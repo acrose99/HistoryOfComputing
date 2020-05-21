@@ -1,0 +1,35 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.media {
+    height: 200px;
+}
+.teammate {
+    margin: 20px;
+    flex: 1;
+    width: 500px;
+    height: 650px;
+
+}
+.content {
+    margin: 10px;
+    /*height: 30px;*/
+    font-size: 12px;
+}
+.links {
+    justify-content: center;
+    position: center;
+    padding-top: 10px;
+    /*height: 0%;*/
+}
+.link1 {
+    height: 50px;
+}
+.link2 {
+    height: 50px;
+}
+
+

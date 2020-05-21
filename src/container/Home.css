@@ -1,0 +1,40 @@
+.App-container {
+    background-image: url('../images/backdrop3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: .6;
+    /* width: 100%; */
+    height: 140vh;;
+    flex: fit-content;
+}
+.media1 {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    display: block;
+    margin: auto auto 50px;
+
+}
+.media2 {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    display: block;
+    margin: 50px auto 50px;
+
+}
+.content {
+    opacity: 1;
+    color: darkmagenta;
+}
+.buttoncontainer {
+    opacity: 1;
+    color: darkmagenta;
+    text-align: center;
+}
+.button {
+    height: 75px;
+}
+
+
