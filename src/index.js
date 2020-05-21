@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter as Router } from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 import * as serviceWorker from './serviceWorker';
 
 
 //Wrapped in browser router so it can be a single page app
 ReactDOM.render(
-    <Router>
+    <BrowserRouter>
         <App />
-    </Router>,
+    </BrowserRouter>,
     document.getElementById('root')
 );
 

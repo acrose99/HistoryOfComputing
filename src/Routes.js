@@ -5,11 +5,11 @@ import Team from "./container/Team";
 import Home from "./container/Home"
 import NfError from "./container/NFError";
 
-export default function Routes({appProps}) {
+export default function Routes({ appProps }) {
     return (
         <Switch>
 
-            <AppliedRoute path="/" exact component={Home} appProps={appProps}  />
+            <AppliedRoute path="/" exact component={Home}   />
 
             {/*{ /* Route to Settings page */ }*/}
             {/*<AppliedRoute path="/settings" exact component={Settings} appProps={appProps} />*/}
@@ -21,7 +21,7 @@ export default function Routes({appProps}) {
             {/*<AppliedRoute path="/contact" exact component={Contact} appProps={appProps} />*/}
 
             { /* Route to team page */ }
-            <AppliedRoute path="/team" exact component={Team}  appProps={appProps}/>
+            {/*<AppliedRoute path="/team" exact component={Team}/>*/}
 
             {/*{ /* Route to Documentation page */ }*/}
             {/*<AppliedRoute path="/documentation" exact component={Documentation} appProps={appProps} />*/}
