@@ -9,7 +9,7 @@ export default function Routes({ appProps }) {
     return (
         <Switch>
 
-            <AppliedRoute path="/" exact component={Home}   />
+            <AppliedRoute path="/" exact component={Home} appProps={appProps}  />
 
             {/*{ /* Route to Settings page */ }*/}
             {/*<AppliedRoute path="/settings" exact component={Settings} appProps={appProps} />*/}
@@ -21,13 +21,13 @@ export default function Routes({ appProps }) {
             {/*<AppliedRoute path="/contact" exact component={Contact} appProps={appProps} />*/}
 
             { /* Route to team page */ }
-            {/*<AppliedRoute path="/team" exact component={Team}/>*/}
+            <AppliedRoute path="/team" exact component={Team} appProps={appProps}/>
 
             {/*{ /* Route to Documentation page */ }*/}
             {/*<AppliedRoute path="/documentation" exact component={Documentation} appProps={appProps} />*/}
 
             { /* Redirects to 404 error for any route that doesnt match */ }
-            <Route component={NfError}/>
+            <Route component={NfError} />
         </Switch>
     );
 }
