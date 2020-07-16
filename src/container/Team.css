@@ -1,35 +1,40 @@
-.root {
+#root {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    position: relative;
 }
-.media {
+#media {
     height: 200px;
 }
-.teammate {
-    margin: 20px;
+#teammate {
+    margin-left: 20px;
+    margin-right: 20px;
     flex: 1;
-    width: 500px;
-    height: 650px;
-
+    height: 700px;
+    max-width: 500px;
+    opacity: 1;
 }
-.content {
+#content {
     margin: 10px;
     /*height: 30px;*/
     font-size: 12px;
+    opacity: 1;
 }
-.links {
+#links {
     justify-content: center;
     position: center;
     padding-top: 10px;
+    opacity: 1;
     /*height: 0%;*/
 }
-.link1 {
+#link1 {
     height: 50px;
+    opacity: 1;
 }
-.link2 {
+#link2 {
     height: 50px;
+    opacity: 1;
 }
 
 

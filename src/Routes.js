@@ -4,6 +4,7 @@ import AppliedRoute from "./components/AppliedRoute";
 import Team from "./container/Team";
 import Home from "./container/Home"
 import NfError from "./container/NFError";
+import Timeline from "./container/Timeline";
 
 export default function Routes({ appProps }) {
     return (
@@ -15,7 +16,7 @@ export default function Routes({ appProps }) {
             {/*<AppliedRoute path="/settings" exact component={Settings} appProps={appProps} />*/}
 
             {/*{ /* Route to historiography page */ }*/}
-            {/*<AppliedRoute path="/historiography" exact component={Historiography} appProps={appProps} />*/}
+            <AppliedRoute path="/timeline" exact component={Timeline} appProps={appProps}/>
 
             {/*{ /* Route to contact page */ }*/}
             {/*<AppliedRoute path="/contact" exact component={Contact} appProps={appProps} />*/}

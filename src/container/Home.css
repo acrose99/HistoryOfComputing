@@ -3,43 +3,52 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-    opacity: .6;
     /* width: 100%; */
     height: 140vh;;
+    position: relative;
 }
-.media {
+#media {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto auto 125px;
-}
-.media1 {
-    height: 200px;
-    width: 200px;
-    opacity: 1;
-    display: block;
-    margin: 50px auto 50px;
+    /*margin: auto 250px 125px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    height: 50%;
+    width: 50%;
+    position: relative;
 
 }
-.media2 {
-    height: 200px;
-    width: 200px;
+#media1 {
+    /*height: 200px;*/
+    /*width: 200px;*/
     opacity: 1;
     display: block;
-    margin: 50px auto 50px;
+    margin-right: 100px;
 
 }
-.content {
+#media2 {
+    /*height: 200px;*/
+    /*width: 200px;*/
+    opacity: 1;
+    display: block;
+    margin-left: 30px;
+
+}
+#contentHome {
     opacity: 1;
     color: darkmagenta;
 }
-.buttoncontainer {
-    opacity: 1;
-    color: darkmagenta;
+#buttoncontainer {
     text-align: center;
+    color: darkmagenta;
+    position: relative;
+    margin-bottom: 25px;
+
 }
-.button {
+#button {
     height: 75px;
+
+    /*background-color: #7baee5;*/
+    opacity: 1;
 }
-
-
