@@ -8,12 +8,22 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Navbar from "../components/Navbar";
 export default function Team() {
+    const media = {
+        display: 'flex',
+        flexDirection: 'row',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 50,
+        height: '50%',
+        width: '100%',
+        position: 'relative',
+    }
     return (
         <div className="App-container">
             <Navbar/>
             <div id="root">
                 <Card id="teammate">
-                    <CardMedia
+                    <CardMedia style={media}
                         id="media"
                         title="George"
                         image={require("../images/gkt.jpg")}
@@ -39,7 +49,7 @@ export default function Team() {
                     </CardActions>
                 </Card>
                 <Card id="teammate">
-                    <CardMedia
+                    <CardMedia style={media}
                         id="media"
                         title="David"
                         image={require("../images/ddennis.jpg")}
@@ -65,7 +75,7 @@ export default function Team() {
                     </CardActions>
                 </Card>
                 <Card id="teammate">
-                    <CardMedia
+                    <CardMedia style={media}
                         id="media"
                         title="Alex"
                         color="textPrimary"
@@ -75,7 +85,7 @@ export default function Team() {
                         <Typography gutterBottom color="primary" variant="h4" component="h4">
                             Alex Rose
                         </Typography>
-                        <Typography gutterBottom color="textPrimary" variant="h4" variant="h5" component="h5">
+                        <Typography gutterBottom color="textPrimary"  variant="h5" component="h5">
                             Programmer/Editor
                         </Typography>
                         <Typography id="content" variant="body2" color="textSecondary" component="p">

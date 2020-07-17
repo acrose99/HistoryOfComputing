@@ -3,16 +3,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    margin-top: 50px;
 }
-#media {
-    height: 200px;
-}
+
 #teammate {
     margin-left: 20px;
     margin-right: 20px;
     flex: 1;
     height: 700px;
-    max-width: 500px;
+    width: 200px;
     opacity: 1;
 }
 #content {

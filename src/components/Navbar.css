@@ -1,18 +1,20 @@
 #nav-container {
-    flexGrow: 1,
+    flexGrow: 1;
 }
 #menuButton {
-    margin-right: 20px;
+    margin-right: 50px;
 }
 #linkButton {
     background-color: #57336a;
     color: white;
-    fontSize: 12;
+    /*fontSize: 14;*/
+    font-size: inherit;
+    font-family: Hack, serif;
     margin-right: 50px;
+    width: 15%;
 }
 #navbar {
     height: 100px;
-
 }
 #icon {
     width: 50px;

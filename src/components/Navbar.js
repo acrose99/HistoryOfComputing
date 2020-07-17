@@ -11,8 +11,8 @@ import {ReactComponent as Icon} from "../images/ai.png";
 export default function Navbar() {
     return (
         <div className="nav-container">
-            <AppBar position="static">
-                <Toolbar id="navbar">
+            <AppBar position="relative" >
+                <Toolbar variant="regular" id="navbar">
                     {/*<IconButton  classname="menuButton" href="/" edge={"start"}>*/}
                     {/*    <SvgIcon classname="icon" role={"img"} ={Icon} viewBox="0 0 50 50">*/}
 
@@ -24,13 +24,13 @@ export default function Navbar() {
                     <Button  id="linkButton" variant="contained"  href="/timeline">
                         The Timeline
                     </Button>
-                    <Button  id="linkButton" variant="contained"  href="https://github.com/acrose99/HistoryOfComputing">
+                    <Button  id="linkButton" variant="contained"  href="https://ecommons.luc.edu/history_facpubs/42/">
                         The Book (WIP)
                     </Button>
                     <Button  id="linkButton" variant="contained"  href="https://ssl.cs.luc.edu/team.html">
                         SSL
                     </Button>
-                    <IconButton  id="menuButton" href="/" edge={"start"}>
+                    <IconButton  id="menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
                         <img id="icon" src={require("../images/github-purple.png")} alt="Github"/>
                     </IconButton>
                     <Button  id="linkButton" variant="contained"  href="/team">

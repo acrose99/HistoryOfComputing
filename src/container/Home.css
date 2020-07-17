@@ -1,11 +1,14 @@
 .App-container {
     background-image: url('../images/backdrop3.jpg');
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: cover;
     background-position: 50% 50%;
-    /* width: 100%; */
+     width: 100%;
     height: 140vh;;
     position: relative;
+}
+#root {
+
 }
 #media {
     display: flex;
