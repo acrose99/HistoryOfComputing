@@ -18,22 +18,22 @@ export default function Navbar() {
 
                     {/*    </SvgIcon>*/}
                     {/*</IconButton>*/}
-                    <Button id="linkButton"  variant="contained"  href="/">
+                    <Button color="primary" id="linkButton"  variant="contained"  href="/">
                         Home
                     </Button>
-                    <Button  id="linkButton" variant="contained"  href="/timeline">
+                    <Button color="primary" id="linkButton" variant="contained"  href="/timeline">
                         The Timeline
                     </Button>
-                    <Button  id="linkButton" variant="contained"  href="https://ecommons.luc.edu/history_facpubs/42/">
+                    <Button color="primary" id="linkButton" variant="contained"  href="https://ecommons.luc.edu/history_facpubs/42/">
                         The Book (WIP)
                     </Button>
-                    <Button  id="linkButton" variant="contained"  href="https://ssl.cs.luc.edu/team.html">
+                    <Button color="primary" id="linkButton" variant="contained"  href="https://ssl.cs.luc.edu/team.html">
                         SSL
                     </Button>
                     <IconButton  id="menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
-                        <img id="icon" src={require("../images/github-purple.png")} alt="Github"/>
+                        <img id="icon" src={require("../images/github.png")} alt="Github"/>
                     </IconButton>
-                    <Button  id="linkButton" variant="contained"  href="/team">
+                    <Button color="primary" id="linkButton" variant="contained"  href="/team">
                         About Us
                     </Button>
                 </Toolbar>

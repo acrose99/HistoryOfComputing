@@ -5,11 +5,11 @@
     margin-right: 50px;
 }
 #linkButton {
-    background-color: #57336a;
+    /*background-color: #57336a;*/
     color: white;
     /*fontSize: 14;*/
     font-size: inherit;
-    font-family: Hack, serif;
+    font-family: Chicago, serif;
     margin-right: 50px;
     width: 15%;
 }

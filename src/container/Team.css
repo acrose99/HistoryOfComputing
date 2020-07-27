@@ -17,7 +17,6 @@
 #content {
     margin: 10px;
     /*height: 30px;*/
-    font-size: 12px;
     opacity: 1;
 }
 #links {
@@ -25,14 +24,34 @@
     position: center;
     padding-top: 10px;
     opacity: 1;
-    /*height: 0%;*/
+}
+#georgeLinks {
+    height: 13%;
+    justify-content: center;
+    position: center;
+    padding-top: 10px;
+}
+#dennisLinks {
+    height: 5%;
+    justify-content: center;
+    position: center;
+    padding-top: 10px;
+}
+#alexLinks {
+    height: 11%;
+    justify-content: center;
+    position: center;
+    padding-top: 10px;
 }
 #link1 {
     height: 50px;
+    width: 100px;
     opacity: 1;
+    justify-content: center;
 }
 #link2 {
     height: 50px;
+    width: 125px;
     opacity: 1;
 }
 

@@ -1,6 +1,6 @@
 .App-container {
-    background-image: url('../images/backdrop3.jpg');
-    background-attachment: inherit;
+    /*background-image: url('../images/backdrop3.jpg');*/
+    background-color: #e3e3ea;
     background-size: cover;
     background-position: 50% 50%;
      width: 100%;
