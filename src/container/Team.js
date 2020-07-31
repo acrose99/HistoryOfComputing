@@ -27,12 +27,12 @@ export default function Team() {
         fontSize: 17,
     }
     return (
-        <div className="App-container">
+        <div>
             <Navbar/>
-            <div id="root">
-                <Card id="teammate">
+            <div className="Team-Container">
+                <Card className="Team-teammate">
                     <CardMedia style={media}
-                        id="media"
+                               className="Team-media"
                         title="George"
                         image={require("../images/gkt.jpg")}
                     />
@@ -43,22 +43,22 @@ export default function Team() {
                         <Typography style={typography} gutterBottom color="textPrimary" variant="h5" component="h5">
                             Writer (Technical History)
                         </Typography>
-                        <Typography style={typographyGeorge} id="content" variant="body2" color="textSecondary" component="p">
+                        <Typography style={typographyGeorge} className="Team-content" variant="body2" color="textSecondary" component="p">
                             Hi! I’m George K. Thiruvathukal. I’m professor of computer science at Loyola University Chicago and visiting faculty at Argonne National Laboratory.
                         </Typography>
                     </CardContent>
-                    <CardActions id="georgeLinks" >
-                        <Button style={typography} id="link1" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
+                    <CardActions className="Team-georgeLinks" >
+                        <Button style={typography} className="Team-link1" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
                             Faculty Page
                         </Button>
-                        <Button style={typography} id="link2" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
+                        <Button style={typography} className="Team-link2" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
                             Personal Website
                         </Button>
                     </CardActions>
                 </Card>
-                <Card id="teammate">
+                <Card className="Team-teammate">
                     <CardMedia style={media}
-                        id="media"
+                               className="Team-media"
                         title="David"
                         image={require("../images/ddennis.jpg")}
                     />
@@ -69,22 +69,22 @@ export default function Team() {
                         <Typography style={typography} gutterBottom color="textPrimary" variant="h5" component="h5">
                             Writer (Cultural History)
                         </Typography>
-                        <Typography style={typography} id="content" variant="body2" color="textSecondary" component="p">
+                        <Typography style={typography} className="Team-content" variant="body2" color="textSecondary" component="p">
                             David B. Dennis (Ph.D., UCLA, 1991; B.A., University of Wisconsin, 1984) is a Professor of History at Loyola University Chicago where he teaches courses on Western Humanities, Modern European Cultural and Intellectual History, and the Cultural History of Computing.
                         </Typography>
                     </CardContent>
-                    <CardActions id="dennisLinks">
-                        <Button style={typography} id="link1" variant='outlined' size="large" color="primary" href="https://github.com/Iqra2124">
+                    <CardActions className="Team-dennisLinks">
+                        <Button style={typography} className="Team-link1" variant='outlined' size="large" color="primary" href="https://github.com/Iqra2124">
                             Faculty Page
                         </Button>
-                        <Button style={typography} id="link2" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
+                        <Button style={typography} className="Team-link2" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
                             Personal Website
                         </Button>
                     </CardActions>
                 </Card>
-                <Card id="teammate">
+                <Card className="Team-teammate">
                     <CardMedia style={media}
-                        id="media"
+                               className="Team-media"
                         title="Alex"
                         color="textPrimary"
                         image={require("../images/alex3.jpeg")}
@@ -96,17 +96,17 @@ export default function Team() {
                         <Typography style={typography} gutterBottom color="textPrimary"  variant="h5" component="h5">
                             Programmer/Editor
                         </Typography>
-                        <Typography style={typography} id="content" variant="body2" color="textSecondary" component="p">
+                        <Typography style={typography} className="content" variant="body2" color="textSecondary" component="p">
                             I'm a sophomore studying Computer Science at Loyola. I'm also a Mulcahy Fellow at the
                             Software
                             Systems Laboratory and the VP of the Don't Panic CS Club. Finally, I work as a IT Technician for the Loyola Service Desk
                         </Typography>
                     </CardContent>
-                    <CardActions id="alexLinks">
-                        <Button style={typography} id="link1" variant='outlined' size="large" color="primary" href="https://github.com/acrose99">
+                    <CardActions className="Team-alexLinks">
+                        <Button style={typography} className="Team-link1" variant='outlined' size="large" color="primary" href="https://github.com/acrose99">
                             Github
                         </Button>
-                        <Button style={typography} id="link2"  variant='outlined' size="large" color="primary" href="https://github.com/acrose99">
+                        <Button style={typography} className="Team-link2"  variant='outlined' size="large" color="primary" href="https://github.com/acrose99">
                             Don't Panic
                         </Button>
                     </CardActions>

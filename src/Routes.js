@@ -3,6 +3,7 @@ import {Route, Switch} from "react-router-dom";
 import AppliedRoute from "./components/AppliedRoute";
 import Team from "./container/Team";
 import Home from "./container/Home"
+import Home98 from "./container/Home98";
 import NfError from "./container/NFError";
 import Timeline from "./container/Timeline";
 
@@ -10,10 +11,9 @@ export default function Routes({ appProps }) {
     return (
         <Switch>
 
-            <AppliedRoute path="/" exact component={Home} appProps={appProps}  />
+            <AppliedRoute path="/" exact component={Home98} appProps={appProps}  />
 
-            {/*{ /* Route to Settings page */ }*/}
-            {/*<AppliedRoute path="/settings" exact component={Settings} appProps={appProps} />*/}
+            <AppliedRoute path="/home" exact component={Home} appProps={appProps}  />
 
             {/*{ /* Route to historiography page */ }*/}
             <AppliedRoute path="/timeline" exact component={Timeline} appProps={appProps}/>

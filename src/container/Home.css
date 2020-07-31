@@ -1,16 +1,12 @@
-.App-container {
+.Home-container {
     /*background-image: url('../images/backdrop3.jpg');*/
-    background-color: #e3e3ea;
-    background-size: cover;
-    background-position: 50% 50%;
-     width: 100%;
-    height: 140vh;;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    margin-top: 100px;
     position: relative;
 }
-#root {
-
-}
-#media {
+.Home-media {
     display: flex;
     flex-direction: row;
     /*margin: auto 250px 125px;*/
@@ -22,7 +18,7 @@
     position: relative;
 
 }
-#media1 {
+.Home-media1 {
     /*height: 200px;*/
     /*width: 200px;*/
     opacity: 1;
@@ -30,7 +26,7 @@
     margin-right: 100px;
 
 }
-#media2 {
+.Home-media2 {
     /*height: 200px;*/
     /*width: 200px;*/
     opacity: 1;
@@ -38,20 +34,21 @@
     margin-left: 30px;
 
 }
-#contentHome {
+.Home-content {
     opacity: 1;
-    color: darkmagenta;
-}
-#buttoncontainer {
     text-align: center;
-    color: darkmagenta;
-    position: relative;
-    margin-bottom: 25px;
-
 }
-#button {
+.Home-buttoncontainer {
+    text-align: center;
+    position: relative;
+    margin: 50px;
+}
+.Home-button {
     height: 75px;
-
     /*background-color: #7baee5;*/
     opacity: 1;
+}
+.Home-Home98link {
+    text-align: center;
+    position: relative;
 }

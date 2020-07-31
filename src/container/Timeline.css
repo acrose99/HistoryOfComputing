@@ -1,3 +1,20 @@
+.timeline-header-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.timeline-header--title {
+    text-align: center;
+}
+
+
+
+
+
+
+/*TODO REFACTOR THE CRAP OUT OF THIS GARBAGE*/
+
+
+
 .timeline {
     position: relative;
     width: 100vw;
@@ -527,6 +544,7 @@
 .timeline-header__subtitle {
     padding-left: 0;
     padding-right: 0;
+
 }
 .timeline-header__subtitle {
     margin-right: 50px;

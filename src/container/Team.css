@@ -1,55 +1,56 @@
-#root {
+
+.Team-Container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    margin-top: 50px;
 }
 
-#teammate {
+.Team-teammate {
     margin-left: 20px;
+    margin-top: 50px;
     margin-right: 20px;
     flex: 1;
     height: 700px;
     width: 200px;
     opacity: 1;
 }
-#content {
+.Team-content {
     margin: 10px;
     /*height: 30px;*/
     opacity: 1;
 }
-#links {
+.Team-links {
     justify-content: center;
     position: center;
     padding-top: 10px;
     opacity: 1;
 }
-#georgeLinks {
+.Team-georgeLinks {
     height: 13%;
     justify-content: center;
     position: center;
     padding-top: 10px;
 }
-#dennisLinks {
+.Team-dennisLinks {
     height: 5%;
     justify-content: center;
     position: center;
     padding-top: 10px;
 }
-#alexLinks {
+.Team-alexLinks {
     height: 11%;
     justify-content: center;
     position: center;
     padding-top: 10px;
 }
-#link1 {
+.Team-link1 {
     height: 50px;
     width: 100px;
     opacity: 1;
     justify-content: center;
 }
-#link2 {
+.Team-link2 {
     height: 50px;
     width: 125px;
     opacity: 1;

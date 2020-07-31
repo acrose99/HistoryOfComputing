@@ -1,25 +1,24 @@
-#nav-container {
-    flexGrow: 1;
+.Nav-container {
+    flex-grow: 1;
 }
-#menuButton {
-    margin-right: 50px;
-}
-#linkButton {
+.Nav-linkButton {
     /*background-color: #57336a;*/
     color: white;
     /*fontSize: 14;*/
     font-size: inherit;
     font-family: Chicago, serif;
     margin-right: 50px;
-    width: 15%;
+    height: 60px;
+    width: 25%;
 }
-#navbar {
+
+.Nav-navbar {
     height: 100px;
 }
-#icon {
+.Nav-icon {
     width: 50px;
     height: 50px;
 }
-#title {
-    flexGrow: 1;
+.Nav-title {
+    flex-grow: 1;
 }

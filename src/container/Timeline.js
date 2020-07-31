@@ -3,6 +3,10 @@ import "./Timeline.css";
 import Navbar from "../components/Navbar";
 
 export default function Timeline() {
+
+    // TODO: fix the image aligment in UI
+    // TODO: Figure out to make timelines go to left and right
+    // TODO: Add logic for clicking on events
     return (
         <div className="App-container">
             <Navbar/>
@@ -10,14 +14,14 @@ export default function Timeline() {
                 className="view view--no-footer-triangle story story--pad-bottom view--silver view--scroll-up story--scroll-up view--sticky story--sticky view--init story--init">
             <div className="view__content view__content--open">
                 <main className="view__container">
-                    <header className="timeline-header view__panel">
-                        <div className="timeline-header__body view__panel">
-                            <h1 className="timeline-header__title">The History of Computing</h1>
-                            <p className="timeline-header__subtitle">
-                                This is by no means a complete historiography, but aims to be a supplement to the book
-                                written by Prof.
-                                Thiruvathukal and Prof. Dennis and to serve as a introduction to new learners.</p>
+                    <header>
+                        <div >
+                            <h3 className="timeline-header--title">The History of Computing</h3>
                         </div>
+                        <h5 className="timeline-header-content">
+                            This is by no means a complete historiography, but aims to be a supplement to the book
+                            written by Prof.
+                            Thiruvathukal and Prof. Dennis and to serve as a introduction to new learners.</h5>
                     </header>
                     <div className="view__content">
                         <section className="timeline timeline--3">

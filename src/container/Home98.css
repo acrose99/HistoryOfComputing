@@ -1,0 +1,29 @@
+.Home98-Container {
+    background-color: #008080;
+    background-size: auto;
+    background-position: 50% 50%;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home98-window {
+    width: 350px;
+}
+
+.Home98-content {
+    text-align: center;
+}
+.Home98-link, .Home98-TableofContents {
+    font-size: 16px;
+}
+.Home98-timelineLink {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.Home98-link, .Home98-timelineLink {
+    /*color: #0468cc;*/
+}
