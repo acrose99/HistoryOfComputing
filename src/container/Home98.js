@@ -17,15 +17,15 @@ export default function Home98() {
                             how far technology has come. This was how Windows 98 looked! </p>
                         <ul className="tree-view">
                             <li className="Home98-TableofContents">Table of Contents:</li>
-                            <a href="/timeline"><button className="Home98-timelineLink">The Timeline (CLICK HERE)</button></a>
+                            <a href="/timeline"><button className="Home98-timelineLink button">The Timeline (CLICK HERE)</button></a>
                             <li>
                                 <details open>
                                     <summary>Other things</summary>
                                     <ul>
-                                        <a href="/team"> <li/><button className="Home98-link">Credits </button></a>
-                                        <a href="https://ecommons.luc.edu/history_facpubs/42/"><li/><button className="Home98-link" >Book</button></a>
-                                        <a href="https://ssl.cs.luc.edu/team.html"> <li/> <button className="Home98-link" >Software Systems Laboratory</button></a>
-                                        <a href="/home"> <li/> <button className="Home98-link" >Click here for a normal homepage</button></a>
+                                        <a href="/team"> <li/><button className="Home98-link button">Credits </button></a>
+                                        <a href="https://ecommons.luc.edu/history_facpubs/42/"><li/><button className="Home98-link button" >Book</button></a>
+                                        <a href="https://ssl.cs.luc.edu/team.html"> <li/> <button className="Home98-link button" >Software Systems Laboratory</button></a>
+                                        <a href="/home"> <li/> <button className="Home98-link button" >Click here for a normal homepage</button></a>
                                     </ul>
                                 </details>
                             </li>

@@ -4,7 +4,6 @@ import Routes from "../Routes";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import SvgIcon from "@material-ui/core/SvgIcon";
 import Button from "@material-ui/core/Button";
 import {ReactComponent as Icon} from "../images/ai.png";
 
@@ -20,15 +19,16 @@ export default function Navbar() {
         height: 60,
         width: '25%',
     }
+    const iconButton = {
+        boxShadow: 'none',
+    }
     return (
         <div className="Nav-container">
             <AppBar position="relative" >
                 <Toolbar variant="regular" className="Nav-navbar">
-                    {/*<IconButton  classname="menuButton" href="/" edge={"start"}>*/}
-                    {/*    <SvgIcon classname="icon" role={"img"} ={Icon} viewBox="0 0 50 50">*/}
-
-                    {/*    </SvgIcon>*/}
-                    {/*</IconButton>*/}
+                    <IconButton style={iconButton}   edge={"start"}>
+                        <img  className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="Ruh roh scoob"/>
+                    </IconButton>
                     <Button color="primary" style={linkButton} variant="contained"  href="/home">
                         Home
                     </Button>
@@ -42,7 +42,7 @@ export default function Navbar() {
                     <Button color="primary" style={linkButton} variant="contained"  href="https://ssl.cs.luc.edu/team.html">
                         SSL
                     </Button>
-                    <IconButton  className="menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
+                    <IconButton  className="Nav-menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
                         <img className="Nav-icon" src={require("../images/github.png")} alt="Github"/>
                     </IconButton>
                     <Button color="primary" style={linkButton} variant="contained"  href="/team">
