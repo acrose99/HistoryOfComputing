@@ -12,7 +12,7 @@ function App(props) {
         <div className="App-container">
 
             <Routes appProps={{  }} />
-            <a href="#" classNme="movable-icon" onClick="slideshow()"> <i className="fa fa-align-justify"/> </a>
+            <a href="#" className="movable-icon"> <i className="fa fa-align-justify"/> </a>
         </div>
     );
 }
