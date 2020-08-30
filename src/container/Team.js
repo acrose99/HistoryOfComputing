@@ -8,6 +8,10 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Navbar from "../components/Navbar";
 export default function Team() {
+
+    //Todo
+        //Refactor the crap out of this
+        // Add Alex Crane to credits
     const media = {
         display: 'flex',
         flexDirection: 'row',

@@ -42,7 +42,7 @@
     width: 50%;
 }
 .Event-date {
-    color: rgb(166, 155, 145);
+    color: black;
     display: inline-block;
     font-family: Merriweather-Regular, serif;
     font-size: 14px;
@@ -52,7 +52,7 @@
     margin: 0 10px 0 0;
 }
 .Event-location {
-    color: rgb(166, 155, 145);
+    color: black;
     display: inline-block;
     font-family: Merriweather-Regular, serif;
     text-align: center;
@@ -97,4 +97,13 @@
     border-radius: 100%;
     transform: translateY(0);
     will-change: transform;
+}
+.Event-container-link:hover {
+    transition: all 1.3s cubic-bezier(0, 1, .5, 1);
+    background: url("../images/Backdrop.svg");
+    height: 200px;
+    background-position-x: center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
