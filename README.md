@@ -1,68 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# History of Computing
+### This is my current research project for the [https://ssl.cs.luc.edu/](https://ssl.cs.luc.edu/). 
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+##### I am being advised by [Professor George K. Thiruvathukal](https://thiruvathukal.com/) and (non-officially) [Professor David Dennis.](https://sites.google.com/a/etl.luc.edu/dbd/Home-Page") 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### Fellow undergrad Alex Crane is also helping me!
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Here’s an abstract: 
+Our goal, with Prof. Thiruvathukal and Professor David Dennis, is to synthesize the field of Computer Science and Cultural History. We aim to go beyond the traditional narratives of computational historiography, in which linear technological developments are focused upon. Instead, it seeks to provide a more fulfilling explanation of The History of Computing, by explaining the cultural aspects that led to the information age, an overview of how the advent of new computational technology led to significant cultural shifts, while also showing a clear timeline of significant developments in the sphere of computing.
+ 
+Technically, we would like to create a site that compares and contrasts the historical timelines in both the History of Computing and the History of Culture. This solves a separate problem about the field of the History of Computing, there are not many aesthetically pleasing condensed summaries for readers without the time to read a whole book, and there are none that also take into account the aspect of Culture within the history of computing.
+Specifically, the ‘stack’ is as follows. 
+ 
+The website is hosted on a single React page, where separate pages are loaded as components. The pipeline is updated through git, where a new push to the master branch updates the site.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+By the end of the year, we would like our website to be presentable to the public!

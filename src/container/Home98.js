@@ -23,7 +23,7 @@ export default function Home98() {
                         </div>
                     </div>
                     <div className="window-body">
-                        <p className="Home98-content">Don't worry, the site wont always look this. But it's a good way to see
+                        <p className="Home98-content">Don't worry, the site wont always look like this. But it's a good way to see
                             how far technology has come. This was how Windows 98 looked! </p>
                         <ul className="tree-view">
                             <li className="Home98-TableofContents">Table of Contents:</li>
