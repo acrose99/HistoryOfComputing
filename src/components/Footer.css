@@ -1,0 +1,82 @@
+#Footer-container {
+    background-color: rgba(63,81,181,1.0);
+    position: relative;
+    margin-top: 125px;
+    height: 8%;
+    width: 100%;
+}
+#Footer-container-top {
+    display: flex;
+    flex-direction: row;
+}
+#Footer-container-link-list1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+    color: white;
+}
+#Footer-container-link-list2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.Footer-link-list-item {
+    list-style: none;
+    font-size: 16px;
+    height: 40px;
+    line-height: 26px;
+    margin: 0;
+}
+.Footer-link-list-anchor {
+    line-height: 1;
+    position: relative;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+.Footer-arrow {
+    width: 30px;
+    height: 30px;
+    overflow: visible;
+}
+.Footer-link-label {
+    display: inline-block;
+}
+
+.Footer-container-link-icons {
+    display: flex;
+}
+
+#Footer-container-bottom {
+    /*display: flex;*/
+
+    text-align: center;
+    border-top: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px;
+    height: 20%;
+}
+#Footer-container-bottom-title {
+    font-family: Merriweather, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    color: #EAEDF7;
+    text-shadow: 0px 12px 12px #000000;
+}
+#Footer-container-link-icons {
+    margin-left: 10%;
+}
+.Footer-menuButton-icon {
+    width: 50px;
+    height: 55px;
+    margin: 25px;
+}
+.Footer-icon {
+    margin-left: 5%;
+    width: 50px;
+    height: 55px;
+}
+

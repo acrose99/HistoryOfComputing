@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
-import "./Timeline.css";
+import "./Timeline.css"
 import Navbar from "../components/Navbar";
 import Event from "../components/Event";
+import Footer from "../components/Footer";
 export default function Timeline() {
 
     // TODO: fix the image aligment in UI
@@ -69,7 +70,7 @@ export default function Timeline() {
             <Event  date="June 5, 2019" location="Cupertino, US" title="The Apple Pro Stand is released"
                     image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-prod.adage.com%2Fs3fs-public%2Fstyles%2Fwidth_1024%2Fpublic%2F20190602_apple_pro_stand_3x2.jpg&f=1&nofb=1"}
             />
-            {/*placeholder for the end of the timeline*/}
+            <Footer/>
         </div>
     )
 }
