@@ -50,10 +50,10 @@ export default function Team() {
                         </Typography>
                     </CardContent>
                     <CardActions className="Team-georgeLinks" >
-                        <Button style={typography} className="Team-link1" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
+                        <Button style={typography} className="Team-link1" variant='outlined' size="large" color="primary" href="https://www.luc.edu/cs/people/ftfaculty/gkt.shtml">
                             Faculty Page
                         </Button>
-                        <Button style={typography} className="Team-link2" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
+                        <Button style={typography} className="Team-link2" variant='outlined' size="large" color="primary" href="https://thiruvathukal.com/">
                             Personal Website
                         </Button>
                     </CardActions>
@@ -76,10 +76,10 @@ export default function Team() {
                         </Typography>
                     </CardContent>
                     <CardActions className="Team-dennisLinks">
-                        <Button style={typography} className="Team-link1" variant='outlined' size="large" color="primary" href="https://github.com/Iqra2124">
+                        <Button style={typography} className="Team-link1" variant='outlined' size="large" color="primary" href="https://www.luc.edu/history/people/facultyandstaffdirectory/dennisdavidb.shtml">
                             Faculty Page
                         </Button>
-                        <Button style={typography} className="Team-link2" variant='outlined' size="large" color="primary" href="https://github.com/MatthewLoffredo">
+                        <Button style={typography} className="Team-link2" variant='outlined' size="large" color="primary" href="https://sites.google.com/a/etl.luc.edu/dbd/Home-Page">
                             Personal Website
                         </Button>
                     </CardActions>
