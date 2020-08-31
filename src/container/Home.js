@@ -1,7 +1,11 @@
 import React, {useEffect, useState} from "react";
 import "./Home.css";
+
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+
+//Material-UI imports is placeholder until we create our own, probably in a few days.
+
 import Navbar from "../components/Navbar";
 export default function Home() {
     return (

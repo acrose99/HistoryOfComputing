@@ -6,6 +6,9 @@ import { Icon, InlineIcon } from '@iconify/react';
 import arrowRightShort from '@iconify/icons-bi/arrow-right-short';
 import emailIcon from '@iconify/icons-carbon/email';
 
+//TODO: WIP WIP WIP WIP
+
+
 export default function Footer() {
     return (
         <div id="Footer-container">

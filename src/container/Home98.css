@@ -1,3 +1,15 @@
+/* Credit for the majority of the CSS goes to Jordan Scales!!!!
+        https://jdan.github.io/98.css/?ref=blogduwebdesign.com
+        It is distributed under the MIT Licence
+        I redid his work slightly for browser compatibility, and so that the scrollbars are kept to the default.
+        That work was on import "../98.css/style.css".
+        If you wanna see exactly what I did just compare the changes from the OG file to my own.
+ */
+
+
+
+
+/* Windows 98 color scheme, centers elements, and adds a min-height*/
 .Home98-Container {
     background-color: #008080;
     background-size: auto;
@@ -9,6 +21,7 @@
     align-items: center;
 }
 
+/* The container for the actual content */
 .Home98-window {
     width: 350px;
 }
@@ -19,11 +32,10 @@
 .Home98-link, .Home98-TableofContents {
     font-size: 16px;
 }
+
+/*Keeps everything nice and neat*/
 .Home98-timelineLink {
     margin-bottom: 10px;
     padding-top: 10px;
     font-size: 20px;
-}
-.Home98-link, .Home98-timelineLink {
-    /*color: #0468cc;*/
 }

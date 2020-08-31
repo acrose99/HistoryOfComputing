@@ -1,13 +1,20 @@
 import React, {useEffect, useState} from "react";
 import "./Navbar.css";
 import Routes from "../Routes";
+
+//Material-UI imports is placeholder until we create our own, probably in a few days.
+
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
+
+
+
 import {ReactComponent as Icon} from "../images/ai.png";
 
 export default function Navbar() {
+
     const linkButton = {
         /*background-color: #57336a;*/
         color: 'white',

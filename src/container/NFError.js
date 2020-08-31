@@ -1,7 +1,9 @@
 import React from 'react';
 import './NFError.css';
 
-// page to hangle 404 errors
+//Todo add a cool and QuIRkY page for this
+
+// page to handle 404 errors
 export default function NfError() {
     return (
         <div className="NfError">

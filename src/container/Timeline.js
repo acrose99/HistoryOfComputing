@@ -1,3 +1,9 @@
+// TODO: Download all the images so that the page loads faster
+// TODO: Try working on text alignment
+// TODO: Keep the timeline separator's width the same
+
+
+
 import React, {useEffect, useState} from "react";
 import "./Timeline.css"
 import Navbar from "../components/Navbar";
@@ -5,9 +11,7 @@ import Event from "../components/Event";
 import Footer from "../components/Footer";
 export default function Timeline() {
 
-    // TODO: fix the image aligment in UI
-    // TODO: Figure out to make timelines go to left and right
-    // TODO: Add logic for clicking on events
+
     return (
         <div id="Timeline">
             <Navbar/>
