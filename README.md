@@ -16,3 +16,4 @@ Specifically, the ‘stack’ is as follows.
 The website is hosted on a single React page, where separate pages are loaded as components. The pipeline is updated through git, where a new push to the master branch updates the site.
 
 By the end of the year, we would like our website to be presentable to the public!
+
