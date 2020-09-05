@@ -3,6 +3,68 @@
     display: flex;
     text-align: center;
     margin-top: 50px;
+    max-height: 170px;
+    border: none;
+    outline: none;
+}
+.Event-container-link {
+    box-sizing: border-box;
+    color: inherit;
+    display: flex;
+    float: none;
+    margin-left: auto;
+    margin-right: auto !important;
+    max-width: 830px;
+    overflow: visible;
+    position: relative;
+    text-decoration: inherit;
+    border: none;
+    outline: none;
+}
+.Event-container-link:before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    border: 8px solid transparent;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.Event-container-link:hover:before {
+    position: absolute;
+    content: '';
+    height: 170px;
+    width: 55%;
+    /*left: 18%;*/
+    border-left: 4mm ridge #9E73D3;
+    border-bottom: 4mm ridge #5C8BAD;
+    border-top: 4mm ridge #9E73D3;
+    transition: height 0.5s linear, width 0.5s linear 0.5s;
+    top: 0;
+}
+.Event-container-link:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    top: 0;
+    right: 0;
+    /*left: 18%;*/
+    box-sizing: border-box;
+}
+.Event-container-link:hover:after {
+    position: absolute;
+    content: '';
+    height: 170px;
+    width: 50% ;
+    border-right: 4mm ridge #5C8BAD;
+    border-bottom: 4mm ridge #9E73D3;
+    border-left: none;
+    border-top: 4mm ridge #5C8BAD;
+    transition: height 0.5s linear, width 0.5s linear 0.5s;
 }
 .Event-figure {
     box-sizing: border-box;
@@ -19,19 +81,7 @@
     max-height: 165px;
     height: 100%;
 }
-.Event-container-link {
-    box-sizing: border-box;
-    color: inherit;
-    display: flex;
-    float: none;
-    margin-left: auto;
-    margin-right: auto !important;
-    max-width: 830px;
-    overflow: visible;
-    position: relative;
-    text-decoration: inherit;
 
-}
 .Event-body {
     box-sizing: border-box;
     margin: 0;
@@ -70,15 +120,14 @@
     margin-top: 25px;
     /*margin-left: 15px ;*/
     /*width: 100%;*/
-
 }
 .Event-body::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     display: flex;
-    background-color: #D9CFBE;
+    background-color: #d9cfbe;
     width: 5px;
     height: 175%;
     border-radius: 100%;
@@ -86,10 +135,10 @@
     will-change: transform;
 }
 .Event-body::after {
-    content: '';
+    content: "";
     position: absolute;
     display: flex;
-    background-color: #2D667B;
+    background-color: #2d667b;
     top: 40%;
     width: 20px;
     height: 20px;
@@ -99,11 +148,12 @@
     will-change: transform;
 }
 .Event-container-link:hover {
-    transition: all 1.3s cubic-bezier(0, 1, .5, 1);
+    transition: all 1.3s;
     background: url("../images/Backdrop.svg");
-    height: 200px;
+    height: 170px;
     background-position-x: center;
     background-size: cover;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
 }
