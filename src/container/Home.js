@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import "./Home.css";
 
 
 //Material-UI imports is placeholder until we create our own, probably in a few days.
-
 import Navbar from "../components/Navbar";
+
 export default function Home() {
 
     return (

@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "../98.css/style.css"
 import "./Home98.css"
 

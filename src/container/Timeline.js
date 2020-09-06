@@ -3,12 +3,12 @@
 // TODO: Keep the timeline separator's width the same
 
 
-
-import React, {useEffect, useState} from "react";
+import React from "react";
 import "./Timeline.css"
 import Navbar from "../components/Navbar";
 import Event from "../components/Event";
 import Footer from "../components/Footer";
+
 export default function Timeline() {
 
 
