@@ -11,7 +11,7 @@ export default function Navbar() {
                         <img  className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="Ruh roh scoob"/>
                     </button>
                     <button className="Nav-linkButton">
-                        <a className="Nav-anchor" href="/">Home</a>
+                        <a className="Nav-anchor" href="/home">Home</a>
                     </button>
 
                     <button className="Nav-linkButton">
