@@ -10,29 +10,29 @@ export default function Navbar() {
                     <button className="iconButton">
                         <img  className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="Ruh roh scoob"/>
                     </button>
-                    <button className="Nav-linkButton">
+                    <div className="Nav-linkButton">
                         <a className="Nav-anchor" href="/home">Home</a>
-                    </button>
+                    </div>
 
-                    <button className="Nav-linkButton">
+                    <div className="Nav-linkButton">
                         <a className="Nav-anchor"  href="/timeline">The Timeline</a>
-                    </button>
-                    <button className="Nav-linkButton">
+                    </div>
+                    <div className="Nav-linkButton">
                         <a  className="Nav-anchor"  href="https://ecommons.luc.edu/history_facpubs/42/">The Book (WIP)</a>
-                    </button>
-                    <button className="Nav-linkButton">
+                    </div>
+                    <div className="Nav-linkButton">
                         <a className="Nav-anchor" href="https://ssl.cs.luc.edu/team.html">SSL</a>
-                    </button>
-                    <button className="iconButton">
+                    </div>
+                    <div className="iconButton">
                         <a className="Nav-anchor" href="https://github.com/acrose99/HistoryOfComputing">
                             <img className="Nav-icon" src={require("../images/github.png")} alt="Github"/>
                         </a>
-                    </button>
-                    <button className="Nav-linkButton">
+                    </div>
+                    <div className="Nav-linkButton">
                         <a className="Nav-anchor" href="/team">
                             About Us
                         </a>
-                    </button>
+                    </div>
                 </div>
         </div>
         )
