@@ -5,7 +5,7 @@ function Event(props) {
     return (
         <div className="Event">
             <div className="Event-Container">
-                <a id={props.id}   className="Event-container-link" href="">
+                <a href={props.href} id={props.id}   className="Event-container-link">
                     <figure className="Event-figure">
                         <img className="Event-image" src={props.image} alt="Error"/>
                     </figure>
@@ -13,7 +13,6 @@ function Event(props) {
                         <span className="Event-date">{props.date}</span>
                         <span className="Event-location">{props.location}.</span>
                         <h3 className="Event-title">{props.title}</h3>
-
                     </div>
                 </a>
             </div>

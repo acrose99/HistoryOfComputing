@@ -1,4 +1,26 @@
-/* Todo, add media responsive queries for mobile CSS */
+/*Galaxy S9+ and Android*/
+@media screen and (max-width: 360px) {
+}
+
+/*iPhone 6,7,8, X*/
+@media screen and (max-width: 375px) {
+
+}
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 411px) {
+
+}
+
+/* iPad */
+@media screen and (min-width: 768px) {
+
+}
+/* Desktop */
+@media screen and (min-width: 1000px) {
+
+}
+
 
 /* The majority of this stuff just keeps everything centered and nice looking for diffrent sizes of the browser*/
 .Home-container {
