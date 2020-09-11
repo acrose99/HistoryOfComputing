@@ -2,9 +2,12 @@ import React from "react";
 import "./EventFocus.css";
 
 class EventFocus extends React.Component {
+  state = {
+    className: "showEvent",
+  };
   render() {
     return (
-      <div className={this.props.className}>
+      <div className="showEvent">
         <p>Example txt</p>
       </div>
     );

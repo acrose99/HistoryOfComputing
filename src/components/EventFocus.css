@@ -1,5 +1,13 @@
 /*Todo */
 
 .showEvent {
+  position: fixed; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
   border: 2px black;
+  background-color: green;
+  width: 700px;
+  height: 500px;
+  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  /* margin: 33%; */
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import EventFocus from "./EventFocus.js";
+// import EventFocus from "./EventFocus.js";
 import "./Event.css";
 
 function Event(props) {
