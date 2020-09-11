@@ -1,8 +1,6 @@
 #Timeline {
-    background: linear-gradient(180deg, rgba(210, 174, 255, 0.1575) 0%, rgba(184, 225, 255, 0.3) 20.84%, rgba(197, 191, 255, 0.3) 45.83%, rgba(184, 225, 255, 0.3) 70.31%, rgba(197, 191, 255, 0.3075) 100%);
-    /*background: url("../images/Gradient Background.png");*/
-    background-position-x: center;
-    height: 4000px;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, rgba(210, 174, 255, 0.7) 0%, rgba(184, 225, 255, 0.5) 20.84%, rgba(197, 191, 255, 0.5) 45.83%, rgba(184, 225, 255, 0.5) 70.31%, rgba(197, 191, 255, 0.7) 100%);
 }
 #Timeline-header {
     font-family: Merriweather, serif;
@@ -11,11 +9,8 @@
     font-size: 48px;
     line-height: 56px;
     /* or 117% */
-
     text-align: center;
-
     color: #222222;
-
     text-shadow: 0px 8px 10px #3F51B5;
 }
 #Timeline-intro {

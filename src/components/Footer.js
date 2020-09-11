@@ -1,10 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import "./Footer.css";
-import Routes from "../Routes";
 import IconButton from "@material-ui/core/IconButton";
-import { Icon, InlineIcon } from '@iconify/react';
+import {Icon} from '@iconify/react';
 import arrowRightShort from '@iconify/icons-bi/arrow-right-short';
-import emailIcon from '@iconify/icons-carbon/email';
 
 //TODO: WIP WIP WIP WIP
 
