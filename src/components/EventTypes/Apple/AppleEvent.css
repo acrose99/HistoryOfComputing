@@ -1,0 +1,160 @@
+
+
+
+.Apple-Event-Container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    max-height: 170px;
+    border: none;
+    outline: none;
+}
+.Apple-Event-container-link {
+    box-sizing: border-box;
+    color: inherit;
+    display: flex;
+    float: none;
+    margin-left: auto;
+    margin-right: auto !important;
+    max-width: 830px;
+    overflow: visible;
+    position: relative;
+    text-decoration: inherit;
+    border: none;
+    outline: none;
+}
+.Apple-Event-container-link:before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    bottom: 0;
+    border: 8px solid transparent;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.Apple-Event-container-link:hover:before {
+    position: absolute;
+    content: "";
+    height: 170px;
+    width: 55%;
+    /*left: 18%;*/
+    border-left: 4mm ridge #feef00;
+    border-bottom: 4mm ridge #00b400;
+    border-top: 4mm ridge #9e73d3;
+    transition: height 0.5s linear, width 0.5s linear 0.5s;
+    top: 0;
+}
+.Apple-Event-container-link:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    top: 0;
+    right: 0;
+    /*left: 18%;*/
+    box-sizing: border-box;
+}
+.Apple-Event-container-link:hover:after {
+    position: absolute;
+    content: "";
+    height: 170px;
+    width: 50%;
+    border-right: 4mm ridge #FE8100;
+    border-bottom: 4mm ridge #c70000;
+    border-left: none;
+    border-top: 4mm ridge #0095FE;
+    transition: height 0.5s linear, width 0.5s linear 0.5s;
+}
+.Apple-Event-figure {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+    width: 50%;
+}
+.Apple-Event-image {
+    box-shadow: none !important;
+    max-width: 165px;
+    width: 100%;
+    max-height: 165px;
+    height: 100%;
+}
+.Apple-Event-body {
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 10;
+    width: 50%;
+}
+.Apple-Event-date {
+    color: black;
+    display: inline-block;
+    font-family: "SF Pro", serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 10px 0 0;
+}
+.Apple-Event-location {
+    color: black;
+    display: inline-block;
+    font-family: "SF Pro", serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 10px 3px 0;
+}
+.Apple-Event-title {
+    color: rgb(34, 34, 34);
+    font-family: "SF Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-top: 25px;
+    /*margin-left: 15px ;*/
+    /*width: 100%;*/
+}
+.Apple-Event-body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: #d9cfbe;
+    width: 5px;
+    height: 175%;
+    border-radius: 100%;
+    transform: translateY(0);
+    will-change: transform;
+}
+.Apple-Event-body::after {
+    content: url("AppleLogo.svg");
+    position: absolute;
+    display: inline-flex;
+    /*background: linear-gradient(180deg, #ff0000 0%, #FFFF00 20.83%, #00FF00 42.19%, #00FFFF 60.42%, #0000FF 79.69%, #FF00FF 100%);    top: 40%;*/
+    width: 20px;
+    height: 40px;
+    left: -6.5%;
+    top: 35%;
+    border-radius: 100%;
+    transform: translateY(0);
+    will-change: transform;
+}
+.Apple-Event-container-link:hover {
+    transition: all 1.3s;
+    background: url("AppleBackdrop.svg");
+    height: 170px;
+    background-position-x: center;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

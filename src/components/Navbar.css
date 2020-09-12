@@ -34,6 +34,7 @@
     display: inline-flex;
     place-items: center;
     height: 100%;
+    width: 100%;
 }
 .Nav-linkButton:hover {
     background-color: #303f9f;

@@ -94,7 +94,7 @@
 .Event-date {
     color: black;
     display: inline-block;
-    font-family: Merriweather-Regular, serif;
+    font-family: sans-serif;
     font-size: 14px;
     text-align: center;
     font-weight: 400;
@@ -104,7 +104,7 @@
 .Event-location {
     color: black;
     display: inline-block;
-    font-family: Merriweather-Regular, serif;
+    font-family: sans-serif;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
@@ -113,7 +113,7 @@
 }
 .Event-title {
     color: rgb(34, 34, 34);
-    font-family: Hack, serif;
+    font-family: serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 26px;

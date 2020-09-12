@@ -40,22 +40,7 @@
     height: 480px;
     width: 728px;
 }
-.Home-media1 {
-    /*height: 200px;*/
-    /*width: 200px;*/
-    opacity: 1;
-    display: block;
-    margin-right: 100px;
 
-}
-#Home-media2 {
-    /*height: 200px;*/
-    /*width: 200px;*/
-    opacity: 1;
-    display: block;
-    margin-left: 30px;
-
-}
 .Home-media:hover {
     background-image: url('../images/Mac128world.png');
 }
