@@ -1,0 +1,12 @@
+## The Design
+ 
+#### Events
+  * Unique Styling
+    * Fonts
+    * Gradients
+     * Markers
+    * Events in Focus
+    
+ #### Timeline Visuals
+      * Line Seperator
+      * Markers 

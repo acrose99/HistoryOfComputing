@@ -1,0 +1,16 @@
+## The Code
+ * Events
+ * Events in Focus
+ * Timeline
+ * Blah Blah more to come
+ 
+### The Design
+ * Events
+  * Unique Styling
+    * Fonts
+    * Gradients
+     * Markers
+    * Events in Focus
+    * Timeline Visuals
+      * Line Seperator
+      * Markers sdsds
