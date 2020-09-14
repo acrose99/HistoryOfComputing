@@ -7,8 +7,13 @@ class EventFocus extends React.Component {
   };
   render() {
     return (
-      <div className="showEvent">
-        <p>Example txt</p>
+      <div className="showEventWrapper">
+        <div className="showEvent">
+          <div id="header" className="eventHeader">
+            <h2>frick</h2>
+          </div>
+          <p>Example txt</p>
+        </div>
       </div>
     );
   }
