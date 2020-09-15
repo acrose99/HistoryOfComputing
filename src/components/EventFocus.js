@@ -11,9 +11,9 @@ class EventFocus extends React.Component {
         <div className="showEvent">
           <div id="header" className="eventHeader">
             <h2 style={{ textAlign: "center" }}>frick</h2>
-          </div>
-          <div id="locationTimeWrapper"></div>
 
+            <div id="locationTimeWrapper"></div>
+          </div>
           <div className="eventBody">
             <p>
               Example txt "Lorem ipsum dolor sit amet, consectetur adipiscing
