@@ -9,6 +9,12 @@ class EventFocus extends React.Component {
     return (
       <div className="showEventWrapper">
         <div className="showEvent">
+          <div id="vaporwaveBar" className="vaporwaveBar">
+            {/* these are just mock ups for buttons i'll add later */}
+            <p className="vaporwaveBarContents">X</p>
+            <p className="vaporwaveBarContents"> Prev</p>
+            <p className="vaporwaveBarContents"> Next</p>
+          </div>
           <div id="header" className="eventHeader">
             <h2 style={{ textAlign: "center" }}>frick</h2>
 

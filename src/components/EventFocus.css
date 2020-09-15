@@ -33,7 +33,8 @@
   border: 2px solid #c54290;
   box-sizing: border-box;
   width: 800px;
-  height: 34px;
+  height: auto;
+  padding: 0.5% 1%;
 }
 .eventBody {
   /* position: absolute; */
@@ -49,11 +50,11 @@
   border: 4px solid #c54290;
   box-sizing: border-box;
   /* font stuff */
-  font-family: Merriweather, serif;
+  /* font-family: Merriweather, serif; */
   /* font-style: italic; */
   /* font-weight: 900; */
-  font-size: 18px;
-  line-height: 18px;
+  /* font-size: 18px;
+  line-height: 18px; */
 }
 
 .showEvent {
@@ -62,7 +63,7 @@
   width: 800px;
   margin: 15px auto;
   border: 2px rgb(104, 16, 16);
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .eventHeader {
   /* position: absolute; */
@@ -75,8 +76,21 @@
   box-sizing: border-box;
 }
 
-/* h2 {
-  font-size: 48px;
-  position: absolute;
-  margin: 185 auto;
-} */
+p {
+  font-family: Merriweather, serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.vaporwaveBar {
+  display: block;
+  background-color: #c54290;
+  width: 200px;
+  height: 30px;
+  /* padding: 0.5%; */
+}
+
+.vaporwaveBarContents {
+  display: inline;
+  /* width: 50px; */
+}
