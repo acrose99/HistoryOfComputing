@@ -1,1 +1,102 @@
 /*Todo */
+
+
+.showEventWrapper {
+  position: relative; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
+  /* border: 5px black; */
+  width: 830px;
+  padding: 20px;
+  /* min-height: 100%;  */
+  /* might put min height back. depends on how it looks when I add stuff to page */
+  height: auto;
+  margin: 10% auto; /* TODO Change back to 5 later */ /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+
+  /* margin: 33%; */
+  background: linear-gradient(180deg, rgba(0, 147, 255, 0.4) 0%, rgba(173, 95, 249, 0.4) 100%);
+}
+
+.event-citation {
+  /* position: absolute; */
+  display: flex;
+  bottom: 0;
+  top: 1000px;
+  background: #ffffff;
+  border: 2px solid #442199;
+  box-sizing: border-box;
+  width: 800px;
+  height: auto;
+  padding: 0.5% 1%;
+}
+.eventBody {
+  /* position: absolute; */
+  display: block;
+  width: 800px;
+  /* min-height: 599px; */
+  /* max-height: max-content; */
+  /* left: 342px; */
+  top: 400px;
+  padding: 3%;
+
+  background: #ffffff;
+  border: 4px solid #442199;
+  box-sizing: border-box;
+  /* font stuff */
+  /* font-family: Merriweather, serif; */
+  /* font-style: italic; */
+  /* font-weight: 900; */
+  /* font-size: 18px;
+  line-height: 18px; */
+}
+
+.showEvent {
+  /* position: absolute; */
+  display: block;
+  width: 800px;
+  margin: 15px auto;
+  border: 2px rgb(104, 16, 16);
+  /* background-color: bisque; */
+}
+.eventHeader {
+  /* position: absolute; */
+  display: block;
+  width: 800px;
+  height: 100px;
+
+  background: #ffffff;
+  border: 4px solid #442199;
+  box-sizing: border-box;
+}
+
+#event-citation-text {
+  font-family: "SF Pro", serif;
+  font-size: 18px;
+  line-height: 18px;
+
+}
+.eventBody-text {
+  font-family: "SF Pro", serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#eventHeader-text {
+  font-family: "Futura", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+.vaporwaveBar {
+  display: block;
+  background-color: #9d41ff;
+  width: 200px;
+  height: 30px;
+  /* padding: 0.5%; */
+}
+
+.vaporwaveBarContents {
+  display: inline;
+  /* width: 50px; */
+}

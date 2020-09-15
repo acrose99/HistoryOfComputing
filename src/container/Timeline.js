@@ -10,6 +10,7 @@ import Event from "../components/Event";
 import AppleEvent from "../components/EventTypes/Apple/AppleEvent";
 import IBMEvent from "../components/EventTypes/IBM/IBMEvent";
 import Footer from "../components/Footer";
+import EventFocus from "../components/EventFocus";
 
 export default function Timeline() {
 
@@ -22,12 +23,15 @@ export default function Timeline() {
 
             {/*</div>*/}
             <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
-            <Event id="Z1" date="1941" location="Berlin, Germany" title="Konrad Zuse finishes the Z3 computer"
-                image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhistory-computer.com%2FModernComputer%2FRelays%2Fimages%2FZuse_Z3.jpg&f=1&nofb=1"}
-            />
             <Event date="August 7. 1944" location="Cambridge, US" title="Harvard Mark 1 is completed"
                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F11%2FHarvard_Mark_I_Computer_-_Left_Segment.jpg%2F1200px-Harvard_Mark_I_Computer_-_Left_Segment.jpg&f=1&nofb=1"}
             />
+
+
+            <EventFocus/>
+
+
+
             <Event date="1962" location="Cambridge, US" title="MIT LINC is introduced"
                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Vn15KIpxZlnaG6ALBzwL1QHaFT%26pid%3DApi&f=1"}
             />
