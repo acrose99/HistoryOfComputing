@@ -18,7 +18,13 @@
             url('/src/fonts/Px437_IBM_BIOS.ttf')
             format('truetype');
 }
-
+@font-face {
+    font-family: 'ChicagoFLF';
+    src:
+            local("ChicagoFLF"),
+            url('/src/fonts/ChicagoFLF.ttf')
+            format('truetype');
+}
 
 
 /* For IBM inspired typography */

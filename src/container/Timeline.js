@@ -12,6 +12,7 @@ import IBMEvent from "../components/EventTypes/IBM/IBMEvent";
 import Footer from "../components/Footer";
 import EventFocus from "../components/EventFocus";
 import OldComputer from "../components/EventinFocusTypes/OldComputer/OldComputer";
+import RetroApple from "../components/EventinFocusTypes/RetroApple/RetroApple";
 export default function Timeline() {
 
 
@@ -26,11 +27,12 @@ export default function Timeline() {
             <Event date="August 7. 1944" location="Cambridge, US" title="Harvard Mark 1 is completed"
                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F11%2FHarvard_Mark_I_Computer_-_Left_Segment.jpg%2F1200px-Harvard_Mark_I_Computer_-_Left_Segment.jpg&f=1&nofb=1"}
             />
-            {/*<Event date="1962" location="Cambridge, US" title="MIT LINC is introduced"*/}
-            {/*       image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Vn15KIpxZlnaG6ALBzwL1QHaFT%26pid%3DApi&f=1"}*/}
-            {/*/>*/}
-            <OldComputer></OldComputer>
-
+            <Event date="1962" location="Cambridge, US" title="MIT LINC is introduced"
+                   image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Vn15KIpxZlnaG6ALBzwL1QHaFT%26pid%3DApi&f=1"}
+            />
+            <EventFocus/>
+            <OldComputer/>
+            <RetroApple/>
             <Event date="1964" location="New York, US" title="SABRE comes on-line"
                    image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.computerhistory.org%2Ftimeline%2Ftimeline_networking.web_1964_sabre.jpg&f=1&nofb=1"}
             />

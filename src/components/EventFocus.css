@@ -70,7 +70,7 @@
 }
 
 #event-citation-text {
-  font-family: "SF Pro", serif;
+  /*font-family: "SF Pro", serif;*/
   font-size: 18px;
   line-height: 18px;
 
@@ -98,5 +98,24 @@
 
 .vaporwaveBarContents {
   display: inline;
+  margin-left: 25px;
+  font-size: 20px;
   /* width: 50px; */
 }
+
+.eventBody-image1 {
+  height: 200px;
+  width: 200px;
+  flex-wrap: wrap;
+  margin: 10px;
+  float: right;
+}
+
+.eventBody-image2 {
+  height: 200px;
+  width: 200px;
+  flex-wrap: wrap;
+  margin: 10px;
+  float: left;
+}
+

@@ -12,15 +12,15 @@ class EventFocus extends React.Component {
           <div id="vaporwaveBar" className="vaporwaveBar">
             {/* these are just mock ups for buttons i'll add later */}
             <p className="vaporwaveBarContents">X</p>
-            <p className="vaporwaveBarContents"> Prev</p>
-            <p className="vaporwaveBarContents"> Next</p>
+            <p className="vaporwaveBarContents"> &#60; &#60;  </p>
+            <p className="vaporwaveBarContents"> >> </p>
           </div>
           <div id="header" className="eventHeader">
             <h2 id="eventHeader-text" style={{ textAlign: "center" }}>Apple Macintosh is released</h2>
-
             <div id="locationTimeWrapper"></div>
           </div>
           <div className="eventBody">
+            <img className="eventBody-image1" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmacgateway.com%2Fwp-content%2Fuploads%2F2011%2F02%2FOriginal-1984-Apple-Macintosh.jpg&f=1&nofb=1" alt=""/>
             <p className="eventBody-text">
               The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.
             </p>
@@ -28,6 +28,7 @@ class EventFocus extends React.Component {
               Its beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse.
               A handle built into the top of the case made it easier for the computer to be lifted and carried.
               It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).
+              <img className="eventBody-image2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcompidiaries.files.wordpress.com%2F2014%2F01%2Fmac1984.jpg&f=1&nofb=1" alt=""/>
             </p>
             <p className="eventBody-text">
               The Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, "1984", that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.
