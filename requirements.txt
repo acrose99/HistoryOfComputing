@@ -1,0 +1,2 @@
+sphinx
+travis-sphinx
