@@ -11,7 +11,13 @@
     font-weight: normal;
 }
 
-
+@font-face {
+    font-family: 'Px437_IBM_BIOS';
+    src:
+            local("Px437_IBM_BIOS"),
+            url('/src/fonts/Px437_IBM_BIOS.ttf')
+            format('truetype');
+}
 
 
 
