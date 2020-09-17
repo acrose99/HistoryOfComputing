@@ -19,13 +19,13 @@ class EventFocus extends React.Component {
               </button>
               <button className="vaporwaveBarContents">
                 <img
-                  src={require("../images/button-left.svg")}
+                  src={require("../images/button-left-v.svg")}
                   alt="Error"
                   className="leftRight"
                 />
               </button>
               <button className="vaporwaveBarContents">
-                <img src={require("../images/button-right.svg")} alt="burr" />{" "}
+                <img src={require("../images/button-right-v.svg")} alt="burr" />
               </button>
             </div>
           </div>
