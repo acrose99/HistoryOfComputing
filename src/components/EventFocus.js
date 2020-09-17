@@ -10,19 +10,24 @@ class EventFocus extends React.Component {
       <div className="showEventWrapper">
         <div className="showEvent">
           <div id="vaporwaveBar" className="vaporwaveBar">
-            {/* these are just mock ups for buttons i'll add later */}
-            <button className="vaporwaveBarContents">
-              <img
-                src={require("../images/media_player_stream_no.png")}
-                alt="alt"
-              />
-            </button>
-            <button className="vaporwaveBarContents">
-              <img src={require("../images/button-left.svg")} alt="Error" />
-            </button>
-            <button className="vaporwaveBarContents">
-              <img src={require("../images/button-right.svg")} alt="burr" />{" "}
-            </button>
+            <div className="vbar-buttons">
+              <button className="vaporwaveBarContents">
+                <img
+                  src={require("../images/media_player_stream_no.png")}
+                  alt="alt"
+                />
+              </button>
+              <button className="vaporwaveBarContents">
+                <img
+                  src={require("../images/button-left.svg")}
+                  alt="Error"
+                  className="leftRight"
+                />
+              </button>
+              <button className="vaporwaveBarContents">
+                <img src={require("../images/button-right.svg")} alt="burr" />{" "}
+              </button>
+            </div>
           </div>
           <div id="header" className="eventHeader">
             <h2 id="eventHeader-text" style={{ textAlign: "center" }}>
