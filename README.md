@@ -1,7 +1,7 @@
 # History of Computing
 
 ## Documentation
-### [See Here](https://acrose99.github.io/HistoryOfComputing/)
+### [See Here](Home)
 
 ### This is my current research project for the [https://ssl.cs.luc.edu/](https://ssl.cs.luc.edu/). 
 
