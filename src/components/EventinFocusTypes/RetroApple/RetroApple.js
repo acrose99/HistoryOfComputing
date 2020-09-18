@@ -1,7 +1,9 @@
 import React from "react";
 import "./RetroApple.css";
+/* LEGACY CODE, PLEASE DONT USE */
 
 class RetroApple extends React.Component {
+
     state = {
         className: "showEvent",
     };

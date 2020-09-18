@@ -40,8 +40,8 @@
   /* max-height: max-content; */
   /* left: 342px; */
   top: 400px;
-  padding: 3%;
-
+  padding: 3% 3% 5%;
+  margin: 20px;
   background: #ffffff;
   border: 4px solid #442199;
   box-sizing: border-box;
@@ -87,6 +87,7 @@
   font-family: "Futura", sans-serif;
   font-style: italic;
   font-weight: normal;
+  text-align: center;
 }
 /* .leftRight{
   margin-top: 3px;
@@ -124,19 +125,18 @@
   height: 30px;
   /* background-color: turquoise; */
 }
-.eventBody-image1 {
+.eventBody-image {
   height: 200px;
   width: 200px;
   flex-wrap: wrap;
   margin: 10px;
   float: right;
 }
+#eventBody-image1 {
+  float: right;
+}
 
-.eventBody-image2 {
-  height: 200px;
-  width: 200px;
-  flex-wrap: wrap;
-  margin: 10px;
+#eventBody-image2 {
   float: left;
 }
 

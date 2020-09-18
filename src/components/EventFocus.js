@@ -1,86 +1,224 @@
 import React from "react";
 import "./EventFocus.css";
+import RetroApple from "./EventinFocusTypes/RetroApple/RetroApple";
+
+
+
+
+/* For RetroApple focused Events (I.E MAC 1984) */
+const RetroAppleStyleDiv = {
+  background: '#7f7f7f',
+  border: '2px solid #ffffff'
+}
+const RetroAppleStyleText = {
+  fontFamily: "ChicagoFLF",
+  color: '#131313',
+  marginLeft: 5,
+  fontSize: '1rem',
+}
+
+const RetroAppleStyleBar = {
+  color: '131313',
+  backgroundColor: '#ffffff',
+}
+
+
+/* For CP/M focused Events (I.E Altair 8800) */
+
+const CPMStyleDiv = {
+  background: '#000055',
+  border: '2px solid #292929'
+}
+const CPMStyleText = {
+  fontFamily: "Px437_IBM_BIOS",
+  color: '#00aaaa',
+  fontSize: '1rem',
+}
+const CPMStyleBar = {
+  color: '00aaaa',
+  backgroundColor: '#292929',
+}
 
 class EventFocus extends React.Component {
-  state = {
-    className: "showEvent",
-  };
+  constructor(props) {
+    super(props);
+    this.state = { className: "showEvent" };
+  }
   render() {
-    return (
-      <div className="showEventWrapper">
-        <div className="showEvent">
-          <div id="vaporwaveBar" className="vaporwaveBar">
-            <div className="vbar-buttons">
-              <button className="vaporwaveBarContents">
+    if (this.props.style === "Default") {
+      return (
+          <div className="showEventWrapper">
+            <div className="showEvent">
+              <div className="vaporwaveBar">
+                <div className="vbar-buttons">
+                  <button className="vaporwaveBarContents">
+                    <img
+                        src={require("../images/media_player_stream_no.png")}
+                        alt="alt"
+                    />
+                  </button>
+                  <button className="vaporwaveBarContents">
+                    <img
+                        src={require("../images/button-left-v.svg")}
+                        alt="Error"
+                        className="leftRight"
+                    />
+                  </button>
+                  <button className="vaporwaveBarContents">
+                    <img src={require("../images/button-right-v.svg")} alt="burr" />
+                  </button>
+                </div>
+              </div>
+              <div id="header" className="eventHeader">
+                <h2 id="eventHeader-text">
+                  {this.props.header}
+                </h2>
+                <div id="locationTimeWrapper"/>
+              </div>
+              <div className="eventBody">
                 <img
-                  src={require("../images/media_player_stream_no.png")}
-                  alt="alt"
+                    className="eventBody-image"
+                    id="eventBody-image1"
+                    src={this.props.images[0]}
+                    alt={""}
                 />
-              </button>
-              <button className="vaporwaveBarContents">
-                <img
-                  src={require("../images/button-left-v.svg")}
-                  alt="Error"
-                  className="leftRight"
-                />
-              </button>
-              <button className="vaporwaveBarContents">
-                <img src={require("../images/button-right-v.svg")} alt="burr" />
-              </button>
+                <p  className="eventBody-text">
+                  <img
+                      className="eventBody-image"
+                      id="eventBody-image2"
+                      src={this.props.images[1]}
+                      alt=""
+                  />
+                  {this.props.body}
+                </p>
+              </div>
+              <div className="event-citation">
+                <p id="event-citation-text">{this.props.citation[0]}</p>
+
+                <p id="event-citation-text">,</p>
+
+                <p id="event-citation-text" style={{ marginLeft: 5 }}>
+                  {this.props.citation[1]}
+                </p>
+              </div>
             </div>
           </div>
-          <div id="header" className="eventHeader">
-            <h2 id="eventHeader-text" style={{ textAlign: "center" }}>
-              Apple Macintosh is released
-            </h2>
-            <div id="locationTimeWrapper"></div>
+      );
+    }
+    else if (this.props.style === "RetroApple") {
+      return (
+          <div style={RetroAppleStyleDiv} className="showEventWrapper">
+            <div className="showEvent">
+              <div style={RetroAppleStyleBar} className="vaporwaveBar">
+                <div className="vbar-buttons">
+                  <button className="vaporwaveBarContents">
+                    <img
+                        src={require("../images/media_player_stream_no.png")}
+                        alt="alt"
+                    />
+                  </button>
+                  <button className="vaporwaveBarContents">
+                    <img
+                        src={require("../images/button-left-v.svg")}
+                        alt="Error"
+                        className="leftRight"
+                    />
+                  </button>
+                  <button className="vaporwaveBarContents">
+                    <img src={require("../images/button-right-v.svg")} alt="burr"/>
+                  </button>
+                </div>
+              </div>
+              <div style={RetroAppleStyleDiv} id="header" className="eventHeader">
+                <h2 id="eventHeader-text" style={RetroAppleStyleText}>
+                  {this.props.header}
+                </h2>
+                <div id="locationTimeWrapper"/>
+              </div>
+              <div style={RetroAppleStyleDiv} className="eventBody">
+                <img
+                    className="eventBody-image"
+                    id="eventBody-image1"
+                    src={this.props.images[0]}
+                    alt={""}
+                />
+                <p style={RetroAppleStyleText} className="eventBody-text">
+                  <img
+                      className="eventBody-image"
+                      id="eventBody-image2"
+                      src={this.props.images[1]}
+                      alt=""
+                  />
+                  {this.props.body}
+                </p>
+              </div>
+              <div style={RetroAppleStyleDiv} className="event-citation">
+                <p style={RetroAppleStyleText} id="event-citation-text">{this.props.citation[0]},</p>
+                <p style={RetroAppleStyleText} id="event-citation-text">
+                  {this.props.citation[1]}
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="eventBody">
-            <img
-              className="eventBody-image1"
-              src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmacgateway.com%2Fwp-content%2Fuploads%2F2011%2F02%2FOriginal-1984-Apple-Macintosh.jpg&f=1&nofb=1"
-              alt=""
-            />
-            <p className="eventBody-text">
-              The Macintosh 128K, originally released as the Apple Macintosh, is
-              the original Apple Macintosh personal computer.
-            </p>
-            <p className="eventBody-text">
-              Its beige case consisted of a 9 in (23 cm) CRT monitor and came
-              with a keyboard and mouse. A handle built into the top of the case
-              made it easier for the computer to be lifted and carried. It had
-              an initial selling price of $2,495 (equivalent to $6,140 in 2019).
-              <img
-                className="eventBody-image2"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcompidiaries.files.wordpress.com%2F2014%2F01%2Fmac1984.jpg&f=1&nofb=1"
-                alt=""
-              />
-            </p>
-            <p className="eventBody-text">
-              The Macintosh was introduced by the now-famous $370,000
-              (equivalent to $910,541 in 2019) television commercial directed by
-              Ridley Scott, "1984", that aired on CBS during the third quarter
-              of Super Bowl XVIII on January 22, 1984. Sales of the Macintosh
-              were strong from its initial release on January 24, 1984, and
-              reached 70,000 units on May 3, 1984. Upon the release of its
-              successor, the Macintosh 512K, it was rebranded as the Macintosh
-              128K. The computer is Model M0001.
-            </p>
+      )
+    }
+    else if (this.props.style === "CPM") {
+      return (
+          <div style={CPMStyleDiv} className="showEventWrapper">
+            <div className="showEvent">
+              <div style={CPMStyleBar} className="vaporwaveBar">
+                <div className="vbar-buttons">
+                  <button className="vaporwaveBarContents">
+                    <img
+                        src={require("../images/media_player_stream_no.png")}
+                        alt="alt"
+                    />
+                  </button>
+                  <button className="vaporwaveBarContents">
+                    <img
+                        src={require("../images/button-left-v.svg")}
+                        alt="Error"
+                        className="leftRight"
+                    />
+                  </button>
+                  <button className="vaporwaveBarContents">
+                    <img src={require("../images/button-right-v.svg")} alt="burr"/>
+                  </button>
+                </div>
+              </div>
+              <div style={CPMStyleDiv} id="header" className="eventHeader">
+                <h2 id="eventHeader-text" style={CPMStyleText}>
+                  {this.props.header}
+                </h2>
+                <div id="locationTimeWrapper"/>
+              </div>
+              <div style={CPMStyleDiv} className="eventBody">
+                <img
+                    className="eventBody-image"
+                    id="eventBody-image1"
+                    src={this.props.images[0]}
+                    alt={""}
+                />
+                <p style={CPMStyleText} className="eventBody-text">
+                  <img
+                      className="eventBody-image"
+                      id="eventBody-image2"
+                      src={this.props.images[1]}
+                      alt=""
+                  />
+                  {this.props.body}
+                </p>
+              </div>
+              <div style={CPMStyleDiv} className="event-citation">
+                <p style={CPMStyleText} id="event-citation-text">{this.props.citation[0]},</p>
+                <p style={CPMStyleText} id="event-citation-text">
+                  {this.props.citation[1]}
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="event-citation">
-            <p id="event-citation-text">Tim Apple (2020)</p>
-
-            <p id="event-citation-text">,</p>
-            {/*because we will need to use props, eventually*/}
-
-            <p id="event-citation-text" style={{ marginLeft: 5 }}>
-              Michael Fassbender (1984)
-            </p>
-          </div>
-        </div>
-        {/* ent event div */}
-      </div>
-    );
+      )
+    }
   }
 }
 export default EventFocus;

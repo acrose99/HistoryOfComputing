@@ -1,5 +1,6 @@
 import React from "react";
 import "./OldComputer.css";
+/* LEGACY CODE, PLEASE DONT USE */
 
 class OldComputer extends React.Component {
     state = {
