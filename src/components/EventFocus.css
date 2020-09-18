@@ -1,17 +1,17 @@
 /*Todo */
 
 .showEventWrapper {
-  position: relative; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
+  position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
   /* border: 5px black; */
-  width: 830px;
+  width: 90%;
   padding: 20px;
   /* min-height: 100%;  */
   /* might put min height back. depends on how it looks when I add stuff to page */
-  height: auto;
+  height: 70%;
   margin: 10% auto; /* TODO Change back to 5 later */ /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
-
+  display: block;
   /* margin: 33%; */
   background: linear-gradient(
     180deg,
