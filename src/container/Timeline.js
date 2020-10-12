@@ -13,8 +13,9 @@ import Footer from "../components/Footer";
 import EventFocus from "../components/EventFocus";
 import OldComputer from "../components/EventinFocusTypes/OldComputer/OldComputer";
 import RetroApple from "../components/EventinFocusTypes/RetroApple/RetroApple";
-export default function Timeline() {
+import parser from "../yaml";
 
+function Timeline() {
 
     return (
         <div id="Timeline">
@@ -34,10 +35,10 @@ export default function Timeline() {
                    image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.codex99.com%2Fdesign%2Fimages%2Fhp%2Fbrochure_73_lg.jpg&f=1&nofb=1"}
             />
             <IBMEvent date="1973" location="LOS Gatos, US" title="IBM Scamp is created"
-                   image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.computerhistory.org%2Ftimeline%2FScamp.png&f=1&nofb=1"}
+                      image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.computerhistory.org%2Ftimeline%2FScamp.png&f=1&nofb=1"}
             />
             <AppleEvent date="June 1977" location="Cupertino, US" title="Apple II introduced"
-                   image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F82%2FApple_II_tranparent_800.png&f=1&nofb=1"}
+                        image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F82%2FApple_II_tranparent_800.png&f=1&nofb=1"}
             />
             <Event date="Feburary 24, 1982" location="Menlo Park, US" title="Sun Microsystems is founded"
                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fleshayman.files.wordpress.com%2F2012%2F09%2Fsun_microsystems.jpg&f=1&nofb=1"}
@@ -46,33 +47,35 @@ export default function Timeline() {
                    image={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/3_versioner_av_c64_%28modified%29.jpg/800px-3_versioner_av_c64_%28modified%29.jpg"}
             />
             <AppleEvent date="January 24, 1984" location="Cupertino, US" title="Apple launches the Macintosh"
-                   image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Fe3%2FMacintosh_128k_transparency.png&f=1&nofb=1"}
+                        image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Fe3%2FMacintosh_128k_transparency.png&f=1&nofb=1"}
             />
             <Event date="September 1988" location="Palo Alto, US" title="Steve Jobs and NeXt create the NeXTcube"
                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F27%2FNeXTcube.jpg%2F1200px-NeXTcube.jpg&f=1&nofb=1"}
             />
             <AppleEvent date="May 8, 1993" location="Cupertino, US" title="Apple Newton is released"
-                   image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.notebookcheck.net%2Ffileadmin%2FNotebooks%2FNews%2F_nc3%2Fnewton_full_open_l.jpg&f=1&nofb=1"}
+                        image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.notebookcheck.net%2Ffileadmin%2FNotebooks%2FNews%2F_nc3%2Fnewton_full_open_l.jpg&f=1&nofb=1"}
             />
             <IBMEvent date="1996" location="Palo Alto, US" title="IBM releases the ThinkPad 701C"
-                   image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.complex.com%2Fcomplex%2Fimage%2Fupload%2Fc_limit%2Cw_680%2Ffl_lossy%2Cpg_1%2Cq_auto%2Fnni61aadu9kvojsgjse5.jpg&f=1&nofb=1"}
+                      image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.complex.com%2Fcomplex%2Fimage%2Fupload%2Fc_limit%2Cw_680%2Ffl_lossy%2Cpg_1%2Cq_auto%2Fnni61aadu9kvojsgjse5.jpg&f=1&nofb=1"}
             />
-            <AppleEvent  date="June 29, 2007" location="Cupertino, US" title="The iPhone is released"
-                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fad%2FIPhone_1st_Gen.svg%2F1200px-IPhone_1st_Gen.svg.png&f=1&nofb=1"}
+            <AppleEvent date="June 29, 2007" location="Cupertino, US" title="The iPhone is released"
+                        image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fad%2FIPhone_1st_Gen.svg%2F1200px-IPhone_1st_Gen.svg.png&f=1&nofb=1"}
             />
-            <AppleEvent  date="April 3, 2010" location="Cupertino, US" title="The Apple iPad is released"
-                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F5c%2FIPad_1_PSD_Mockup.png%2F1200px-IPad_1_PSD_Mockup.png&f=1&nofb=1"}
+            <AppleEvent date="April 3, 2010" location="Cupertino, US" title="The Apple iPad is released"
+                        image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F5c%2FIPad_1_PSD_Mockup.png%2F1200px-IPad_1_PSD_Mockup.png&f=1&nofb=1"}
             />
-            <Event  date="Feburary 2012" location="Germany" title="Raspberry Pi Model B is released"
-                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FRaspberry_Pi_4_Model_B_-_Side.jpg%2F1200px-Raspberry_Pi_4_Model_B_-_Side.jpg&f=1&nofb=1"}
+            <Event date="Feburary 2012" location="Germany" title="Raspberry Pi Model B is released"
+                   image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FRaspberry_Pi_4_Model_B_-_Side.jpg%2F1200px-Raspberry_Pi_4_Model_B_-_Side.jpg&f=1&nofb=1"}
             />
-            <Event  date="July 15, 2015" location="Redmond, US" title="Windows 10 is released"
-                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftr2.cbsistatic.com%2Fhub%2Fi%2Fr%2F2015%2F03%2F25%2Fb06b7a00-711d-4803-a242-58279f992dc4%2Fresize%2F770x%2F381743adbbb46266227661b832c6df8e%2Fwin10.png&f=1&nofb=1"}
+            <Event date="July 15, 2015" location="Redmond, US" title="Windows 10 is released"
+                   image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftr2.cbsistatic.com%2Fhub%2Fi%2Fr%2F2015%2F03%2F25%2Fb06b7a00-711d-4803-a242-58279f992dc4%2Fresize%2F770x%2F381743adbbb46266227661b832c6df8e%2Fwin10.png&f=1&nofb=1"}
             />
-            <AppleEvent  date="June 5, 2019" location="Cupertino, US" title="The Apple Pro Stand is released"
-                    image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-prod.adage.com%2Fs3fs-public%2Fstyles%2Fwidth_1024%2Fpublic%2F20190602_apple_pro_stand_3x2.jpg&f=1&nofb=1"}
+            <AppleEvent date="June 5, 2019" location="Cupertino, US" title="The Apple Pro Stand is released"
+                        image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-prod.adage.com%2Fs3fs-public%2Fstyles%2Fwidth_1024%2Fpublic%2F20190602_apple_pro_stand_3x2.jpg&f=1&nofb=1"}
             />
             <Footer/>
         </div>
     )
 }
+
+export default Timeline;
