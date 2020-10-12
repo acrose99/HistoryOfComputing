@@ -275,7 +275,7 @@
   font-family: Courier New, serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: #6031ac;
 }
 .bioList img {
@@ -290,7 +290,7 @@
   font-family: Courier New, serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: #6031ac;
 }
 
@@ -309,20 +309,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .infoBio {
-  margin: 10px;
+  margin: 0px 10px;
   /* background-color: #6031ac; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.headerBio h2 {
+.headerBio {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
 }
 
+.headerBio h2 {
+  font-family: Courier New, serif;
+  font-size: 42px;
+  text-shadow: 5px 5px 2px rgba(0, 255, 194, 0.51);
+}
+.headerBio h3 {
+  margin: 0px;
+  font-size: 24px;
+  font-family: Courier New, serif;
+}
 #teamDiv {
   display: flex;
   flex-direction: column;

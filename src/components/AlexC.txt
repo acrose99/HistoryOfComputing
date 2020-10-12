@@ -1,3 +1,9 @@
+    plans:
+    make onhover for links 
+    make a border for each team thing
+    new color for text shadow
+    
+    
     // return (
     //     // <div id="Team-teammate">
     //     //     <picture id="Team-media">
