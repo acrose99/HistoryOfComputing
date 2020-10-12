@@ -2,7 +2,7 @@
 
 .showEventWrapper {
   position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
-  /* border: 5px black; */
+
   width: 90%;
   padding: 20px;
   /* min-height: 100%;  */
@@ -11,7 +11,7 @@
   margin: 10% auto; /* TODO Change back to 5 later */ /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
-  display: block;
+  /* display: block; */
   /* margin: 33%; */
   background: linear-gradient(
     180deg,
@@ -41,7 +41,7 @@
   /* left: 342px; */
   top: 400px;
   padding: 3% 3% 5%;
-  margin: 20px;
+  margin: 20px 0px;
   background: #ffffff;
   border: 4px solid #442199;
   box-sizing: border-box;
