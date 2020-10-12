@@ -38,6 +38,12 @@ export default function Team() {
                               fav="Books"
                     >
                     </Teammate>
+                    <Teammate image={require("../images/Jack.png")} name="Jack Narowski" role="Programmer"
+                              bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
+                              links={[["Github", "https://github.com/JackNarowski"], ["","" ]]}
+                              fav="React"
+                    >
+                    </Teammate>
                 </div>
             </div>
         </div>
