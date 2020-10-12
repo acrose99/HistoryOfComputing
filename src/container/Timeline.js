@@ -13,7 +13,7 @@ import Footer from "../components/Footer";
 import EventFocus from "../components/EventFocus";
 import OldComputer from "../components/EventinFocusTypes/OldComputer/OldComputer";
 import RetroApple from "../components/EventinFocusTypes/RetroApple/RetroApple";
-import parser from "../yaml";
+
 
 function Timeline() {
 
