@@ -2,7 +2,7 @@
     make onhover for links 
     make a border for each team thing
     new color for text shadow
-    
+    make sure to make it compatible for diff sizes 
     
     // return (
     //     // <div id="Team-teammate">

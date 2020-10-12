@@ -179,12 +179,13 @@
   }
 }
 
-/*  
-
 #Team-Container {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
+  /* margin: 0 auto; */
+  width: 100%;
+  align-items: center;
 }
 #Team-teammate {
   flex: 1;
