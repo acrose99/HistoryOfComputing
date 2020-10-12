@@ -263,10 +263,42 @@
 
 /* we stylin here */
 
-.bioList {
-  list-style-type: circle;
-  list-style-image: url("../images/button-right.svg");
+.bioList li {
+  list-style-type: none;
+
+  /* list-style-image: url("../images/world-1.png"); */
 }
+.bioList p {
+  text-decoration: none;
+  font-family: Courier New, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #6031ac;
+  /* display: inline-flex; */
+  /* place-items: center; */
+  width: 100%;
+  height: 100%;
+}
+.bioList img {
+  width: 12px;
+  height: 12px;
+}
+
+.bioList a {
+  padding-left: 10px;
+  text-decoration: none;
+  font-family: Courier New, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #6031ac;
+  /* display: inline-flex; */
+  /* place-items: center; */
+  width: 100%;
+  height: 100%;
+}
+
 .eventBody-text {
   font-family: "SF Pro", serif;
   font-size: 18px;

@@ -18,7 +18,7 @@ export default function Team() {
                     >
                     </Teammate>
                     <Teammate image={require("../images/alexC.jpg")} name="Alex Crane" role="Programmer"
-                              bio=" I'm Alex Crane and I am a senior Software Engineering major at Loyola. I like web development and Object-Oriented programming."
+                              bio=" I'm Alex Crane and I am a senior Software Engineering major at Loyola. I am an active member of Alpha Phi Omega. I like web development and Object-Oriented programming."
                               
                               links={[["Github", "https://github.com/alexandratcrane"], ["ITS","https://www.luc.edu/its/service/" ]]}
                               fav="Java"
