@@ -263,40 +263,35 @@
 
 /* we stylin here */
 
+.bioList {
+  display: flex;
+  align-items: center;
+}
 .bioList li {
   list-style-type: none;
-
   /* list-style-image: url("../images/world-1.png"); */
 }
 .bioList p {
-  text-decoration: none;
   font-family: Courier New, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   color: #6031ac;
-  /* display: inline-flex; */
-  /* place-items: center; */
-  width: 100%;
-  height: 100%;
 }
 .bioList img {
   width: 12px;
   height: 12px;
+  padding-left: 12px;
 }
 
 .bioList a {
-  padding-left: 10px;
+  padding-left: 12px;
   text-decoration: none;
   font-family: Courier New, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   color: #6031ac;
-  /* display: inline-flex; */
-  /* place-items: center; */
-  width: 100%;
-  height: 100%;
 }
 
 .eventBody-text {
@@ -309,13 +304,23 @@
   margin: 2px 0px;
   background: #ffffff;
   border: 4px solid #442199;
-  width: 800px;
+  width: 600px;
+  height: 600px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .infoBio {
   margin: 10px;
+  /* background-color: #6031ac; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerBio h2 {
 }
 
 #teamDiv {
