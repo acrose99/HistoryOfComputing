@@ -3,6 +3,8 @@ import EventFocus from "./EventFocus.js";
 import "./Event.css";
 
 function Event(props) {
+
+// state = {class}
   const [showEventInFocus, setShowEventFocus] = React.useState(false);
   const [showEvent, setShowEvent] = React.useState(true);
 

@@ -17,8 +17,9 @@ export default function Team() {
                               fav="Macintosh128k"
                     >
                     </Teammate>
-                    <Teammate image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0f%2FDouble_Trouble_(4919788838).jpg%2F1200px-Double_Trouble_(4919788838).jpg&f=1&nofb=1" name="Alex Crane" role="Programmer"
-                              bio="Alex Crane is a Junior studying Computer Science at Loyola. She works as an ITS Service Desk Technician. She likes web development too!"
+                    <Teammate image={require("../images/alexC.jpg")} name="Alex Crane" role="Programmer"
+                              bio=" I'm Alex Crane and I am a senior Software Engineering major at Loyola. I like web development and Object-Oriented programming."
+                              
                               links={[["Github", "https://github.com/alexandratcrane"], ["ITS","https://www.luc.edu/its/service/" ]]}
                               fav="Java"
                     >

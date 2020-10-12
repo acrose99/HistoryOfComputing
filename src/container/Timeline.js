@@ -72,7 +72,12 @@ export default function Timeline() {
             <AppleEvent  date="June 5, 2019" location="Cupertino, US" title="The Apple Pro Stand is released"
                     image={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-prod.adage.com%2Fs3fs-public%2Fstyles%2Fwidth_1024%2Fpublic%2F20190602_apple_pro_stand_3x2.jpg&f=1&nofb=1"}
             />
+
+<EventFocus date="1973" location="LOS Gatos, US" title="IBM Scamp is created"
+                   image={"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.computerhistory.org%2Ftimeline%2FScamp.png&f=1&nofb=1"}
+            />
             <Footer/>
+
         </div>
     )
 }

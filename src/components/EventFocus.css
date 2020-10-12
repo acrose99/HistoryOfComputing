@@ -18,6 +18,11 @@
     rgba(0, 147, 255, 0.4) 0%,
     rgba(173, 95, 249, 0.4) 100%
   );
+  transform: translateY(100%);
+}
+
+.showEventWrapper--open {
+  transform: translateY(0%);
 }
 
 .event-citation {
