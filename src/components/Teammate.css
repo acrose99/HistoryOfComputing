@@ -186,6 +186,7 @@
   /* margin: 0 auto; */
   width: 100%;
   align-items: center;
+  background-color: #e0f1ff;
 }
 #Team-teammate {
   flex: 1;
@@ -345,7 +346,8 @@
 .headerBio h2 {
   font-family: Courier New, serif;
   font-size: 42px;
-  text-shadow: 5px 5px 2px rgba(0, 255, 194, 0.51);
+  text-shadow: 5px 5px 2px #b8c5fa;
+  /* rgba(0, 255, 194, 0.51); */
 }
 .headerBio h3 {
   margin: 0px;
