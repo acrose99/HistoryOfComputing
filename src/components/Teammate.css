@@ -295,6 +295,18 @@
   color: #6031ac;
 }
 
+.team-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.team-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .eventBody-text {
   font-family: "SF Pro", serif;
   font-size: 18px;
