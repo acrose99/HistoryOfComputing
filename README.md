@@ -1,16 +1,17 @@
 # History of Computing
 
-## Documentation
+### Documentation
 ### [Click here for documentation for both the design and code of the project!](https://acrose99.github.io/HistoryOfComputingDocs/)
 
-### This is the current research project for the [History of Computing SSL Team](https://ssl.cs.luc.edu/). 
 
-### Team
+## Team
 
 * #### [Lead: Alex Rose](https://acrose99.github.io/PersonalWebsite/)
 * #### [Advisor: George K. Thiruvathukal](https://thiruvathukal.com)
 * #### [Programmer: Alex Crane](https://github.com/alexandratcrane)
 * #### [Programmer: Jack Narowski](https://github.com/JackNarowski)
+
+### This is the current research project for the [History of Computing SSL Team](https://ssl.cs.luc.edu/). 
 
 
 ##### Alex Rose, and to an extent the whole team, are being advised by [Professor George K. Thiruvathukal](https://thiruvathukal.com/) and (non-officially) [Professor David Dennis.](https://sites.google.com/a/etl.luc.edu/dbd/Home-Page") 
