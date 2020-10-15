@@ -4,11 +4,12 @@
   position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
 
   width: 90%;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* min-height: 100%;  */
   /* might put min height back. depends on how it looks when I add stuff to page */
-  height: 70%;
-  margin: 10% auto; /* TODO Change back to 5 later */ /* Will not center vertically and won't work in IE6/7. */
+  height: 30%;
+  margin: 5% auto 5%;
   left: 0;
   right: 0;
   /* display: block; */
@@ -18,7 +19,7 @@
     rgba(0, 147, 255, 0.4) 0%,
     rgba(173, 95, 249, 0.4) 100%
   );
-  transform: translateY(100%);
+  /*transform: translateY(100%);*/
 }
 
 .showEventWrapper--open {

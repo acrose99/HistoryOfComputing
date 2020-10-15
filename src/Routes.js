@@ -7,7 +7,6 @@ import Home98 from "./container/Home98";
 import NfError from "./container/NFError";
 import Timeline from "./container/Timeline";
 import EventFocus from "./components/EventFocus";
-
 export default function Routes({ appProps }) {
   return (
     <Switch>
