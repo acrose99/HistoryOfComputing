@@ -10,7 +10,8 @@ export default function Team() {
         <div>
             <Navbar/>
             <div id="Team-Container">
-                <div className="Team-Row" >
+                <div class = "team-column">
+                <div className="team-row" >
                     <Teammate image={require("../images/alex2.jpeg")} name="Alex Rose" role="Lead Programmer"
                               bio="I'm a Junior studying Computer Science at Loyola. I'm also a Mulcahy Fellow at the Software Systems Laboratory and the VP of the Don't Panic CS Club. I like web development and scripting"
                               links={[["Github", "https://github.com/acrose99"], ["Personal Website","https://acrose99.github.io/PersonalWebsite/" ]]}
@@ -25,7 +26,11 @@ export default function Team() {
                     >
                     </Teammate>
                 </div>
-                <div className="Team-Row">
+
+
+
+                <div class = "team-column">
+                <div className="team-row">
                     <Teammate image={require("../images/gkt.jpg")} name="George K. Thiruvathukal" role="Writer (Technical History)"
                               bio="Hi! I’m George K. Thiruvathukal. I’m professor of computer science at Loyola University Chicago and visiting faculty at Argonne National Laboratory."
                               links={[["Faculty Page", "https://www.luc.edu/cs/people/ftfaculty/gkt.shtml"], ["Personal Website","https://thiruvathukal.com" ]]}
@@ -38,14 +43,15 @@ export default function Team() {
                               fav="Books"
                     >
                     </Teammate>
-                    <Teammate image={require("../images/Jack.png")} name="Jack Narowski" role="Programmer"
+                    
+                </div>
+                <div className = "team-row"><Teammate image={require("../images/Jack.png")} name="Jack Narowski" role="Programmer"
                               bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
                               links={[["Github", "https://github.com/JackNarowski"], ["","" ]]}
                               fav="React"
                     >
-                    </Teammate>
-                </div>
-            </div>
+                    </Teammate></div>
+            </div></div></div>
         </div>
     );
 }

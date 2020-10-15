@@ -14,8 +14,9 @@ import RetroApple from "../components/EventinFocusTypes/RetroApple/RetroApple";
 import OldComputer from "../components/EventinFocusTypes/OldComputer/OldComputer";
 import IBMEvent from "../components/EventTypes/IBM/IBMEvent";
 function Timeline() {
+     let newdata = data.map;
 
-    let newdata = data.map((data) => {
+     newdata.map((data) => {
             if (data.Type === "Apple") {
                 return (
                     <AppleEvent  key={data.id} date={data.Date} location={data.Location} title={data.Title}

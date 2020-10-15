@@ -186,11 +186,12 @@
   /* margin: 0 auto; */
   width: 100%;
   align-items: center;
+  background-color: #e0f1ff;
 }
 #Team-teammate {
   flex: 1;
   box-shadow: 0px 2px 3px 6px #3b4bb3, 0px 1px 3px 3px #3b4bb3,
-  0px 1px 3px 0px #3b4bb3;
+    0px 1px 3px 0px #3b4bb3;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   background-color: #f1f6f6;
   border-radius: 4px;
@@ -295,6 +296,18 @@
   color: #6031ac;
 }
 
+.team-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.team-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .eventBody-text {
   font-family: "SF Pro", serif;
   font-size: 18px;
@@ -333,7 +346,8 @@
 .headerBio h2 {
   font-family: Courier New, serif;
   font-size: 42px;
-  text-shadow: 5px 5px 2px rgba(0, 255, 194, 0.51);
+  text-shadow: 5px 5px 2px #b8c5fa;
+  /* rgba(0, 255, 194, 0.51); */
 }
 .headerBio h3 {
   margin: 0px;
