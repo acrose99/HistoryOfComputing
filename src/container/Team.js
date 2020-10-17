@@ -1,4 +1,4 @@
-import './Team.css';
+import '../components/Teammate.css';
 import React from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
@@ -21,7 +21,7 @@ export default function Team() {
                     <Teammate image={require("../images/alexC.jpg")} name="Alex Crane" role="Programmer"
                               bio=" I'm Alex Crane and I am a senior Software Engineering major at Loyola. I am an active member of Alpha Phi Omega. I like web development and Object-Oriented programming."
 
-                              links={[["Github", "https://github.com/alexandratcrane"], ["ITS","https://www.luc.edu/its/service/" ]]}
+                              links={[["Github", "https://github.com/alexandratcrane"], ["LinkedIn","https://www.linkedin.com/in/alexandra-crane/" ]]}
                               fav="Java"
                     >
                     </Teammate>

@@ -13,15 +13,8 @@
     max-width: 200px;
     position: relative;
   }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
+  
+
   #Team-fav {
     font-size: 1rem;
   }
@@ -45,15 +38,7 @@
     max-width: 200px;
     position: relative;
   }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
+
   #Team-fav {
     font-size: 1rem;
   }
@@ -76,15 +61,8 @@
     max-width: 200px;
     position: relative;
   }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
+ 
+
   #Team-fav {
     font-size: 1rem;
   }
@@ -116,15 +94,7 @@
     max-width: 200px;
     position: relative;
   }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
+
   #Team-fav {
     font-size: 1rem;
   }
@@ -162,15 +132,7 @@
     max-width: 300px;
     position: relative;
   }
-  #Team-name {
-    font-size: 2rem;
-  }
-  #Team-role {
-    font-size: 1.6rem;
-  }
-  #Team-bio {
-    font-size: 1.1rem;
-  }
+
   #Team-fav {
     font-size: 1.1rem;
   }
@@ -209,24 +171,7 @@
 #Team-body {
   text-align: center;
 }
-#Team-name {
-  color: #3f51b5;
-  font-family: Silom, serif;
-  font-style: normal;
-  font-weight: bold;
-}
-#Team-role {
-  color: #8714e7;
-  font-family: Courier New, serif;
-  font-style: normal;
-  font-weight: normal;
-}
-#Team-bio {
-  color: #023740;
-  font-family: Courier New, serif;
-  font-style: normal;
-  font-weight: normal;
-}
+
 #Team-fav {
   color: #8600ff;
   font-family: Courier New, serif;
