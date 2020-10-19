@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/HistoryOfComputing/static/css/main.3595c081.chunk.css",
+    "main.js": "/HistoryOfComputing/static/js/main.fa7b8993.chunk.js",
+    "main.js.map": "/HistoryOfComputing/static/js/main.fa7b8993.chunk.js.map",
+    "runtime-main.js": "/HistoryOfComputing/static/js/runtime-main.289f9a96.js",
+    "runtime-main.js.map": "/HistoryOfComputing/static/js/runtime-main.289f9a96.js.map",
+    "static/js/2.41c61df6.chunk.js": "/HistoryOfComputing/static/js/2.41c61df6.chunk.js",
+    "static/js/2.41c61df6.chunk.js.map": "/HistoryOfComputing/static/js/2.41c61df6.chunk.js.map",
+    "index.html": "/HistoryOfComputing/index.html",
+    "precache-manifest.b9223889a0058d63e208b806d299e877.js": "/HistoryOfComputing/precache-manifest.b9223889a0058d63e208b806d299e877.js",
+    "service-worker.js": "/HistoryOfComputing/service-worker.js",
+    "static/css/main.3595c081.chunk.css.map": "/HistoryOfComputing/static/css/main.3595c081.chunk.css.map",
+    "static/js/2.41c61df6.chunk.js.LICENSE.txt": "/HistoryOfComputing/static/js/2.41c61df6.chunk.js.LICENSE.txt",
+    "static/media/404Error.png": "/HistoryOfComputing/static/media/404Error.239dcadb.png",
+    "static/media/AppleEvent.css": "/HistoryOfComputing/static/media/AppleLogo.99890cab.svg",
+    "static/media/Event.css": "/HistoryOfComputing/static/media/Backdrop.d68d8b11.svg",
+    "static/media/fonts.css": "/HistoryOfComputing/static/media/IBM-Plex-Sans.ddfa1e16.otf",
+    "static/media/Home.css": "/HistoryOfComputing/static/media/Mac128world.4c8c12ec.png",
+    "static/media/alex2.jpeg": "/HistoryOfComputing/static/media/alex2.52cf3839.jpeg",
+    "static/media/alexC.jpg": "/HistoryOfComputing/static/media/alexC.62fc7cf1.jpg",
+    "static/media/artificial-intelligence.png": "/HistoryOfComputing/static/media/artificial-intelligence.6994ca9f.png",
+    "static/media/button-left-v.svg": "/HistoryOfComputing/static/media/button-left-v.55850fd4.svg",
+    "static/media/button-right-v.svg": "/HistoryOfComputing/static/media/button-right-v.d2d1b9fa.svg",
+    "static/media/ddennis.jpg": "/HistoryOfComputing/static/media/ddennis.a5871ad1.jpg",
+    "static/media/github.png": "/HistoryOfComputing/static/media/github.b15eedbd.png",
+    "static/media/gkt.jpg": "/HistoryOfComputing/static/media/gkt.4841a021.jpg",
+    "static/media/jack.png": "/HistoryOfComputing/static/media/jack.620cd3db.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.289f9a96.js",
+    "static/js/2.41c61df6.chunk.js",
+    "static/css/main.3595c081.chunk.css",
+    "static/js/main.fa7b8993.chunk.js"
+  ]
+}
