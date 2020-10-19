@@ -72,14 +72,14 @@ function EventFocus(props) {
                             <img
                                 className="eventBody-image"
                                 id="eventBody-image1"
-                                src={props.images[0]}
+                                src={props.EventFocusImages[0]}
                                 alt={""}
                             />
                             <p style={RetroAppleStyleText} className="eventBody-text">
                                 <img
                                     className="eventBody-image"
                                     id="eventBody-image2"
-                                    src={props.images[1]}
+                                    src={props.EventFocusImages[1]}
                                     alt=""
                                 />
                                 {props.body}
@@ -133,14 +133,14 @@ function EventFocus(props) {
                             <img
                                 className="eventBody-image"
                                 id="eventBody-image1"
-                                src={props.images[0]}
+                                src={props.EventFocusImages[0]}
                                 alt={""}
                             />
                             <p style={CPMStyleText} className="eventBody-text">
                                 <img
                                     className="eventBody-image"
                                     id="eventBody-image2"
-                                    src={this.props.images[1]}
+                                    src={props.EventFocusImages[1]}
                                     alt=""
                                 />
                                 {props.body}
@@ -200,14 +200,14 @@ function EventFocus(props) {
                         <img
                             className="eventBody-image"
                             id="eventBody-image1"
-                            src={props.images[0]}
+                            src={props.EventFocusImages[0]}
                             alt={""}
                         />
                         <p className="eventBody-text">
                             <img
                                 className="eventBody-image"
                                 id="eventBody-image2"
-                                src={props.images[1]}
+                                src={props.EventFocusImages[1]}
                                 alt=""
                             />
                             {props.body}

@@ -34,7 +34,7 @@ function Event(props) {
         <EventFocus
           style={props.Type}
           header={props.title}
-          images={[props.images[1], props.images[2]]}
+          EventFocusImages={[props.EventFocusImages[0], props.EventFocusImages[1]]}
           body={props.body}
           citations={[props.citations[0], props.citations[1]]}
         />
@@ -42,7 +42,7 @@ function Event(props) {
       <div className="Event-Container">
         <a href={props.href} id={props.id} className="Event-container-link">
           <figure className="Event-figure">
-            <img className="Event-image" src={props.images[0]} alt="Error" />
+            <img className="Event-image" src={props.TimelineImage} alt="Error" />
           </figure>
           <div className="Event-body">
             <span className="Event-date">{props.date}</span>
