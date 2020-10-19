@@ -1,4 +1,4 @@
-import './Team.css';
+import '../components/Teammate.css';
 import React from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
@@ -21,7 +21,7 @@ export default function Team() {
                         <Teammate image={require("../images/alexC.jpg")} name="Alex Crane" role="Programmer"
                                   bio=" I'm Alex Crane and I am a senior Software Engineering major at Loyola. I am an active member of Alpha Phi Omega. I like web development and Object-Oriented programming."
 
-                                  links={[["Github", "https://github.com/alexandratcrane"], ["ITS", "https://www.luc.edu/its/service/"]]}
+                                  links={[["Github", "https://github.com/alexandratcrane"], ["LinkedIn", "https://www.linkedin.com/in/alexandra-crane/"]]}
                                   fav="Java"
                         >
                         </Teammate>
@@ -30,13 +30,12 @@ export default function Team() {
 
                     <div class="team-column">
                         <div className="team-row">
-                            <div className="team-row"><Teammate image={require("../images/Jack.png")}
-                                                                name="Jack Narowski" role="Programmer"
-                                                                bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
-                                                                links={[["Github", "https://github.com/JackNarowski"], ["LinkedIn", "https://www.linkedin.com/in/jacob-narowski-b3b715160/"]]}
-                                                                fav="React"
-                            >
-                            </Teammate></div>
+                            <Teammate image={require("../images/jack.png")} name="Jack Narowski"
+                                      role="Programmer"
+                                      bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
+                                      links={[["Github", "https://github.com/JackNarowski"], ["LinkedIn", "https://www.linkedin.com/in/jacob-narowski-b3b715160/"]]}
+                                      fav="React">
+                            </Teammate>
                             <Teammate image={require("../images/gkt.jpg")} name="George K. Thiruvathukal"
                                       role="Writer (Technical History)"
                                       bio="Hi! I’m George K. Thiruvathukal. I’m professor of computer science at Loyola University Chicago and visiting faculty at Argonne National Laboratory."
@@ -46,13 +45,14 @@ export default function Team() {
                             </Teammate>
 
                         </div>
-                        <div className="team-row"><Teammate image={require("../images/ddennis.jpg")} name="David Dennis"
-                                                            role="Writer (Cultural History)"
-                                                            bio=" David B. Dennis (Ph.D., UCLA, 1991; B.A., University of Wisconsin, 1984) is a Professor of History at Loyola University Chicago where he teaches courses on Western Humanities, Modern European Cultural and Intellectual History, and the Cultural History of Computing."
-                                                            links={[["Faculty Page", "https://www.luc.edu/history/people/facultyandstaffdirectory/dennisdavidb.shtml"], ["Personal Website", "https://sites.google.com/a/etl.luc.edu/dbd/Home-Page"]]}
-                                                            fav="Books"
-                        >
-                        </Teammate>
+                        <div className="team-row">
+                            <Teammate image={require("../images/ddennis.jpg")} name="David Dennis"
+                                      role="Writer (Cultural History)"
+                                      bio=" David B. Dennis (Ph.D., UCLA, 1991; B.A., University of Wisconsin, 1984) is a Professor of History at Loyola University Chicago where he teaches courses on Western Humanities, Modern European Cultural and Intellectual History, and the Cultural History of Computing."
+                                      links={[["Faculty Page", "https://www.luc.edu/history/people/facultyandstaffdirectory/dennisdavidb.shtml"], ["Personal Website", "https://sites.google.com/a/etl.luc.edu/dbd/Home-Page"]]}
+                                      fav="Books"
+                            >
+                            </Teammate>
                         </div>
                     </div>
                 </div>

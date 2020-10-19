@@ -16,36 +16,46 @@ import IBMEvent from "../components/EventTypes/IBM/IBMEvent";
 function Timeline() {
 
     let newdata = data.map((data) => {
-                // data.sort((a, b) => a.Date - b.Date);
-                // this.setState({data: data});
 
             if (data.Type === "Apple") {
                 return (
-                    <AppleEvent  key={data.id} date={data.Date} location={data.Location} title={data.Title}
-                                 TimelineImage={data.TimelineImage} EventFocusImages={data.EventFocusImages}
-                                 body={data.Body}
-                                 citations={[data.Citations[0], data.Citations[1]]}> </AppleEvent>
+                    <AppleEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                                TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                                body={data["Body"]}
+                                citations={[data["Citations"][0], data["Citations"][1]]}
+                                type = {data['Type']}
+                    > </AppleEvent>
                 )
             }
         // else if (data.Type === "RetroApple") {
         //     return (
-        //         <RetroApple key={data.id} date={data.Date} location={data.Location} title={data.Title}
-        //                     image={data.Image}
-        //         />
+        //         <RetroApple key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+        //                     TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+        //                     body={data["Body"]}
+        //                     citations={[data["Citations"][0], data["Citations"][1]]}
+        //                     type = {[data['Type']]}
+        //         >
+        //
+        //         </RetroApple>
         //     )
         // }
         // else if (data.Type === "IBM") {
         //     return (
-        //         <IBMEvent key={data.id} date={data.Date} location={data.Location} title={data.Title}
-        //                     image={data.Image}
-        //         />
+        //         <IBMEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+        //                   TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+        //                   body={data["Body"]}
+        //                   citations={[data["Citations"][0], data["Citations"][1]]}
+        //                   type = {[data['Type']]}
+        //         > </IBMEvent>
         //     )
         // }
             return (
-                <Event  key={data.id} date={data.Date} location={data.Location} title={data.Title}
-                        TimelineImage={data.TimelineImage} EventFocusImages={data.EventFocusImages}
-                        body={data.Body}
-                        citations={[data.Citations[0], data.Citations[1]]}> </Event>
+                <Event key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                       TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                       body={data["Body"]}
+                       citations={[data["Citations"][0], data["Citations"][1]]}
+                       type = {data['Type']}
+                > </Event>
 
             )
         }

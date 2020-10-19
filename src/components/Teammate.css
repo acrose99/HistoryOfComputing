@@ -1,183 +1,199 @@
-/*Galaxy S9+ and Android
+/*Galaxy S9+ and Android */
 @media screen and (max-width: 360px) {
-  #Team-teammate {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 30px 20px;
-    width: 280px;
+  .eventBody-text {
+    font-size: 12px;
+  }
+  .headerBio h2 {
+    font-size: 24px;
+  }
+  .info {
+    padding: 10% 0% 5% 5%;
+    margin: 2px 0px;
+    width: 300px;
+    height: 520px;
+  }
+  #teamDiv {
     display: flex;
     flex-direction: column;
-  }
-  #Team-media {
-    max-height: 90px;
-    max-width: 200px;
-    position: relative;
-  }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
-  #Team-fav {
-    font-size: 1rem;
-  }
-  .Team-link {
-    font-size: 0.9rem;
-  }
-}
-
-/*iPhone 6,7,8, X
-@media screen and (max-width: 375px) {
-  #Team-teammate {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 30px 20px;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-  }
-  #Team-media {
-    max-height: 100px;
-    max-width: 200px;
-    position: relative;
-  }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
-  #Team-fav {
-    font-size: 1rem;
-  }
-  .Team-link {
-    font-size: 0.9rem;
-  }
-}
-
-/*iPhone Plus, XS, XS Max 
-@media screen and (min-width: 411px) {
-  #Team-teammate {
-    padding: 20px;
-    margin: 30px 20px;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-  }
-  #Team-media {
-    max-height: 110px;
-    max-width: 200px;
-    position: relative;
-  }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
-  #Team-fav {
-    font-size: 1rem;
-  }
-  .Team-link {
-    font-size: 0.9rem;
-  }
-}
-
-/* iPad*/
-@media screen and (min-width: 768px) {
-  #Team-teammate {
-    padding: 20px;
-    margin: 30px 20px;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-  }
-  .Team-Row {
-    display: flex;
-    flex-direction: row;
+    margin: 0px auto;
   }
   .teamImg {
-    display: inherit;
+    /*display: relative;*/
+    max-width: 200px;
+    height: 100px;
+  }
+
+  .team-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .team-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+
+/*iPhone 6,7,8, X */
+@media screen and (max-width: 375px) {
+  .eventBody-text {
+    font-size: 12px;
+  }
+  .headerBio h2 {
+    font-size: 24px;
+  }
+  .info {
+    padding: 10% 0% 5% 5%;
+    margin: 2px 0px;
+    width: 300px;
+    height: 520px;
+  }
+  #teamDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  .teamImg {
+    /*display: relative;*/
+    max-width: 200px;
+    height: 100px;
+  }
+
+  .team-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .team-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 411px) {
+  .eventBody-text {
+    font-size: 12px;
+  }
+  .headerBio h2 {
+    font-size: 24px;
+  }
+  .info {
+    padding: 10% 3% 5%;
+    margin: 2px 0px;
+    width: 350px;
+    height: 415px;
+  }
+  #teamDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  .teamImg {
+    /*display: relative;*/
+    max-width: 200px;
+    height: 100px;
+  }
+
+  .team-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .team-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .eventBody-text {
+    font-size: 30px;
+  }
+  .headerBio h2 {
+    font-size: 42px;
+  }
+  .info {
+    padding: 3% 3% 5%;
+    margin: 2px 0px;
+    width: 600px;
+    height: 600px;
+  }
+  #teamDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  .teamImg {
+    /*display: relative;*/
     max-width: 300px;
     height: 200px;
   }
-  #Team-media {
-    max-height: 110px;
-    max-width: 200px;
-    position: relative;
+
+  .team-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
   }
-  #Team-name {
-    font-size: 1.2rem;
-  }
-  #Team-role {
-    font-size: 1.1rem;
-  }
-  #Team-bio {
-    font-size: 0.8rem;
-  }
-  #Team-fav {
-    font-size: 1rem;
-  }
-  .Team-link {
-    font-size: 0.9rem;
+  .team-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 /* Desktop */
 @media screen and (min-width: 1000px) {
-  #Team-teammate {
-    padding: 20px;
-    margin: 30px 20px;
-    width: 320px;
+  .eventBody-text {
+    font-size: 30px;
+  }
+  .headerBio h2 {
+    font-size: 42px;
+  }
+  .info {
+    padding: 3% 3% 5%;
+    margin: 2px 0px;
+    width: 600px;
+    height: 600px;
+  }
+  .teamImg {
+     display: inline-block;
+     max-width: 300px;
+     height: 200px;
+  }
+  #teamDiv {
     display: flex;
     flex-direction: column;
+    margin: 0px auto;
   }
-  .Team-Row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .teamImg {
-    /* display: inline-block; */
-    /* max-width: 300px; */
-    /* height: 200px; */
-  }
-
   .teamImg img {
     width: fit-content;
     height: 200px;
   }
 
-  #Team-media {
-    max-height: 200px;
-    max-width: 300px;
-    position: relative;
+  .team-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
   }
-  #Team-name {
-    font-size: 2rem;
-  }
-  #Team-role {
-    font-size: 1.6rem;
-  }
-  #Team-bio {
-    font-size: 1.1rem;
-  }
-  #Team-fav {
-    font-size: 1.1rem;
-  }
-  .Team-link {
-    font-size: 0.9rem;
+  .team-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
+
+/* we stylin here */
 
 #Team-Container {
   display: flex;
@@ -188,82 +204,6 @@
   align-items: center;
   background-color: #e0f1ff;
 }
-#Team-teammate {
-  flex: 1;
-  box-shadow: 0px 2px 3px 6px #3b4bb3, 0px 1px 3px 3px #3b4bb3,
-    0px 1px 3px 0px #3b4bb3;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background-color: #f1f6f6;
-  border-radius: 4px;
-}
-
-#Team-media {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  position: relative;
-}
-
-#Team-body {
-  text-align: center;
-}
-#Team-name {
-  color: #3f51b5;
-  font-family: Silom, serif;
-  font-style: normal;
-  font-weight: bold;
-}
-#Team-role {
-  color: #8714e7;
-  font-family: Courier New, serif;
-  font-style: normal;
-  font-weight: normal;
-}
-#Team-bio {
-  color: #023740;
-  font-family: Courier New, serif;
-  font-style: normal;
-  font-weight: normal;
-}
-#Team-fav {
-  color: #8600ff;
-  font-family: Courier New, serif;
-  font-style: normal;
-  font-weight: normal;
-}
-#Team-fav-prop {
-  color: #8600ff;
-  font-weight: bolder;
-}
-#Team-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Team-linkContainer {
-  box-sizing: border-box;
-  background-color: #8eadae;
-  margin: 20px;
-  height: 40px;
-  padding-right: 10px;
-}
-.Team-link {
-  padding-left: 10px;
-  text-decoration: none;
-  font-family: Courier New, serif;
-  font-style: normal;
-  font-weight: bold;
-  color: #6031ac;
-  display: inline-flex;
-  place-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-
-/* we stylin here */
 
 .bioList {
   display: flex;
@@ -296,30 +236,18 @@
   color: #6031ac;
 }
 
-.team-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-.team-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .eventBody-text {
   font-family: "SF Pro", serif;
-  font-size: 18px;
+  /*font-size: 18px;*/
   line-height: 30px;
 }
 .info {
-  padding: 3% 3% 5%;
-  margin: 2px 0px;
+  /* padding: 3% 3% 5%; 
+  margin: 2px 0px;*/
   background: #ffffff;
   border: 4px solid #442199;
-  width: 600px;
-  height: 600px;
+  /* width: 600px;
+  height: 600px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +273,7 @@
 
 .headerBio h2 {
   font-family: Courier New, serif;
-  font-size: 42px;
+  /*font-size: 42px;*/
   text-shadow: 5px 5px 2px #b8c5fa;
   /* rgba(0, 255, 194, 0.51); */
 }
@@ -385,23 +313,3 @@
   width: fit-content;
   height: fit-content;
 }
-
-/*  
-.teamBody {
-  /* display: flex; 
-  flex-direction: column;
-  /* justify-content: baseline; 
-  width: 90%;
-  padding: 20px;
-}
-.eventBody {
-  width: 800px;
-}
-.vaporwaveBar {
-  /* display: block; 
-  background-color: #9d41ff;
-  /* padding-left: 5px; 
-  width: 200px;
-  height: 30px;
-  /* padding: 0.5%; 
-}*/
