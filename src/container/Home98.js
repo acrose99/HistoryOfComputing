@@ -1,6 +1,6 @@
 import React from "react";
-import "../98.css/style.css"
-import "./Home98.css"
+// import "../98.css/style.css"
+// import "./Home98.css"
 
 /* Credit for the majority of the CSS goes to Jordan Scales!!!!
         https://jdan.github.io/98.css/?ref=blogduwebdesign.com
