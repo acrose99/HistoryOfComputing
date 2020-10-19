@@ -96,7 +96,7 @@ function EventFocus(props) {
         }
     }
 
-    if (props.Type === "RetroApple") {
+    if (props.type === "RetroApple") {
         return (
             <div className="showEventWrapper">
                 <div className="showEvent">
@@ -138,7 +138,7 @@ function EventFocus(props) {
                 </div>
             </div>
         );
-    } else if (props.style === "CPM") {
+    } else if (props.type === "CPM") {
         return (
             <div className="showEventWrapper">
                 <div className="showEvent">

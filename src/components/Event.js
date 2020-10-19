@@ -36,6 +36,7 @@ function Event(props) {
           header={props.title}
           EventFocusImages={[props.EventFocusImages[0], props.EventFocusImages[1]]}
           body={props.body}
+          type={props.type}
           citations={[props.citations[0], props.citations[1]]}
         />
       ) : null}

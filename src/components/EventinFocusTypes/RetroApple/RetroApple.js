@@ -2,12 +2,7 @@ import React from "react";
 import "./RetroApple.css";
 /* LEGACY CODE, PLEASE DONT USE */
 
-class RetroApple extends React.Component {
-
-    state = {
-        className: "showEvent",
-    };
-    render() {
+function RetroApple(props) {
         return (
             <div className="showEventWrapper RetroApple-border">
                 <div  className="showEvent RetroApple-border">
@@ -50,7 +45,6 @@ class RetroApple extends React.Component {
                 {/* ent event div */}
             </div>
         );
-    }
 }
 export default RetroApple;
 //trying to figure out if i want to use a function stateless component or a stateful component
