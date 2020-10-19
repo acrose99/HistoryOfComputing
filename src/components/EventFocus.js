@@ -36,13 +36,16 @@ const CPMStyleBar = {
 
 function EventFocus(props) {
     function renderCitations() {
-        if (props.citations[0] == null || props.citations === "") {
+        if (props.citations[0] == null || props.citations[0]=== "") {
             return (
-                <p id="event-citation-text">
-                    No citations.
-                </p>
+                <div>
+                    <p id="event-citation-text">
+                        No citations.
+                    </p>
+                </div>
             )
-        } else {
+        }
+        else {
             return (
                 <div style={{display: "flex"}}>
                     <p id="event-citation-text">
@@ -53,6 +56,40 @@ function EventFocus(props) {
                     </p>
                     <p style={{marginLeft: "5px"}} id="event-citation-text">
                         {props.citations[1]}
+                    </p>
+                </div>
+            )
+        }
+    }
+    function renderBody() {
+        if (props.EventFocusImages[0] === undefined) {
+
+            return (
+                <div>
+                    <p className="eventBody-text">
+                        {props.body}
+                    </p>
+                </div>
+            )
+        }
+        else  {
+            return (
+                <div>
+                    <img
+                        className="eventBody-image"
+                        id="eventBody-image1"
+                        src={props.EventFocusImages[0]}
+                        alt={""}
+                    />
+                    <p style={RetroAppleStyleText} className="eventBody-text">
+                        <img
+                            className="eventBody-image"
+                            id="eventBody-image2"
+                            src={props.EventFocusImages[1]}
+                            alt=""
+                        />
+                        {props.body}
+
                     </p>
                 </div>
             )
@@ -93,21 +130,7 @@ function EventFocus(props) {
                         <div id="locationTimeWrapper"/>
                     </div>
                     <div style={RetroAppleStyleDiv} className="eventBody">
-                        <img
-                            className="eventBody-image"
-                            id="eventBody-image1"
-                            src={props.EventFocusImages[0]}
-                            alt={""}
-                        />
-                        <p style={RetroAppleStyleText} className="eventBody-text">
-                            <img
-                                className="eventBody-image"
-                                id="eventBody-image2"
-                                src={props.EventFocusImages[1]}
-                                alt=""
-                            />
-                            {props.body}
-                        </p>
+                        {renderBody()}
                     </div>
                     <div style={RetroAppleStyleDiv} className="event-citation">
                         {renderCitations()}
@@ -149,21 +172,7 @@ function EventFocus(props) {
                         <div id="locationTimeWrapper"/>
                     </div>
                     <div style={CPMStyleDiv} className="eventBody">
-                        <img
-                            className="eventBody-image"
-                            id="eventBody-image1"
-                            src={props.EventFocusImages[0]}
-                            alt={""}
-                        />
-                        <p style={CPMStyleText} className="eventBody-text">
-                            <img
-                                className="eventBody-image"
-                                id="eventBody-image2"
-                                src={props.EventFocusImages[1]}
-                                alt=""
-                            />
-                            {props.body}
-                        </p>
+                        {renderBody()}
                     </div>
                     <div style={CPMStyleDiv} className="event-citation">
                         {renderCitations()}
@@ -211,21 +220,7 @@ function EventFocus(props) {
 
                 {/* event body  */}
                 <div className="eventBody">
-                    <img
-                        className="eventBody-image"
-                        id="eventBody-image1"
-                        src={props.EventFocusImages[0]}
-                        alt={""}
-                    />
-                    <p className="eventBody-text">
-                        <img
-                            className="eventBody-image"
-                            id="eventBody-image2"
-                            src={props.EventFocusImages[1]}
-                            alt=""
-                        />
-                        {props.body}
-                    </p>
+                    {renderBody()}
                 </div>
                 <div className="event-citation">
                     {renderCitations()}
