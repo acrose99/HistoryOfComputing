@@ -35,139 +35,37 @@ const CPMStyleBar = {
 };
 
 function EventFocus(props) {
-        if (props.Type === "RetroApple") {
+    function renderCitations() {
+        if (props.citations[0] == null || props.citations === "") {
             return (
-                <div className="showEventWrapper">
-                    <div className="showEvent">
-                        <div style={RetroAppleStyleBar} className="vaporwaveBar">
-                            <div className="vbar-buttons">
-                                <button className="vaporwaveBarContents">
-                                    <img
-                                        src={require("../images/media_player_stream_no.png")}
-                                        alt="alt"
-                                    />
-                                </button>
-                                <button className="vaporwaveBarContents">
-                                    <img
-                                        src={require("../images/button-left-v.svg")}
-                                        alt="Error"
-                                        className="leftRight"
-                                    />
-                                </button>
-                                <button className="vaporwaveBarContents">
-                                    <img
-                                        src={require("../images/button-right-v.svg")}
-                                        alt="burr"
-                                    />
-                                </button>
-                            </div>
-                        </div>
-                        <div style={RetroAppleStyleDiv} id="header" className="eventHeader">
-                            <h2 id="eventHeader-text" style={RetroAppleStyleText}>
-                                {props.Title}
-                            </h2>
-                            <div id="locationTimeWrapper"/>
-                        </div>
-                        <div style={RetroAppleStyleDiv} className="eventBody">
-                            <img
-                                className="eventBody-image"
-                                id="eventBody-image1"
-                                src={props.EventFocusImages[0]}
-                                alt={""}
-                            />
-                            <p style={RetroAppleStyleText} className="eventBody-text">
-                                <img
-                                    className="eventBody-image"
-                                    id="eventBody-image2"
-                                    src={props.EventFocusImages[1]}
-                                    alt=""
-                                />
-                                {props.body}
-                            </p>
-                        </div>
-                        <div style={RetroAppleStyleDiv} className="event-citation">
-                            <p style={RetroAppleStyleText} id="event-citation-text">
-                                {props.citations[0]},
-                            </p>
-                            <p style={RetroAppleStyleText} id="event-citation-text">
-                                {props.citations[1]}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            );
-        } else if (props.style === "CPM") {
+                <p id="event-citation-text">
+                    No citations.
+                </p>
+            )
+        } else {
             return (
-                <div className="showEventWrapper">
-                    <div className="showEvent">
-                        <div style={CPMStyleBar} className="vaporwaveBar">
-                            <div className="vbar-buttons">
-                                <button className="vaporwaveBarContents">
-                                    <img
-                                        src={require("../images/media_player_stream_no.png")}
-                                        alt="alt"
-                                    />
-                                </button>
-                                <button className="vaporwaveBarContents">
-                                    <img
-                                        src={require("../images/button-left-v.svg")}
-                                        alt="Error"
-                                        className="leftRight"
-                                    />
-                                </button>
-                                <button className="vaporwaveBarContents">
-                                    <img
-                                        src={require("../images/button-right-v.svg")}
-                                        alt="burr"
-                                    />
-                                </button>
-                            </div>
-                        </div>
-                        <div style={CPMStyleDiv} id="header" className="eventHeader">
-                            <h2 id="eventHeader-text" style={CPMStyleText}>
-                                {props.header}
-                            </h2>
-                            <div id="locationTimeWrapper"/>
-                        </div>
-                        <div style={CPMStyleDiv} className="eventBody">
-                            <img
-                                className="eventBody-image"
-                                id="eventBody-image1"
-                                src={props.EventFocusImages[0]}
-                                alt={""}
-                            />
-                            <p style={CPMStyleText} className="eventBody-text">
-                                <img
-                                    className="eventBody-image"
-                                    id="eventBody-image2"
-                                    src={props.EventFocusImages[1]}
-                                    alt=""
-                                />
-                                {props.body}
-                            </p>
-                        </div>
-                        <div style={CPMStyleDiv} className="event-citation">
-                            <p style={CPMStyleText} id="event-citation-text">
-                                {props.citations[0]},
-                            </p>
-                            <p style={CPMStyleText} id="event-citation-text">
-                                {props.citations[1]}
-                            </p>
-                        </div>
-                    </div>
+                <div style={{display: "flex"}}>
+                    <p id="event-citation-text">
+                        Citations:
+                    </p>
+                    <p id="event-citation-text">
+                        {props.citations[0]}
+                    </p>
+                    <p style={{marginLeft: "5px"}} id="event-citation-text">
+                        {props.citations[1]}
+                    </p>
                 </div>
-            );
+            )
         }
+    }
+
+    if (props.Type === "RetroApple") {
         return (
             <div className="showEventWrapper">
                 <div className="showEvent">
-                    {/* vaporwave themed navigation bar  */}
-                    <div className="vaporwaveBar">
+                    <div style={RetroAppleStyleBar} className="vaporwaveBar">
                         <div className="vbar-buttons">
-                            <button
-                                onClick={props.onClick}
-                                className="vaporwaveBarContents"
-                            >
+                            <button className="vaporwaveBarContents">
                                 <img
                                     src={require("../images/media_player_stream_no.png")}
                                     alt="alt"
@@ -188,22 +86,20 @@ function EventFocus(props) {
                             </button>
                         </div>
                     </div>
-
-                    {/* header for the event  */}
-                    <div id="header" className="eventHeader">
-                        <h2 id="eventHeader-text">{props.header}</h2>
+                    <div style={RetroAppleStyleDiv} id="header" className="eventHeader">
+                        <h2 id="eventHeader-text" style={RetroAppleStyleText}>
+                            {props.Title}
+                        </h2>
                         <div id="locationTimeWrapper"/>
                     </div>
-
-                    {/* event body  */}
-                    <div className="eventBody">
+                    <div style={RetroAppleStyleDiv} className="eventBody">
                         <img
                             className="eventBody-image"
                             id="eventBody-image1"
                             src={props.EventFocusImages[0]}
                             alt={""}
                         />
-                        <p className="eventBody-text">
+                        <p style={RetroAppleStyleText} className="eventBody-text">
                             <img
                                 className="eventBody-image"
                                 id="eventBody-image2"
@@ -213,19 +109,132 @@ function EventFocus(props) {
                             {props.body}
                         </p>
                     </div>
-                    <div className="event-citation">
-                        <p id="event-citation-text">{props.citations[0]}</p>
-
-                        <p id="event-citation-text">,</p>
-
-                        <p id="event-citation-text" style={{marginLeft: 5}}>
-                            {props.citations[1]}
-                        </p>
+                    <div style={RetroAppleStyleDiv} className="event-citation">
+                        {renderCitations()}
                     </div>
                 </div>
             </div>
         );
+    } else if (props.style === "CPM") {
+        return (
+            <div className="showEventWrapper">
+                <div className="showEvent">
+                    <div style={CPMStyleBar} className="vaporwaveBar">
+                        <div className="vbar-buttons">
+                            <button className="vaporwaveBarContents">
+                                <img
+                                    src={require("../images/media_player_stream_no.png")}
+                                    alt="alt"
+                                />
+                            </button>
+                            <button className="vaporwaveBarContents">
+                                <img
+                                    src={require("../images/button-left-v.svg")}
+                                    alt="Error"
+                                    className="leftRight"
+                                />
+                            </button>
+                            <button className="vaporwaveBarContents">
+                                <img
+                                    src={require("../images/button-right-v.svg")}
+                                    alt="burr"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div style={CPMStyleDiv} id="header" className="eventHeader">
+                        <h2 id="eventHeader-text" style={CPMStyleText}>
+                            {props.header}
+                        </h2>
+                        <div id="locationTimeWrapper"/>
+                    </div>
+                    <div style={CPMStyleDiv} className="eventBody">
+                        <img
+                            className="eventBody-image"
+                            id="eventBody-image1"
+                            src={props.EventFocusImages[0]}
+                            alt={""}
+                        />
+                        <p style={CPMStyleText} className="eventBody-text">
+                            <img
+                                className="eventBody-image"
+                                id="eventBody-image2"
+                                src={props.EventFocusImages[1]}
+                                alt=""
+                            />
+                            {props.body}
+                        </p>
+                    </div>
+                    <div style={CPMStyleDiv} className="event-citation">
+                        {renderCitations()}
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    return (
+        <div className="showEventWrapper">
+            <div className="showEvent">
+                {/* vaporwave themed navigation bar  */}
+                <div className="vaporwaveBar">
+                    <div className="vbar-buttons">
+                        <button
+                            onClick={props.onClick}
+                            className="vaporwaveBarContents"
+                        >
+                            <img
+                                src={require("../images/media_player_stream_no.png")}
+                                alt="alt"
+                            />
+                        </button>
+                        <button className="vaporwaveBarContents">
+                            <img
+                                src={require("../images/button-left-v.svg")}
+                                alt="Error"
+                                className="leftRight"
+                            />
+                        </button>
+                        <button className="vaporwaveBarContents">
+                            <img
+                                src={require("../images/button-right-v.svg")}
+                                alt="burr"
+                            />
+                        </button>
+                    </div>
+                </div>
+
+                {/* header for the event  */}
+                <div id="header" className="eventHeader">
+                    <h2 id="eventHeader-text">{props.header}</h2>
+                    <div id="locationTimeWrapper"/>
+                </div>
+
+                {/* event body  */}
+                <div className="eventBody">
+                    <img
+                        className="eventBody-image"
+                        id="eventBody-image1"
+                        src={props.EventFocusImages[0]}
+                        alt={""}
+                    />
+                    <p className="eventBody-text">
+                        <img
+                            className="eventBody-image"
+                            id="eventBody-image2"
+                            src={props.EventFocusImages[1]}
+                            alt=""
+                        />
+                        {props.body}
+                    </p>
+                </div>
+                <div className="event-citation">
+                    {renderCitations()}
+                </div>
+            </div>
+        </div>
+    );
 }
+
 export default EventFocus;
 //trying to figure out if i want to use a function stateless component or a stateful component
 //researching what the freaking difference is
