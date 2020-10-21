@@ -47,7 +47,7 @@ export default function Team() {
                 </div>
                 <div className = "team-row"><Teammate image={require("../images/jack.png")} name="Jack Narowski" role="Programmer"
                               bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
-                              links={[["Github", "https://github.com/JackNarowski"], ["","" ]]}
+                              links={[["Github", "https://github.com/JackNarowski"], ["Linked In","" ]]}
                               fav="React"
                     >
                     </Teammate></div>
