@@ -34,7 +34,6 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-
 }
 
 /*iPhone 6,7,8, X */
@@ -75,6 +74,8 @@
   }
 }
 
+/* iPhone sizes */
+
 /*iPhone Plus, XS, XS Max */
 @media screen and (min-width: 411px) {
   .eventBody-text {
@@ -112,7 +113,6 @@
     flex-wrap: wrap;
   }
 }
-
 
 /* iPad */
 @media screen and (min-width: 768px) and (max-width: 1000px) {
@@ -153,12 +153,46 @@
 }
 /* Desktop */
 @media screen and (min-width: 1000px) {
-  .eventBody-text {
-    font-size: 30px;
+  .bioList {
+    display: flex;
+    align-items: center;
   }
+  .bioList a {
+    padding-left: 12px;
+    text-decoration: none;
+    font-family: Courier New, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #6031ac;
+  }
+  .bioList img {
+    width: 12px;
+    height: 12px;
+    padding-left: 12px;
+  }
+
+  .headerBio {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+  }
+
   .headerBio h2 {
+    font-family: Courier New, serif;
     font-size: 42px;
+    text-shadow: 5px 5px 2px #b8c5fa;
+    /* rgba(0, 255, 194, 0.51); */
   }
+  .headerBio h3 {
+    margin: 0px;
+    font-size: 24px;
+    font-family: Courier New, serif;
+  }
+
   .info {
     padding: 3% 3% 5%;
     margin: 2px 0px;
@@ -166,15 +200,16 @@
     height: 600px;
   }
   .teamImg {
-     display: inline-block;
-     max-width: 300px;
-     height: 200px;
+    display: inline-block;
+    max-width: 300px;
+    height: 200px;
   }
   #teamDiv {
     display: flex;
     flex-direction: column;
     margin: 0px auto;
   }
+
   .teamImg img {
     width: fit-content;
     height: 200px;
@@ -209,26 +244,15 @@
   display: flex;
   align-items: center;
 }
+.bioList a {
+  transition: 0.5s;
+}
+
 .bioList li {
   list-style-type: none;
   /* list-style-image: url("../images/world-1.png"); */
 }
 .bioList p {
-  font-family: Courier New, serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  color: #6031ac;
-}
-.bioList img {
-  width: 12px;
-  height: 12px;
-  padding-left: 12px;
-}
-
-.bioList a {
-  padding-left: 12px;
-  text-decoration: none;
   font-family: Courier New, serif;
   font-style: normal;
   font-weight: bold;
@@ -271,17 +295,20 @@
   margin: 4px;
 }
 
-.headerBio h2 {
+/* .headerBio h2 {
   font-family: Courier New, serif;
-  /*font-size: 42px;*/
+  /*font-size: 42px;
   text-shadow: 5px 5px 2px #b8c5fa;
-  /* rgba(0, 255, 194, 0.51); */
+  /* rgba(0, 255, 194, 0.51); 
+  font-size: 42px;
+  text-shadow: 5px 5px 2px #b8c5fa;
+  /* rgba(0, 255, 194, 0.51); 
 }
 .headerBio h3 {
   margin: 0px;
   font-size: 24px;
   font-family: Courier New, serif;
-}
+} */
 #teamDiv {
   display: flex;
   flex-direction: column;
