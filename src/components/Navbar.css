@@ -3,6 +3,7 @@
   background-color: #3f51b5;
   overflow-x: hidden;
   overscroll-behavior-x: contain;
+  border-bottom: 4px solid black;
 }
 .Nav-linkButton {
   /*background-color: #57336a;*/
