@@ -2,6 +2,7 @@ import "../components/Teammate.css";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
+import Footer from "../components/Footer";
 
 export default function Team() {
     //Todo Refactor the crap out of this and Add Alex Crane to credits
@@ -83,8 +84,8 @@ export default function Team() {
                     </div>
 
                 </div>
-
-            </div>
+             </div>
+            <Footer/>
         </div>
     );
 }

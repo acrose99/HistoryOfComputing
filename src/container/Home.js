@@ -4,6 +4,7 @@ import "./Home.css";
 
 //Material-UI imports is placeholder until we create our own, probably in a few days.
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
                 </div>
             </div>
             {/*<Routes/>*/}
+            <Footer/>
         </div>
     )
 }

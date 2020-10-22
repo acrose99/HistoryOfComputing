@@ -76,6 +76,11 @@ function Timeline() {
             <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
 
             <Events/>
+
+            {/*hack way to fix the timeline separator*/}
+            <div style={{marginBottom: '200px'}}/>
+            {/*hack way to fix the timeline separator*/}
+
             <Footer/>
         </div>
     )
