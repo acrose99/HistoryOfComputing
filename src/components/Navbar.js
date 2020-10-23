@@ -3,37 +3,35 @@ import "./Navbar.css";
 
 
 export default function Navbar() {
-
-    return (
-        <div id="Nav-container">
-                <div  id="Nav-navbar">
-                    <button className="iconButton">
-                        <img  className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="Ruh roh scoob"/>
-                    </button>
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor" href="/home">Home</a>
-                    </div>
-
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor"  href="/timeline">The Timeline</a>
-                    </div>
-                    <div className="Nav-linkButton">
-                        <a  className="Nav-anchor"  href="https://ecommons.luc.edu/history_facpubs/42/">The Book (WIP)</a>
-                    </div>
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor" href="https://ssl.cs.luc.edu/team.html">SSL</a>
-                    </div>
-                    <div className="iconButton">
-                        <a className="Nav-anchor" href="https://github.com/acrose99/HistoryOfComputing">
-                            <img className="Nav-icon" src={require("../images/github.png")} alt="Github"/>
-                        </a>
-                    </div>
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor" href="/team">
-                            About Us
-                        </a>
-                    </div>
-                </div>
-        </div>
+    var windowSize = window.matchMedia("(max-width:700px)");
+    if (windowSize.matches) {
+        return (
+            // if window is smaller
+            <div>
+                <p>booh</p>
+            </div>
         )
+    }
+    else {
+
+        return (
+            // if window is bigger
+            <div id="Nav-container">
+                <div id="top-container">
+                    <h2 class="title">The History Of Computing</h2>
+                    <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+
+                </div>
+                <div id="bottom-container">
+                    <button class="menuItem">The Timeline</button>
+                    <button class="menuItem">The Book</button>
+                    <button class="menuItem">About Us</button>
+                    <button class="menuItem">SSL</button>
+                    <button class="menuItem"><img class="menuImg" src={require("../images/github.svg")} /></button>
+
+                </div>
+            </div>
+        )
+    }//end if
+
 }

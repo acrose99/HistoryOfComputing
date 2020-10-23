@@ -1,40 +1,36 @@
     plans:
-    make onhover for links 
-    make a border for each team thing
-    new color for text shadow
-    make sure to make it compatible for diff sizes 
+    fix nav bar 
+    make it so that its hamburger size for phone sized media queries
+    figure out how to do it in a responsive way w hooks? 
+    figured out a way for it to work when u reload page, which makes sense 
+    since react doesnt do reloads without setstate i think
     
-    // return (
-    //     // <div id="Team-teammate">
-    //     //     <picture id="Team-media">
-    //     //         <img src={props.image} alt=""/>
-    //     //     </picture>
-    //     //     <div id="Team-body">
-    //     //         <h3 id="Team-name">
-    //     //             {props.name}
-    //     //         </h3>
-    //     //         <h4 id="Team-role">
-    //     //             {props.role}
-    //     //         </h4>
-    //     //         <p id="Team-bio">
-    //     //             {props.bio}
-    //     //         </p>
-    //     //         <h4 id="Team-fav">Favorite piece of tech history:
-    //     //             <br/>
-    //     //             <br/>
-    //     //             <span id="Team-fav-prop">
-    //     //                 {props.fav}
-    //     //             </span>
-    //     //         </h4>
-    //     //     </div>
-    //     //     <div id="Team-links">
-    //     //         {/*Buttons wil turn into div */}
-    //     //         <div className="Team-linkContainer">
-    //     //             <a className="Team-link" href={props.links[0][1]}>{props.links[0][0]}</a>
-    //     //         </div>
-    //     //         <div className="Team-linkContainer" >
-    //     //             <a className="Team-link" href={props.links[1][1]}>{props.links[1][0]}</a>
-    //     //         </div>
-    //     //     </div>
-    //     // </div>
-    // );
+    <div id="Nav-navbar">
+                    <button className="iconButton">
+                        <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="Ruh roh scoob" />
+                    </button>
+                    <div className="Nav-linkButton">
+                        <a className="Nav-anchor" href="/home">Home</a>
+                    </div>
+
+                    <div className="Nav-linkButton">
+                        <a className="Nav-anchor" href="/timeline">The Timeline</a>
+                    </div>
+                    <div className="Nav-linkButton">
+                        <a className="Nav-anchor" href="https://ecommons.luc.edu/history_facpubs/42/">The Book (WIP)</a>
+                    </div>
+                    <div className="Nav-linkButton">
+                        <a className="Nav-anchor" href="https://ssl.cs.luc.edu/team.html">SSL</a>
+                    </div>
+                    <div className="iconButton">
+                        <a className="Nav-anchor" href="https://github.com/acrose99/HistoryOfComputing">
+                            <img className="Nav-icon" src={require("../images/github.png")} alt="Github" />
+                        </a>
+                    </div>
+                    <div className="Nav-linkButton">
+                        <a className="Nav-anchor" href="/team">
+                            About Us
+                        </a>
+                    </div>
+                </div>
+                
