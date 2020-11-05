@@ -63,8 +63,12 @@
   background-color: #a158fd;
   overflow-x: hidden;
   overscroll-behavior-x: contain;
+<<<<<<< HEAD
   margin: 0 auto;
   border-radius: 25px;
+=======
+  border-bottom: 4px solid black;
+>>>>>>> 13e87696ac0d22e14aacefef9c1f903b62e08f20
 }
 .Nav-linkButton {
   /*background-color: #57336a;

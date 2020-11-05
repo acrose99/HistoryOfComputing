@@ -1,8 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import IconButton from "@material-ui/core/IconButton";
-import {Icon} from '@iconify/react';
-import arrowRightShort from '@iconify/icons-bi/arrow-right-short';
+import { Icon} from '@iconify/react';
+import emailIcon from '@iconify/icons-carbon/email';
+import githubFilled from '@iconify/icons-ant-design/github-filled';
+
 
 //TODO: WIP WIP WIP WIP
 
@@ -10,56 +12,53 @@ import arrowRightShort from '@iconify/icons-bi/arrow-right-short';
 export default function Footer() {
     return (
         <div id="Footer-container">
-            <div id="Footer-container-top">
-                <div id="Footer-container-link-list1">
-                    <li className="Footer-link-list-item">
-                        <a href="/team" className="Footer-link-list-anchor">
-                             <Icon className="Footer-arrow" icon={arrowRightShort} style={{fontSize: '45px'}} />
-                             <span className="Footer-link-label">Contact</span>
-                        </a>
-                    </li>
-                    <li className="Footer-link-list-item">
-                        <a href="/" className="Footer-link-list-anchor">
-                            <Icon className="Footer-arrow" icon={arrowRightShort} style={{fontSize: '45px'}} />
-                            <span className="Footer-link-label">Homepage</span>
-                        </a>
-                    </li>
-                    <li className="Footer-link-list-item">
-                        <a href="/team" className="Footer-link-list-anchor">
-                            <Icon className="Footer-arrow" icon={arrowRightShort} style={{fontSize: '45px'}} />
-                            <span className="Footer-link-label">About us</span>
-                        </a>
-                    </li>
+            <div className="footer-04">
+                <div className="container">
+                    <div className="footer-flex-wrap">
+                        <div className="footer-block-left">
+                            <img
+                            src={require("../images/FlatLogo.svg")}
+                            alt="" className="logo-flat"/>
+                            <p id='slogan'>
+                                We make History fun.
+                            </p>
+                        </div>
+                        <div className="line-break"/>
+                        <div className="footer-block-right">
+                            <div className="w-layout-grid grid">
+                                <div className="footer-column">
+                                    <div className="footer-title">About</div>
+                                    <a href="/team" className="footer-link-dark">Our Team</a>
+                                    <a href="https://github.com/acrose99/HistoryOfComputingDocs" className="footer-link-dark">Documentation</a>
+                                    <a href="https://ecommons.luc.edu/history_facpubs/42/" className="footer-link-dark">The Book</a>
+                                    <a href="https://ssl.cs.luc.edu/team.html" className="footer-link-dark">SSL</a>
+                                </div>
+                                <div className="footer-column">
+                                    <div className="footer-title">Contribute</div>
+                                    <IconButton  className="Footer-menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
+                                        {/*<img className="Footer-menuButton-icon" src={require("../images/github.png")} alt="Github"/>*/}
+                                        <Icon className="Footer-menuButton-icon" icon={githubFilled} style={{color: '#0029FF'}} />
+                                    </IconButton>
+                                    <IconButton className="Footer-menuButton" href="mailto:arose5@luc.edu" edge={"start"}>
+                                        <Icon className="Footer-menuButton-icon" style={{color: '#0029FF'}}  icon={emailIcon} />
+                                    </IconButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/*TODO add Privacy Policy and terms of conditions (usual open source BS)*/}
+                    <div className="footer-bottom-full">
+                        <div className="footer-wrapper">
+                            <div className="text-rights">
+                                © Copyright 2012-Present, Software and Systems Laboratory
+                            </div>
+                        </div>
+                    {/*    <div className="footer-wrapper"><a href="#"*/}
+                    {/*                                       className="secondary-link-dark">Terms &amp; Conditions</a><a*/}
+                    {/*        href="#" className="secondary-link-dark">Privacy Policy</a></div>*/}
+                    </div>
                 </div>
-                <div id="Footer-container-link-list2">
-                    <li className="Footer-link-list-item">
-                        <a href="/team" className="Footer-link-list-anchor">
-                            <Icon className="Footer-arrow" icon={arrowRightShort} style={{fontSize: '45px'}} />
-                            <span className="Footer-link-label">Software Systems Laboratory</span>
-                        </a>
-                    </li>
-                    <li className="Footer-link-list-item">
-                        <a href="/team" className="Footer-link-list-anchor">
-                            <Icon className="Footer-arrow" icon={arrowRightShort} style={{fontSize: '45px'}} />
-                            <span className="Footer-link-label">The Book</span>
-                        </a>
-                    </li>
-                </div>
-                <div id="Footer-container-link-icons">
-                    <IconButton  className="Footer-menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
-                        <img className="Footer-menuButton-icon" src={require("../images/github.png")} alt="Github"/>
-                    </IconButton>
-                    <IconButton className="Footer-menuButton" href="mailto:arose5@luc.edu" edge={"start"}>
-                        <img className="Footer-menuButton-icon" src={require("../images/MailTo.png")} alt="Mail"/>
-                    </IconButton>
-                </div>
-            </div>
-            <div id="Footer-container-bottom">
-                <h1 id="Footer-container-bottom-title">The History of Computing
-                    <span>
-                        <img  className="Footer-icon" src={require("../images/artificial-intelligence.png")} alt="Ruh roh scoob"/>
-                    </span>
-                </h1>
             </div>
         </div>
     )

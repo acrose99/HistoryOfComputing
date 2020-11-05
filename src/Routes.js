@@ -10,8 +10,8 @@ import EventFocus from "./components/EventFocus";
 export default function Routes({ appProps }) {
   return (
     <Switch>
-      {/*<AppliedRoute path="/" exact component={Home98} appProps={appProps} />*/}
-      <AppliedRoute path="/" exact component={Home} appProps={appProps} />
+      <AppliedRoute path="/" exact component={Home98} appProps={appProps} />
+      <AppliedRoute path="/home" exact component={Home} appProps={appProps} />
       {/*{ /* Route to historiography page */}
       <AppliedRoute
         path="/timeline"

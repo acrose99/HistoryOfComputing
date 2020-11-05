@@ -2,12 +2,13 @@ import "../components/Teammate.css";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
+import Footer from "../components/Footer";
 
 export default function Team() {
     //Todo Refactor the crap out of this and Add Alex Crane to credits
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div id="Team-Container">
                 <div class="team-row">
                     <div className="team-column">
@@ -24,7 +25,7 @@ export default function Team() {
                                 ],
                             ]}
                             fav="Macintosh128k"
-                        ></Teammate>
+                        />
 
                         <Teammate
                             image={require("../images/alexC.jpg")}
@@ -36,11 +37,11 @@ export default function Team() {
                                 ["LinkedIn", "https://www.linkedin.com/in/alexandra-crane/"],
                             ]}
                             fav="Java"
-                        ></Teammate>
-                        <Teammate image={require("../images/Jack.png")} name="Jack Narowski" role="Programmer"
-                            bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
-                            links={[["Github", "https://github.com/JackNarowski"], ["Personal Website", "https://jacknarowski.com/"]]}
-                            fav="React"
+                        />
+                        <Teammate image={require("../images/jack.png")} name="Jack Narowski" role="Programmer"
+                                  bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
+                                  links={[["Github", "https://github.com/JackNarowski"], ["Personal Website", "https://jacknarowski.com/"]]}
+                                  fav="React"
                         >
                         </Teammate>
                     </div>
@@ -59,7 +60,7 @@ export default function Team() {
                                 ["Personal Website", "https://thiruvathukal.com"],
                             ]}
                             fav="Ubuntu Linux"
-                        ></Teammate>
+                        />
 
                         <Teammate
                             image={require("../images/ddennis.jpg")}
@@ -77,14 +78,14 @@ export default function Team() {
                                 ],
                             ]}
                             fav="Books"
-                        ></Teammate>
+                        />
 
 
                     </div>
 
                 </div>
-
-            </div>
+             </div>
+            <Footer/>
         </div>
     );
 }
