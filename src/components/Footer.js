@@ -12,18 +12,18 @@ import emailIcon from '@iconify/icons-carbon/email';
 export default function Footer() {
     return (
         <div id="Footer-container">
-            {/* <div className="footer-04">
+            <div className="footer-04">
                 <div className="container">
                     <div className="footer-flex-wrap">
                         <div className="footer-block-left">
                             <img
-                            src={require("../images/FlatLogo.svg")}
-                            alt="" className="logo-flat"/>
+                                src={require("../images/FlatLogo.svg")}
+                                alt="" className="logo-flat" />
                             <p id='slogan'>
                                 We make History fun.
                             </p>
                         </div>
-                        <div className="line-break"/>
+                        <div className="line-break" />
                         <div className="footer-block-right">
                             <div className="w-layout-grid grid">
                                 <div className="footer-column">
@@ -35,30 +35,30 @@ export default function Footer() {
                                 </div>
                                 <div className="footer-column">
                                     <div className="footer-title">Contribute</div>
-                                    <IconButton  className="Footer-menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
-                                        {/*<img className="Footer-menuButton-icon" src={require("../images/github.png")} alt="Github"/>*/}
-            {/* <Icon className="Footer-menuButton-icon" icon={githubFilled} style={{color: '#0029FF'}} /> */}
-            {/* </IconButton> */}
-            {/* <IconButton className="Footer-menuButton" href="mailto:arose5@luc.edu" edge={"start"}> */}
-            {/* <Icon className="Footer-menuButton-icon" style={{color: '#0029FF'}}  icon={emailIcon} /> */}
-            {/* </IconButton> */}
-            {/* </div> */}
-            {/* </div> */}
-            {/* </div> */}
-            {/* </div> */}
-
-            {/*TODO add Privacy Policy and terms of conditions (usual open source BS)*/}
-            <div className="footer-bottom-full">
-                <div className="footer-wrapper">
-                    <div className="text-rights">
-                        © Copyright 2012-Present, Software and Systems Laboratory
+                                    <IconButton className="Footer-menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
+                                        <img className="Footer-menuButton-icon" src={require("../images/github.png")} alt="Github" />
+                                        <Icon className="Footer-menuButton-icon" icon={githubFilled} style={{ color: '#0029FF' }} />
+                                    </IconButton>
+                                    <IconButton className="Footer-menuButton" href="mailto:arose5@luc.edu" edge={"start"}>
+                                        <Icon className="Footer-menuButton-icon" style={{ color: '#0029FF' }} icon={emailIcon} />
+                                    </IconButton>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+
+                    {/*TODO add Privacy Policy and terms of conditions (usual open source BS)*/}
+                    <div className="footer-bottom-full">
+                        <div className="footer-wrapper">
+                            <div className="text-rights">
+                                © Copyright 2012-Present, Software and Systems Laboratory
+                            </div>
+                        </div>
+                        <div className="footer-wrapper"><a href="#"
+                            className="secondary-link-dark">Terms &amp; Conditions</a><a
+                                href="#" className="secondary-link-dark">Privacy Policy</a></div>*/}
                 </div>
-                {/*    <div className="footer-wrapper"><a href="#"*/}
-                {/*                                       className="secondary-link-dark">Terms &amp; Conditions</a><a*/}
-                {/*        href="#" className="secondary-link-dark">Privacy Policy</a></div>*/}
-                {/* </div> */}
-                {/* </div> */}
+                </div>
             </div >
         </div >
     )
