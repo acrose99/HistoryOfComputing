@@ -8,7 +8,7 @@ export default function Team() {
     //Todo Refactor the crap out of this and Add Alex Crane to credits
     return (
         <div>
-            <Navbar/>
+            <Navbar />
             <div id="Team-Container">
                 <div class="team-row">
                     <div className="team-column">
@@ -38,10 +38,10 @@ export default function Team() {
                             ]}
                             fav="Java"
                         />
-                        <Teammate image={require("../images/jack.png")} name="Jack Narowski" role="Programmer"
-                                  bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
-                                  links={[["Github", "https://github.com/JackNarowski"], ["Personal Website", "https://jacknarowski.com/"]]}
-                                  fav="React"
+                        <Teammate image={require("../images/Jack.png")} name="Jack Narowski" role="Programmer"
+                            bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
+                            links={[["Github", "https://github.com/JackNarowski"], ["Personal Website", "https://jacknarowski.com/"]]}
+                            fav="React"
                         >
                         </Teammate>
                     </div>
@@ -84,8 +84,8 @@ export default function Team() {
                     </div>
 
                 </div>
-             </div>
-            <Footer/>
+            </div>
+            <Footer />
         </div>
     );
 }

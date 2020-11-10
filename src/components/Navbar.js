@@ -1,39 +1,98 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Navbar.css";
 
 
-export default function Navbar() {
+export default class Navbar extends Component {
 
-    return (
-        <div id="Nav-container">
-                <div  id="Nav-navbar">
-                    <button className="iconButton">
-                        <img  className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="Ruh roh scoob"/>
-                    </button>
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor" href="/home">Home</a>
-                    </div>
+    // big = over 700px width. mini = less than 700 width
+    constructor() {
 
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor"  href="/timeline">The Timeline</a>
-                    </div>
-                    <div className="Nav-linkButton">
-                        <a  className="Nav-anchor"  href="https://ecommons.luc.edu/history_facpubs/42/">The Book (WIP)</a>
-                    </div>
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor" href="https://ssl.cs.luc.edu/team.html">SSL</a>
-                    </div>
-                    <div className="iconButton">
-                        <a className="Nav-anchor" href="https://github.com/acrose99/HistoryOfComputing">
-                            <img className="Nav-icon" src={require("../images/github.png")} alt="Github"/>
-                        </a>
-                    </div>
-                    <div className="Nav-linkButton">
-                        <a className="Nav-anchor" href="/team">
-                            About Us
-                        </a>
-                    </div>
-                </div>
-        </div>
-        )
+        super();
+        this.state = {
+            windowBig: true,
+        }
+    }
+
+
+    updateMenuStyle() {
+
+        if (window.innerWidth < 700) {
+            this.setState({ windowBig: false, });
+            // if window is smaller
+            // <div>
+            //     <p>booh</p>
+            // </div>
+
+        }
+        else {
+            this.setState({ windowBig: true, });
+        }
+    }
+
+    componentDidMount() {
+        this.updateMenuStyle();
+        window.addEventListener("resize", this.updateMenuStyle.bind(this));
+    }
+
+    render() {
+        return (
+            <div>
+                {
+                    // this is a good old fashioned JS ternary expression. if window big is true it returns one div. if it is not big than it will return another div
+                    this.state.windowBig === true ?
+
+                        <div id="bigMenu">
+                            <div id="top-container">
+                                <h2 class="title">The History Of Computing</h2>
+                                <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+
+                            </div>
+                            <div id="bottom-container">
+                                <button class="menuItem">The Timeline</button>
+                                <button class="menuItem">The Book</button>
+                                <button class="menuItem">About Us</button>
+                                <button class="menuItem">SSL</button>
+                                <button class="menuItem"><img class="menuImg" src={require("../images/github.svg")} /></button>
+
+                            </div>
+                        </div>
+
+                        :
+                        // if it is false
+                        <div id="smallMenu">
+                            <div id="top-container">
+                                <h2 class="title">The History Of Computing</h2>
+                                <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+
+                            </div>
+
+                        </div>
+                }
+            </div>
+        );
+
+
+    }
 }
+    //     return (
+    //         // if window is bigger
+    //         <div id="Nav-container">
+
+                    //             {/* if(state.mediaSize == true) ? */}
+/* //             <div id="top-container"> *
+                         <h2 class="title">The History Of Computing</h2>
+//                 <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+
+//             </div>
+//             <div id="bottom-container">
+        //                 <button class="menuItem">The Timeline</button>
+//                 <button class="menuItem">The Book</button>
+//                 <button class="menuItem">About Us</button>
+//                 <button class="menuItem">SSL</button>
+//                 <button class="menuItem"><img class="menuImg" src={require("../images/github.svg")} /></button>
+
+//             </div>
+//         </div>
+//     )
+// }//end if */
+
