@@ -38,7 +38,35 @@ export default class Navbar extends Component {
         return (
             <div>
                 {
-                    this.state.windowBig === true ? <div>BIGGER HELLO</div> : <div>hello</div>
+                    // this is a good old fashioned JS ternary expression. if window big is true it returns one div. if it is not big than it will return another div
+                    this.state.windowBig === true ?
+
+                        <div id="bigMenu">
+                            <div id="top-container">
+                                <h2 class="title">The History Of Computing</h2>
+                                <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+
+                            </div>
+                            <div id="bottom-container">
+                                <button class="menuItem">The Timeline</button>
+                                <button class="menuItem">The Book</button>
+                                <button class="menuItem">About Us</button>
+                                <button class="menuItem">SSL</button>
+                                <button class="menuItem"><img class="menuImg" src={require("../images/github.svg")} /></button>
+
+                            </div>
+                        </div>
+
+                        :
+                        // if it is false
+                        <div id="smallMenu">
+                            <div id="top-container">
+                                <h2 class="title">The History Of Computing</h2>
+                                <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+
+                            </div>
+
+                        </div>
                 }
             </div>
         );
