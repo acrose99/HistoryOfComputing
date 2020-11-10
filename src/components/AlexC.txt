@@ -34,3 +34,8 @@
                     </div>
                 </div>
                 
+
+    https://www.hawatel.com/blog/handle-window-resize-in-react/            
+https://www.pluralsight.com/guides/re-render-react-component-on-window-resize
+    
+    
