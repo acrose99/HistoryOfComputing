@@ -48,16 +48,17 @@ export default class Navbar extends Component {
 
                         <div id="bigMenu">
                             <div id="top-container">
-                                <h2 class="title">The History Of Computing</h2>
-                                <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
-
+                                <h2 id="title">The History Of Computing
+                                    <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+                                </h2>
                             </div>
                             <div id="bottom-container">
-                                <button class="menuItem">The Timeline</button>
-                                <button class="menuItem">The Book</button>
-                                <button class="menuItem">About Us</button>
-                                <button class="menuItem">SSL</button>
-                                <button class="menuItem"><img class="menuImg" src={require("../images/github.svg")} /></button>
+                                <button className="menuItem"><a className="menuItemLink" href="/timeline">The Timeline</a></button>
+                                <button className="menuItem"><a className="menuItemLink"  href="https://github.com/acrose99/HistoryOfComputingDocs">Documentation</a></button>
+                                <button className="menuItem"><a className="menuItemLink"  href="/team">About US</a></button>
+                                <button className="menuItem"><a className="menuItemLink"  href="/https://ecommons.luc.edu/history_facpubs/42/">The Book</a></button>
+                                <button className="menuItem"><a className="menuItemLink"  href="https://ssl.cs.luc.edu/">SSL</a></button>
+                                <button className="menuItem"><a href="https://github.com/acrose99/HistoryOfComputing"><img className="menuImg" src={require("../images/github.svg")} role="link" aria-label="Github Link" alt="Github"/></a></button>
 
                             </div>
                         </div>
@@ -66,9 +67,9 @@ export default class Navbar extends Component {
                         // if it is false
                         <div id="smallMenu">
                             <div id="top-container">
-                                <h2 class="title">The History Of Computing</h2>
-                                <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
-
+                                <h2 id="title">The History Of Computing
+                                    <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+                                </h2>
                             </div>
 
                         </div>

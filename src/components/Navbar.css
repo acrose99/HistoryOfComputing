@@ -48,15 +48,27 @@
   bottom: 0;
 }
 .Nav-icon {
-  width: 30px;
-  height: 30px;
+  position: relative;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.menuItemLink {
+  text-decoration: none;
+  color: #6666fa;
+  font-size: 1.2em;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, .2);
+  padding: 2px;
 }
 
-.title {
+#title {
   font-family: "Futura", sans-serif;
   /* font-style: italic; */
   font-weight: normal;
   font-size: 24px;
+  margin-left: 5px;
 }
 /* #Nav-container {
   width: 90%;
