@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 
-
 export default class Navbar extends Component {
 
     // big = over 700px width. mini = less than 700 width
@@ -10,7 +9,9 @@ export default class Navbar extends Component {
         super();
         this.state = {
             windowBig: true,
+            menuOn: false,
         }
+        this.miniMenuFunction = this.miniMenuFunction.bind(this);
     }
 
 
@@ -33,6 +34,23 @@ export default class Navbar extends Component {
         this.updateMenuStyle();
         window.addEventListener("resize", this.updateMenuStyle.bind(this));
     }
+    componentWillUnmount() {
+        // tutorial said i should unmount the event listener so here it is
+        window.removeEventListener("resize", this.updateMenuStyle.bind(this));
+    }
+
+    miniMenuFunction() {
+
+        var miniMenu = document.getElementById("toggleContainer");
+        if (this.state.menuOn == false) {
+            miniMenu.style.display = "block";
+            this.setState({ menuOn: true, });
+        }
+        else {
+            miniMenu.style.display = "none";
+            this.setState({ menuOn: false, });
+        }
+    }
 
     componentWillUnmount() {
         // tutorial said i should unmount the event listener so here it is
@@ -49,16 +67,16 @@ export default class Navbar extends Component {
 
                         <div id="bigMenu">
                             <div id="top-container">
-                                <h2 class="title">The History Of Computing</h2>
+                                <h2 className="title">The History Of Computing</h2>
                                 <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
 
                             </div>
                             <div id="bottom-container">
-                                <button class="menuItem">The Timeline</button>
-                                <button class="menuItem">The Book</button>
-                                <button class="menuItem">About Us</button>
-                                <button class="menuItem">SSL</button>
-                                <button class="menuItem"><img class="menuImg" src={require("../images/github.svg")} /></button>
+                                <button className="menuItem">The Timeline</button>
+                                <button className="menuItem">The Book</button>
+                                <button className="menuItem">About Us</button>
+                                <button className="menuItem">SSL</button>
+                                <button className="menuItem"><img className="menuImg" src={require("../images/github.svg")} /></button>
 
                             </div>
                         </div>
@@ -66,11 +84,22 @@ export default class Navbar extends Component {
                         :
                         // if it is false
                         <div id="smallMenu">
-                            <div id="top-container">
-                                <h2 class="title">The History Of Computing</h2>
-                                <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+
+                            <h2 className="title">The History Of Computing</h2>
+                            {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
+                            <div id="toggleContainer">
+                                <a className="menuItem">The Timeline</a>
+                                <a className="menuItem">The Book</a>
+                                <a className="menuItem">About Us</a>
+                                <a className="menuItem">SSL</a>
+                                <a className="menuItem"><img className="menuImg" src={require("../images/github.svg")} /></a>
 
                             </div>
+
+                            <a className="hamLink">
+                                <img id="hamIcon" src={require("../images/bars-solid.svg")} alt="X" onClick={this.miniMenuFunction} />
+                            </a>
+
 
                         </div>
                 }
