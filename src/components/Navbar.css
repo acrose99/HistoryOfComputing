@@ -47,11 +47,34 @@
   /* margin-bottom: 0px; */
   bottom: 0;
 }
+
+#toggleContainer {
+  display: none;
+}
 .Nav-icon {
   width: 30px;
   height: 30px;
 }
 
+.hamIcon {
+  /* background: transparent; */
+  /* display: flex; */
+  height: 30px;
+  /* width: 30px; */
+  /* justify-self: flex-end; */
+  margin-left: auto;
+  align-self: center;
+  margin-right: 5px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+}
+.hamLink {
+  background-color: aliceblue;
+}
+
+.hamLink a:hover {
+  background-color: aquamarine;
+}
 .title {
   font-family: "Futura", sans-serif;
   /* font-style: italic; */
