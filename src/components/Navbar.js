@@ -60,7 +60,7 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <div>
+            <div id="Nav-container">
                 {
                     // this is a good old fashioned JS ternary expression. if window big is true it returns one div. if it is not big than it will return another div
                     this.state.windowBig === true ?

@@ -1,6 +1,6 @@
 #Nav-container {
   width: 90%;
-  /* background-color: #a158fd; */
+  background-color: #a158fd;
   overflow-x: hidden;
   overscroll-behavior-x: contain;
   margin: 0 auto;
@@ -29,6 +29,7 @@
   border: none;
   background-color: transparent;
   display: flex;
+  font-family: "IBM Plex Sans";
   /* align-content: flex-end; */
   /* align-self: flex-end; */
   /* margin-bottom: 2px; */
@@ -118,7 +119,8 @@
   background-color: #8d8bff;
 }
 .title {
-  font-family: "Futura", sans-serif;
+  /* font-family: "Futura", sans-serif; */
+  font-family: "IBM Plex Sans";
   /* font-style: italic; */
   font-weight: normal;
   font-size: 24px;
