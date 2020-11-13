@@ -3,7 +3,7 @@ import CSS from "./Footer.css";
 import IconButton from "@material-ui/core/IconButton";
 import { Icon } from '@iconify/react';
 import emailIcon from '@iconify/icons-carbon/email';
-// import githubFilled from '@iconify/icons-ant-design/github-filled';
+import githubFilled from '@iconify/icons-ant-design/github-filled';
 
 
 //TODO: WIP WIP WIP WIP
@@ -36,8 +36,7 @@ export default function Footer() {
                                 <div className="footer-column">
                                     <div className="footer-title">Contribute</div>
                                     <IconButton className="Footer-menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
-                                        <img className="Footer-menuButton-icon" src={require("../images/github.png")} alt="Github" />
-                                        {/* <Icon className="Footer-menuButton-icon" icon={githubFilled} style={{ color: '#0029FF' }} /> */}
+                                        <Icon className="Footer-menuButton-icon" icon={githubFilled} style={{ color: '#0029FF' }} />
                                     </IconButton>
                                     <IconButton className="Footer-menuButton" href="mailto:arose5@luc.edu" edge={"start"}>
                                         <Icon className="Footer-menuButton-icon" style={{ color: '#0029FF' }} icon={emailIcon} />
@@ -48,18 +47,18 @@ export default function Footer() {
                     </div>
 
                     {/*TODO add Privacy Policy and terms of conditions (usual open source BS)*/}
-                    {/* <div className="footer-bottom-full"> */}
-                    {/* <div className="footer-wrapper"> */}
-                    {/* <div className="text-rights"> */}
-                    {/* © Copyright 2012-Present, Software and Systems Laboratory */}
-                    {/* </div> */}
-                    {/* </div> */}
-                    {/*    <div className="footer-wrapper"><a href="#"*/}
-                    {/*                                       className="secondary-link-dark">Terms &amp; Conditions</a><a*/}
-                    {/*        href="#" className="secondary-link-dark">Privacy Policy</a></div>*/}
-                    {/* </div> */}
+                    <div className="footer-bottom-full">
+                        <div className="footer-wrapper">
+                            <div className="text-rights">
+                                © Copyright 2012-Present, Software and Systems Laboratory
+                            </div>
+                        </div>
+                        <div className="footer-wrapper"><a href="#"
+                            className="secondary-link-dark">Terms &amp; Conditions</a><a
+                                href="#" className="secondary-link-dark">Privacy Policy</a></div>
+                    </div>
                 </div>
             </div >
         </div >
-    );
+    )
 }

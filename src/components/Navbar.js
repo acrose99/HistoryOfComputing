@@ -43,7 +43,7 @@ export default class Navbar extends Component {
 
         var miniMenu = document.getElementById("toggleContainer");
         if (this.state.menuOn == false) {
-            miniMenu.style.display = "block";
+            miniMenu.style.display = "flex";
             this.setState({ menuOn: true, });
         }
         else {
@@ -66,7 +66,7 @@ export default class Navbar extends Component {
                     this.state.windowBig === true ?
 
                         <div id="bigMenu">
-                            <div id="top-container">
+                            <div className="top-container">
                                 <h2 className="title">The History Of Computing</h2>
                                 <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
 
@@ -84,22 +84,34 @@ export default class Navbar extends Component {
                         :
                         // if it is false
                         <div id="smallMenu">
+                            <div className="top-container">
 
-                            <h2 className="title">The History Of Computing</h2>
-                            {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
-                            <div id="toggleContainer">
-                                <a className="menuItem">The Timeline</a>
-                                <a className="menuItem">The Book</a>
-                                <a className="menuItem">About Us</a>
-                                <a className="menuItem">SSL</a>
-                                <a className="menuItem"><img className="menuImg" src={require("../images/github.svg")} /></a>
+                                <h2 className="title">The History Of Computing</h2>
+                                {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
+
+                                <a className="hamLink">
+                                    <img id="hamIcon" src={require("../images/bars-solid.svg")} alt="X" onClick={this.miniMenuFunction} />
+                                </a>
 
                             </div>
+                            <div id="toggleContainer">
+                                <div className="miniMenuItemDiv">
+                                    <a className="miniMenuItem">The Timeline</a>
+                                </div>
+                                <div className="miniMenuItemDiv">
 
-                            <a className="hamLink">
-                                <img id="hamIcon" src={require("../images/bars-solid.svg")} alt="X" onClick={this.miniMenuFunction} />
-                            </a>
+                                    <a className="miniMenuItem">The Book</a></div>
+                                <div className="miniMenuItemDiv">
 
+                                    <a className="miniMenuItem">About Us</a></div>
+                                <div className="miniMenuItemDiv">
+
+                                    <a className="miniMenuItem">SSL</a></div>
+                                <div className="miniMenuItemDiv">
+
+                                    <a className="miniMenuItem">Github</a>
+                                </div>
+                            </div>
 
                         </div>
                 }
