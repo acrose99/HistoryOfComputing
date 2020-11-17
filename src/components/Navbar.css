@@ -1,4 +1,4 @@
-#Nav-container {
+#bigMenu {
   width: 90%;
   /* background-color: #a158fd; */
   overflow-x: hidden;
@@ -52,34 +52,27 @@
   display: none;
 }
 .Nav-icon {
-  width: 30px;
-  height: 30px;
+  position: relative;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.menuItemLink {
+  text-decoration: none;
+  color: #6666fa;
+  font-size: 1.2em;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.2);
+  padding: 2px;
 }
 
-.hamIcon {
-  /* background: transparent; */
-  /* display: flex; */
-  height: 30px;
-  /* width: 30px; */
-  /* justify-self: flex-end; */
-  margin-left: auto;
-  align-self: center;
-  margin-right: 5px;
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
-}
-.hamLink {
-  background-color: aliceblue;
-}
-
-.hamLink a:hover {
-  background-color: aquamarine;
-}
-.title {
+#title {
   font-family: "Futura", sans-serif;
   /* font-style: italic; */
   font-weight: normal;
   font-size: 24px;
+  margin-left: 5px;
 }
 /* #Nav-container {
   width: 90%;
