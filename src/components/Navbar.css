@@ -17,7 +17,10 @@
 #bottom-container {
   background-color: white;
   display: flex;
+  height: 32px;
   flex-direction: row;
+  align-items: center;
+  /* justify-itegitms: center; */
   padding: 2px;
   border: 1px solid black;
 
@@ -29,6 +32,7 @@
   border: none;
   background-color: transparent;
   display: flex;
+  font-size: 14px;
   /* align-content: flex-end; */
   /* align-self: flex-end; */
   /* margin-bottom: 2px; */
