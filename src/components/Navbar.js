@@ -17,7 +17,7 @@ export default class Navbar extends Component {
 
     updateMenuStyle() {
 
-        if (window.innerWidth < 700) {
+        if (window.innerWidth <= 700) {
             this.setState({ windowBig: false, });
             // if window is smaller
             // <div>
@@ -92,17 +92,17 @@ export default class Navbar extends Component {
                             </div>
                             <div id="toggleContainer">
                                 <div className="miniMenuItemDiv">
-                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">The Timeline</a>
+                                    <a href="/timeline" className="miniMenuItem">The Timeline</a>
                                 </div>
                                 <div className="miniMenuItemDiv">
 
-                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">The Book</a></div>
+                                    <a href="/https://ecommons.luc.edu/history_facpubs/42/" className="miniMenuItem">The Book</a></div>
                                 <div className="miniMenuItemDiv">
 
-                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">About Us</a></div>
+                                    <a href="/team" className="miniMenuItem">About Us</a></div>
                                 <div className="miniMenuItemDiv">
 
-                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">SSL</a></div>
+                                    <a href="https://ssl.cs.luc.edu/" className="miniMenuItem">SSL</a></div>
                                 <div className="miniMenuItemDiv">
 
                                     <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">Github</a>
