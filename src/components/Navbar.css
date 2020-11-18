@@ -9,6 +9,7 @@
   flex-direction: column;
 }
 
+
 #top-container {
   background-color: #8d8bff;
   display: flex;
@@ -17,30 +18,24 @@
 #bottom-container {
   background-color: white;
   display: flex;
-  height: 32px;
   flex-direction: row;
-  align-items: center;
-  /* justify-itegitms: center; */
   padding: 2px;
   border: 1px solid black;
 
   /* justify-content: center; */
 }
-
 .menuItem {
   background-color: azure;
   border: none;
   background-color: transparent;
   display: flex;
-  font-size: 14px;
   /* align-content: flex-end; */
   /* align-self: flex-end; */
   /* margin-bottom: 2px; */
 }
 
-.menuItem:last-child {
-  margin-left: auto;
-}
+
+
 .menuImg {
   display: flex;
   align-self: flex-end;
@@ -51,6 +46,7 @@
   /* margin-bottom: 0px; */
   bottom: 0;
 }
+
 
 #toggleContainer {
   display: none;
@@ -63,20 +59,80 @@
   margin-left: 15px;
   margin-top: 10px;
 }
-.menuItemLink {
+.menuItem {
+  background-color: azure;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  /* align-content: flex-end; */
+  /* align-self: flex-end; */
+  /* margin-bottom: 2px; */
+}
+.miniMenuItem {
   text-decoration: none;
-  color: #6666fa;
+  background-color: white;
+  text-align: center;
+  width: 100%;
   font-size: 1.2em;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.2);
   padding: 2px;
 }
 
-#title {
+
+.miniMenuItemDiv a:hover {
+  color: white;
+  background-color: #6764fd;
+}
+
+.miniMenuItemDiv {
+  border-bottom: 2px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 24px;
+}
+.miniMenuItemDiv:hover {
+  background-color: #6764fd;
+}
+.miniMenuItemDiv:last-child {
+  border-bottom: transparent;
+}
+.Nav-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#hamIcon {
+  /* background: transparent; */
+  /* display: flex; */
+  height: 60px;
+  /* width: 30px; */
+  /* justify-self: flex-end; */
+  margin-left: auto;
+  align-self: center;
+  margin-right: 5px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+}
+.hamLink {
+  /* background-color: rgb(86, 102, 116); */
+  display: flex;
+  /* justify-self: flex-end; */
+  margin-left: auto;
+}
+
+#smallMenu {
+  /* height: 100px; */
+  display: flex;
+  flex-direction: column;
+  background-color: #8d8bff;
+}
+.title {
   font-family: "Futura", sans-serif;
   /* font-style: italic; */
   font-weight: normal;
   font-size: 24px;
-  margin-left: 5px;
 }
 /* #Nav-container {
   width: 90%;
