@@ -80,32 +80,32 @@ export default class Navbar extends Component {
                         :
                         // if it is false
                         <div id="smallMenu">
-                            <div className="top-container">
+                            <div id="mini-top-container">
 
                                 <h2 className="title">The History Of Computing</h2>
                                 {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
 
                                 <a className="hamLink">
-                                    <img id="hamIcon" src={require("../images/bars-solid.svg")} alt="X" onClick={this.miniMenuFunction} />
+                                    <img id="hamIcon" src={require("../images/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
                                 </a>
 
                             </div>
                             <div id="toggleContainer">
                                 <div className="miniMenuItemDiv">
-                                    <a href="https://github.com/acrose99/HistoryOfComputing"  className="miniMenuItem">The Timeline</a>
+                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">The Timeline</a>
                                 </div>
                                 <div className="miniMenuItemDiv">
 
                                     <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">The Book</a></div>
                                 <div className="miniMenuItemDiv">
 
-                                    <a href="https://github.com/acrose99/HistoryOfComputing"  className="miniMenuItem">About Us</a></div>
+                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">About Us</a></div>
                                 <div className="miniMenuItemDiv">
 
-                                    <a href="https://github.com/acrose99/HistoryOfComputing"  className="miniMenuItem">SSL</a></div>
+                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">SSL</a></div>
                                 <div className="miniMenuItemDiv">
 
-                                    <a href="https://github.com/acrose99/HistoryOfComputing"  className="miniMenuItem">Github</a>
+                                    <a href="https://github.com/acrose99/HistoryOfComputing" className="miniMenuItem">Github</a>
                                 </div>
                             </div>
 
