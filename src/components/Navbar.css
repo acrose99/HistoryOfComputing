@@ -16,21 +16,38 @@
 }
 #bottom-container {
   background-color: white;
+  background-color: white;
   display: flex;
+  display: flex;
+  height: 32px;
   flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  /* justify-itegitms: center; */
+  padding: 2px;
   padding: 2px;
   border: 1px solid black;
+  border: 1px solid black;
 
-  /* justify-content: center; */
+  /* justify-content: center; */ /* justify-content: center; */
 }
 .menuItem {
   background-color: azure;
+  background-color: azure;
+  border: none;
   border: none;
   background-color: transparent;
+  background-color: transparent;
   display: flex;
-  /* align-content: flex-end; */
-  /* align-self: flex-end; */
-  /* margin-bottom: 2px; */
+  display: flex;
+  font-size: 14px;
+  /* align-content: flex-end; */ /* align-content: flex-end; */
+  /* align-self: flex-end; */ /* align-self: flex-end; */
+  /* margin-bottom: 2px; */ /* margin-bottom: 2px; */
+}
+.menuItem:last-child {
+  margin-left: auto;
+  margin-left: auto;
 }
 
 .menuImg {
@@ -68,6 +85,25 @@
   /* align-self: flex-end; */
   /* margin-bottom: 2px; */
 }
+
+.Nav-icon {
+  width: 30px;
+  position: relative;
+  height: 30px;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.menuItemLink {
+  text-decoration: none;
+  color: #6666fa;
+  font-size: 1.2em;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.2);
+  padding: 2px;
+}
+
 .miniMenuItem {
   text-decoration: none;
   background-color: white;
