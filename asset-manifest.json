@@ -1,22 +1,40 @@
 {
   "files": {
-    "main.css": "/static/css/main.85c82147.chunk.css",
-    "main.js": "/static/js/main.07600125.chunk.js",
-    "main.js.map": "/static/js/main.07600125.chunk.js.map",
+    "main.css": "/static/css/main.6d17a7ea.chunk.css",
+    "main.js": "/static/js/main.a3bf901f.chunk.js",
+    "main.js.map": "/static/js/main.a3bf901f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6bb43f13.js",
     "runtime-main.js.map": "/static/js/runtime-main.6bb43f13.js.map",
-    "static/js/2.f8f22858.chunk.js": "/static/js/2.f8f22858.chunk.js",
-    "static/js/2.f8f22858.chunk.js.map": "/static/js/2.f8f22858.chunk.js.map",
+    "static/css/2.3979b7dc.chunk.css": "/static/css/2.3979b7dc.chunk.css",
+    "static/js/2.4226ed7a.chunk.js": "/static/js/2.4226ed7a.chunk.js",
+    "static/js/2.4226ed7a.chunk.js.map": "/static/js/2.4226ed7a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.93ac9343e8781bf1e24ce52c55580f28.js": "/precache-manifest.93ac9343e8781bf1e24ce52c55580f28.js",
+    "precache-manifest.aa823428ce0604ba16c4497bcc60c224.js": "/precache-manifest.aa823428ce0604ba16c4497bcc60c224.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.85c82147.chunk.css.map": "/static/css/main.85c82147.chunk.css.map",
-    "static/js/2.f8f22858.chunk.js.LICENSE.txt": "/static/js/2.f8f22858.chunk.js.LICENSE.txt"
+    "static/css/2.3979b7dc.chunk.css.map": "/static/css/2.3979b7dc.chunk.css.map",
+    "static/css/main.6d17a7ea.chunk.css.map": "/static/css/main.6d17a7ea.chunk.css.map",
+    "static/js/2.4226ed7a.chunk.js.LICENSE.txt": "/static/js/2.4226ed7a.chunk.js.LICENSE.txt",
+    "static/media/AppleEvent.css": "/static/media/AppleLogo.b1b95ef9.svg",
+    "static/media/Event.css": "/static/media/Backdrop.d68d8b11.svg",
+    "static/media/FlatLogo.svg": "/static/media/FlatLogo.97c29e99.svg",
+    "static/media/Home.css": "/static/media/Mac128world.4c8c12ec.png",
+    "static/media/alex2.jpeg": "/static/media/alex2.52cf3839.jpeg",
+    "static/media/alexC.jpg": "/static/media/alexC.62fc7cf1.jpg",
+    "static/media/artificial-intelligence.png": "/static/media/artificial-intelligence.6994ca9f.png",
+    "static/media/button-left-v.svg": "/static/media/button-left-v.55850fd4.svg",
+    "static/media/button-right-v.svg": "/static/media/button-right-v.d2d1b9fa.svg",
+    "static/media/ddennis.jpg": "/static/media/ddennis.a5871ad1.jpg",
+    "static/media/github.svg": "/static/media/github.5cff78e4.svg",
+    "static/media/gkt.jpg": "/static/media/gkt.4841a021.jpg",
+    "static/media/jack.png": "/static/media/jack.620cd3db.png",
+    "static/media/menu.svg": "/static/media/menu.a12f1059.svg",
+    "static/media/98.css": "/static/media/ms_sans_serif_bold.cb1c7473.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.6bb43f13.js",
-    "static/js/2.f8f22858.chunk.js",
-    "static/css/main.85c82147.chunk.css",
-    "static/js/main.07600125.chunk.js"
+    "static/css/2.3979b7dc.chunk.css",
+    "static/js/2.4226ed7a.chunk.js",
+    "static/css/main.6d17a7ea.chunk.css",
+    "static/js/main.a3bf901f.chunk.js"
   ]
 }
