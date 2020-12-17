@@ -7,6 +7,7 @@ function AppleEvent(props) {
     const [showEventInFocus, setShowEventFocus] = React.useState(false);
     const [showEvent, setShowEvent] = React.useState(true);
 
+
     function updateEventInFocusTrue() {
         setShowEventFocus(true);
     }

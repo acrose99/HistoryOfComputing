@@ -100,7 +100,6 @@
 } */
 .vaporwaveBar {
   display: block;
-  background-color: #9d41ff;
   /* padding-left: 5px; */
   width: 200px;
   height: 30px;
@@ -125,11 +124,11 @@
   height: fit-content;
 }
 .vbar-buttons {
+  display: inline-flex;
   /* margin-left: 15px; */
-  margin: auto 5px auto;
-  width: 95px;
+  margin: auto 5px auto 0;
   height: 30px;
-  /* background-color: turquoise; */
+   background-color: #9d41ff;
 }
 .eventBody-image {
   height: 200px;

@@ -1,8 +1,7 @@
 // TODO: Download all the images so that the page loads faster
 // TODO: Try working on text alignment
 // TODO: Keep the timeline separator's width the same
-
-
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import React, {Component} from "react";
 import "./Timeline.css"
 import Navbar from "../components/Navbar";
@@ -71,18 +70,18 @@ function Timeline() {
     }
 
     return (
-        <div id="Timeline">
-            <Navbar/>
-            <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
+            <div id="Timeline">
+                <Navbar/>
+                <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
 
-            <Events/>
+                <Events/>
 
-            {/*hack way to fix the timeline separator*/}
-            <div style={{marginBottom: '200px'}}/>
-            {/*hack way to fix the timeline separator*/}
+                {/*hack way to fix the timeline separator*/}
+                <div style={{marginBottom: '200px'}}/>
+                {/*hack way to fix the timeline separator*/}
 
-            <Footer/>
-        </div>
+                <Footer/>
+            </div>
     )
 }
 

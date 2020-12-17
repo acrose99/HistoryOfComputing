@@ -1,6 +1,11 @@
 import React from "react";
-import "../98.css/style.css"
+import "98.css"
 import "./Home98.css"
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import Home from "./Home";
+import Timeline from "./Timeline";
+import Team from "./Team";
+import AppliedRoute from "../components/AppliedRoute";
 
 /* Credit for the majority of the CSS goes to Jordan Scales!!!!
         https://jdan.github.io/98.css/?ref=blogduwebdesign.com
@@ -27,16 +32,18 @@ export default function Home98() {
                         <ul className="tree-view">
                             <li className="Home98-TableofContents">Table of Contents:</li>
                             {/*the button class is unique to 98.css*/}
-                            <a href="/timeline"><button className="Home98-timelineLink button">The Timeline (CLICK HERE)</button></a>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <button className="Home98-timelineLink button"> <Link to="/timeline">The Timeline (CLICK HERE)</Link></button>
                             <li>
                                 <details open>
                                     <summary>Other things</summary>
                                     <ul>
                                         {/*the window class is unique to 98.css*/}
-                                        <a href="/team"> <li/><button className="Home98-link button">Credits </button></a>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <li><button className="Home98-link button"><Link to="/team">Credits</Link></button></li>
                                         <a href="https://ecommons.luc.edu/history_facpubs/42/"><li/><button className="Home98-link button" >Book</button></a>
                                         <a href="https://ssl.cs.luc.edu/team.html"> <li/> <button className="Home98-link button" >Software Systems Laboratory</button></a>
-                                        <a href="/home"> <li/> <button className="Home98-link button" >Click here for a normal homepage</button></a>
+                                        <li><button className="Home98-link button"><Link to="/homeNormal">Click here for a normal homepage</Link></button></li>
                                     </ul>
                                 </details>
                             </li>

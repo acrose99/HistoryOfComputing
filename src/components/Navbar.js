@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import {Link} from "react-router-dom";
 
 export default class Navbar extends Component {
 
@@ -92,14 +93,18 @@ export default class Navbar extends Component {
                             </div>
                             <div id="toggleContainer">
                                 <div className="miniMenuItemDiv">
-                                    <a href="/timeline" className="miniMenuItem">The Timeline</a>
+                                    <a href="/timeline" className="miniMenuItem">The Timeline
+                                    </a>
                                 </div>
                                 <div className="miniMenuItemDiv">
 
                                     <a href="/https://ecommons.luc.edu/history_facpubs/42/" className="miniMenuItem">The Book</a></div>
                                 <div className="miniMenuItemDiv">
 
-                                    <a href="/team" className="miniMenuItem">About Us</a></div>
+                                    <a className="miniMenuItem">About Us
+                                       < Link to="/team">Home</Link>
+                                    </a>
+                                </div>
                                 <div className="miniMenuItemDiv">
 
                                     <a href="https://ssl.cs.luc.edu/" className="miniMenuItem">SSL</a></div>
