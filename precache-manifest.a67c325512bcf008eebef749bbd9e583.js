@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2f29e6dcb568b7c70a7e49413c23eaf0",
+    "revision": "c5319e184d381eea419b33c245e6efee",
     "url": "/HistoryOfComputing/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HistoryOfComputing/static/css/2.1492b11f.chunk.css"
   },
   {
-    "revision": "fd7bdfc303c53e80b58e",
+    "revision": "16cc8581f9c5c80076ae",
     "url": "/HistoryOfComputing/static/css/main.25842d6d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HistoryOfComputing/static/js/2.690aca6b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fd7bdfc303c53e80b58e",
-    "url": "/HistoryOfComputing/static/js/main.fbea0efc.chunk.js"
+    "revision": "16cc8581f9c5c80076ae",
+    "url": "/HistoryOfComputing/static/js/main.5b318c9c.chunk.js"
   },
   {
     "revision": "37781d8920d9e8ea6e19",
