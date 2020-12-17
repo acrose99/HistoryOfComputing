@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/HistoryOfComputing/static/css/main.25842d6d.chunk.css",
+    "main.css": "/HistoryOfComputing/static/css/main.790e9264.chunk.css",
     "main.js": "/HistoryOfComputing/static/js/main.d4311fac.chunk.js",
     "main.js.map": "/HistoryOfComputing/static/js/main.d4311fac.chunk.js.map",
     "runtime-main.js": "/HistoryOfComputing/static/js/runtime-main.0677d69b.js",
@@ -9,10 +9,10 @@
     "static/js/2.690aca6b.chunk.js": "/HistoryOfComputing/static/js/2.690aca6b.chunk.js",
     "static/js/2.690aca6b.chunk.js.map": "/HistoryOfComputing/static/js/2.690aca6b.chunk.js.map",
     "index.html": "/HistoryOfComputing/index.html",
-    "precache-manifest.226bc64396f8239712e9e1da123f3579.js": "/HistoryOfComputing/precache-manifest.226bc64396f8239712e9e1da123f3579.js",
+    "precache-manifest.0604f89391daed3c3edbdceecca633d2.js": "/HistoryOfComputing/precache-manifest.0604f89391daed3c3edbdceecca633d2.js",
     "service-worker.js": "/HistoryOfComputing/service-worker.js",
     "static/css/2.1492b11f.chunk.css.map": "/HistoryOfComputing/static/css/2.1492b11f.chunk.css.map",
-    "static/css/main.25842d6d.chunk.css.map": "/HistoryOfComputing/static/css/main.25842d6d.chunk.css.map",
+    "static/css/main.790e9264.chunk.css.map": "/HistoryOfComputing/static/css/main.790e9264.chunk.css.map",
     "static/js/2.690aca6b.chunk.js.LICENSE.txt": "/HistoryOfComputing/static/js/2.690aca6b.chunk.js.LICENSE.txt",
     "static/media/AppleEvent.css": "/HistoryOfComputing/static/media/AppleLogo.b1b95ef9.svg",
     "static/media/Event.css": "/HistoryOfComputing/static/media/Backdrop.d68d8b11.svg",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.0677d69b.js",
     "static/css/2.1492b11f.chunk.css",
     "static/js/2.690aca6b.chunk.js",
-    "static/css/main.25842d6d.chunk.css",
+    "static/css/main.790e9264.chunk.css",
     "static/js/main.d4311fac.chunk.js"
   ]
 }
