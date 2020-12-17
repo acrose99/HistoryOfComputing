@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "CI=false npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -u 'acrose99 <acrosemail@gmail.com>' -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
