@@ -4,6 +4,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { Icon } from '@iconify/react';
 import emailIcon from '@iconify/icons-carbon/email';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
+import {Link} from "react-router-dom";
 
 
 //TODO: WIP WIP WIP WIP
@@ -16,9 +17,13 @@ export default function Footer() {
                 <div className="container">
                     <div className="footer-flex-wrap">
                         <div className="footer-block-left">
-                            <img
-                                src={require("../images/FlatLogo.svg")}
-                                alt="" className="logo-flat" />
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
+                            <a href="">
+                                <Link to="/homeNormal"/>
+                                <img
+                                    src={require("../images/FlatLogo.svg")}
+                                    alt="" className="logo-flat" />
+                            </a>
                             <p id='slogan'>
                                 We make History fun.
                             </p>
@@ -28,7 +33,7 @@ export default function Footer() {
                             <div className="w-layout-grid grid">
                                 <div className="footer-column">
                                     <div className="footer-title">About</div>
-                                    <a href="/team" className="footer-link-dark">Our Team</a>
+                                    <Link to="/team" className="footer-link-dark">Our Team</Link>
                                     <a href="https://github.com/acrose99/HistoryOfComputingDocs" className="footer-link-dark">Documentation</a>
                                     <a href="https://ecommons.luc.edu/history_facpubs/42/" className="footer-link-dark">The Book</a>
                                     <a href="https://ssl.cs.luc.edu/team.html" className="footer-link-dark">SSL</a>

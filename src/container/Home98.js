@@ -3,7 +3,6 @@ import "98.css"
 import "./Home98.css"
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import Home from "./Home";
-import Timeline from "./Timeline";
 import Team from "./Team";
 import AppliedRoute from "../components/AppliedRoute";
 

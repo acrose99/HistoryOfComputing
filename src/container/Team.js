@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export default function Team() {
     //Todo Refactor the crap out of this and Add Alex Crane to credits
     return (
-        <div>
+        <div style={{backgroundColor: "#e0f1ff"}}>
             <Navbar />
             <div id="Team-Container">
                 <div class="team-row">

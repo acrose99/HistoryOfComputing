@@ -1,7 +1,8 @@
 {
-  "name": "historycomp",
+  "name": "historyofcomputing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://acrose99.github.io/HistoryOfComputing",
   "dependencies": {
     "98.css": "^0.1.16",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
