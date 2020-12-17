@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/HistoryOfComputing/home/static/css/main.fb29f0d8.chunk.css",
-    "main.js": "/HistoryOfComputing/home/static/js/main.6bda4086.chunk.js",
-    "main.js.map": "/HistoryOfComputing/home/static/js/main.6bda4086.chunk.js.map",
+    "main.css": "/HistoryOfComputing/home/static/css/main.1a021209.chunk.css",
+    "main.js": "/HistoryOfComputing/home/static/js/main.5bd25010.chunk.js",
+    "main.js.map": "/HistoryOfComputing/home/static/js/main.5bd25010.chunk.js.map",
     "runtime-main.js": "/HistoryOfComputing/home/static/js/runtime-main.a24db1f4.js",
     "runtime-main.js.map": "/HistoryOfComputing/home/static/js/runtime-main.a24db1f4.js.map",
     "static/css/2.f62f5b6d.chunk.css": "/HistoryOfComputing/home/static/css/2.f62f5b6d.chunk.css",
-    "static/js/2.5655b4c9.chunk.js": "/HistoryOfComputing/home/static/js/2.5655b4c9.chunk.js",
-    "static/js/2.5655b4c9.chunk.js.map": "/HistoryOfComputing/home/static/js/2.5655b4c9.chunk.js.map",
+    "static/js/2.872e386e.chunk.js": "/HistoryOfComputing/home/static/js/2.872e386e.chunk.js",
+    "static/js/2.872e386e.chunk.js.map": "/HistoryOfComputing/home/static/js/2.872e386e.chunk.js.map",
     "index.html": "/HistoryOfComputing/home/index.html",
-    "precache-manifest.3057eb2c740b9274e09dc387211cdc5d.js": "/HistoryOfComputing/home/precache-manifest.3057eb2c740b9274e09dc387211cdc5d.js",
+    "precache-manifest.edbb57d2f88dc9c6acbe4139115ab86e.js": "/HistoryOfComputing/home/precache-manifest.edbb57d2f88dc9c6acbe4139115ab86e.js",
     "service-worker.js": "/HistoryOfComputing/home/service-worker.js",
     "static/css/2.f62f5b6d.chunk.css.map": "/HistoryOfComputing/home/static/css/2.f62f5b6d.chunk.css.map",
-    "static/css/main.fb29f0d8.chunk.css.map": "/HistoryOfComputing/home/static/css/main.fb29f0d8.chunk.css.map",
-    "static/js/2.5655b4c9.chunk.js.LICENSE.txt": "/HistoryOfComputing/home/static/js/2.5655b4c9.chunk.js.LICENSE.txt",
+    "static/css/main.1a021209.chunk.css.map": "/HistoryOfComputing/home/static/css/main.1a021209.chunk.css.map",
+    "static/js/2.872e386e.chunk.js.LICENSE.txt": "/HistoryOfComputing/home/static/js/2.872e386e.chunk.js.LICENSE.txt",
     "static/media/AppleEvent.css": "/HistoryOfComputing/home/static/media/AppleLogo.b1b95ef9.svg",
     "static/media/Event.css": "/HistoryOfComputing/home/static/media/Backdrop.d68d8b11.svg",
     "static/media/FlatLogo.svg": "/HistoryOfComputing/home/static/media/FlatLogo.97c29e99.svg",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.a24db1f4.js",
     "static/css/2.f62f5b6d.chunk.css",
-    "static/js/2.5655b4c9.chunk.js",
-    "static/css/main.fb29f0d8.chunk.css",
-    "static/js/main.6bda4086.chunk.js"
+    "static/js/2.872e386e.chunk.js",
+    "static/css/main.1a021209.chunk.css",
+    "static/js/main.5bd25010.chunk.js"
   ]
 }
