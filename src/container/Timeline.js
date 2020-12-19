@@ -7,7 +7,7 @@ import "./Timeline.css"
 import Navbar from "../components/Navbar";
 import Event from "../components/Event";
 import Footer from "../components/Footer";
-import data from '../events.json'
+import {data} from "../events"
 import AppleEvent from "../components/EventTypes/Apple/AppleEvent";
 import RetroApple from "../components/EventinFocusTypes/RetroApple/RetroApple";
 import OldComputer from "../components/EventinFocusTypes/OldComputer/OldComputer";
