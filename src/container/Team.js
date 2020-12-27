@@ -10,7 +10,7 @@ export default function Team() {
         <div style={{backgroundColor: "#e0f1ff"}}>
             <Navbar />
             <div id="Team-Container">
-                <div class="team-row">
+                <div className="team-row">
                     <div className="team-column">
                         <Teammate
                             image={require("../images/alex2.jpeg")}

@@ -1,9 +1,8 @@
-
-
-
-
-
-
+/*
+=============
+TODO MEDIA QUERIES
+=============
+ */
 #Timeline {
     overflow-x: hidden;
     background: linear-gradient(180deg, rgba(210, 174, 255, 0.7) 0%, rgba(184, 225, 255, 0.5) 20.84%, rgba(197, 191, 255, 0.5) 45.83%, rgba(184, 225, 255, 0.5) 70.31%, rgba(197, 191, 255, 0.7) 100%);

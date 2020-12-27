@@ -5,9 +5,9 @@ import {Link} from "react-router-dom";
 export default class Navbar extends Component {
 
     // big = over 700px width. mini = less than 700 width
-    constructor() {
+    constructor(props) {
 
-        super();
+        super(props);
         this.state = {
             windowBig: true,
             menuOn: false,
@@ -20,11 +20,6 @@ export default class Navbar extends Component {
 
         if (window.innerWidth <= 700) {
             this.setState({ windowBig: false, });
-            // if window is smaller
-            // <div>
-            //     <p>booh</p>
-            // </div>
-
         }
         else {
             this.setState({ windowBig: true, });
@@ -42,8 +37,8 @@ export default class Navbar extends Component {
 
     miniMenuFunction() {
 
-        var miniMenu = document.getElementById("toggleContainer");
-        if (this.state.menuOn == false) {
+        let miniMenu = document.getElementById("toggleContainer");
+        if (this.state.menuOn === false) {
             miniMenu.style.display = "block";
             this.setState({ menuOn: true, });
         }
@@ -89,24 +84,27 @@ export default class Navbar extends Component {
 
                                 <h2 className="title">The History Of Computing</h2>
                                 {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
-
+                                {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                 <a className="hamLink">
+                                    <Link to="/homeNormal"/>
                                     <img id="hamIcon" src={require("../images/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
                                 </a>
 
                             </div>
                             <div id="toggleContainer">
                                 <div className="miniMenuItemDiv">
-                                    <a href="/timeline" className="miniMenuItem">The Timeline
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
+                                    <a className="miniMenuItem">The Timeline
+                                        < Link to="/timeline"/>
                                     </a>
                                 </div>
                                 <div className="miniMenuItemDiv">
 
                                     <a href="/https://ecommons.luc.edu/history_facpubs/42/" className="miniMenuItem">The Book</a></div>
                                 <div className="miniMenuItemDiv">
-
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                     <a className="miniMenuItem">About Us
-                                       < Link to="/team">Home</Link>
+                                       < Link to="/team"/>
                                     </a>
                                 </div>
                                 <div className="miniMenuItemDiv">

@@ -53,11 +53,10 @@
 // export default Home;
 
 import React from "react";
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Timeline from "./container/Timeline";
 import Home98 from "./container/Home98";
 import Team from "./container/Team";
-import AppliedRoute from "./components/AppliedRoute";
 import Home from "./container/Home";
 const App = () => (
     <Router basename='/HistoryOfComputing'>

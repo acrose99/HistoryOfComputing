@@ -1,5 +1,4 @@
 import React from "react";
-import CSS from "./Footer.css";
 import IconButton from "@material-ui/core/IconButton";
 import { Icon } from '@iconify/react';
 import emailIcon from '@iconify/icons-carbon/email';
@@ -58,9 +57,11 @@ export default function Footer() {
                                 © Copyright 2012-Present, Software and Systems Laboratory
                             </div>
                         </div>
-                        <div className="footer-wrapper"><a href="#"
-                            className="secondary-link-dark">Terms &amp; Conditions</a><a
-                                href="#" className="secondary-link-dark">Privacy Policy</a></div>
+                        <div className="footer-wrapper">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
+                            <a href="#"  className="secondary-link-dark">Terms &amp; Conditions</a>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a href="#" className="secondary-link-dark">Privacy Policy</a></div>
                     </div>
                 </div>
             </div >

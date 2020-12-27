@@ -6,19 +6,19 @@ function Event(props) {
 
 // state = {class}
   const [showEventInFocus, setShowEventFocus] = React.useState(false);
-  const [showEvent, setShowEvent] = React.useState(true);
+  // const [showEvent, setShowEvent] = React.useState(true);
 
   function updateEventInFocusTrue() {
     setShowEventFocus(true);
   }
-  const updateEventTrue = () => setShowEvent(false);
-
+  // const updateEventTrue = () => setShowEvent(false);
+  //
   function updateEventInFocusFalse() {
     setShowEventFocus(false);
   }
-  const updateEventFalse = () => setShowEvent(true);
-
-  let i = 0;
+  // const updateEventFalse = () => setShowEvent(true);
+  //
+  // let i = 0;
   function onClick() {
     // console.log(showEventInFocus);
     if (showEventInFocus === true) {

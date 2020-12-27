@@ -1,10 +1,8 @@
 import React from "react";
 import "98.css"
 import "./Home98.css"
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
-import Home from "./Home";
-import Team from "./Team";
-import AppliedRoute from "../components/AppliedRoute";
+import {Link} from "react-router-dom";
+
 
 /* Credit for the majority of the CSS goes to Jordan Scales!!!!
         https://jdan.github.io/98.css/?ref=blogduwebdesign.com

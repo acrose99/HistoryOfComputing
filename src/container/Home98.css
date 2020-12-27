@@ -6,8 +6,33 @@
         If you wanna see exactly what I did just compare the changes from the OG file to my own.
  */
 
+/*
+=============
+TODO MEDIA QUERIES
+=============
+*/
+/*Galaxy S9+ and Android*/
+@media screen and (max-width: 360px) {
+}
 
+/*iPhone 6,7,8, X*/
+@media screen and (max-width: 375px) {
 
+}
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 411px) {
+
+}
+
+/* iPad */
+@media screen and (min-width: 768px) {
+
+}
+/* Desktop */
+@media screen and (min-width: 1000px) {
+
+}
 
 /* Windows 98 color scheme, centers elements, and adds a min-height*/
 .Home98-Container {

@@ -1,7 +1,3 @@
-// TODO: Download all the images so that the page loads faster
-// TODO: Try working on text alignment
-// TODO: Keep the timeline separator's width the same
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import React, {Component} from "react";
 import "./Timeline.css"
 import Navbar from "../components/Navbar";
@@ -9,9 +5,6 @@ import Event from "../components/Event";
 import Footer from "../components/Footer";
 import {data} from "../events"
 import AppleEvent from "../components/EventTypes/Apple/AppleEvent";
-import RetroApple from "../components/EventinFocusTypes/RetroApple/RetroApple";
-import OldComputer from "../components/EventinFocusTypes/OldComputer/OldComputer";
-import IBMEvent from "../components/EventTypes/IBM/IBMEvent";
 function Timeline() {
 
     let newdata = data.map((data) => {
