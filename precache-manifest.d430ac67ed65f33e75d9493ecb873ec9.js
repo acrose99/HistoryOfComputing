@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7eeda70adfdb22e05c1356795619111",
+    "revision": "314987a69679389f2a3828a949a0c602",
     "url": "/HistoryOfComputing/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HistoryOfComputing/static/css/2.1492b11f.chunk.css"
   },
   {
-    "revision": "04ed3dc69d1e24b16632",
-    "url": "/HistoryOfComputing/static/css/main.61927ecd.chunk.css"
+    "revision": "e8bad4b559863cf33b84",
+    "url": "/HistoryOfComputing/static/css/main.5f49389e.chunk.css"
   },
   {
     "revision": "8fb80630a38273e6a8d6",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HistoryOfComputing/static/js/2.edcca5e8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04ed3dc69d1e24b16632",
-    "url": "/HistoryOfComputing/static/js/main.e2a4e2de.chunk.js"
+    "revision": "e8bad4b559863cf33b84",
+    "url": "/HistoryOfComputing/static/js/main.6acd1363.chunk.js"
   },
   {
     "revision": "37781d8920d9e8ea6e19",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HistoryOfComputing/static/media/AppleBackdrop.46f70ead.svg"
   },
   {
-    "revision": "b1b95ef95e66cbec6f1c5394d5c77bb1",
-    "url": "/HistoryOfComputing/static/media/AppleLogo.b1b95ef9.svg"
+    "revision": "e18133cd8e0d774ee1d506b956f5c480",
+    "url": "/HistoryOfComputing/static/media/AppleLogo.e18133cd.svg"
   },
   {
     "revision": "d68d8b1124b4d39ed9f73e62c11a80a9",

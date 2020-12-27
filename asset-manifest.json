@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/HistoryOfComputing/static/css/main.61927ecd.chunk.css",
-    "main.js": "/HistoryOfComputing/static/js/main.e2a4e2de.chunk.js",
-    "main.js.map": "/HistoryOfComputing/static/js/main.e2a4e2de.chunk.js.map",
+    "main.css": "/HistoryOfComputing/static/css/main.5f49389e.chunk.css",
+    "main.js": "/HistoryOfComputing/static/js/main.6acd1363.chunk.js",
+    "main.js.map": "/HistoryOfComputing/static/js/main.6acd1363.chunk.js.map",
     "runtime-main.js": "/HistoryOfComputing/static/js/runtime-main.0677d69b.js",
     "runtime-main.js.map": "/HistoryOfComputing/static/js/runtime-main.0677d69b.js.map",
     "static/css/2.1492b11f.chunk.css": "/HistoryOfComputing/static/css/2.1492b11f.chunk.css",
     "static/js/2.edcca5e8.chunk.js": "/HistoryOfComputing/static/js/2.edcca5e8.chunk.js",
     "static/js/2.edcca5e8.chunk.js.map": "/HistoryOfComputing/static/js/2.edcca5e8.chunk.js.map",
     "index.html": "/HistoryOfComputing/index.html",
-    "precache-manifest.9e4542a4f139314b9aa6dbe03057afb2.js": "/HistoryOfComputing/precache-manifest.9e4542a4f139314b9aa6dbe03057afb2.js",
+    "precache-manifest.d430ac67ed65f33e75d9493ecb873ec9.js": "/HistoryOfComputing/precache-manifest.d430ac67ed65f33e75d9493ecb873ec9.js",
     "service-worker.js": "/HistoryOfComputing/service-worker.js",
     "static/css/2.1492b11f.chunk.css.map": "/HistoryOfComputing/static/css/2.1492b11f.chunk.css.map",
-    "static/css/main.61927ecd.chunk.css.map": "/HistoryOfComputing/static/css/main.61927ecd.chunk.css.map",
+    "static/css/main.5f49389e.chunk.css.map": "/HistoryOfComputing/static/css/main.5f49389e.chunk.css.map",
     "static/js/2.edcca5e8.chunk.js.LICENSE.txt": "/HistoryOfComputing/static/js/2.edcca5e8.chunk.js.LICENSE.txt",
-    "static/media/AppleEvent.css": "/HistoryOfComputing/static/media/AppleLogo.b1b95ef9.svg",
+    "static/media/AppleEvent.css": "/HistoryOfComputing/static/media/AppleLogo.e18133cd.svg",
     "static/media/Event.css": "/HistoryOfComputing/static/media/Backdrop.d68d8b11.svg",
     "static/media/EventFocus1.jpg": "/HistoryOfComputing/static/media/EventFocus1.e8eabcda.jpg",
     "static/media/EventFocus2.jpg": "/HistoryOfComputing/static/media/EventFocus2.efb4af94.jpg",
@@ -52,7 +52,7 @@
     "static/js/runtime-main.0677d69b.js",
     "static/css/2.1492b11f.chunk.css",
     "static/js/2.edcca5e8.chunk.js",
-    "static/css/main.61927ecd.chunk.css",
-    "static/js/main.e2a4e2de.chunk.js"
+    "static/css/main.5f49389e.chunk.css",
+    "static/js/main.6acd1363.chunk.js"
   ]
 }
