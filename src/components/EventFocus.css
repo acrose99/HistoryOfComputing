@@ -132,6 +132,7 @@
   height: auto;
   padding: 0.5% 1%;
 }
+
 .eventBody {
   /* position: absolute; */
   display: block;
@@ -176,6 +177,12 @@
   /*font-family: "SF Pro", serif;*/
   font-size: 18px;
   line-height: 18px;
+}
+#event-citation-text-right {
+  /*font-family: "SF Pro", serif;*/
+  font-size: 18px;
+  line-height: 18px;
+  margin-left: 5px;
 }
 .eventBody-text {
   font-family: "SF Pro", serif;
@@ -222,7 +229,7 @@
   /* margin-left: 15px; */
   margin: auto 5px auto 0;
   height: 30px;
-   background-color: #9d41ff;
+   /*background-color: #9d41ff;*/
 }
 .eventBody-image {
   height: 200px;

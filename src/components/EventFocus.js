@@ -36,10 +36,34 @@ const CPMStyleBar = {
 
 function EventFocus(props) {
     function renderCitations() {
+        let styleText;
+        if (props.type === "CPM") {
+            styleText = {
+                fontFamily: "Px437_IBM_BIOS",
+                color: "#00aaaa",
+                fontSize: "1rem",
+            }
+        }
+        else if (props.type === "RetroApple") {
+            styleText = {
+                fontFamily: "ChicagoFLF",
+                color: "#131313",
+                marginLeft: 5,
+                fontSize: "1rem",
+            }
+        }
+        else {
+            styleText = {
+                fontFamily: "ChicagoFLF",
+                color: "#131313",
+                marginLeft: 5,
+                fontSize: "1rem",
+            }
+        }
         if (props.citations[0] == null || props.citations[0]=== "") {
             return (
                 <div>
-                    <p id="event-citation-text">
+                    <p style={styleText} id="event-citation-text">
                         No citations.
                     </p>
                 </div>
@@ -48,16 +72,39 @@ function EventFocus(props) {
         else {
             return (
                 <div style={{display: "flex"}}>
-                    <p id="event-citation-text">
+                    <p style={styleText} id="event-citation-text">
                         Citations:
                     </p>
-                    <p id="event-citation-text">
+                    <p style={styleText} id="event-citation-text">
                         {props.citations[0]}
                     </p>
-                    <p style={{marginLeft: "5px"}} id="event-citation-text">
+                    <p style={styleText}  id="event-citation-text-right">
                         {props.citations[1]}
                     </p>
                 </div>
+            )
+        }
+    }
+    function renderBodyText() {
+        if (props.type === "CPM") {
+            return (
+                <p style={CPMStyleText} className="eventBody-text">
+                    {props.body}
+                </p>
+            )
+        }
+        else if (props.type === "RetroApple") {
+            return (
+                <p style={RetroAppleStyleText} className="eventBody-text">
+                    {props.body}
+                </p>
+            )
+        }
+        else {
+            return (
+                <p style={RetroAppleStyleText} className="eventBody-text">
+                    {props.body}
+                </p>
             )
         }
     }
@@ -66,9 +113,7 @@ function EventFocus(props) {
 
             return (
                 <div>
-                    <p className="eventBody-text">
-                        {props.body}
-                    </p>
+                    {renderBodyText()}
                 </div>
             )
         }
@@ -81,16 +126,7 @@ function EventFocus(props) {
                         src={props.EventFocusImages[0]}
                         alt={""}
                     />
-                    <p style={RetroAppleStyleText} className="eventBody-text">
-                        <img
-                            className="eventBody-image"
-                            id="eventBody-image2"
-                            src={props.EventFocusImages[1]}
-                            alt=""
-                        />
-                        {props.body}
-
-                    </p>
+                    {renderBodyText()}
                 </div>
             )
         }
@@ -101,7 +137,7 @@ function EventFocus(props) {
             <div className="showEventWrapper">
                 <div className="showEvent">
                     <div style={RetroAppleStyleBar} className="vaporwaveBar">
-                        <div className="vbar-buttons">
+                        <div style={{backgroundColor: "#7f7f7f"}} className="vbar-buttons">
                             <button className="vaporwaveBarContents">
                                 <img
                                     src={require("../images/media_player_stream_no.png")}
@@ -125,7 +161,7 @@ function EventFocus(props) {
                     </div>
                     <div style={RetroAppleStyleDiv} id="header" className="eventHeader">
                         <h2 id="eventHeader-text" style={RetroAppleStyleText}>
-                            {props.Title}
+                            {props.header}
                         </h2>
                         <div id="locationTimeWrapper"/>
                     </div>
@@ -143,7 +179,7 @@ function EventFocus(props) {
             <div className="showEventWrapper">
                 <div className="showEvent">
                     <div style={CPMStyleBar} className="vaporwaveBar">
-                        <div className="vbar-buttons">
+                        <div style={{backgroundColor: "#000055"}} className="vbar-buttons">
                             <button className="vaporwaveBarContents">
                                 <img
                                     src={require("../images/media_player_stream_no.png")}
@@ -186,7 +222,7 @@ function EventFocus(props) {
             <div className="showEvent">
                 {/* vaporwave themed navigation bar  */}
                 <div className="vaporwaveBar">
-                    <div className="vbar-buttons">
+                    <div style={{backgroundColor: "#9d41ff"}} className="vbar-buttons">
                         <button
                             onClick={props.onClick}
                             className="vaporwaveBarContents"
