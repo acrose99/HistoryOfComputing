@@ -1,8 +1,10 @@
 #bigMenu {
   width: 90%;
   /* background-color: #a158fd; */
+  /* preventing scrollbars from popping up in navbar */
   overflow-x: hidden;
   overscroll-behavior-x: contain;
+  overflow-y: hidden;
   margin: 0 auto;
   /* border-radius: 25px; */
   display: flex;
