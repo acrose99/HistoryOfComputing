@@ -32,12 +32,17 @@
   background-color: transparent;
   display: flex;
   font-size: 14px;
-  width: 200px;
+  width: 140px;
+  padding: 2px;
   /* align-content: flex-end; */ /* align-content: flex-end; */
   /* align-self: flex-end; */ /* align-self: flex-end; */
+
   /* margin-bottom: 2px; */ /* margin-bottom: 2px; */
 }
-.menuItem:last-child {
+.gitItem {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
   margin-left: auto;
   margin-right: 20px;
 }

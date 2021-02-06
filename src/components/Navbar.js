@@ -71,8 +71,12 @@ export default class Navbar extends Component {
                                 <button className="menuItem"><Link className="menuItemLink" to="/team">About US</Link></button>
                                 <button className="menuItem"><a className="menuItemLink" href="/https://ecommons.luc.edu/history_facpubs/42/">The Book</a></button>
                                 <button className="menuItem"><a className="menuItemLink" href="https://ssl.cs.luc.edu/">SSL</a></button>
-                                <a style={{ marginLeft: "45%" }} href="https://github.com/acrose99/HistoryOfComputing"><img className="menuImg" src={require("../images/github.svg")} role="link" aria-label="Github Link" alt="Github" /></a>
-
+                                <button className="gitItem" >
+                                    <a href="https://github.com/acrose99/HistoryOfComputing">
+                                        <img className="menuImg" src={require("../images/github.svg")} role="link" aria-label="Github Link" alt="Github" />
+                                    </a>
+                                </button>
+                                {/* put back in prev line: style={{ marginLeft: "45%" }} */}
                             </div>
                         </div>
 
