@@ -1,10 +1,10 @@
 import React from "react";
-import  "./Footer.css";
+import "./Footer.css";
 import IconButton from "@material-ui/core/IconButton";
 import { Icon } from '@iconify/react';
 import emailIcon from '@iconify/icons-carbon/email';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 //TODO: WIP WIP WIP WIP
@@ -18,12 +18,12 @@ export default function Footer() {
                     <div className="footer-flex-wrap">
                         <div className="footer-block-left">
                             {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
-                            <a href="">
-                                <Link to="/homeNormal"/>
+
+                            <Link to="/homeNormal">
                                 <img
                                     src={require("../images/FlatLogo.svg")}
                                     alt="" className="logo-flat" />
-                            </a>
+                            </Link>
                             <p id='slogan'>
                                 We make History fun.
                             </p>

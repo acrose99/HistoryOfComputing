@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
 
@@ -60,10 +60,9 @@ export default class Navbar extends Component {
                             <div id="top-container">
                                 <h2 id="title">The History Of Computing
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a href="">
-                                        <Link to="/homeNormal"/>
-                                        <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt=""/>
-                                    </a>
+                                    <Link to="/homeNormal" >
+                                        <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+                                    </Link>
                                 </h2>
                             </div>
                             <div id="bottom-container">
@@ -72,7 +71,7 @@ export default class Navbar extends Component {
                                 <button className="menuItem"><Link className="menuItemLink" to="/team">About US</Link></button>
                                 <button className="menuItem"><a className="menuItemLink" href="/https://ecommons.luc.edu/history_facpubs/42/">The Book</a></button>
                                 <button className="menuItem"><a className="menuItemLink" href="https://ssl.cs.luc.edu/">SSL</a></button>
-                                <a style={{marginLeft: "45%"}} href="https://github.com/acrose99/HistoryOfComputing"><img className="menuImg" src={require("../images/github.svg")} role="link" aria-label="Github Link" alt="Github" /></a>
+                                <a style={{ marginLeft: "45%" }} href="https://github.com/acrose99/HistoryOfComputing"><img className="menuImg" src={require("../images/github.svg")} role="link" aria-label="Github Link" alt="Github" /></a>
 
                             </div>
                         </div>
@@ -86,7 +85,7 @@ export default class Navbar extends Component {
                                 {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
                                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                 <a className="hamLink">
-                                    <Link to="/homeNormal"/>
+                                    <Link to="/homeNormal" />
                                     <img id="hamIcon" src={require("../images/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
                                 </a>
 
@@ -95,7 +94,7 @@ export default class Navbar extends Component {
                                 <div className="miniMenuItemDiv">
                                     {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                     <a className="miniMenuItem">The Timeline
-                                        < Link to="/timeline"/>
+                                        < Link to="/timeline" />
                                     </a>
                                 </div>
                                 <div className="miniMenuItemDiv">
@@ -104,7 +103,7 @@ export default class Navbar extends Component {
                                 <div className="miniMenuItemDiv">
                                     {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                     <a className="miniMenuItem">About Us
-                                       < Link to="/team"/>
+                                       < Link to="/team" />
                                     </a>
                                 </div>
                                 <div className="miniMenuItemDiv">
