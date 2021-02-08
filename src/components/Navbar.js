@@ -17,8 +17,8 @@ export default class Navbar extends Component {
 
 
     updateMenuStyle() {
-
-        if (window.innerWidth <= 700) {
+        // if the width is less than 800px, it goes into small menu
+        if (window.innerWidth <= 800) {
             this.setState({ windowBig: false, });
         }
         else {
