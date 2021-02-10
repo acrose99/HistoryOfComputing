@@ -41,4 +41,8 @@ TODO MEDIA QUERIES
     height: 3053px;
     background-color: #D9CFBE;
 }
-
+#events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

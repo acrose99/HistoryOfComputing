@@ -1,0 +1,14 @@
+.input-range {
+    width: 110px;
+    display: flex;
+    margin-left: 20px;
+}
+.input-range__label {
+    color: white;
+}
+.input-range__label--min {
+    display: none;
+}
+.input-range__label--max {
+    display: none;
+}

@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Event from "../components/Event";
 import Footer from "../components/Footer";
 import {data} from "../events"
+import Filterer from "../components/Filterer";
 import AppleEvent from "../components/EventTypes/Apple/AppleEvent";
 function Timeline() {
 
@@ -57,7 +58,7 @@ function Timeline() {
     class Events extends Component {
         render() {
             return (
-                <div>  {newdata}  </div>
+                <div id="events">  {newdata}  </div>
             )
         }
     }
@@ -66,7 +67,7 @@ function Timeline() {
             <div id="Timeline">
                 <Navbar/>
                 <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
-
+                <Filterer filtererType="Closed"/>
                 <Events/>
 
                 {/*hack way to fix the timeline separator*/}
