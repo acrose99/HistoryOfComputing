@@ -91,7 +91,7 @@ class Filterer extends Component{
                 return (
                     <div id="filtererClosed">
                         <div className="filtererContainer">
-                            <h4  id="filtererClosedHeader">Filter Events</h4>
+                            <h4  id="filtererClosedHeader">Filter: {this.props.timelineFilter}</h4>
                             <InlineIcon onClick={() => this.changeFiltererType('OpenCategories')} className="icon" height={32} width={32} icon={caretUpFilled} style={{color: '#ffff'}} />
                         </div>
                         <div className="filtererShowAll">
@@ -175,7 +175,7 @@ class Filterer extends Component{
                 return (
                     <div id="filtererClosed">
                         <div className="filtererContainer">
-                            <h4  id="filtererClosedHeader">Filter Events</h4>
+                            <h4  id="filtererClosedHeader">Filter: {this.props.timelineFilter}</h4>
                             <InlineIcon className="icon" onClick={() => this.changeFiltererType('Closed')}  height={32} width={32} icon={caretDownOutlined} style={{color: '#ffff'}} />
                         </div>
                         <div className="filtererCategories">
