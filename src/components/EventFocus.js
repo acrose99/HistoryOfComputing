@@ -15,7 +15,6 @@ const RetroAppleStyleText = {
 
 const RetroAppleStyleBar = {
     color: "131313",
-    backgroundColor: "#ffffff",
 };
 
 /* For CP/M focused Events (I.E Altair 8800) */
@@ -31,7 +30,6 @@ const CPMStyleText = {
 };
 const CPMStyleBar = {
     color: "00aaaa",
-    backgroundColor: "#292929",
 };
 
 function EventFocus(props) {
