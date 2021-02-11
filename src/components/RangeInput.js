@@ -4,14 +4,10 @@ import './RangeInput.css';
 
 class RangeInput extends React.Component {
     constructor(props) {
-        const styles = {
-            width: 200,
-            color: 'purple'
-        }
         super(props);
 
         this.state = {
-            value: 2000
+            value: this.props.year
         };
     }
 
@@ -19,9 +15,9 @@ class RangeInput extends React.Component {
         return (
             <InputRange
                 maxValue={2020}
-                minValue={1956}
-                value={this.state.value}
-                onChange={value => this.setState({value})}/>
+                minValue={1944}
+                value={this.props.year}
+                onChange={value => this.props.handleYear(value)}/>
         );
     }
 }

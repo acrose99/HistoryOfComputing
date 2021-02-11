@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import Event from "./Event";
 import Footer from "./Footer";
 import {events} from "../events"
-import Filterer from "./Filterer";
 import AppleEvent from "./EventTypes/Apple/AppleEvent";
 function Timeline(props) {
     let newdata;
@@ -31,6 +30,71 @@ function Timeline(props) {
             )
         })
     }
+    else if (typeof props.filter === "number") {
+        if (events.filter(data => data.Year === props.filter).length > 0) {
+            newdata = events.filter(data => data.Year === props.filter).map((data) => {
+                    console.log(data.length);
+
+                    if (data.Type === "Apple") {
+                        return (
+                            <AppleEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                                        TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                                        body={data["Body"]}
+                                        citations={[data["Citations"][0], data["Citations"][1]]}
+                                        type = {data['Type']}
+                            > </AppleEvent>
+                        )
+                    }
+                    // else if (data.Type === "RetroApple") {
+                    //     return (
+                    //         <RetroApple key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    //                     TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                    //                     body={data["Body"]}
+                    //                     citations={[data["Citations"][0], data["Citations"][1]]}
+                    //                     type = {[data['Type']]}
+                    //         >
+                    //
+                    //         </RetroApple>
+                    //     )
+                    // }
+                    // else if (data.Type === "IBM") {
+                    //     return (
+                    //         <IBMEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    //                   TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                    //                   body={data["Body"]}
+                    //                   citations={[data["Citations"][0], data["Citations"][1]]}
+                    //                   type = {[data['Type']]}
+                    //         > </IBMEvent>
+                    //     )
+                    // }
+                    return (
+                        <Event key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                               TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                               body={data["Body"]}
+                               citations={[data["Citations"][0], data["Citations"][1]]}
+                               type = {data['Type']}
+                        > </Event>
+
+                    )
+                }
+            )
+        }
+        else {
+                return (
+                    <div id="Timeline">
+                        <Navbar/>
+                        <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
+                        <h1 style={{textAlign: "center", color: "#5c71e1" }}>No Events Found! Try Again!</h1>
+
+                        {/*hack way to fix the timeline separator*/}
+                        <div style={{marginBottom: '200px'}}/>
+                        {/*hack way to fix the timeline separator*/}
+
+                        <Footer/>
+                    </div>
+                )
+            }
+        }
     else {
         newdata = events.filter(data => data.Filter === props.filter).map((data) => {
 

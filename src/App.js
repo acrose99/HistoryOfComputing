@@ -54,7 +54,6 @@
 
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Timeline from "./components/Timeline";
 import Home98 from "./container/Home98";
 import Team from "./container/Team";
 import Home from "./container/Home";
