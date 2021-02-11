@@ -3,8 +3,11 @@
     width: 12%;
     min-width: 150px;
     max-width: 200px;
-    float: right;
     margin-right: 25px;
+    /*display: flex;*/
+    align-self: end;
+    top: 40%;
+    position: fixed;
 }
 #filtererClosedHeader {
     color: white;
@@ -67,4 +70,21 @@
 }
 #filtererCategoryContainerYear {
     border: none;
+}
+
+.filtererShowAll {
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+}
+.filtererShowAllContainer {
+    background: #40B2D2;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.filtererShowAllHeader {
+    color: white;
+    font-size: 16px;
+    text-align: center;
 }

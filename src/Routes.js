@@ -5,7 +5,7 @@ import Team from "./container/Team";
 import Home from "./container/Home";
 import Home98 from "./container/Home98";
 import NfError from "./container/NFError";
-import Timeline from "./container/Timeline";
+import TimelineContainer from "./container/TimelineContainer";
 export default function Routes({ appProps }) {
   return (
     <Switch>
@@ -14,8 +14,7 @@ export default function Routes({ appProps }) {
       {/*{ /* Route to historiography page */}
       <AppliedRoute
         path="/timeline"
-        exact
-        component={Timeline}
+        exact component={TimelineContainer}
         appProps={appProps}
       />
       {/*{ /* Route to contact page */}

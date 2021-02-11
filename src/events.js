@@ -1,4 +1,4 @@
-export const data = [
+export const events = [
     {
         "id": 1,
         "Type": "Default",
@@ -50,6 +50,7 @@ export const data = [
     },
     {
         "id": 4,
+        "Filter": "IBM",
         "Type": "CPM",
         "Title": "IBM Scamp is created",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -66,6 +67,7 @@ export const data = [
     },
     {
         "id": 5,
+        "Filter": "Apple",
         "Type": "RetroApple",
         "Title": "Apple II introduced",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -114,6 +116,7 @@ export const data = [
     },
     {
         "id": 8,
+        "Filter": "Apple",
         "Type": "Apple",
         "Title": "Apple launches the Macintosh",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -130,6 +133,7 @@ export const data = [
     },
     {
         "id": 9,
+        "Filter": "Apple",
         "Type": "Next",
         "Title": "Steve Jobs and NeXt create the NeXTcube",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -146,6 +150,7 @@ export const data = [
     },
     {
         "id": 10,
+        "Filter": "Apple",
         "Type": "Apple",
         "Title": "Apple Newton is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -162,6 +167,7 @@ export const data = [
     },
     {
         "id": 11,
+        "Filter": "IBM",
         "Type": "IBM",
         "Title": "IBM releases the ThinkPad 701C",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -178,6 +184,7 @@ export const data = [
     },
     {
         "id": 12,
+        "Filter": "Apple",
         "Type": "Apple",
         "Title": "The iPhone is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -194,6 +201,7 @@ export const data = [
     },
     {
         "id": 13,
+        "Filter": "Apple",
         "Type": "Apple",
         "Title": "The Apple iPad is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -226,6 +234,7 @@ export const data = [
     },
     {
         "id": 15,
+        "Filter": "Microsoft",
         "Type": "Windows",
         "Title": "Windows 10 is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -242,6 +251,7 @@ export const data = [
     },
     {
         "id": 16,
+        "Filter": "Apple",
         "Type": "Apple",
         "Title": "The Apple Pro Stand is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",

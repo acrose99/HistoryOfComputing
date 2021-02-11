@@ -54,10 +54,11 @@
 
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Timeline from "./container/Timeline";
+import Timeline from "./components/Timeline";
 import Home98 from "./container/Home98";
 import Team from "./container/Team";
 import Home from "./container/Home";
+import TimelineContainer from "./container/TimelineContainer";
 const App = () => (
     <Router basename='/HistoryOfComputing'>
         <Switch>
@@ -71,7 +72,7 @@ const App = () => (
                 <Team/>
             </Route>
             <Route path="/timeline">
-                <Timeline/>
+                <TimelineContainer/>
             </Route>
         </Switch>
     </Router>
