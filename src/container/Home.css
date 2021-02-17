@@ -1,24 +1,40 @@
 /*Galaxy S9+ and Android*/
 @media screen and (max-width: 360px) {
+    .Home-media {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 /*iPhone 6,7,8, X*/
 @media screen and (max-width: 375px) {
-
+    .Home-media {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 /*iPhone Plus, XS, XS Max */
 @media screen and (min-width: 411px) {
-
+    .Home-media {
+        width: 325px;
+        height: 325px;
+    }
 }
 
 /* iPad */
 @media screen and (min-width: 768px) {
-
+    .Home-media {
+        width: 500px;
+        height: 500px;
+    }
 }
 /* Desktop */
 @media screen and (min-width: 1000px) {
-
+    .Home-media {
+        width: 400px;
+        height: 700px;
+    }
 }
 
 
@@ -36,13 +52,7 @@
     /*margin: auto 250px 125px;*/
     margin: 50px auto;
     position: relative;
-    background-image: url('../images/Mac128hello.png');
-    height: 480px;
-    width: 728px;
-}
 
-.Home-media:hover {
-    background-image: url('../images/Mac128world.png');
 }
 .Home-content {
     opacity: 1;

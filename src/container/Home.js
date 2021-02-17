@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import "./Home.css";
 
 
@@ -6,27 +6,30 @@ import "./Home.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export default function Home() {
-
-    return (
-        <div>
-            <div className="Home-container">
-                <Navbar/>
-                <div className="Home-media">
+class Home extends Component
+{
+    constructor(props) {
+        super(props);
+        this.state = {
+            src: require('../images/Mac128hello.svg')
+        }
+    }
+    render() {
+        return (
+            <div>
+                <div className="Home-container">
+                    <Navbar/>
+                    <div>
+                        <img className="Home-media" onMouseLeave={() => this.setState({src: require('../images/Mac128hello.svg')})} onMouseEnter={() => this.setState({src: require('../images/Mac128world.svg')})} src={this.state.src} alt="MacHello"/>
+                    </div>
+                    <h1   className="Home-content">
+                        The History of Computing!
+                    </h1>
                 </div>
-                <h1  className="Home-content">
-                    The History of Computing!
-                </h1>
-                <div className="Home-buttoncontainer">
-                    <button className="Home-Home98link">
-                        <a id="Home-Home98-anchor" href="/">
-                            Click here for the Windows 98 themed homepage.
-                        </a>
-                    </button>
-                </div>
+                {/*<Routes/>*/}
+                <Footer/>
             </div>
-            {/*<Routes/>*/}
-            <Footer/>
-        </div>
-    )
+        )
+    }
 }
+export default Home
