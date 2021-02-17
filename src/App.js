@@ -54,7 +54,6 @@
 
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home98 from "./container/Home98";
 import Team from "./container/Team";
 import Home from "./container/Home";
 import TimelineContainer from "./container/TimelineContainer";
@@ -62,7 +61,7 @@ const App = () => (
     <Router basename='/HistoryOfComputing'>
         <Switch>
             <Route path="/home">
-                <Home98/>
+                <Home/>
             </Route>
             <Route path="/homeNormal">
                 <Home/>

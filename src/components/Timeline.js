@@ -5,13 +5,14 @@ import Event from "./Event";
 import Footer from "./Footer";
 import {events} from "../events"
 import AppleEvent from "./EventTypes/Apple/AppleEvent";
+
 function Timeline(props) {
     let newdata;
     if (props.filter === '') {
         newdata = events.map(function (data) {
             if (data.Type === "Apple") {
                 return (
-                    <AppleEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    <AppleEvent key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                 TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                 body={data["Body"]}
                                 citations={[data["Citations"][0], data["Citations"][1]]}
@@ -20,7 +21,7 @@ function Timeline(props) {
                 )
             }
             return (
-                <Event key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                <Event key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                        TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                        body={data["Body"]}
                        citations={[data["Citations"][0], data["Citations"][1]]}
@@ -37,7 +38,7 @@ function Timeline(props) {
 
                     if (data.Type === "Apple") {
                         return (
-                            <AppleEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                            <AppleEvent key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                         TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                         body={data["Body"]}
                                         citations={[data["Citations"][0], data["Citations"][1]]}
@@ -68,7 +69,7 @@ function Timeline(props) {
                     //     )
                     // }
                     return (
-                        <Event key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                        <Event key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                body={data["Body"]}
                                citations={[data["Citations"][0], data["Citations"][1]]}
@@ -131,11 +132,11 @@ function Timeline(props) {
                 //     )
                 // }
                 return (
-                    <Event key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    <Event nextEvent={events[8]} key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                            TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                            body={data["Body"]}
                            citations={[data["Citations"][0], data["Citations"][1]]}
-                           type = {data['Type']}
+                           type={data['Type']}
                     > </Event>
 
                 )
@@ -143,26 +144,47 @@ function Timeline(props) {
         )
     }
 
-
     class Events extends Component {
+        constructor(props) {
+            super(props)
+            this.state = {
+                events: newdata
+            }
+            this.nextEvent = this.nextEvent.bind(this);
+        }
+
+        nextEvent() {
+            const EventsCopy = this.state.events.slice() //copy the array
+            let currentEvent = EventsCopy[0];
+            EventsCopy[0] = EventsCopy[1] //execute the manipulations
+            EventsCopy[1] = currentEvent //execute the manipulations
+            this.setState({events: EventsCopy}) //set the new state
+            console.log(this.state.events);
+        }
+
         render() {
+            console.log(this.state.events);
             return (
-                <div id="events">  {newdata}  </div>
+                <div>
+                    <button  onClick={() => this.nextEvent()}>
+                        Click me
+                    </button>
+                    <div id="events">  {this.state.events}  </div>
+                </div>
             )
         }
     }
 
     return (
-            <div id="Timeline">
-                <Navbar/>
-                <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
-                <Events/>
+        <div id="Timeline">
+            <Navbar/>
+            <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
+            <Events />
+            {/*hack way to fix the timeline separator*/}
+            <div style={{marginBottom: '200px'}}/>
+            {/*hack way to fix the timeline separator*/}
 
-                {/*hack way to fix the timeline separator*/}
-                <div style={{marginBottom: '200px'}}/>
-                {/*hack way to fix the timeline separator*/}
-
-                <Footer/>
+            <Footer/>
             </div>
     )
 }

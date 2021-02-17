@@ -109,9 +109,9 @@
   /* display: block; */
   /* margin: 33%; */
   background: linear-gradient(
-    180deg,
-    rgba(0, 147, 255, 0.4) 0%,
-    rgba(173, 95, 249, 0.4) 100%
+          180deg,
+          rgba(0, 147, 255, 0.4) 0%,
+          rgba(173, 95, 249, 0.4) 100%
   );
   /*transform: translateY(100%);*/
 }
@@ -229,7 +229,8 @@
   /* margin-left: 15px; */
   margin: auto 5px auto 0;
   height: 30px;
-   /*background-color: #9d41ff;*/
+  /*background-color: #9d41ff;*/
+  width: 55%;
 }
 .eventBody-image {
   height: 200px;
