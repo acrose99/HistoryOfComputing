@@ -9,7 +9,7 @@ function RetroApple(props) {
                     <div id="RetroApple-vaporwaveBar" >
                         {/* these are just mock ups for buttons i'll add later */}
                         <p className="vaporwaveBarContents">X</p>
-                        <p className="vaporwaveBarContents"> >> </p>
+                        <p className="vaporwaveBarContents"/>
                         <p className="vaporwaveBarContents"> &#60; &#60; </p>
                     </div>
                     <div className="eventHeader RetroApple-border">

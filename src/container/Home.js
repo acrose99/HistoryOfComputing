@@ -10,8 +10,8 @@ export default function Home() {
 
     return (
         <div>
-            <Navbar/>
             <div className="Home-container">
+                <Navbar/>
                 <div className="Home-media">
                 </div>
                 <h1  className="Home-content">
