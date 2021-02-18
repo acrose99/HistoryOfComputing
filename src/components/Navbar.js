@@ -60,7 +60,7 @@ export default class Navbar extends Component {
                             <div id="top-container">
                                 <h2 id="title">The History Of Computing
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <Link to="/homeNormal" >
+                                    <Link to="/home" >
                                         <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
                                     </Link>
                                 </h2>
