@@ -66,7 +66,7 @@ export default class Navbar extends Component {
                                 </h2>
                             </div>
                             <div id="bottom-container">
-                                <button className="hvr-sweep-to-right"><Link className="hvr-sweep-to-right" to="/timeline">The Timeline</Link></button>
+                                <button className="hvr-sweep-to-right"><Link className="menuItemLink" to="/timeline">The Timeline</Link></button>
                                 <button className="hvr-sweep-to-right"><a className="menuItemLink" href="https://github.com/acrose99/HistoryOfComputingDocs">Documentation</a></button>
                                 <button className="hvr-sweep-to-right"><Link className="menuItemLink" to="/team">About US</Link></button>
                                 <button className="hvr-sweep-to-right"><a className="menuItemLink" href="/https://ecommons.luc.edu/history_facpubs/42/">The Book</a></button>
