@@ -160,6 +160,10 @@
   padding: 2px;
 }
 
+.menuItemLink:hover {
+  color: white;
+}
+
 .miniMenuItem {
   text-decoration: none;
   background-color: white;
