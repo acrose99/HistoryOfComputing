@@ -1,12 +1,14 @@
-import React, {Component} from "react";
+import React, {Component, useContext} from "react";
 import "./Timeline.css"
 import Navbar from "./Navbar";
 import Event from "./Event";
 import Footer from "./Footer";
 import {events} from "../events"
 import AppleEvent from "./EventTypes/Apple/AppleEvent";
+import {ThemeContext} from '../theme-context'
 
 function Timeline(props) {
+    const theme = useContext(ThemeContext);
     let newdata;
     if (props.filter === '') {
         newdata = events.map(function (data) {
@@ -166,9 +168,6 @@ function Timeline(props) {
             console.log(this.state.events);
             return (
                 <div>
-                    <button  onClick={() => this.nextEvent()}>
-                        Click me
-                    </button>
                     <div id="events">  {this.state.events}  </div>
                 </div>
             )
@@ -176,7 +175,7 @@ function Timeline(props) {
     }
 
     return (
-        <div id="Timeline">
+        <div style={{backgroundColor: theme.background}} id="Timeline">
             <Navbar/>
             <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
             <Events />

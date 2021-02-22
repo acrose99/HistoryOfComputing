@@ -52,28 +52,70 @@
 //
 // export default Home;
 
-import React from "react";
+import React, {Component} from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Team from "./container/Team";
 import Home from "./container/Home";
 import TimelineContainer from "./container/TimelineContainer";
-const App = () => (
-    <Router basename='/HistoryOfComputing'>
-        <Switch>
-            <Route path="/home">
-                <Home/>
-            </Route>
-            <Route path="/homeNormal">
-                <Home/>
-            </Route>
-            <Route path="/team">
-                <Team/>
-            </Route>
-            <Route path="/timeline">
-                <TimelineContainer/>
-            </Route>
-        </Switch>
-    </Router>
-);
+import {ThemeContext, themes} from './theme-context';
+
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            theme: themes.Vaporwave,
+        };
+
+        this.toggleTheme = (themeGiven) => {
+            if (themeGiven === 'RetroApple' || themeGiven === 'retroapple') {
+                this.setState(state => ({
+                    theme: themes.RetroApple
+                }));
+            }
+            else if (themeGiven === 'Vaporwave' || themeGiven === 'vaporwave') {
+                this.setState(state => ({
+                    theme: themes.Vaporwave
+                }));
+            }
+            else if (themeGiven === 'IBM' || themeGiven === 'ibm') {
+                this.setState(state => ({
+                    theme: themes.IBM
+                }));
+            }
+            else if (themeGiven === 'Microsoft' || themeGiven === 'microsoft') {
+                this.setState(state => ({
+                    theme: themes.Microsoft
+                }));
+            }
+            else {
+                this.setState(state => ({
+                    theme: themes.Vaporwave
+                }));
+            }
+        };
+    }
+    render() {
+        return (
+            <ThemeContext.Provider value={this.state.theme}>
+                <Router basename='/HistoryOfComputing'>
+                    <Switch>
+                        <Route path="/home">
+                            <Home toggleTheme={this.toggleTheme} />/>
+                        </Route>
+                        <Route path="/homeNormal">
+                            <Home toggleTheme={this.toggleTheme} />/>
+                        </Route>
+                        <Route path="/team">
+                            <Team toggleTheme={this.toggleTheme} />/>
+                        </Route>
+                        <Route path="/timeline">
+                            <TimelineContainer toggleTheme={this.toggleTheme} />
+                        </Route>
+                    </Switch>
+                </Router>
+            </ThemeContext.Provider>
+        )
+    }
+}
 
 export default App;

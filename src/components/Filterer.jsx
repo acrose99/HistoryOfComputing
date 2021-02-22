@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import './Filterer.css';
+import {ThemeContext} from '../theme-context';
 
 import {InlineIcon } from '@iconify/react';
 import appleIcon from '@iconify/icons-openmoji/apple';
@@ -22,6 +23,10 @@ class Filterer extends Component{
         this.showCategory = this.showCategory.bind(this);
         this.changeTimeLineFilter = this.changeTimeLineFilter.bind(this);
         this.handleYear = this.handleYear.bind(this);
+    }
+    onClickFiltererType(filter, theme) {
+        this.props.toggleTheme(theme)
+        this.changeTimeLineFilter(filter)
     }
     changeTimeLineFilter(filter) {
         this.props.handleFilterChange(filter)
@@ -81,7 +86,7 @@ class Filterer extends Component{
                 return (
                     <div id="filtererClosed">
                         <div className="filtererContainer">
-                            <h4  id="filtererClosedHeader">Filter Events</h4>
+                            <h4 id="filtererClosedHeader">Filter Events</h4>
                             <InlineIcon onClick={() => this.changeFiltererType('OpenCategories')} className="icon" height={32} width={32} icon={caretUpFilled} style={{color: '#ffff'}} />
                         </div>
                     </div>
@@ -96,7 +101,7 @@ class Filterer extends Component{
                         </div>
                         <div className="filtererShowAll">
                             <div  className="filtererShowAllContainer">
-                                <h4 onClick={() => this.changeTimeLineFilter('')} className="filtererShowAllHeader">Show All</h4>
+                                <h4 onClick={() => this.onClickFiltererType('', 'vaporwave')} className="filtererShowAllHeader">Show All</h4>
                             </div>
                         </div>
                     </div>
@@ -120,19 +125,19 @@ class Filterer extends Component{
                                 </div>
                                 <div id="Companies"  className="filtererCategoriesOpened">
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.changeTimeLineFilter('Apple')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Apple', 'RetroApple')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={appleIcon} />
                                             <h4 className="filtererCategoryTypeHeader">Apple</h4>
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.changeTimeLineFilter('Microsoft')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Apple', 'Microsoft')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={bxlMicrosoft} style={{color: '#19D2FF'}} />
                                             <h4 className="filtererCategoryTypeHeader">Microsoft</h4>
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.changeTimeLineFilter('IBM')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Apple', 'IBM')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={ibmIcon} />
                                             <h4 className="filtererCategoryTypeHeader">IBM</h4>
                                         </div>
@@ -186,19 +191,19 @@ class Filterer extends Component{
                                 </div>
                                 <div id="Companies"  className="filtererCategoriesOpened">
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.changeTimeLineFilter('Apple')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Apple', 'RetroApple')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={appleIcon} />
                                             <h4 className="filtererCategoryTypeHeader">Apple</h4>
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.changeTimeLineFilter('Microsoft')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Apple', 'Microsoft')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={bxlMicrosoft} style={{color: '#19D2FF'}} />
                                             <h4 className="filtererCategoryTypeHeader">Microsoft</h4>
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.changeTimeLineFilter('IBM')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Apple', 'IBM')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={ibmIcon} />
                                             <h4 className="filtererCategoryTypeHeader">IBM</h4>
                                         </div>
@@ -226,7 +231,7 @@ class Filterer extends Component{
                             </div>
                             <div className="filtererShowAll">
                                 <div  className="filtererShowAllContainer">
-                                    <h4 onClick={() => this.changeTimeLineFilter('')} className="filtererShowAllHeader">Show All</h4>
+                                    <h4 onClick={() => this.onClickFiltererType('', 'vaporwave')} className="filtererShowAllHeader">Show All</h4>
                                 </div>
                             </div>
                             {/* EVENTS NOT IMPLEMENTED YET, NO FILTER NEEDED*/}

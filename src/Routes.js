@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import AppliedRoute from "./components/AppliedRoute";
 import Team from "./container/Team";
 import Home from "./container/Home";
-import NfError from "./container/NFError";
+import NFError from "./container/NFError";
 import TimelineContainer from "./container/TimelineContainer";
 export default function Routes({ appProps }) {
   return (
@@ -23,7 +23,7 @@ export default function Routes({ appProps }) {
       {/*{ /* Route to Documentation page */}
       {/*<AppliedRoute path="/documentation" exact component={Documentation} appProps={appProps} />*/}
       {/* Redirects to 404 error for any route that doesnt match */}
-      <Route component={NfError} />
+      <Route component={NFError} />
     </Switch>
   );
 }

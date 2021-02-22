@@ -1,6 +1,7 @@
 import './Teammate.css';
 import React from 'react';
 // import './EventFocus';
+import {ThemeContext} from '../App'
 
 function Teammate(props) {
 
