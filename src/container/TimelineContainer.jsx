@@ -24,7 +24,7 @@ class TimelineContainer extends Component{
             <div id="TimelineContainer">
                 {/*<FiltererMobile/>*/}
                 <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange} filtererType="Closed"/>
-                <Timeline filter={this.state.timelineFilter}/>
+                <Timeline  timelineFilter={this.state.timelineFilter}  filter={this.state.timelineFilter}/>
             </div>
 
         )

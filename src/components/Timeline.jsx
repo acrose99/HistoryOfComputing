@@ -1,18 +1,18 @@
-import React, {Component, useContext} from "react";
+import React, {Component, useContext, useState} from "react";
 import "./Timeline.css"
 import Navbar from "./Navbar";
 import Event from "./Event";
 import Footer from "./Footer";
 import {events} from "../events"
 import AppleEvent from "./EventTypes/Apple/AppleEvent";
-import {ThemeContext} from '../theme-context'
+import {ThemeStyles} from '../themeStyles'
 
 function Timeline(props) {
-    const theme = useContext(ThemeContext);
+    const theme = useContext(ThemeStyles);
     let newdata;
     if (props.filter === '') {
         newdata = events.map(function (data) {
-            if (data.Type === "Apple") {
+            if (props.timelineFilter === "Apple") {
                 return (
                     <AppleEvent key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                 TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
@@ -38,7 +38,7 @@ function Timeline(props) {
             newdata = events.filter(data => data.Year === props.filter).map((data) => {
                     console.log(data.length);
 
-                    if (data.Type === "Apple") {
+                    if (props.timelineFilter === "Apple") {
                         return (
                             <AppleEvent key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                         TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
@@ -100,8 +100,8 @@ function Timeline(props) {
         }
     else {
         newdata = events.filter(data => data.Filter === props.filter).map((data) => {
-
-                if (data.Type === "Apple") {
+            console.log(theme);
+                if (props.timelineFilter === "Apple") {
                     return (
                         <AppleEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                     TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
@@ -174,10 +174,19 @@ function Timeline(props) {
         }
     }
 
+    function createTimeLineIntro() {
+        if (props.filter === '') {
+            return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing.</h2>)
+        }
+        else {
+            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter}.</h2>)
+        }
+    }
+
     return (
-        <div style={{backgroundColor: theme.background}} id="Timeline">
+        <div style={{backgroundImage: theme.backgroundImage}} id="Timeline">
             <Navbar/>
-            <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
+            {createTimeLineIntro()}
             <Events />
             {/*hack way to fix the timeline separator*/}
             <div style={{marginBottom: '200px'}}/>

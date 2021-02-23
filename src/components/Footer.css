@@ -87,8 +87,8 @@
 
     /* Vapor */
 
-    background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);
-    -webkit-text-fill-color: transparent;
+    /*background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);*/
+    /*-webkit-text-fill-color: transparent;*/
     -webkit-background-clip: text;
 }
 
@@ -97,7 +97,7 @@
     margin-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: rgba(0, 41, 255, 1);
+    /*color: rgba(0, 41, 255, 1);*/
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -155,8 +155,8 @@ text-rights {
     letter-spacing: -0.204545px;
     /* Vapor */
 
-    background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);
-    -webkit-text-fill-color: transparent;
+    /*background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);*/
+    /*-webkit-text-fill-color: transparent;*/
     -webkit-background-clip: text;
 }
 

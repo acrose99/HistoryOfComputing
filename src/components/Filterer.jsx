@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './Filterer.css';
-import {ThemeContext} from '../theme-context';
+import {ThemeStyles} from '../themeStyles';
 
 import {InlineIcon } from '@iconify/react';
 import appleIcon from '@iconify/icons-openmoji/apple';
@@ -131,13 +131,13 @@ class Filterer extends Component{
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Apple', 'Microsoft')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Microsoft', 'Microsoft')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={bxlMicrosoft} style={{color: '#19D2FF'}} />
                                             <h4 className="filtererCategoryTypeHeader">Microsoft</h4>
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Apple', 'IBM')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('IBM', 'IBM')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={ibmIcon} />
                                             <h4 className="filtererCategoryTypeHeader">IBM</h4>
                                         </div>
@@ -197,13 +197,13 @@ class Filterer extends Component{
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Apple', 'Microsoft')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('Microsoft', 'Microsoft')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={bxlMicrosoft} style={{color: '#19D2FF'}} />
                                             <h4 className="filtererCategoryTypeHeader">Microsoft</h4>
                                         </div>
                                     </div>
                                     <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Apple', 'IBM')} className="filtererCategoryTypeContainer">
+                                        <div onClick={() => this.onClickFiltererType('IBM', 'IBM')} className="filtererCategoryTypeContainer">
                                             <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={ibmIcon} />
                                             <h4 className="filtererCategoryTypeHeader">IBM</h4>
                                         </div>

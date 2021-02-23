@@ -12,7 +12,7 @@
 }
 
 #top-container {
-  background-color: #8d8bff;
+  /*background-color: #8d8bff;*/
   display: flex;
   border: 1px solid black;
 }
@@ -85,7 +85,7 @@
 }
 .menuItemLink {
   text-decoration: none;
-  color: #6666fa;
+  /*color: #6666fa;*/
   font-size: 1.2em;
   padding: 2px;
 }
@@ -141,7 +141,7 @@
   /* height: 100px; */
   display: flex;
   flex-direction: column;
-  background-color: #8d8bff;
+  /*background-color: #8d8bff;*/
 }
 .title {
   font-family: "Futura", sans-serif;

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./EventFocus.css";
-import {ThemeContext} from '../App'
+import {ThemeStyles} from '../App'
 
 /* For RetroApple focused Events (I.E MAC 1984) */
 const RetroAppleStyleDiv = {

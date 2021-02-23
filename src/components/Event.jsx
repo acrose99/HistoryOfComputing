@@ -1,21 +1,30 @@
 import React, {Component} from "react";
 import EventFocus from "./EventFocus";
 import "./Event.css";
-import {ThemeContext} from '../App'
+import {ThemeStyles} from '../themeStyles'
+import Navbar from "./Navbar";
 
 class Event extends Component{
 
   constructor(props) {
     super(props);
     this.state = {
-      showEventInFocus: false
+      showEventInFocus: false,
+      // background: 'none'
     }
     this.eventRef = React.createRef();
     this.showEventInFocus = this.hideEventInFocus.bind(this);
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
     this.onClick = this.onClick.bind(this);
     this.nextEvent = this.nextEvent.bind(this);
+    // this.changeEventBackground = this.changeEventBackground.bind(this);
   }
+  // changeEventBackground(style) {
+  //   console.log(this.state.background);
+  //   this.setState({
+  //     background: style
+  //   })
+  // }
   showEventInFocus() {
     this.setState({
       showEventInFocus: true
@@ -43,17 +52,22 @@ class Event extends Component{
 
   render() {
     console.log(this.props.nextEvent);
+    let theme = this.context;
+    // const styles = {
+    //   background: 'none',
+    //   backgroundHover: require('../images/Backdrop.svg')
+    // }
     if (this.state.showEventInFocus === false) {
       return (
-          <div ref={this.eventRef } onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})} className="Event-Container">
-            <a href={this.props.href} id={this.props.id} className="Event-container-link">
+          <div className="Event-Container">
+            <a style={{color: theme.textEventColor}} ref={this.eventRef } onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}  href={this.props.href} id={this.props.id} className="Event-container-link">
               <figure className="Event-figure">
                 <img className="Event-image" src={this.props.TimelineImage} alt="Error" />
               </figure>
               <div className="Event-body">
-                <span className="Event-date">{this.props.date}</span>
-                <span className="Event-location">{this.props.location}.</span>
-                <h3 className="Event-title">{this.props.title}</h3>
+                <span style={{color: theme.textEventColor}} className="Event-date">{this.props.date}</span>
+                <span style={{color: theme.textEventColor}} className="Event-location">{this.props.location}.</span>
+                <h3 style={{color: theme.textEventColor}} className="Event-title">{this.props.title}</h3>
               </div>
             </a>
           </div>
@@ -71,4 +85,6 @@ class Event extends Component{
     );
   }
 }
+Event.contextType = ThemeStyles;
+
 export default Event;
