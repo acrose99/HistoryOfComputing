@@ -14,16 +14,16 @@ function Timeline(props) {
         newdata = events.map(function (data) {
             if (props.timelineFilter === "Apple") {
                 return (
-                    <AppleEvent key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                 TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                 body={data["Body"]}
                                 citations={[data["Citations"][0], data["Citations"][1]]}
                                 type={data['Type']}
-                    > </AppleEvent>
+                    > </Event>
                 )
             }
             return (
-                <Event key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                        TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                        body={data["Body"]}
                        citations={[data["Citations"][0], data["Citations"][1]]}
@@ -40,12 +40,12 @@ function Timeline(props) {
 
                     if (props.timelineFilter === "Apple") {
                         return (
-                            <AppleEvent key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                            <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                         TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                         body={data["Body"]}
                                         citations={[data["Citations"][0], data["Citations"][1]]}
                                         type = {data['Type']}
-                            > </AppleEvent>
+                            > </Event>
                         )
                     }
                     // else if (data.Type === "RetroApple") {
@@ -71,7 +71,7 @@ function Timeline(props) {
                     //     )
                     // }
                     return (
-                        <Event key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                        <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                body={data["Body"]}
                                citations={[data["Citations"][0], data["Citations"][1]]}
@@ -103,12 +103,12 @@ function Timeline(props) {
             console.log(theme);
                 if (props.timelineFilter === "Apple") {
                     return (
-                        <AppleEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                        <Event theme={props.timelineFilter} key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                     TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                     body={data["Body"]}
                                     citations={[data["Citations"][0], data["Citations"][1]]}
                                     type = {data['Type']}
-                        > </AppleEvent>
+                        > </Event>
                     )
                 }
                 // else if (data.Type === "RetroApple") {
@@ -134,7 +134,7 @@ function Timeline(props) {
                 //     )
                 // }
                 return (
-                    <Event nextEvent={events[8]} key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    <Event theme={props.timelineFilter} nextEvent={events[8]} key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                            TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                            body={data["Body"]}
                            citations={[data["Citations"][0], data["Citations"][1]]}

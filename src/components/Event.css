@@ -40,10 +40,10 @@
     height: 170px;
     width: 55%;
     /*left: 18%;*/
-    border-left: 4mm ridge #9E73D3;
-    border-bottom: 4mm ridge #5C8BAD;
-    border-top: 4mm ridge #9E73D3;
-    transition: height 0.5s linear, width 0.5s linear 0.5s;
+    /*border-left: 4mm ridge #9E73D3;*/
+    /*border-bottom: 4mm ridge #5C8BAD;*/
+    /*border-top: 4mm ridge #9E73D3;*/
+    /*transition: height 0.5s linear, width 0.5s linear 0.5s;*/
     top: 0;
 }
 .Event-container-link:after {
@@ -62,11 +62,11 @@
     content: '';
     height: 170px;
     width: 50% ;
-    border-right: 4mm ridge #5C8BAD;
-    border-bottom: 4mm ridge #9E73D3;
-    border-left: none;
-    border-top: 4mm ridge #5C8BAD;
-    transition: height 0.5s linear, width 0.5s linear 0.5s;
+    /*border-right: 4mm ridge #5C8BAD;*/
+    /*border-bottom: 4mm ridge #9E73D3;*/
+    /*border-left: none;*/
+    /*border-top: 4mm ridge #5C8BAD;*/
+    /*transition: height 0.5s linear, width 0.5s linear 0.5s;*/
 }
 .Event-figure {
     box-sizing: border-box;
@@ -151,7 +151,8 @@
 }
 .Event-container-link:hover {
     transition: all 1.3s;
-    background: url("../images/Backdrop.svg");
+
+    /*background: url("../images/Backdrop.svg");*/
     height: 170px;
     background-position-x: center;
     background-size: cover;

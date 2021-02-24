@@ -23,7 +23,10 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        // background: url("../images/Backdrop.svg");
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
 
         backgroundImage: "linear-gradient(180deg, rgba(210, 174, 255, 0.1575) 0%, rgba(184, 225, 255, 0.3) 20.84%, rgba(197, 191, 255, 0.3) 45.83%, rgba(184, 225, 255, 0.3) 70.31%, rgba(197, 191, 255, 0.3075)",
         navbarBackground: "#8d8bff"
@@ -65,7 +68,11 @@ export const themes = {
         textFooterColor: 'white',
         headerColor: '#000000',
 
-        textEventColor: 'rgb(255,120,75)',
+        textEventColor: 'rgb(0,0,0)',
+        borderLeftColor: '4mm ridge #feef00',
+        borderRightColor: '4mm ridge #FE8100',
+        borderTopColor: '4mm ridge #9e73d3',
+        borderBottomColor: '4mm ridge #00b400',
 
         backgroundImage: 'linear-gradient(180deg, rgba(0, 189, 0, 0.3) 0%, rgba(255, 240, 0, 0.3) 18.23%, rgba(255, 149, 0, 0.3) 38.54%, rgba(213, 29, 0, 0.3) 59.37%, rgba(187, 41, 167, 0.3) 80.73%, rgba(0, 169, 255, 0.3) 100%)',
         navbarBackground: 'rgba(244, 171, 142, 1)'

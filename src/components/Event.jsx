@@ -1,16 +1,21 @@
 import React, {Component} from "react";
 import EventFocus from "./EventFocus";
-import "./Event.css";
+import './Event.css'
 import {ThemeStyles} from '../themeStyles'
-import Navbar from "./Navbar";
+
+// import Backdrop from '../../images/Backdrop.svg';
 
 class Event extends Component{
-
   constructor(props) {
     super(props);
     this.state = {
       showEventInFocus: false,
-      // background: 'none'
+      backdrop: null,
+      background: 'none',
+      borderLeft: 'none',
+      borderRight: 'none',
+      borderTop: 'none',
+      borderBottom: 'none'
     }
     this.eventRef = React.createRef();
     this.showEventInFocus = this.hideEventInFocus.bind(this);
@@ -18,13 +23,19 @@ class Event extends Component{
     this.onClick = this.onClick.bind(this);
     this.nextEvent = this.nextEvent.bind(this);
     // this.changeEventBackground = this.changeEventBackground.bind(this);
+    this.onMouseEnterEvent = this.onMouseEnterEvent.bind(this);
   }
-  // changeEventBackground(style) {
-  //   console.log(this.state.background);
-  //   this.setState({
-  //     background: style
-  //   })
-  // }
+  changeEventBorder(style) {
+    console.log(this.state.background);
+    this.setState({
+      border: style
+    })
+  }
+  changeEventBackground(style) {
+    this.setState({
+      background: style
+    })
+  }
   showEventInFocus() {
     this.setState({
       showEventInFocus: true
@@ -46,21 +57,59 @@ class Event extends Component{
       this.showEventInFocus();
     }
   }
+  onMouseEnterEvent(style, theme) {
+    console.log(theme);
+    this.setState({
+      background: style,
+      borderLeft:  theme.borderLeftColor,
+      borderRight: theme.borderLeftColor,
+      borderTop: theme.borderTopColor,
+      borderBottom: theme.borderBottomColor,
+    })
+  }
+  onMouseLeaveEvent() {
+    this.setState({
+      background: 'none',
+      borderLeft: 'none',
+      borderRight: 'none',
+      borderTop: 'none',
+      borderBottom: 'none',
+    })
+  }
   nextEvent() {
     return Event
   }
+  importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  findBackdrop(backdrops) {
+    if (this.props.theme === 'Apple') {
+      this.state.backdrop = backdrops['AppleBackdrop.svg']
+    }
+    else {
+      this.state.backdrop = backdrops['Backdrop.svg']
+    }
+  }
+
 
   render() {
-    console.log(this.props.nextEvent);
     let theme = this.context;
-    // const styles = {
-    //   background: 'none',
-    //   backgroundHover: require('../images/Backdrop.svg')
-    // }
+
+    const backdrops = this.importAll(require.context('../images/Backdrops', false, /Backdrop.svg$/));
+    this.findBackdrop(backdrops)
     if (this.state.showEventInFocus === false) {
       return (
           <div className="Event-Container">
-            <a style={{color: theme.textEventColor}} ref={this.eventRef } onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}  href={this.props.href} id={this.props.id} className="Event-container-link">
+            <a style={{color: theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
+              borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderRight}}
+               onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, theme)}
+               onMouseLeave={() => this.onMouseLeaveEvent()}
+               ref={this.eventRef }
+               onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
+               href={this.props.href} id={this.props.id} className="Event-container-link">
+
               <figure className="Event-figure">
                 <img className="Event-image" src={this.props.TimelineImage} alt="Error" />
               </figure>
@@ -74,14 +123,14 @@ class Event extends Component{
       )
     }
     else return (
-              <EventFocus  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
-                  style={this.props.Type}
-                  header={this.props.title}
-                  EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}
-                  body={this.props.body}
-                  type={this.props.type}
-                  citations={[this.props.citations[0], this.props.citations[1]]}
-              />
+        <EventFocus  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
+                     style={this.props.Type}
+                     header={this.props.title}
+                     EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}
+                     body={this.props.body}
+                     type={this.props.type}
+                     citations={[this.props.citations[0], this.props.citations[1]]}
+        />
     );
   }
 }
