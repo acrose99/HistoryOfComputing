@@ -12,18 +12,8 @@ function Timeline(props) {
     let newdata;
     if (props.filter === '') {
         newdata = events.map(function (data) {
-            if (props.timelineFilter === "Apple") {
-                return (
-                    <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                                TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
-                                body={data["Body"]}
-                                citations={[data["Citations"][0], data["Citations"][1]]}
-                                type={data['Type']}
-                    > </Event>
-                )
-            }
             return (
-                <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                <Event theme={props.timelineFilter} filter={data["Filter"]} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                        TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                        body={data["Body"]}
                        citations={[data["Citations"][0], data["Citations"][1]]}
@@ -36,46 +26,12 @@ function Timeline(props) {
     else if (typeof props.filter === "number") {
         if (events.filter(data => data.Year === props.filter).length > 0) {
             newdata = events.filter(data => data.Year === props.filter).map((data) => {
-                    console.log(data.length);
-
-                    if (props.timelineFilter === "Apple") {
-                        return (
-                            <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                                        TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
-                                        body={data["Body"]}
-                                        citations={[data["Citations"][0], data["Citations"][1]]}
-                                        type = {data['Type']}
-                            > </Event>
-                        )
-                    }
-                    // else if (data.Type === "RetroApple") {
-                    //     return (
-                    //         <RetroApple key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                    //                     TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
-                    //                     body={data["Body"]}
-                    //                     citations={[data["Citations"][0], data["Citations"][1]]}
-                    //                     type = {[data['Type']]}
-                    //         >
-                    //
-                    //         </RetroApple>
-                    //     )
-                    // }
-                    // else if (data.Type === "IBM") {
-                    //     return (
-                    //         <IBMEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                    //                   TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
-                    //                   body={data["Body"]}
-                    //                   citations={[data["Citations"][0], data["Citations"][1]]}
-                    //                   type = {[data['Type']]}
-                    //         > </IBMEvent>
-                    //     )
-                    // }
                     return (
-                        <Event theme={props.timelineFilter} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                        <Event theme={props.timelineFilter}  key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                                TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                                body={data["Body"]}
                                citations={[data["Citations"][0], data["Citations"][1]]}
-                               type = {data['Type']}
+                               type={data['Type']}
                         > </Event>
 
                     )
@@ -101,40 +57,8 @@ function Timeline(props) {
     else {
         newdata = events.filter(data => data.Filter === props.filter).map((data) => {
             console.log(theme);
-                if (props.timelineFilter === "Apple") {
-                    return (
-                        <Event theme={props.timelineFilter} key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                                    TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
-                                    body={data["Body"]}
-                                    citations={[data["Citations"][0], data["Citations"][1]]}
-                                    type = {data['Type']}
-                        > </Event>
-                    )
-                }
-                // else if (data.Type === "RetroApple") {
-                //     return (
-                //         <RetroApple key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                //                     TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
-                //                     body={data["Body"]}
-                //                     citations={[data["Citations"][0], data["Citations"][1]]}
-                //                     type = {[data['Type']]}
-                //         >
-                //
-                //         </RetroApple>
-                //     )
-                // }
-                // else if (data.Type === "IBM") {
-                //     return (
-                //         <IBMEvent key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                //                   TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
-                //                   body={data["Body"]}
-                //                   citations={[data["Citations"][0], data["Citations"][1]]}
-                //                   type = {[data['Type']]}
-                //         > </IBMEvent>
-                //     )
-                // }
                 return (
-                    <Event theme={props.timelineFilter} nextEvent={events[8]} key={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    <Event theme={props.timelineFilter} filter={data["Filter"]} key={data["id"]} listId={data["id"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                            TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
                            body={data["Body"]}
                            citations={[data["Citations"][0], data["Citations"][1]]}

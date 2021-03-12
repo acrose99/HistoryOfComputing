@@ -13,9 +13,9 @@ class App extends Component {
         };
 
         this.toggleTheme = (themeGiven) => {
-            if (themeGiven === 'RetroApple' || themeGiven === 'retroapple') {
+            if (themeGiven === 'RetroApple' || themeGiven === 'retroapple' || themeGiven === 'Apple' || themeGiven === 'apple') {
                 this.setState(state => ({
-                    theme: themes.RetroApple
+                    theme: themes.Apple
                 }));
             }
             else if (themeGiven === 'Vaporwave' || themeGiven === 'vaporwave') {

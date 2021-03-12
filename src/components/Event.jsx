@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import EventFocus from "./EventFocus";
 import './Event.css'
 import {ThemeStyles} from '../themeStyles'
+import {themes} from '../themeStyles';
 
 // import Backdrop from '../../images/Backdrop.svg';
 
@@ -57,9 +58,29 @@ class Event extends Component{
       this.showEventInFocus();
     }
   }
-  onMouseEnterEvent(style, theme) {
-    console.log(theme);
-    this.setState({
+  onMouseEnterEvent(style, theme, filter) {
+    if (filter !== undefined) {
+      /* console.log(themes[filter].borderLeftColor); */
+      if (themes[filter].borderLeftColor !== undefined && themes[filter].borderRightColor !== undefined
+          && themes[filter].borderTopColor !== undefined
+          && themes[filter].borderBottomColor !== undefined) {
+        this.setState({
+          background: style,
+          borderLeft:  themes[filter].borderLeftColor,
+          borderRight: themes[filter].borderRightColor,
+          borderTop: themes[filter].borderTopColor,
+          borderBottom: themes[filter].borderBottomColor,
+        })
+      }
+      else this.setState({
+        background: style,
+        borderLeft:  theme.borderLeftColor,
+        borderRight: theme.borderLeftColor,
+        borderTop: theme.borderTopColor,
+        borderBottom: theme.borderBottomColor,
+      })
+    }
+    else this.setState({
       background: style,
       borderLeft:  theme.borderLeftColor,
       borderRight: theme.borderLeftColor,
@@ -85,7 +106,8 @@ class Event extends Component{
     return images;
   }
   findBackdrop(backdrops) {
-    if (this.props.theme === 'Apple') {
+    console.log(this.props.filter);
+    if (this.props.filter === 'Apple') {
       this.state.backdrop = backdrops['AppleBackdrop.svg']
     }
     else {
@@ -96,7 +118,7 @@ class Event extends Component{
 
   render() {
     let theme = this.context;
-
+    let filter = this.props.filter;
     const backdrops = this.importAll(require.context('../images/Backdrops', false, /Backdrop.svg$/));
     this.findBackdrop(backdrops)
     if (this.state.showEventInFocus === false) {
@@ -104,7 +126,7 @@ class Event extends Component{
           <div className="Event-Container">
             <a style={{color: theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
               borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderRight}}
-               onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, theme)}
+               onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, theme, filter)}
                onMouseLeave={() => this.onMouseLeaveEvent()}
                ref={this.eventRef }
                onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}

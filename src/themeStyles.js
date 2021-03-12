@@ -59,7 +59,7 @@ export const themes = {
         backgroundImage: "linear-gradient(180deg, rgba(197, 231, 255, 0.225) 0%, rgba(38, 129, 194, 0.3075) 52.6%, rgba(197, 231, 255, 0.225) 97.39%, rgba(226, 243, 255, 0.75) 100%)",
         navbarBackground: "#71bae9"
     },
-    RetroApple: {
+    Apple: {
         foreground: '#00BD00',
         background: 'rgba(244, 171, 142, 1)',
 
@@ -80,3 +80,4 @@ export const themes = {
 };
 
 export const ThemeStyles = React.createContext(themes.vaporwave);
+export default themes;
