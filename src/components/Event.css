@@ -4,29 +4,33 @@
     position: relative;
     display: flex;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     max-height: 170px;
     border: none;
     outline: none;
 }
 .Event-container-link {
-    box-sizing: border-box;
+    height: 100%;
     color: inherit;
     display: flex;
-    float: none;
     margin-left: auto;
     margin-right: auto !important;
     max-width: 830px;
-    overflow: visible;
     position: relative;
     text-decoration: inherit;
-    border: none;
-    outline: none;
+}
+.Event-container-link:hover {
+    transition: all 1.3s;
+    /*background: url("../images/Backdrop.svg");*/
+    height: 100%;
+    background-position-x: center;
+    background-size: cover;
+    padding-top: 25px;
 }
 .Event-container-link:before {
     position: absolute;
     content: '';
-    height: 0;
+    height: 100%;
     width: 0;
     bottom: 0;
     border: 8px solid transparent;
@@ -37,7 +41,7 @@
 .Event-container-link:hover:before {
     position: absolute;
     content: '';
-    height: 170px;
+    height: 100%;
     width: 55%;
     /*left: 18%;*/
     /*border-left: 4mm ridge #9E73D3;*/
@@ -49,7 +53,7 @@
 .Event-container-link:after {
     position: absolute;
     content: '';
-    height: 0;
+    height: 100%;
     width: 0;
     border: 8px solid transparent;
     top: 0;
@@ -60,7 +64,7 @@
 .Event-container-link:hover:after {
     position: absolute;
     content: '';
-    height: 170px;
+    height: 100%;
     width: 50% ;
     /*border-right: 4mm ridge #5C8BAD;*/
     /*border-bottom: 4mm ridge #9E73D3;*/
@@ -68,6 +72,7 @@
     /*border-top: 4mm ridge #5C8BAD;*/
     /*transition: height 0.5s linear, width 0.5s linear 0.5s;*/
 }
+
 .Event-figure {
     box-sizing: border-box;
     margin: 0;
@@ -127,11 +132,11 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    top: -100px;
     display: flex;
     background-color: #d9cfbe;
     width: 5px;
-    height: 175%;
+    height: 200%;
     border-radius: 100%;
     transform: translateY(0);
     will-change: transform;
@@ -144,19 +149,8 @@
     top: 40%;
     width: 20px;
     height: 20px;
-    left: -2.5%;
+    left: -3%;
     border-radius: 100%;
     transform: translateY(0);
     will-change: transform;
-}
-.Event-container-link:hover {
-    transition: all 1.3s;
-
-    /*background: url("../images/Backdrop.svg");*/
-    height: 170px;
-    background-position-x: center;
-    background-size: cover;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
 }
