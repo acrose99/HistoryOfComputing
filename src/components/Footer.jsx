@@ -20,9 +20,9 @@ export default function Footer() {
                             {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
 
                             <Link to="/homeNormal">
-                                <img
+                                {/* <img
                                     src={require("../images/FlatLogo.svg")}
-                                    alt="" className="logo-flat" />
+                                    alt="" className="logo-flat" /> */}
                             </Link>
                             <p id='slogan'>
                                 We make History fun.

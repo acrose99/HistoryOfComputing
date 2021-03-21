@@ -13,7 +13,7 @@ export default function Team() {
                 <div className="team-row">
                     <div className="team-column">
                         <Teammate
-                            image={require("../images/alex2.jpeg")}
+                            image={require("../images/team/alex.jpeg")}
                             name="Alex Rose"
                             role="Lead Programmer"
                             bio="I'm a Junior studying Computer Science at Loyola. I'm also a Mulcahy Fellow at the Software Systems Laboratory and the VP of the Don't Panic CS Club. I like web development and scripting"
@@ -28,7 +28,7 @@ export default function Team() {
                         />
 
                         <Teammate
-                            image={require("../images/alexC.jpg")}
+                            image={require("../images/team/alexC.jpg")}
                             name="Alex Crane"
                             role="Programmer"
                             bio=" I'm Alex Crane and I am a senior Software Engineering major at Loyola. I am an active member of Alpha Phi Omega. I like web development and Object-Oriented programming."
@@ -38,7 +38,7 @@ export default function Team() {
                             ]}
                             fav="Java"
                         />
-                        <Teammate image={require("../images/Jack.png")} name="Jack Narowski" role="Programmer"
+                        <Teammate image={require("../images/team/jack.png")} name="Jack Narowski" role="Programmer"
                             bio="Jacob Narowski is a Software Engineering student at Loyola University. He is specifically interested in research, integrated software, and micro-computers."
                             links={[["Github", "https://github.com/JackNarowski"], ["Personal Website", "https://jacknarowski.com/"]]}
                             fav="React"
@@ -48,7 +48,7 @@ export default function Team() {
 
                     <div className="team-column">
                         <Teammate
-                            image={require("../images/gkt.jpg")}
+                            image={require("../images/team/gkt.jpg")}
                             name="George K. Thiruvathukal"
                             role="Writer (Technical History)"
                             bio="Hi! I’m George K. Thiruvathukal. I’m professor of computer science at Loyola University Chicago and visiting faculty at Argonne National Laboratory."
@@ -63,7 +63,7 @@ export default function Team() {
                         />
 
                         <Teammate
-                            image={require("../images/ddennis.jpg")}
+                            image={require("../images/team/ddennis.jpg")}
                             name="David Dennis"
                             role="Writer (Cultural History)"
                             bio=" David B. Dennis (Ph.D., UCLA, 1991; B.A., University of Wisconsin, 1984) is a Professor of History at Loyola University Chicago where he teaches courses on Western Humanities, Modern European Cultural and Intellectual History, and the Cultural History of Computing."

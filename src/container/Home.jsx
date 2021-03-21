@@ -11,7 +11,7 @@ class Home extends Component
     constructor(props) {
         super(props);
         this.state = {
-            src: require('../images/Mac128hello.svg')
+            // src: require('../images/Mac128hello.svg')
         }
     }
     render() {
@@ -20,7 +20,7 @@ class Home extends Component
                 <div className="Home-container">
                     <Navbar/>
                     <div>
-                        <img className="Home-media" onMouseLeave={() => this.setState({src: require('../images/Mac128hello.svg')})} onMouseEnter={() => this.setState({src: require('../images/Mac128world.svg')})} src={this.state.src} alt="MacHello"/>
+                        {/* <img className="Home-media" onMouseLeave={() => this.setState({src: require('../images/Mac128hello.svg')})} onMouseEnter={() => this.setState({src: require('../images/Mac128world.svg')})} src={this.state.src} alt="MacHello"/> */}
                     </div>
                     <h1   className="Home-content">
                         The History of Computing!

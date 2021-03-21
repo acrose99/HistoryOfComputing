@@ -3,11 +3,11 @@ import "./Timeline.css"
 import Navbar from "../components/Navbar";
 import Event from "../components/Event";
 import Footer from "../components/Footer";
-import {data} from "../events"
+import {events} from "../events"
 import AppleEvent from "../components/EventTypes/Apple/AppleEvent";
 function Timeline() {
 
-    let newdata = data.map((data) => {
+    let newdata = events.map((data) => {
 
             if (data.Type === "Apple") {
                 return (

@@ -61,7 +61,7 @@ export default class Navbar extends Component {
                                 <h2 id="title">The History Of Computing
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <Link to="/homeNormal" >
-                                        <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" />
+                                        <img className="Nav-icon" src={require("../images/buttons/artificial-intelligence.png")} alt="" />
                                     </Link>
                                 </h2>
                             </div>
@@ -73,7 +73,7 @@ export default class Navbar extends Component {
                                 <button className="hvr-sweep-to-right"><a className="menuItemLink" href="https://ssl.cs.luc.edu/">SSL</a></button>
                                 <button className="gitItem" >
                                     <a href="https://github.com/acrose99/HistoryOfComputing">
-                                        <img className="menuImg" src={require("../images/github.svg")} role="link" aria-label="Github Link" alt="Github" />
+                                        <img className="menuImg" src={require("../images/buttons/github.svg")} role="link" aria-label="Github Link" alt="Github" />
                                     </a>
                                 </button>
                                 {/* put back in prev line: style={{ marginLeft: "45%" }} */}
@@ -86,11 +86,11 @@ export default class Navbar extends Component {
                             <div id="mini-top-container">
 
                                 <h2 className="title">The History Of Computing</h2>
-                                {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
+                                <img className="Nav-icon" src={require("../images/buttons/artificial-intelligence.png")} alt="" />
                                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                 <a className="hamLink">
                                     <Link to="/homeNormal" />
-                                    <img id="hamIcon" src={require("../images/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
+                                    <img id="hamIcon" src={require("../images/buttons/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
                                 </a>
 
                             </div>

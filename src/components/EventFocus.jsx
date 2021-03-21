@@ -138,20 +138,20 @@ function EventFocus(props) {
                         <div style={{backgroundColor: "#7f7f7f"}} className="vbar-buttons">
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/media_player_stream_no.png")}
+                                    src={require("../images/buttons/media_player_stream_no.png")}
                                     alt="alt"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/button-left-v.svg")}
+                                    src={require("../images/buttons/button-left-v.svg")}
                                     alt="Error"
                                     className="leftRight"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/button-right-v.svg")}
+                                    src={require("../images/buttons/button-right-v.svg")}
                                     alt="burr"
                                 />
                             </button>
@@ -180,20 +180,20 @@ function EventFocus(props) {
                         <div style={{backgroundColor: "#000055"}} className="vbar-buttons">
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/media_player_stream_no.png")}
+                                    src={require("../images/buttons/media_player_stream_no.png")}
                                     alt="alt"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/button-left-v.svg")}
+                                    src={require("../images/buttons/button-left-v.svg")}
                                     alt="Error"
                                     className="leftRight"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/button-right-v.svg")}
+                                    src={require("../images/buttons/button-right-v.svg")}
                                     alt="burr"
                                 />
                             </button>
@@ -226,20 +226,20 @@ function EventFocus(props) {
                             className="vaporwaveBarContents"
                         >
                             <img
-                                src={require("../images/media_player_stream_no.png")}
+                                src={require("../images/buttons/media_player_stream_no.png")}
                                 alt="alt"
                             />
                         </button>
                         <button className="vaporwaveBarContents">
                             <img
-                                src={require("../images/button-left-v.svg")}
+                                src={require("../images/buttons/button-left-v.svg")}
                                 alt="Error"
                                 className="leftRight"
                             />
                         </button>
                         <button className="vaporwaveBarContents">
                             <img
-                                src={require("../images/button-right-v.svg")}
+                                src={require("../images/buttons/button-right-v.svg")}
                                 alt="burr"
                             />
                         </button>
