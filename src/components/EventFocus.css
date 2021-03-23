@@ -80,9 +80,11 @@
 @media screen and (min-width: 1400px) {
   .showEventWrapper {
     width: 1000px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
     margin: 15% auto 5%;
+    display: flex;
+    flex-direction: column;
   }
   .showEvent {
     width: 800px;
@@ -108,11 +110,11 @@
   right: 0;
   /* display: block; */
   /* margin: 33%; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(0, 147, 255, 0.4) 0%,
     rgba(173, 95, 249, 0.4) 100%
-  );
+  ); */
   /*transform: translateY(100%);*/
 }
 
@@ -142,9 +144,13 @@
   /* left: 342px; */
   /*top: 400px;*/
   padding: 3% 3% 5%;
-  margin: 20px 0px;
+  margin: 0px 0px;
   background: #ffffff;
-  border: 4px solid #442199;
+  /* border: solid #442199; */
+  border: solid rgb(78, 76, 76);
+  border-width: 0px 1.5px 1.5px 1.5px;
+  border-radius: 0em 0em 0.5em 0.5em;
+
   box-sizing: border-box;
   /* font stuff */
   /* font-family: Merriweather, serif; */
@@ -163,14 +169,25 @@
   /* background-color: bisque; */
 }
 .eventHeader {
-  /* position: absolute; */
-  display: block;
-  /*width: 800px;*/
-  /*height: 100px;*/
+  /* display: block; */
+  /* width: 800px; */
+  height: 30px;
 
   background: #ffffff;
-  border: 4px solid #442199;
-  box-sizing: border-box;
+  /* border: solid #442199; */
+  border: solid rgb(78, 76, 76);
+
+  border-width: 1.5px 1.5px 0px 1.5px;
+  padding: 0px;
+  /* box-shadow: 0px 1px 0px gray; */
+  border-radius: 0.5em 0.5em 0em 0em;
+  /* box-shadow: inset 0 0.9em 1em; */
+  /* box-sizing: border-box; */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 147, 255, 0.4) 0%,
+    rgba(173, 95, 249, 0.4) 100%
+  );
 }
 
 #event-citation-text {
@@ -195,6 +212,7 @@
   font-style: italic;
   font-weight: normal;
   text-align: center;
+  font-size: 12px;
 }
 /* .leftRight{
   margin-top: 3px;
@@ -229,7 +247,7 @@
   /* margin-left: 15px; */
   margin: auto 5px auto 0;
   height: 30px;
-   /*background-color: #9d41ff;*/
+  /*background-color: #9d41ff;*/
   width: 55%;
 }
 .eventBody-image {

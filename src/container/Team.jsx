@@ -3,11 +3,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
 import Footer from "../components/Footer";
+import FocusEvent from "../components/FocusEvent";
 
 export default function Team() {
     //Todo Refactor the crap out of this and Add Alex Crane to credits
     return (
         <div style={{ backgroundColor: "#e0f1ff" }}>
+            <FocusEvent/>
             <Navbar />
             <div id="Team-Container">
                 <div className="team-row">
