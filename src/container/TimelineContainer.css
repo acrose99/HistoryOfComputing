@@ -1,0 +1,4 @@
+#TimelineContainer {
+    display: flex;
+    flex-direction: column;
+}

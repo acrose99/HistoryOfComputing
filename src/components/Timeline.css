@@ -1,0 +1,52 @@
+/*
+=============
+TODO MEDIA QUERIES
+=============
+ */
+#Timeline {
+    overflow-x: hidden;
+    /*background: linear-gradient(180deg, rgba(210, 174, 255, 0.7) 0%, rgba(184, 225, 255, 0.5) 20.84%, rgba(197, 191, 255, 0.5) 45.83%, rgba(184, 225, 255, 0.5) 70.31%, rgba(197, 191, 255, 0.7) 100%);*/
+}
+#Timeline-header {
+    font-family: Merriweather, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    /* or 117% */
+    text-align: center;
+    color: #222222;
+    text-shadow: 0px 8px 10px #3F51B5;
+}
+#Timeline-intro {
+    font-family: Merriweather, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    /* or 100% */
+
+    text-align: center;
+
+    color: #222222;
+
+}
+#Timeline-separator {
+    display: flex;
+    position: sticky;
+    border: none;
+    margin: auto;
+    border: 2px;
+    width: 2%;
+    height: 3053px;
+    background-color: #D9CFBE;
+}
+#events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+    position: relative;
+    min-height: 500px;
+}

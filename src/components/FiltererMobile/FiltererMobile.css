@@ -1,0 +1,12 @@
+#FiltererMobileCarousel {
+    display: flex;
+    background: #ca7bb2;
+}
+.FiltererMobileType {
+    background: #40b2d2;
+}
+.filtererMobileCategoryIcon {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}

@@ -36,13 +36,13 @@
     /*margin: auto 250px 125px;*/
     margin: 50px auto;
     position: relative;
-    background-image: url('../images/Mac128hello.png');
+    background-image: url('../images/butttons/Mac128hello.png');
     height: 480px;
     width: 728px;
 }
 
 .Home-media:hover {
-    background-image: url('../images/Mac128world.png');
+    background-image: url('../images/butttons/Mac128world.png');
 }
 .Home-content {
     opacity: 1;

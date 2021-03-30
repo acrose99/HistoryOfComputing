@@ -1,7 +1,8 @@
 import './Teammate.css';
 import React from 'react';
 // import './EventFocus';
-
+// import {ThemeStyles} from '../themeStyles'
+//Todo Change by theme?
 function Teammate(props) {
 
     return (
@@ -19,9 +20,9 @@ function Teammate(props) {
                     <p className="eventBody-text">{props.bio}</p>
                     <div className="bioList">
                         <p className="bioList">Links:</p>
-                                <img src = {require("../images/world-1.png")} alt="" className="bioList"/>
+                                <img src = {require("../images/butttons/world-1.png")} alt="" className="bioList"/>
                                 <a className= "bioList" href = {props.links[0][1]}>{props.links[0][0]}</a>
-                                <img src = {require("../images/world-1.png")} alt = " " className="bioList"/>
+                                <img src = {require("../images/butttons/world-1.png")} alt = " " className="bioList"/>
                                 <a className="bioList" href={props.links[1][1]}>{props.links[1][0]}</a>
                     </div>
                 </div>

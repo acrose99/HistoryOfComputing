@@ -1,5 +1,8 @@
-import React from "react";
+import React, {Component} from "react";
 import "./EventFocus.css";
+// import {ThemeStyles} from '../themeStyles';
+
+//TODO change based on context?
 
 /* For RetroApple focused Events (I.E MAC 1984) */
 const RetroAppleStyleDiv = {
@@ -15,6 +18,7 @@ const RetroAppleStyleText = {
 
 const RetroAppleStyleBar = {
     color: "131313",
+    backgroundColor: "#ffffff",
 };
 
 /* For CP/M focused Events (I.E Altair 8800) */
@@ -30,19 +34,24 @@ const CPMStyleText = {
 };
 const CPMStyleBar = {
     color: "00aaaa",
+    backgroundColor: "#292929",
 };
 
-function EventFocus(props) {
-    function renderCitations() {
+class EventFocus extends Component  {
+    constructor(props) {
+        super(props);
+        this.ref = this.props.ref;
+    }
+     renderCitations() {
         let styleText;
-        if (props.type === "CPM") {
+        if (this.props.type === "CPM") {
             styleText = {
                 fontFamily: "Px437_IBM_BIOS",
                 color: "#00aaaa",
                 fontSize: "1rem",
             }
         }
-        else if (props.type === "RetroApple") {
+        else if (this.props.type === "RetroApple") {
             styleText = {
                 fontFamily: "ChicagoFLF",
                 color: "#131313",
@@ -58,7 +67,7 @@ function EventFocus(props) {
                 fontSize: "1rem",
             }
         }
-        if (props.citations[0] == null || props.citations[0]=== "") {
+        if (this.props.citations[0] == null || this.props.citations[0]=== "") {
             return (
                 <div>
                     <p style={styleText} id="event-citation-text">
@@ -74,44 +83,44 @@ function EventFocus(props) {
                         Citations:
                     </p>
                     <p style={styleText} id="event-citation-text">
-                        {props.citations[0]}
+                        {this.props.citations[0]}
                     </p>
                     <p style={styleText}  id="event-citation-text-right">
-                        {props.citations[1]}
+                        {this.props.citations[1]}
                     </p>
                 </div>
             )
         }
     }
-    function renderBodyText() {
-        if (props.type === "CPM") {
+    renderBodyText() {
+        if (this.props.type === "CPM") {
             return (
                 <p style={CPMStyleText} className="eventBody-text">
-                    {props.body}
+                    {this.props.body}
                 </p>
             )
         }
-        else if (props.type === "RetroApple") {
+        else if (this.props.type === "RetroApple") {
             return (
                 <p style={RetroAppleStyleText} className="eventBody-text">
-                    {props.body}
+                    {this.props.body}
                 </p>
             )
         }
         else {
             return (
                 <p style={RetroAppleStyleText} className="eventBody-text">
-                    {props.body}
+                    {this.props.body}
                 </p>
             )
         }
     }
-    function renderBody() {
-        if (props.EventFocusImages[0] === undefined) {
+    renderBody() {
+        if (this.props.EventFocusImages[0] === undefined) {
 
             return (
                 <div>
-                    {renderBodyText()}
+                    {this.renderBodyText()}
                 </div>
             )
         }
@@ -121,147 +130,148 @@ function EventFocus(props) {
                     <img
                         className="eventBody-image"
                         id="eventBody-image1"
-                        src={props.EventFocusImages[0]}
+                        src={this.props.EventFocusImages[0]}
                         alt={""}
                     />
-                    {renderBodyText()}
+                    {this.renderBodyText()}
                 </div>
             )
         }
     }
-
-    if (props.type === "RetroApple") {
-        return (
-            <div className="showEventWrapper">
-                <div className="showEvent">
-                    <div style={RetroAppleStyleBar} className="vaporwaveBar">
-                        <div style={{backgroundColor: "#7f7f7f"}} className="vbar-buttons">
-                            <button className="vaporwaveBarContents">
-                                <img
-                                    src={require("../images/media_player_stream_no.png")}
-                                    alt="alt"
-                                />
-                            </button>
-                            <button className="vaporwaveBarContents">
-                                <img
-                                    src={require("../images/button-left-v.svg")}
-                                    alt="Error"
-                                    className="leftRight"
-                                />
-                            </button>
-                            <button className="vaporwaveBarContents">
-                                <img
-                                    src={require("../images/button-right-v.svg")}
-                                    alt="burr"
-                                />
-                            </button>
+    render() {
+        if (this.props.type === "RetroApple") {
+            return (
+                <div className="showEventWrapper">
+                    <div className="showEvent">
+                        <div className="vaporwaveBar">
+                            <div style={RetroAppleStyleBar}  className="vbar-buttons">
+                                <button onClick={this.props.hideEventInFocus} className="vaporwaveBarContents">
+                                    <img
+                                        src={require("../images/butttons/media_player_stream_no.png")}
+                                        alt="alt"
+                                    />
+                                </button>
+                                <button className="vaporwaveBarContents">
+                                    <img
+                                        src={require("../images/butttons/button-left-v.svg")}
+                                        alt="Error"
+                                        className="leftRight"
+                                    />
+                                </button>
+                                <button className="vaporwaveBarContents">
+                                    <img
+                                        src={require("../images/butttons/button-right-v.svg")}
+                                        alt="burr"
+                                    />
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div style={RetroAppleStyleDiv} id="header" className="eventHeader">
-                        <h2 id="eventHeader-text" style={RetroAppleStyleText}>
-                            {props.header}
-                        </h2>
-                        <div id="locationTimeWrapper"/>
-                    </div>
-                    <div style={RetroAppleStyleDiv} className="eventBody">
-                        {renderBody()}
-                    </div>
-                    <div style={RetroAppleStyleDiv} className="event-citation">
-                        {renderCitations()}
+                        <div style={RetroAppleStyleDiv} id="header" className="eventHeader">
+                            <h2 id="eventHeader-text" style={RetroAppleStyleText}>
+                                {this.props.header}
+                            </h2>
+                            <div id="locationTimeWrapper"/>
+                        </div>
+                        <div style={RetroAppleStyleDiv} className="eventBody">
+                            {this.renderBody()}
+                        </div>
+                        <div style={RetroAppleStyleDiv} className="event-citation">
+                            {this.renderCitations()}
+                        </div>
                     </div>
                 </div>
-            </div>
-        );
-    } else if (props.type === "CPM") {
-        return (
+            );
+        } else if (this.props.type === "CPM") {
+            return (
+                <div className="showEventWrapper">
+                    <div className="showEvent">
+                        <div className="vaporwaveBar">
+                            <div style={CPMStyleBar}  className="vbar-buttons">
+                                <button onClick={this.props.hideEventInFocus} className="vaporwaveBarContents">
+                                    <img
+                                        src={require("../images/butttons/media_player_stream_no.png")}
+                                        alt="alt"
+                                    />
+                                </button>
+                                <button className="vaporwaveBarContents">
+                                    <img
+                                        src={require("../images/butttons/button-left-v.svg")}
+                                        alt="Error"
+                                        className="leftRight"
+                                    />
+                                </button>
+                                <button className="vaporwaveBarContents">
+                                    <img
+                                        src={require("../images/butttons/button-right-v.svg")}
+                                        alt="burr"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                        <div style={CPMStyleDiv} id="header" className="eventHeader">
+                            <h2 id="eventHeader-text" style={CPMStyleText}>
+                                {this.props.header}
+                            </h2>
+                            <div id="locationTimeWrapper"/>
+                        </div>
+                        <div style={CPMStyleDiv} className="eventBody">
+                            {this.renderBody()}
+                        </div>
+                        <div style={CPMStyleDiv} className="event-citation">
+                            {this.renderCitations()}
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        else return (
             <div className="showEventWrapper">
                 <div className="showEvent">
-                    <div style={CPMStyleBar} className="vaporwaveBar">
-                        <div style={{backgroundColor: "#000055"}} className="vbar-buttons">
-                            <button className="vaporwaveBarContents">
+                    {/* vaporwave themed navigation bar  */}
+                    <div className="vaporwaveBar">
+                        <div style={{backgroundColor: "#9d41ff"}} className="vbar-buttons">
+                            <button
+                                onClick={this.props.hideEventInFocus}
+                                className="vaporwaveBarContents"
+                            >
                                 <img
-                                    src={require("../images/media_player_stream_no.png")}
+                                    src={require("../images/butttons/media_player_stream_no.png")}
                                     alt="alt"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/button-left-v.svg")}
+                                    src={require("../images/butttons/button-left-v.svg")}
                                     alt="Error"
                                     className="leftRight"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/button-right-v.svg")}
+                                    src={require("../images/butttons/button-right-v.svg")}
                                     alt="burr"
                                 />
                             </button>
                         </div>
                     </div>
-                    <div style={CPMStyleDiv} id="header" className="eventHeader">
-                        <h2 id="eventHeader-text" style={CPMStyleText}>
-                            {props.header}
-                        </h2>
+
+                    {/* header for the event  */}
+                    <div id="header" className="eventHeader">
+                        <h2 id="eventHeader-text">{this.props.header}</h2>
                         <div id="locationTimeWrapper"/>
                     </div>
-                    <div style={CPMStyleDiv} className="eventBody">
-                        {renderBody()}
+
+                    {/* event body  */}
+                    <div className="eventBody">
+                        {this.renderBody()}
                     </div>
-                    <div style={CPMStyleDiv} className="event-citation">
-                        {renderCitations()}
+                    <div className="event-citation">
+                        {this.renderCitations()}
                     </div>
                 </div>
             </div>
         );
     }
-    return (
-        <div className="showEventWrapper">
-            <div className="showEvent">
-                {/* vaporwave themed navigation bar  */}
-                <div className="vaporwaveBar">
-                    <div style={{backgroundColor: "#9d41ff"}} className="vbar-buttons">
-                        <button
-                            onClick={props.onClick}
-                            className="vaporwaveBarContents"
-                        >
-                            <img
-                                src={require("../images/media_player_stream_no.png")}
-                                alt="alt"
-                            />
-                        </button>
-                        <button className="vaporwaveBarContents">
-                            <img
-                                src={require("../images/button-left-v.svg")}
-                                alt="Error"
-                                className="leftRight"
-                            />
-                        </button>
-                        <button className="vaporwaveBarContents">
-                            <img
-                                src={require("../images/button-right-v.svg")}
-                                alt="burr"
-                            />
-                        </button>
-                    </div>
-                </div>
-
-                {/* header for the event  */}
-                <div id="header" className="eventHeader">
-                    <h2 id="eventHeader-text">{props.header}</h2>
-                    <div id="locationTimeWrapper"/>
-                </div>
-
-                {/* event body  */}
-                <div className="eventBody">
-                    {renderBody()}
-                </div>
-                <div className="event-citation">
-                    {renderCitations()}
-                </div>
-            </div>
-        </div>
-    );
 }
 
 export default EventFocus;
