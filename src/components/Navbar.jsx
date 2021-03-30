@@ -92,7 +92,7 @@ class Navbar extends Component {
                                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                 <div className="hamLink">
                                     <a aria-hidden title="home" href="/home">
-                                    <img id="hamIcon" src={require("../images/butttons/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
+                                    <img id="hamIcon" src={require("../images/buttons/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
                                     </a>
                                 </div>
 
@@ -108,7 +108,7 @@ class Navbar extends Component {
                                     <a href="/https://ecommons.luc.edu/history_facpubs/42/" className="miniMenuItem">The Book</a></div>
                                 <div className="miniMenuItemDiv">
                                     {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
-                                    <a href="about" lassName="miniMenuItem">About Us
+                                    <a href="about" className="miniMenuItem">About Us
                                     </a>
                                 </div>
                                 <div className="miniMenuItemDiv">

@@ -147,20 +147,20 @@ class EventFocus extends Component  {
                             <div style={RetroAppleStyleBar}  className="vbar-buttons">
                                 <button onClick={this.props.hideEventInFocus} className="vaporwaveBarContents">
                                     <img
-                                        src={require("../images/butttons/media_player_stream_no.png")}
+                                        src={require("../images/buttons/media_player_stream_no.png")}
                                         alt="alt"
                                     />
                                 </button>
                                 <button className="vaporwaveBarContents">
                                     <img
-                                        src={require("../images/butttons/button-left-v.svg")}
+                                        src={require("../images/buttons/button-left-v.svg")}
                                         alt="Error"
                                         className="leftRight"
                                     />
                                 </button>
                                 <button className="vaporwaveBarContents">
                                     <img
-                                        src={require("../images/butttons/button-right-v.svg")}
+                                        src={require("../images/buttons/button-right-v.svg")}
                                         alt="burr"
                                     />
                                 </button>
@@ -189,20 +189,20 @@ class EventFocus extends Component  {
                             <div style={CPMStyleBar}  className="vbar-buttons">
                                 <button onClick={this.props.hideEventInFocus} className="vaporwaveBarContents">
                                     <img
-                                        src={require("../images/butttons/media_player_stream_no.png")}
+                                        src={require("../images/buttons/media_player_stream_no.png")}
                                         alt="alt"
                                     />
                                 </button>
                                 <button className="vaporwaveBarContents">
                                     <img
-                                        src={require("../images/butttons/button-left-v.svg")}
+                                        src={require("../images/buttons/button-left-v.svg")}
                                         alt="Error"
                                         className="leftRight"
                                     />
                                 </button>
                                 <button className="vaporwaveBarContents">
                                     <img
-                                        src={require("../images/butttons/button-right-v.svg")}
+                                        src={require("../images/buttons/button-right-v.svg")}
                                         alt="burr"
                                     />
                                 </button>
@@ -235,20 +235,20 @@ class EventFocus extends Component  {
                                 className="vaporwaveBarContents"
                             >
                                 <img
-                                    src={require("../images/butttons/media_player_stream_no.png")}
+                                    src={require("../images/buttons/media_player_stream_no.png")}
                                     alt="alt"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/butttons/button-left-v.svg")}
+                                    src={require("../images/buttons/button-left-v.svg")}
                                     alt="Error"
                                     className="leftRight"
                                 />
                             </button>
                             <button className="vaporwaveBarContents">
                                 <img
-                                    src={require("../images/butttons/button-right-v.svg")}
+                                    src={require("../images/buttons/button-right-v.svg")}
                                     alt="burr"
                                 />
                             </button>
