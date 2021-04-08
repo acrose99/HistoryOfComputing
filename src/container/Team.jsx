@@ -3,34 +3,7 @@ import React, {Component} from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
 import Footer from "../components/Footer";
-<<<<<<< HEAD
-import FocusEvent from "../components/FocusEvent";
-
-export default function Team() {
-    //Todo Refactor the crap out of this and Add Alex Crane to credits
-    return (
-        <div style={{ backgroundColor: "#e0f1ff" }}>
-            <FocusEvent/>
-            <Navbar />
-            <div id="Team-Container">
-                <div className="team-row">
-                    <div className="team-column">
-                        <Teammate
-                            image={require("../images/team/alex.jpeg")}
-                            name="Alex Rose"
-                            role="Lead Programmer"
-                            bio="I'm a Junior studying Computer Science at Loyola. I'm also a Mulcahy Fellow at the Software Systems Laboratory and the VP of the Don't Panic CS Club. I like web development and scripting"
-                            links={[
-                                ["Github", "https://github.com/acrose99"],
-                                [
-                                    "Personal Website",
-                                    "https://acrose99.github.io/PersonalWebsite/",
-                                ],
-                            ]}
-                            fav="Macintosh128k"
-                        />
-=======
-// import {ThemeStyles} from '../themeStyles'
+// import hemeStyles} from '../themeStyles'
 //TODO Change based on context
 class Team extends Component{
     // const theme = useContext(ThemeStyles);
@@ -78,7 +51,6 @@ class Team extends Component{
                             >
                             </Teammate>
                         </div>
->>>>>>> ad2a58e5744f8dcbd2986682793210f095ea35fc
 
                         <div className="team-column">
                             <Teammate
