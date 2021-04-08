@@ -12,6 +12,8 @@
   }
   #eventHeader-text {
     font-size: 16px;
+    color: white;
+    font-weight: bold;
   }
   .eventBody-image {
     display: none;
@@ -178,6 +180,10 @@
   border: solid rgb(78, 76, 76);
 
   border-width: 1.5px 1.5px 0px 1.5px;
+  /* align-self: center; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 0px;
   /* box-shadow: 0px 1px 0px gray; */
   border-radius: 0.5em 0.5em 0em 0em;
@@ -226,7 +232,8 @@
 }
 
 .vaporwaveBarContents {
-  display: inline-block;
+  /* display: inline-block; */
+  position: relative;
   /* margin-right: 10px; */
   font-size: 20px;
 
@@ -234,6 +241,7 @@
   border: transparent;
   width: 30px;
   height: 30px;
+  margin-left: 2px;
 
   /* width: 50px; */
 }
@@ -248,7 +256,7 @@
   margin: auto 5px auto 0;
   height: 30px;
   /*background-color: #9d41ff;*/
-  width: 55%;
+  width: 45%;
 }
 .eventBody-image {
   height: 200px;
