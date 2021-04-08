@@ -1,0 +1,99 @@
+#filtererClosed {
+    background: #CA7BB2;
+    width: 12%;
+    min-width: 150px;
+    max-width: 200px;
+    margin-right: 25px;
+    /*display: flex;*/
+    align-self: end;
+    top: 40%;
+    position: fixed;
+}
+#filtererClosedHeader {
+    color: white;
+    font-size: 16px;
+    display: contents;
+    margin-left: 5px;
+
+}
+.filtererContainer {
+    padding-left: 15px;
+}
+
+.icon {
+    align-self: center;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.filtererCategory {
+    color: white;
+    font-size: 16px;
+}
+.filtererCategoryContainer {
+    /*display: flex;*/
+    border-bottom: 1px solid rgba(0,0,0,1);
+    width: 100%;
+}
+.filtererCategoryHeaderContainer {
+    display: flex;
+    margin-left: 5px;
+}
+.filtererCategoriesOpened {
+    display: none;
+    flex-direction: column;
+}
+.filtererCategoryType {
+    background: #40B2D2;
+    border-bottom: 2px solid rgba(0,0,0,1)
+}
+.filtererCategoryTypeContainer {
+    display: flex;
+}
+.filtererCategoryIcon {
+    align-self: center;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.filtererCategoryTypeHeader {
+    color: white;
+    margin-left: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.input-range {
+    justify-content: center;
+}
+#filtererContainerYear {
+    padding-bottom: 20px;
+}
+#filtererCategoryContainerYear {
+    border: none;
+}
+
+.filtererShowAll {
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+}
+.filtererShowAllContainer {
+    background: #40B2D2;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.filtererShowAllHeader {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+#yearSubmit {
+    background: #3f51b5 ;
+    color: white;
+    width: 80%;
+    height: 20px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    border: 0;
+}

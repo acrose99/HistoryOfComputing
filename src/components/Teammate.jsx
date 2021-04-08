@@ -1,7 +1,8 @@
 import './Teammate.css';
 import React from 'react';
 // import './EventFocus';
-
+// import {ThemeStyles} from '../themeStyles'
+//Todo Change by theme?
 function Teammate(props) {
 
     return (
