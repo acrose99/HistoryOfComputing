@@ -130,7 +130,7 @@ class EventFocus extends Component  {
                     <img
                         className="eventBody-image"
                         id="eventBody-image1"
-                        src={this.props.EventFocusImages[0]}
+                        // src={this.props.EventFocusImages[0]}
                         alt={""}
                     />
                     {this.renderBodyText()}

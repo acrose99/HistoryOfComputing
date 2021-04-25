@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
 import Footer from "../components/Footer";
+import FocusEvent from "../components/FocusEvent";
 // import hemeStyles} from '../themeStyles'
 //TODO Change based on context
 class Team extends Component{
@@ -14,6 +15,7 @@ class Team extends Component{
     render () {
         return (
             <div style={{ backgroundColor: "#e0f1ff" }}>
+                <FocusEvent/>
                 <Navbar />
                 <div id="Team-Container">
                     <div className="team-row">

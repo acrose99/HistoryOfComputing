@@ -3,15 +3,10 @@ import { Route, Switch } from "react-router-dom";
 import AppliedRoute from "./components/AppliedRoute";
 import Team from "./container/Team";
 import Home from "./container/Home";
-<<<<<<< HEAD
 import NfError from "./container/NFError";
 import Timeline from "./container/Timeline";
-import FocusEvent from "./components/EventFocus.jsx";
+import FocusEvent from "./components/FocusEvent";
 
-=======
-import NFError from "./container/NFError";
-import TimelineContainer from "./container/TimelineContainer";
->>>>>>> ad2a58e5744f8dcbd2986682793210f095ea35fc
 export default function Routes({ appProps }) {
   return (
     <Switch>
