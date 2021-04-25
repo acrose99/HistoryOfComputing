@@ -189,12 +189,12 @@
 
 .event-citation {
   /* position: absolute; */
-  display: flex;
+  /* display: flex; */
   bottom: 0;
-  top: 1000px;
+  /* top: 1000px; */
   background: #ffffff;
-  border: 2px solid #442199;
-  box-sizing: border-box;
+  /* border: 2px solid #442199; */
+  /* box-sizing: border-box; */
   /*width: 800px;*/
   height: auto;
   padding: 0.5% 1%;
