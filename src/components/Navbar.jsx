@@ -91,9 +91,9 @@ class Navbar extends Component {
                                 {/* <img className="Nav-icon" src={require("../images/artificial-intelligence.png")} alt="" /> */}
                                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                                 <div className="hamLink">
-                                    <a aria-hidden title="home" href="/home">
+                                    <p aria-hidden title="home">
                                     <img id="hamIcon" src={require("../images/buttons/menu.svg")} alt="X" onClick={this.miniMenuFunction} />
-                                    </a>
+                                    </p>
                                 </div>
 
                             </div>
