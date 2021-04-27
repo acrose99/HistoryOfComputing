@@ -3,7 +3,6 @@ import React, {Component} from "react";
 import Navbar from "../components/Navbar";
 import Teammate from "../components/Teammate";
 import Footer from "../components/Footer";
-// import {ThemeStyles} from '../themeStyles'
 //TODO Change based on context
 class Team extends Component{
     // const theme = useContext(ThemeStyles);

@@ -151,7 +151,7 @@ class Event extends Component{
       )
     }
     else return (
-        <EventFocus  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
+        <EventFocus theme={theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
                      style={this.props.Type}
                      header={this.props.title}
                      EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}

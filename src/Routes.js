@@ -3,8 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import AppliedRoute from "./components/AppliedRoute";
 import Team from "./container/Team";
 import Home from "./container/Home";
-import NFError from "./container/NFError";
 import TimelineContainer from "./container/TimelineContainer";
+import NFError from "./container/NFError";
 export default function Routes({ appProps }) {
   return (
     <Switch>
@@ -20,6 +20,7 @@ export default function Routes({ appProps }) {
       {/*<AppliedRoute path="/contact" exact component={Contact} appProps={appProps} />*/}
       {/* Route to team page */}
       <AppliedRoute path="/team" exact component={Team} appProps={appProps} />
+      <AppliedRoute path="/event" exact component={FocusEvent} appProps={appProps} />
       {/*{ /* Route to Documentation page */}
       {/*<AppliedRoute path="/documentation" exact component={Documentation} appProps={appProps} />*/}
       {/* Redirects to 404 error for any route that doesnt match */}
