@@ -50,20 +50,12 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-
-                    {/*TODO add Privacy Policy and terms of conditions (usual open source BS)*/}
                     <div className="footer-bottom-full">
                         <div className="footer-wrapper">
                             <div style={{color: theme.textFooterColor}} className="text-rights">
                                 © Copyright 2012-Present, Software and Systems Laboratory
                             </div>
                         </div>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        {/*<div className="footer-wrapper">*/}
-                        {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
-                        {/*    <a style={{color: theme.textFooterColor}} href="#" className="secondary-link-dark">Terms &amp; Conditions</a>*/}
-                        {/*    <a style={{color: theme.textFooterColor}} href="#" className="secondary-link-dark">Privacy Policy</a>*/}
-                        {/*</div>*/}
                     </div>
                 </div>
             </div >
