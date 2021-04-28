@@ -9,9 +9,6 @@ import menuOutlined from '@iconify/icons-ant-design/menu-outlined';
 
 
 class BigNavbar extends Component{
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div style={{backgroundColor: this.props.theme.navbarBackground}} id="bigMenu">

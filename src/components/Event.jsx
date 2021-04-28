@@ -103,7 +103,7 @@ class Event extends Component{
     let images = {};
     // Copied this from stack overflow and I aint screwing with it
     // eslint-disable-next-line
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item);
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item).default;
     });
     return images;
   }
@@ -137,7 +137,7 @@ class Event extends Component{
                href={this.props.href} id={this.props.id} className="Event-container-link">
 
               <figure className="Event-figure">
-                <img className="Event-image" src={this.props.TimelineImage} alt="Error" />
+                <img className="Event-image" src={this.props.TimelineImage.default} alt="Error" />
               </figure>
               <div className="Event-body">
                 <span style={{color: theme.textEventColor}} className="Event-date">{this.props.date}</span>

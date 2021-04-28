@@ -21,7 +21,7 @@ export default function Footer() {
                         <div className="footer-block-left">
                             {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
 
-                            <Link style={{textDecorationColor: theme.headerColor}} to="/homeNormal">
+                            <Link style={{textDecorationColor: theme.headerColor}} to="/home">
                                 <h2 style={{color: theme.headerColor, fontStyle: "italic"}} id="title">The History Of Computing </h2>
                             </Link>
                             <p style={{color: theme.headerColor}}  id='slogan'>
