@@ -62,7 +62,7 @@ class EventFocus extends Component  {
                                 onClick={this.props.hideEventInFocus}
                                 >
                                 <img
-                                    src={require("../images/buttons/media_player_stream_no.png")}
+                                    src={require("../images/buttons/media_player_stream_no.png").default}
                                     alt="Close"
                                 />
                         </button>
