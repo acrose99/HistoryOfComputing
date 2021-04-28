@@ -18,7 +18,6 @@ class Event extends Component{
       borderTop: 'none',
       borderBottom: 'none'
     }
-    this.eventRef = React.createRef();
     this.showEventInFocus = this.hideEventInFocus.bind(this);
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
     this.onClick = this.onClick.bind(this);
@@ -134,7 +133,6 @@ class Event extends Component{
               borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderRight}}
                onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, theme, filter)}
                onMouseLeave={() => this.onMouseLeaveEvent()}
-               ref={this.eventRef }
                onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
                href={this.props.href} id={this.props.id} className="Event-container-link">
 

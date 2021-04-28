@@ -1,4 +1,71 @@
-/* Todo: Mobile */
+/*Galaxy S9+ and Android */
+@media screen and (max-width: 360px) and (max-width: 375px) {
+    .Event-Container {
+        justify-content: center;
+    }
+    .Event-image {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/*iPhone 6,7,8, X */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    .Event-Container {
+        justify-content: center;
+    }
+    .Event-image {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* iPhone sizes */
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 414px) and (max-width: 768px) {
+    .Event-Container {
+        justify-content: center;
+    }
+    .Event-image {
+        height: 150px;
+        width: 150px;
+    }
+}
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Event-Container {
+        justify-content: center;
+    }
+    .Event-image {
+        margin-right: 100px;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* Smaller Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    .Event-Container {
+        justify-content: center;
+    }
+    .Event-image {
+        margin-right: 100px;
+        height: 200px;
+        width: 200px;
+    }
+}
+/* Larger Desktop */
+@media screen and (min-width: 1400px) {
+    .Event-Container {
+        justify-content: center;
+    }
+    .Event-image {
+        margin-right: 100px;
+        height: 200px;
+        width: 200px;
+    }
+}
 
 .Event-Container {
     position: relative;
@@ -83,10 +150,8 @@
 }
 .Event-image {
     box-shadow: none !important;
-    max-width: 165px;
-    width: 100%;
-    max-height: 165px;
-    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 .Event-body {

@@ -100,11 +100,6 @@
   padding: 2px;
 }
 
-.miniMenuItemDiv a:hover {
-  color: white;
-  background-color: #6764fd;
-}
-
 .miniMenuItemDiv {
   border-bottom: 2px solid black;
   width: 100%;

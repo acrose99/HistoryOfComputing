@@ -1,10 +1,13 @@
 /*Galaxy S9+ and Android */
 @media screen and (max-width: 360px) and (max-width: 375px) {
   .showEventWrapper {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 320px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 35% auto 5%;
+    margin: 35% 0;
   }
   .showEvent {
     width: 240px;
@@ -14,10 +17,13 @@
 /*iPhone 6,7,8, X */
 @media screen and (min-width: 375px) and (max-width: 414px) {
   .showEventWrapper {
-    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 335px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 35% auto 5%;
+    margin: 35% 0;
   }
 
   .eventBody {
@@ -35,15 +41,16 @@
   }
 }
 
-/* iPhone sizes */
-
 /*iPhone Plus, XS, XS Max */
 @media screen and (min-width: 414px) and (max-width: 768px) {
   .showEventWrapper {
-    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 375px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 35% auto 5%;
+    margin: 35% 0;
   }
   .eventBody {
     flex-direction: column;
@@ -62,10 +69,13 @@
 /* iPad */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .showEventWrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     width: 500px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 15% auto 5%;
+    margin: 35% 0;
   }
   .eventBody {
     flex-direction: column;
@@ -87,11 +97,13 @@
 /* Smaller Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .showEventWrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     width: 650px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 15% auto 5%;
-    flex-direction: row;
+    margin: 35% 0;
   }
   .eventBody-image {
     padding: 3%;
@@ -107,9 +119,11 @@
 /* Larger Desktop */
 @media screen and (min-width: 1400px) {
   .showEventWrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     width: 1000px;
     margin: 15% auto 5%;
-    display: flex;
     flex-direction: column;
   }
   .eventBody-image {
@@ -125,11 +139,6 @@
     flex: 0;
   }
 }
-.showEventWrapper {
-  position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
-  left: 0;
-  right: 0;
-}
 
 .showEventWrapper--open {
   transform: translateY(0%);
@@ -142,7 +151,6 @@
   padding: 0.5% 1%;
   float: right;
 }
-
 .eventBody {
   display: flex;
   padding: 3% 5%;
