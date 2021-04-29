@@ -45,17 +45,14 @@ class App extends Component {
             <ThemeStyles.Provider value={this.state.theme}>
                 <Router>
                     <Switch>
-                        <Route path="/home">
-                            <Home toggleTheme={this.toggleTheme} />
-                        </Route>
-                        <Route path="/homeNormal">
-                            <Home toggleTheme={this.toggleTheme} />
-                        </Route>
                         <Route path="/team">
                             <Team toggleTheme={this.toggleTheme} />
                         </Route>
                         <Route path="/timeline">
                             <TimelineContainer theme={this.state.theme} toggleTheme={this.toggleTheme} />
+                        </Route>
+                        <Route path="/">
+                            <Home toggleTheme={this.toggleTheme} />
                         </Route>
                     </Switch>
                 </Router>
