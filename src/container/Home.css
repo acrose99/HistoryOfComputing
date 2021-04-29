@@ -23,66 +23,17 @@
 
 
 /* The majority of this stuff just keeps everything centered and nice looking for diffrent sizes of the browser*/
-.Home-container {
-    background: linear-gradient(180deg, rgba(210, 174, 255, 0.7) 0%, rgba(184, 225, 255, 0.5) 20.84%, rgba(197, 191, 255, 0.5) 45.83%, rgba(184, 225, 255, 0.5) 70.31%, rgba(197, 191, 255, 0.7) 100%);
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    position: relative;
-}
-.Home-media {
-    display: flex;
-    flex-direction: row;
-    /*margin: auto 250px 125px;*/
-    margin: 50px auto;
-    position: relative;
-    background-image: url('../images/buttons/Mac128hello.png');
-    height: 480px;
-    width: 728px;
+.Home-content {
+    text-align: center;
 }
 
-.Home-media:hover {
-    background-image: url('../images/buttons/Mac128world.png');
+#macHome {
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+    max-width: 500px;
 }
-.Home-content {
-    opacity: 1;
-    text-align: center;
-    color:#9777CD;
-    transition: color 1.5s;
-    font-family: Chicago, sans-serif;
-}
-.Home-content:hover {
-    opacity: 1;
-    text-align: center;
-    color: #8190e9;
-    font-family: Chicago, sans-serif;
-}
-.Home-buttoncontainer {
-    text-align: center;
-    position: relative;
-    margin: 50px;
-}
-.Home-button {
-    height: 75px;
-    /*background-color: #7baee5;*/
-    opacity: 1;
-}
-.Home-Home98link {
-    text-align: center;
-    position: relative;
-    height: 150px;
-    background-color: #3f51b5;
-}
-.Home-Home98link:hover {
-    text-align: center;
-    position: relative;
-    height: 150px;
-    background-color: #5973cb;
-    transition: background-color 1s;
-}
-#Home-Home98-anchor {
-    font-size: 45px;
-    font-family: ChicagoFLF, sans-serif;
-    color: white;
-    text-decoration: none;
+
+.Home-container {
+    min-height: calc(100vh);
 }

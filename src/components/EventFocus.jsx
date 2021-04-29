@@ -1,8 +1,5 @@
 import React, {Component} from "react";
 import "./EventFocus.css";
-
-//TODO change based on context?
-
 class EventFocus extends Component  {
      renderCitations() {
         if (this.props.citations[0] == null || this.props.citations[0]=== "") {
