@@ -108,7 +108,7 @@ function Timeline(props) {
 
     return (
         <div style={{backgroundImage: theme.backgroundImage}} id="Timeline">
-            <Navbar/>
+            {/* <Navbar/> */}
             {createTimeLineIntro()}
             <Events />
             {/*hack way to fix the timeline separator*/}

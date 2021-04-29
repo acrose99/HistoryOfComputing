@@ -1,99 +1,105 @@
 #filtererClosed {
-    background: #CA7BB2;
-    width: 12%;
-    min-width: 150px;
-    max-width: 200px;
-    margin-right: 25px;
-    /*display: flex;*/
-    align-self: end;
-    top: 40%;
-    position: fixed;
+  background: #ca7bb2;
+  width: 90%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  /* min-width: 150px; */
+  /* max-width: 200px; */
+  /* margin-right: 25px; */
+  /*display: flex;*/
+  /* align-self: end; */
+  /* top: 40%; */
+  /* position: fixed; */
 }
 #filtererClosedHeader {
-    color: white;
-    font-size: 16px;
-    display: contents;
-    margin-left: 5px;
-
+  color: white;
+  font-size: 16px;
+  display: contents;
+  margin-left: 5px;
 }
 .filtererContainer {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 .icon {
-    align-self: center;
-    display: inline-flex;
-    vertical-align: middle;
+  align-self: center;
+  display: inline-flex;
+  vertical-align: middle;
 }
 .filtererCategory {
-    color: white;
-    font-size: 16px;
+  color: white;
+  font-size: 16px;
 }
 .filtererCategoryContainer {
-    /*display: flex;*/
-    border-bottom: 1px solid rgba(0,0,0,1);
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 45%; /*45 percent of overall width*/
+  align-items: center;
 }
 .filtererCategoryHeaderContainer {
-    display: flex;
-    margin-left: 5px;
+  display: flex;
+  margin-left: 5px;
 }
 .filtererCategoriesOpened {
-    display: none;
-    flex-direction: column;
+  display: none;
+  flex-direction: column;
 }
 .filtererCategoryType {
-    background: #40B2D2;
-    border-bottom: 2px solid rgba(0,0,0,1)
+  background: #40b2d2;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  width: 100px;
 }
 .filtererCategoryTypeContainer {
-    display: flex;
+  display: flex;
 }
 .filtererCategoryIcon {
-    align-self: center;
-    display: inline-flex;
-    vertical-align: middle;
+  align-self: center;
+  display: inline-flex;
+  vertical-align: middle;
 }
 .filtererCategoryTypeHeader {
-    color: white;
-    margin-left: 5px;
-    font-size: 14px;
-    text-align: center;
+  color: white;
+  margin-left: 5px;
+  font-size: 14px;
+  text-align: center;
 }
-
 
 .input-range {
-    justify-content: center;
+  justify-content: center;
 }
 #filtererContainerYear {
-    padding-bottom: 20px;
+  /* width: 45%; 45 percent of overall width */
 }
 #filtererCategoryContainerYear {
-    border: none;
+  border: none;
 }
 
 .filtererShowAll {
-    width: 80%;
-    justify-content: center;
-    margin-left: 10%;
+  width: 80%;
+  justify-content: center;
+  margin-left: 10%;
 }
 .filtererShowAllContainer {
-    background: #40B2D2;
-    height: 30px;
-    margin-bottom: 10px;
+  background: #40b2d2;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
 .filtererShowAllHeader {
-    color: white;
-    font-size: 16px;
-    text-align: center;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 #yearSubmit {
-    background: #3f51b5 ;
-    color: white;
-    width: 80%;
-    height: 20px;
-    margin-left: 10%;
-    margin-bottom: 10px;
-    border: 0;
+  background: #3f51b5;
+  color: white;
+  width: 80%;
+  height: 20px;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  border: 0;
 }

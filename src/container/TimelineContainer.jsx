@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import "./TimelineContainer.css"
 import Timeline from "../components/Timeline";
 import Filterer from "../components/Filterer";
+import Navbar from "../components/Navbar"
 // import FiltererMobile from "../components/FiltererMobile/FiltererMobile";
 class TimelineContainer extends Component{
     constructor(props) {
@@ -22,6 +23,7 @@ class TimelineContainer extends Component{
     render() {
         return (
             <div id="TimelineContainer">
+                <Navbar/>
                 <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange} filtererType="Closed"/>
                 <Timeline  timelineFilter={this.state.timelineFilter}  filter={this.state.timelineFilter}/>
             </div>
