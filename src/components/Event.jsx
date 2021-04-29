@@ -18,7 +18,6 @@ class Event extends Component{
       borderTop: 'none',
       borderBottom: 'none'
     }
-    this.eventRef = React.createRef();
     this.showEventInFocus = this.hideEventInFocus.bind(this);
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
     this.onClick = this.onClick.bind(this);
@@ -104,7 +103,7 @@ class Event extends Component{
     let images = {};
     // Copied this from stack overflow and I aint screwing with it
     // eslint-disable-next-line
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item);
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item).default;
     });
     return images;
   }
@@ -134,12 +133,11 @@ class Event extends Component{
               borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderRight}}
                onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, theme, filter)}
                onMouseLeave={() => this.onMouseLeaveEvent()}
-               ref={this.eventRef }
                onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
                href={this.props.href} id={this.props.id} className="Event-container-link">
 
               <figure className="Event-figure">
-                <img className="Event-image" src={this.props.TimelineImage} alt="Error" />
+                <img className="Event-image" src={this.props.TimelineImage.default} alt="Error" />
               </figure>
               <div className="Event-body">
                 <span style={{color: theme.textEventColor}} className="Event-date">{this.props.date}</span>
@@ -151,7 +149,7 @@ class Event extends Component{
       )
     }
     else return (
-        <EventFocus  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
+        <EventFocus theme={theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
                      style={this.props.Type}
                      header={this.props.title}
                      EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}

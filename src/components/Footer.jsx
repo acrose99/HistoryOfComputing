@@ -21,7 +21,7 @@ export default function Footer() {
                         <div className="footer-block-left">
                             {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
 
-                            <Link style={{textDecorationColor: theme.headerColor}} to="/homeNormal">
+                            <Link style={{textDecorationColor: theme.headerColor}} to="/home">
                                 <h2 style={{color: theme.headerColor, fontStyle: "italic"}} id="title">The History Of Computing </h2>
                             </Link>
                             <p style={{color: theme.headerColor}}  id='slogan'>
@@ -50,20 +50,12 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-
-                    {/*TODO add Privacy Policy and terms of conditions (usual open source BS)*/}
                     <div className="footer-bottom-full">
                         <div className="footer-wrapper">
                             <div style={{color: theme.textFooterColor}} className="text-rights">
                                 © Copyright 2012-Present, Software and Systems Laboratory
                             </div>
                         </div>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        {/*<div className="footer-wrapper">*/}
-                        {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
-                        {/*    <a style={{color: theme.textFooterColor}} href="#" className="secondary-link-dark">Terms &amp; Conditions</a>*/}
-                        {/*    <a style={{color: theme.textFooterColor}} href="#" className="secondary-link-dark">Privacy Policy</a>*/}
-                        {/*</div>*/}
                     </div>
                 </div>
             </div >

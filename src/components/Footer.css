@@ -1,3 +1,39 @@
+/*Galaxy S9+ and Android */
+@media screen and (max-width: 360px) and (max-width: 375px) {
+    .w-layout-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-title {
+        text-decoration: underline;
+    }
+}
+
+/*iPhone 6,7,8, X */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+
+}
+
+/* iPhone sizes */
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 414px) and (max-width: 768px) {
+
+}
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Smaller Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+
+}
+/* Larger Desktop */
+@media screen and (min-width: 1400px) {
+
+}
+
 .footer-04 {
     padding: 20px 3%;
     /*background-color: #fff;*/
@@ -49,8 +85,7 @@
     grid-template-rows: auto;
 }
 .w-layout-grid {
-    display: -ms-grid;
-    display: grid;
+    display: flex;
     grid-auto-columns: 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;

@@ -1,32 +1,29 @@
-/*Todo: Mobile */
 /*Galaxy S9+ and Android */
 @media screen and (max-width: 360px) and (max-width: 375px) {
   .showEventWrapper {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 320px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 35% auto 5%;
+    margin: 35% 0;
   }
   .showEvent {
     width: 240px;
   }
-  /* #eventHeader-text {
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
-  } */
-  /* .eventBody-image {
-    display: none;
-  } */
 }
 
 /*iPhone 6,7,8, X */
-@media screen and (min-width: 375px) and (max-width: 411px) {
+@media screen and (min-width: 375px) and (max-width: 414px) {
   .showEventWrapper {
-    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 335px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 35% auto 5%;
+    margin: 35% 0;
   }
 
   .eventBody {
@@ -35,9 +32,6 @@
 
   .eventBody-image {
     max-width: 240px;
-    /* align-self: center; */
-
-    /* max-width: 167px; */
   }
   .showEvent {
     width: 250px;
@@ -45,20 +39,18 @@
   #eventHeader-text {
     font-size: 18px;
   }
-  /* .eventBody-image {
-    display: none;
-  } */
 }
 
-/* iPhone sizes */
-
 /*iPhone Plus, XS, XS Max */
-@media screen and (min-width: 411px) and (max-width: 768px) {
+@media screen and (min-width: 414px) and (max-width: 768px) {
   .showEventWrapper {
-    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 375px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 35% auto 5%;
+    margin: 35% 0;
   }
   .eventBody {
     flex-direction: column;
@@ -66,9 +58,6 @@
 
   .eventBody-image {
     max-width: 366px;
-    /* align-self: center; */
-
-    /* max-width: 167px; */
   }
   .showEvent {
     width: 280px;
@@ -76,17 +65,17 @@
   #eventHeader-text {
     font-size: 22px;
   }
-  /* .eventBody-image {
-    display: none;
-  } */
 }
 /* iPad */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .showEventWrapper {
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 15% auto 5%;
+    margin: 35% 0;
   }
   .eventBody {
     flex-direction: column;
@@ -94,10 +83,8 @@
 
   .eventBody-image {
     max-height: 233px;
-    /* align-self: center; */
     float: left;
     padding: 3%;
-    /* max-width: 167px; */
   }
   .showEvent {
     width: 480px;
@@ -105,24 +92,21 @@
   #eventHeader-text {
     font-size: 22px;
   }
-  /* .eventBody-image {
-    display: inherit;
-  } */
 }
 
 /* Smaller Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .showEventWrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     width: 650px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 15% auto 5%;
-    flex-direction: row;
+    margin: 35% 0;
   }
   .eventBody-image {
-    /* max-width: 333px; */
     padding: 3%;
-
     float: left;
   }
   .showEvent {
@@ -131,18 +115,15 @@
   #eventHeader-text {
     font-size: 22px;
   }
-  /* .eventBody-image {
-    display: inherit;
-  } */
 }
 /* Larger Desktop */
 @media screen and (min-width: 1400px) {
   .showEventWrapper {
-    width: 1000px;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
-    margin: 15% auto 5%;
     display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 1000px;
+    margin: 15% auto 5%;
     flex-direction: column;
   }
   .eventBody-image {
@@ -157,9 +138,6 @@
     font-size: 24px;
     flex: 0;
   }
-  /* .eventBody-image {
-    display: inherit;
-  } */
 }
 .showEventWrapper {
   position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
@@ -188,146 +166,76 @@
 }
 
 .event-citation {
-  /* position: absolute; */
-  /* display: flex; */
   bottom: 0;
-  /* top: 1000px; */
   background: #ffffff;
-  /* border: 2px solid #442199; */
-  /* box-sizing: border-box; */
-  /*width: 800px;*/
   height: auto;
   padding: 0.5% 1%;
+  float: right;
 }
-
 .eventBody {
-  /* position: */
   display: flex;
-  /*width: 800px;*/
-  /* min-height: 599px; */
-  /* max-height: max-content; */
-  /* left: 342px; */
-  /*top: 400px;*/
-  padding: 3% 3% 5%;
-  margin: 0px 0px;
+  padding: 3% 5%;
   background: #ffffff;
-  /* border: solid #442199; */
   border: solid rgb(78, 76, 76);
   border-width: 0px 1.5px 1.5px 1.5px;
   border-radius: 0em 0em 0.5em 0.5em;
 
   box-sizing: border-box;
-  /* font stuff */
-  /* font-family: Merriweather, serif; */
-  /* font-style: italic; */
-  /* font-weight: 900; */
-  /* font-size: 18px;
-  line-height: 18px; */
 }
 
 .showEvent {
-  /* position: absolute; */
   display: block;
-  /*width: 800px;*/
   margin: 15px auto;
-  border: 2px rgb(104, 16, 16);
-  /* background-color: bisque; */
 }
 .eventHeader {
-  /* display: block; */
-  /* width: 800px; */
-  height: 30px;
-
+  height: 10%;
   background: #ffffff;
-  /* border: solid #442199; */
   border: solid rgb(78, 76, 76);
 
   border-width: 1.5px 1.5px 0px 1.5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
-  padding: 0px;
-  /* box-shadow: 0px 1px 0px gray; */
   border-radius: 0.5em 0.5em 0em 0em;
-  /* box-shadow: inset 0 0.9em 1em; */
-  /* box-sizing: border-box; */
-  background: linear-gradient(
-    180deg,
-    rgba(0, 147, 255, 0.4) 0%,
-    rgba(173, 95, 249, 0.4) 100%
-  );
 }
 
 #event-citation-text {
-  /*font-family: "SF Pro", serif;*/
-  font-size: 18px;
   line-height: 18px;
-}
-#event-citation-text-right {
-  /*font-family: "SF Pro", serif;*/
-  font-size: 18px;
-  line-height: 18px;
-  margin-left: 5px;
+  font-size: 1rem;
 }
 .eventBody-text {
-  font-family: "SF Pro", serif;
-  padding: 3%;
-
-  font-size: 18px;
-  /* line-height: 30px; */
-  flex-grow: 2;
+  font-size: 1rem;
+  float: right;
 }
 
 #eventHeader-text {
-  /* font-family: "Futura", sans-serif; */
-  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: italic;
-  /* font-weight: bold; */
   text-align: center;
   font-size: 16px;
-  color: white;
 }
-/* .leftRight{
-  margin-top: 3px;
-} */
 .vaporwaveBar {
   display: block;
-  /* padding-left: 5px; */
   width: 200px;
   height: 30px;
-  /* padding: 0.5%; */
 }
 
 .vaporwaveBarContents {
-  /* display: inline-block; */
-  /* position: relative; */
-  /* margin-right: 10px; */
   font-size: 20px;
-
   background-color: transparent;
   border: transparent;
   width: 30px;
   height: 30px;
   margin-left: 2px;
-
-  /* width: 50px; */
 }
 .vaporwaveBarContents img {
-  /* margin: auto; */
   width: fit-content;
   height: fit-content;
 }
 .vbar-buttons {
-  /* display: inline-flex; */
   position: relative;
-  /* margin-left: 5px; */
-  /* margin: auto 5px auto 0; */
   top: 0;
-  left: 2;
+  left: 2px;
   height: 30px;
-  /*background-color: #9d41ff;*/
   width: 33%;
 }
 
@@ -336,18 +244,12 @@
   display: flex;
   align-self: center;
   justify-content: center;
-  /* background-color: blue; */
   border: 2px black;
 }
 
 .eventBody-image {
-  /* max-height: 200px; */
-  /* max-width: 200px; */
   justify-content: left;
   flex-grow: 1;
-  /* flex-wrap: wrap; */
-  /* margin: 10px; */
-  /* float: right; */
 }
 #eventBody-image1 {
   float: right;
