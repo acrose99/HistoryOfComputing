@@ -175,11 +175,11 @@
   right: 0;
   /* display: block; */
   /* margin: 33%; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(0, 147, 255, 0.4) 0%,
     rgba(173, 95, 249, 0.4) 100%
-  );
+  ); */
   /*transform: translateY(100%);*/
 }
 
