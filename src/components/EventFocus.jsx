@@ -1,8 +1,5 @@
 import React, {Component} from "react";
 import "./EventFocus.css";
-
-//TODO change based on context?
-
 class EventFocus extends Component  {
      renderCitations() {
         if (this.props.citations[0] == null || this.props.citations[0]=== "") {
@@ -62,7 +59,7 @@ class EventFocus extends Component  {
                                 onClick={this.props.hideEventInFocus}
                                 >
                                 <img
-                                    src={require("../images/buttons/media_player_stream_no.png")}
+                                    src={require("../images/buttons/media_player_stream_no.png").default}
                                     alt="Close"
                                 />
                         </button>

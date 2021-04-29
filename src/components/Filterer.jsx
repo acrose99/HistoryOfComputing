@@ -11,9 +11,6 @@ import bxlMicrosoft from '@iconify/icons-bx/bxl-microsoft';
 import "react-input-range/lib/css/index.css";
 import RangeInput from "./RangeInput";
 import ibmIcon from '@iconify/icons-cib/ibm';
-
-//TODO change based on context?
-
 class Filterer extends Component{
     constructor(props) {
         super(props);

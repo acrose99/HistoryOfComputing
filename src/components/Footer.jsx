@@ -8,9 +8,6 @@ import githubFilled from '@iconify/icons-ant-design/github-filled';
 import { Link } from "react-router-dom";
 
 
-//TODO: WIP WIP WIP WIP
-
-
 export default function Footer() {
     const theme = useContext(ThemeStyles);
     return (
