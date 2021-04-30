@@ -192,36 +192,26 @@ class DesktopEvent extends Component {
     }
   }
   render() {
+    const backdrops = this.importAll(require.context('../images/Backdrops', false, /Backdrop.svg$/));
+    this.findBackdrop(backdrops);
     if (this.state.showEventInFocus === false) {
       return (
-          <div className="Event-Container">
-            <a style={{color: this.props.theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
-              borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
+          <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
+            borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
                onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter)}
                onMouseLeave={() => this.onMouseLeaveEvent()}
                onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
-               href={this.props.href} id={this.props.id} className="Event-container-link">
+                id={this.props.id} className="Event-Container">
               <div className="Event-body">
-                <div className="Event-SecondaryInfo">
-                  <p>
-                    <span style={{color: this.props.theme.textEventColor}} className="Event-date">{this.props.year}</span>
-                    {/*<span style={{color: theme.textEventColor}} className="Event-location">{this.props.location}.</span>*/}
-                  </p>
-                </div>
+                <p style={{color: this.props.theme.textEventColor}} className="Event-date">
+                  {this.props.year}
+                  {/*<span style={{color: theme.textEventColor}} className="Event-location">{this.props.location}.</span>*/}
+                </p>
                 <h3 style={{color: this.props.theme.textEventColor}} className="Event-title">{this.props.title}</h3>
-              </div>
-              <div className="Event-timeline">
-                <div className="Event-timeline-line">
-
-                </div>
-                <div className="Event-timeline-marker">
-
-                </div>
               </div>
               <figure className="Event-figure">
                 <img className="Event-image" src={this.props.TimelineImage.default} alt="Error" />
               </figure>
-            </a>
           </div>
       )
     }

@@ -40,7 +40,7 @@ export const themes = {
 
         textEventColor: '#009fff',
         borderDefault: '4mm ridge black',
-        backgroundImage: "linear-gradient(180deg, rgba(0, 133, 208, 0.3) 0%, rgba(147, 216, 255, 0.3) 51.04%, rgba(0, 133, 208, 0.3) 100%)",
+        backgroundImage: "linear-gradient(rgb(86, 204, 242, .5), rgb(47, 128, 237, .5))",
         navbarBackground: "#71bae9"
     },
     IBM: {
@@ -54,7 +54,7 @@ export const themes = {
 
         textEventColor: '#009fff',
         borderDefault: '4mm ridge black',
-        backgroundImage: "linear-gradient(180deg, rgba(197, 231, 255, 0.225) 0%, rgba(38, 129, 194, 0.3075) 52.6%, rgba(197, 231, 255, 0.225) 97.39%, rgba(226, 243, 255, 0.75) 100%)",
+        backgroundImage: "linear-gradient(rgb(86, 204, 242, .5), rgb(47, 128, 237, .5))",
         navbarBackground: "#71bae9"
     },
     Apple: {
@@ -73,7 +73,7 @@ export const themes = {
         borderTopColor: '4mm ridge #9e73d3',
         borderBottomColor: '4mm ridge #00b400',
 
-        backgroundImage: 'linear-gradient(to top, #ff5f6d 50%, #ffc371, .5)',
+        backgroundImage: 'linear-gradient(rgb(255, 195, 113, .5), rgb(255, 95, 109, .5))',
         navbarBackground: 'rgba(244, 171, 142, 1)'
     }
 };
