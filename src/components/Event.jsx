@@ -5,11 +5,10 @@ import {ThemeStyles} from '../themeStyles'
 import {themes} from '../themeStyles';
 
 // import Backdrop from '../../images/Backdrop.svg';
-
-class Event extends Component{
+class MobileEvent extends Component {
   constructor(props) {
     super(props);
-    const border = '4mm ridge black';
+    const border = 'none';
     this.state = {
       showEventInFocus: false,
       backdrop: null,
@@ -22,7 +21,74 @@ class Event extends Component{
     this.showEventInFocus = this.hideEventInFocus.bind(this);
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
     this.onClick = this.onClick.bind(this);
-    this.nextEvent = this.nextEvent.bind(this);
+  }
+  showEventInFocus() {
+    this.setState({
+      showEventInFocus: true
+    })
+  }
+  hideEventInFocus() {
+    this.setState({
+      showEventInFocus: false
+    })
+  }
+  onClick() {
+    // console.log(showEventInFocus);
+    if (this.state.showEventInFocus === true) {
+      this.hideEventInFocus();
+    } else {
+      this.showEventInFocus();
+    }
+  }
+  render() {
+    if (this.state.showEventInFocus === false) {
+      return (
+          <div>
+            {/*hack way to fix the timeline separator*/}
+            <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', borderTop: '4px solid #d9cfbe'}} onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})} className="Mobile-Event-Container">
+              <h2 style={{color: this.props.theme.textEventColor}} className="Mobile-Event-Date">{this.props.year}</h2>
+              <div  className="Mobile-Event-Body">
+                <h3 style={{color: this.props.theme.textEventColor}} className="Mobile-Event-Title">{this.props.title}</h3>
+              </div>
+              <div>
+                <figure className="Mobile-Event-Figure">
+                  <img className="Mobile-Event-Image" src={this.props.TimelineImage.default} alt="Error"/>
+                </figure>
+              </div>
+            </div>
+          </div>
+      )
+    }
+    else return (
+        <EventFocus theme={this.props.theme} showEventInFocus={this.state.showEventInFocus}
+                    hideEventInFocus={this.hideEventInFocus}
+                    style={this.props.Type}
+                    header={this.props.title}
+                    EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}
+                    body={this.props.body}
+                    type={this.props.type}
+                    citations={[this.props.citations[0], this.props.citations[1]]}
+        />
+    );
+  }
+}
+
+class DesktopEvent extends Component {
+  constructor(props) {
+    super(props);
+    const border = 'none';
+    this.state = {
+      showEventInFocus: false,
+      backdrop: null,
+      background: 'none',
+      borderLeft: border,
+      borderRight: border,
+      borderTop: border,
+      borderBottom: border
+    }
+    this.showEventInFocus = this.hideEventInFocus.bind(this);
+    this.hideEventInFocus = this.hideEventInFocus.bind(this);
+    this.onClick = this.onClick.bind(this);
     // this.changeEventBackground = this.changeEventBackground.bind(this);
     this.onMouseEnterEvent = this.onMouseEnterEvent.bind(this);
     this.onMouseLeaveEvent = this.onMouseLeaveEvent.bind(this, border);
@@ -96,17 +162,14 @@ class Event extends Component{
     }
   }
   onMouseLeaveEvent() {
-    const border = '4mm ridge black';
+    const border = 'none';
     this.setState({
       background: 'none',
-      borderLeft: this.border,
-      borderRight: this.border,
-      borderTop: this.border,
-      borderBottom: this.border,
+      borderLeft: border,
+      borderRight: border,
+      borderTop: border,
+      borderBottom: border,
     })
-  }
-  nextEvent() {
-    return Event
   }
   importAll(r) {
     let images = {};
@@ -128,37 +191,42 @@ class Event extends Component{
       this.state.backdrop = backdrops['Backdrop.svg']
     }
   }
-
-
   render() {
-    let theme = this.context;
-    let filter = this.props.filter;
-    const backdrops = this.importAll(require.context('../images/Backdrops', false, /Backdrop.svg$/));
-    this.findBackdrop(backdrops)
     if (this.state.showEventInFocus === false) {
       return (
           <div className="Event-Container">
-            <a style={{color: theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
+            <a style={{color: this.props.theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
               borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
-               onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, theme, filter)}
+               onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter)}
                onMouseLeave={() => this.onMouseLeaveEvent()}
                onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
                href={this.props.href} id={this.props.id} className="Event-container-link">
+              <div className="Event-body">
+                <div className="Event-SecondaryInfo">
+                  <p>
+                    <span style={{color: this.props.theme.textEventColor}} className="Event-date">{this.props.year}</span>
+                    {/*<span style={{color: theme.textEventColor}} className="Event-location">{this.props.location}.</span>*/}
+                  </p>
+                </div>
+                <h3 style={{color: this.props.theme.textEventColor}} className="Event-title">{this.props.title}</h3>
+              </div>
+              <div className="Event-timeline">
+                <div className="Event-timeline-line">
 
+                </div>
+                <div className="Event-timeline-marker">
+
+                </div>
+              </div>
               <figure className="Event-figure">
                 <img className="Event-image" src={this.props.TimelineImage.default} alt="Error" />
               </figure>
-              <div className="Event-body">
-                <span style={{color: theme.textEventColor}} className="Event-date">{this.props.date}</span>
-                <span style={{color: theme.textEventColor}} className="Event-location">{this.props.location}.</span>
-                <h3 style={{color: theme.textEventColor}} className="Event-title">{this.props.title}</h3>
-              </div>
             </a>
           </div>
       )
     }
     else return (
-        <EventFocus theme={theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
+        <EventFocus theme={this.props.theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
                      style={this.props.Type}
                      header={this.props.title}
                      EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}
@@ -167,6 +235,57 @@ class Event extends Component{
                      citations={[this.props.citations[0], this.props.citations[1]]}
         />
     );
+  }
+}
+class Event extends Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobile: false,
+    }
+  }
+
+
+  updateMenuStyle() {
+    // if the width is less than 768px (an IPAD) it goes into mobile event
+    if (window.innerWidth < 768) {
+      this.setState({ mobile: true, });
+    }
+    else {
+      this.setState({ mobile: false, });
+    }
+  }
+
+  componentDidMount() {
+    this.updateMenuStyle();
+    window.addEventListener("resize", this.updateMenuStyle.bind(this));
+  }
+  componentWillUnmount() {
+    // tutorial said i should unmount the event listener so here it is
+    window.removeEventListener("resize", this.updateMenuStyle.bind(this));
+  }
+
+  render() {
+    let theme = this.context;
+    let filter = this.props.filter;
+    if (this.state.mobile === true) {
+      return (
+          <MobileEvent theme={theme} filter={filter}  year={this.props.year} date={this.props.date} location={this.props.location} title={this.props.title}
+                       TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
+                       body={this.props.body}
+                       citations={[this.props.citations[1], this.props.citations[2]]}
+                       type={this.props.type} />
+      )
+    }
+    else if (this.state.mobile === false) {
+      return (
+          <DesktopEvent theme={theme} filter={filter}  year={this.props.year} date={this.props.date} location={this.props.location} title={this.props.title}
+                       TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
+                       body={this.props.body}
+                       citations={[this.props.citations[1], this.props.citations[2]]}
+                       type={this.props.type} />
+      )
+    }
   }
 }
 Event.contextType = ThemeStyles;
