@@ -9,14 +9,15 @@ import {themes} from '../themeStyles';
 class Event extends Component{
   constructor(props) {
     super(props);
+    const border = '4mm ridge black';
     this.state = {
       showEventInFocus: false,
       backdrop: null,
       background: 'none',
-      borderLeft: 'none',
-      borderRight: 'none',
-      borderTop: 'none',
-      borderBottom: 'none'
+      borderLeft: border,
+      borderRight: border,
+      borderTop: border,
+      borderBottom: border
     }
     this.showEventInFocus = this.hideEventInFocus.bind(this);
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
@@ -24,6 +25,7 @@ class Event extends Component{
     this.nextEvent = this.nextEvent.bind(this);
     // this.changeEventBackground = this.changeEventBackground.bind(this);
     this.onMouseEnterEvent = this.onMouseEnterEvent.bind(this);
+    this.onMouseLeaveEvent = this.onMouseLeaveEvent.bind(this, border);
   }
   changeEventBorder(style) {
     console.log(this.state.background);
@@ -58,6 +60,9 @@ class Event extends Component{
     }
   }
   onMouseEnterEvent(style, theme, filter) {
+    // console.log("theme:" + theme);
+    console.log("style:" + style);
+    console.log("filter:" + filter);
     if (filter !== undefined) {
       /* console.log(themes[filter].borderLeftColor); */
       if (themes[filter].borderLeftColor !== undefined && themes[filter].borderRightColor !== undefined
@@ -74,26 +79,30 @@ class Event extends Component{
       else this.setState({
         background: style,
         borderLeft:  theme.borderLeftColor,
-        borderRight: theme.borderLeftColor,
+        borderRight: theme.borderRightColor,
         borderTop: theme.borderTopColor,
         borderBottom: theme.borderBottomColor,
       })
     }
-    else this.setState({
-      background: style,
-      borderLeft:  theme.borderLeftColor,
-      borderRight: theme.borderLeftColor,
-      borderTop: theme.borderTopColor,
-      borderBottom: theme.borderBottomColor,
-    })
+    else {
+      console.log("theme:" + theme);
+      this.setState({
+        background: style,
+        borderLeft:  theme.borderLeftColor,
+        borderRight: theme.borderRightColor,
+        borderTop: theme.borderTopColor,
+        borderBottom: theme.borderBottomColor,
+      })
+    }
   }
   onMouseLeaveEvent() {
+    const border = '4mm ridge black';
     this.setState({
       background: 'none',
-      borderLeft: 'none',
-      borderRight: 'none',
-      borderTop: 'none',
-      borderBottom: 'none',
+      borderLeft: this.border,
+      borderRight: this.border,
+      borderTop: this.border,
+      borderBottom: this.border,
     })
   }
   nextEvent() {
@@ -130,7 +139,7 @@ class Event extends Component{
       return (
           <div className="Event-Container">
             <a style={{color: theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
-              borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderRight}}
+              borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
                onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, theme, filter)}
                onMouseLeave={() => this.onMouseLeaveEvent()}
                onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
@@ -161,5 +170,4 @@ class Event extends Component{
   }
 }
 Event.contextType = ThemeStyles;
-
 export default Event;

@@ -20,12 +20,13 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
+        borderDefault: '4mm ridge black',
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
         borderBottomColor: '4mm ridge #5C8BAD',
 
-        backgroundImage: "linear-gradient(180deg, rgba(210, 174, 255, 0.1575) 0%, rgba(184, 225, 255, 0.3) 20.84%, rgba(197, 191, 255, 0.3) 45.83%, rgba(184, 225, 255, 0.3) 70.31%, rgba(197, 191, 255, 0.3075)",
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
         navbarBackground: "#8d8bff"
     },
     Microsoft: {
@@ -38,7 +39,7 @@ export const themes = {
         headerColor: '#000000',
 
         textEventColor: '#009fff',
-
+        borderDefault: '4mm ridge black',
         backgroundImage: "linear-gradient(180deg, rgba(0, 133, 208, 0.3) 0%, rgba(147, 216, 255, 0.3) 51.04%, rgba(0, 133, 208, 0.3) 100%)",
         navbarBackground: "#71bae9"
     },
@@ -52,7 +53,7 @@ export const themes = {
         headerColor: '#009cff',
 
         textEventColor: '#009fff',
-
+        borderDefault: '4mm ridge black',
         backgroundImage: "linear-gradient(180deg, rgba(197, 231, 255, 0.225) 0%, rgba(38, 129, 194, 0.3075) 52.6%, rgba(197, 231, 255, 0.225) 97.39%, rgba(226, 243, 255, 0.75) 100%)",
         navbarBackground: "#71bae9"
     },
@@ -66,12 +67,13 @@ export const themes = {
         headerColor: '#000000',
 
         textEventColor: 'rgb(0,0,0)',
+        borderDefault: '4mm ridge black',
         borderLeftColor: '4mm ridge #feef00',
         borderRightColor: '4mm ridge #FE8100',
         borderTopColor: '4mm ridge #9e73d3',
         borderBottomColor: '4mm ridge #00b400',
 
-        backgroundImage: 'linear-gradient(180deg, rgba(0, 189, 0, 0.3) 0%, rgba(255, 240, 0, 0.3) 18.23%, rgba(255, 149, 0, 0.3) 38.54%, rgba(213, 29, 0, 0.3) 59.37%, rgba(187, 41, 167, 0.3) 80.73%, rgba(0, 169, 255, 0.3) 100%)',
+        backgroundImage: 'linear-gradient(to top, #ff5f6d 50%, #ffc371, .5)',
         navbarBackground: 'rgba(244, 171, 142, 1)'
     }
 };
