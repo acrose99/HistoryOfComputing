@@ -196,7 +196,7 @@ class DesktopEvent extends Component {
     this.findBackdrop(backdrops);
     if (this.state.showEventInFocus === false) {
       return (
-          <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background, borderTop: this.state.borderTop,
+          <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background,borderTop: this.state.borderTop,
             borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
                onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter)}
                onMouseLeave={() => this.onMouseLeaveEvent()}
