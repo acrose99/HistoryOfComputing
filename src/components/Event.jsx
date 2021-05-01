@@ -126,11 +126,11 @@ class DesktopEvent extends Component {
     }
   }
   onMouseEnterEvent(style, theme, filter) {
-    // console.log("theme:" + theme);
+    console.log("theme:" + theme);
     console.log("style:" + style);
     console.log("filter:" + filter);
-    if (filter !== undefined) {
-      /* console.log(themes[filter].borderLeftColor); */
+    if (filter !== undefined && filter !== null) {
+      console.log(themes[filter].borderLeftColor);
       if (themes[filter].borderLeftColor !== undefined && themes[filter].borderRightColor !== undefined
           && themes[filter].borderTopColor !== undefined
           && themes[filter].borderBottomColor !== undefined) {
