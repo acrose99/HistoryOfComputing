@@ -1,0 +1,8 @@
+#Team-Container {
+    padding: 2em;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 3fr));
+    gap: 1em;
+    place-items: center;
+}

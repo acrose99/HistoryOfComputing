@@ -25,6 +25,9 @@
 /* The majority of this stuff just keeps everything centered and nice looking for diffrent sizes of the browser*/
 .Home-content {
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #macHome {
@@ -32,8 +35,4 @@
     margin: 0 auto;
     max-height: 500px;
     max-width: 500px;
-}
-
-.Home-container {
-    min-height: calc(100vh);
 }
