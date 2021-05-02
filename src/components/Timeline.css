@@ -26,17 +26,15 @@
     color: #222222;
 
 }
-#Timeline-separator {
+#eventsDesktop { /* Event Container for Desktop */
     display: flex;
-    position: sticky;
-    border: none;
-    margin: auto;
-    border: 2px;
-    width: 2%;
-    height: 3053px;
-    background-color: #D9CFBE;
+    flex-direction: column;
+    /*left: 25%;*/
+    min-height: 500px;
+    justify-content: center;
 }
-#events {
+
+#eventsMobile { /* Event Container for Mobile */
     display: flex;
     flex-direction: column;
     justify-content: center;
