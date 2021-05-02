@@ -5,15 +5,13 @@ import Event from "./Event";
 import Footer from "./Footer";
 import {events} from "../events"
 import {ThemeStyles} from '../themeStyles'
+import mobile from "@iconify/icons-carbon/src/mobile";
 
 function Timeline(props) {
     const theme = useContext(ThemeStyles);
     let newdata;
     if (props.filter === '') {
-        newdata = events.sort((a,b) => {
-            if (a["Year"] < b["Year"]) return -1;
-            else return 1;
-        }).map(function (data) {
+        newdata = events.map(function (data) {
             return (
                 <Event theme={props.timelineFilter} filter={data["Filter"]} key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                        TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
@@ -39,28 +37,23 @@ function Timeline(props) {
             )
         }
         else {
-            return (
-                <div id="Timeline">
-                    <Navbar/>
-                    <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
-                    <h1 style={{textAlign: "center", color: "#5c71e1" }}>No Events Found! Try Again!</h1>
+                return (
+                    <div id="Timeline">
+                        <Navbar/>
+                        <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
+                        <h1 style={{textAlign: "center", color: "#5c71e1" }}>No Events Found! Try Again!</h1>
 
-                    <div style={{marginBottom: '200px'}}/>
-                    {/*hack way to fix the timeline separator*/}
+                        <div style={{marginBottom: '200px'}}/>
+                        {/*hack way to fix the timeline separator*/}
 
-                    <Footer/>
-                </div>
-            )
-        }
-    }
-    else {
-        newdata = events.filter(data => data.Filter === props.filter).sort(((a,b) => {
-            if (a["Year"] > b["Year"]) {
-                return 1;
+                        <Footer/>
+                    </div>
+                )
             }
-            else return -1;
-        })).map((data) => {
-                console.log(theme);
+        }
+    else {
+        newdata = events.filter(data => data.Filter === props.filter).map((data) => {
+            console.log(theme);
                 return (
                     <Event theme={props.timelineFilter} filter={data["Filter"]} key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
                            TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
@@ -78,25 +71,42 @@ function Timeline(props) {
         constructor(props) {
             super(props)
             this.state = {
+                mobile: false,
                 events: newdata
             }
-            this.nextEvent = this.nextEvent.bind(this);
+        }
+        updateMenuStyle() {
+            // if the width is less than 768px (an IPAD) it goes into mobile event
+            if (window.innerWidth < 768) {
+                this.setState({ mobile: true});
+            }
+            else {
+                this.setState({ mobile: false});
+            }
         }
 
-        nextEvent() {
-            const EventsCopy = this.state.events.slice() //copy the array
-            let currentEvent = EventsCopy[0];
-            EventsCopy[0] = EventsCopy[1] //execute the manipulations
-            EventsCopy[1] = currentEvent //execute the manipulations
-            this.setState({events: EventsCopy}) //set the new state
-            console.log(this.state.events);
+        componentDidMount() {
+            this.updateMenuStyle();
+            window.addEventListener("resize", this.updateMenuStyle.bind(this));
         }
+        componentWillUnmount() {
+            // tutorial said i should unmount the event listener so here it is
+            window.removeEventListener("resize", this.updateMenuStyle.bind(this));
+        }
+
 
         render() {
             console.log(this.state.events);
-            return (
+            if (mobile === true) {
+                return (
+                    <div>
+                        <div id="eventsDesktop">  {this.state.events}  </div>
+                    </div>
+                )
+            }
+            else return (
                 <div>
-                    <div id="events">  {this.state.events}  </div>
+                    <div id="eventsMobile">  {this.state.events}  </div>
                 </div>
             )
         }
@@ -122,7 +132,7 @@ function Timeline(props) {
             {/*hack way to fix the timeline separator*/}
 
             <Footer/>
-        </div>
+            </div>
     )
 }
 
