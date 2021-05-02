@@ -26,22 +26,10 @@
     color: #222222;
 
 }
-#Timeline-separator {
-    display: flex;
-    position: sticky;
-    border: none;
-    margin: auto;
-    border: 2px;
-    width: 2%;
-    height: 3053px;
-    background-color: #D9CFBE;
-}
 #events {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    left: 25%;
-    position: relative;
+    /*left: 25%;*/
     min-height: 500px;
+    justify-content: center;
 }

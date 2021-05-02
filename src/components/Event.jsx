@@ -196,12 +196,13 @@ class DesktopEvent extends Component {
     this.findBackdrop(backdrops);
     if (this.state.showEventInFocus === false) {
       return (
-          <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background,borderTop: this.state.borderTop,
-            borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
-               onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter)}
-               onMouseLeave={() => this.onMouseLeaveEvent()}
-               onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
-                id={this.props.id} className="Event-Container">
+          <div className="Event">
+            <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background,borderTop: this.state.borderTop,
+              borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
+                 onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter)}
+                 onMouseLeave={() => this.onMouseLeaveEvent()}
+                 onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
+                 id={this.props.id} className="Event-Container">
               <div className="Event-body">
                 <p style={{color: this.props.theme.textEventColor}} className="Event-date">
                   {this.props.year}
@@ -212,6 +213,7 @@ class DesktopEvent extends Component {
               <figure className="Event-figure">
                 <img className="Event-image" src={this.props.TimelineImage.default} alt="Error" />
               </figure>
+            </div>
           </div>
       )
     }
