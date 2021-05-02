@@ -26,10 +26,20 @@
     color: #222222;
 
 }
-#events {
+#eventsDesktop { /* Event Container for Desktop */
     display: flex;
     flex-direction: column;
     /*left: 25%;*/
     min-height: 500px;
     justify-content: center;
+}
+
+#eventsMobile { /* Event Container for Mobile */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+    position: relative;
+    min-height: 500px;
 }

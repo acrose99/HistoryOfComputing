@@ -5,6 +5,7 @@ import Event from "./Event";
 import Footer from "./Footer";
 import {events} from "../events"
 import {ThemeStyles} from '../themeStyles'
+import mobile from "@iconify/icons-carbon/src/mobile";
 
 function Timeline(props) {
     const theme = useContext(ThemeStyles);
@@ -70,25 +71,42 @@ function Timeline(props) {
         constructor(props) {
             super(props)
             this.state = {
+                mobile: false,
                 events: newdata
             }
-            this.nextEvent = this.nextEvent.bind(this);
+        }
+        updateMenuStyle() {
+            // if the width is less than 768px (an IPAD) it goes into mobile event
+            if (window.innerWidth < 768) {
+                this.setState({ mobile: true});
+            }
+            else {
+                this.setState({ mobile: false});
+            }
         }
 
-        nextEvent() {
-            const EventsCopy = this.state.events.slice() //copy the array
-            let currentEvent = EventsCopy[0];
-            EventsCopy[0] = EventsCopy[1] //execute the manipulations
-            EventsCopy[1] = currentEvent //execute the manipulations
-            this.setState({events: EventsCopy}) //set the new state
-            console.log(this.state.events);
+        componentDidMount() {
+            this.updateMenuStyle();
+            window.addEventListener("resize", this.updateMenuStyle.bind(this));
         }
+        componentWillUnmount() {
+            // tutorial said i should unmount the event listener so here it is
+            window.removeEventListener("resize", this.updateMenuStyle.bind(this));
+        }
+
 
         render() {
             console.log(this.state.events);
-            return (
+            if (mobile === true) {
+                return (
+                    <div>
+                        <div id="eventsDesktop">  {this.state.events}  </div>
+                    </div>
+                )
+            }
+            else return (
                 <div>
-                    <div id="events">  {this.state.events}  </div>
+                    <div id="eventsMobile">  {this.state.events}  </div>
                 </div>
             )
         }
