@@ -196,9 +196,6 @@ class DesktopEvent extends Component {
     else if (this.props.filter === 'Ancient') {
       this.state.backdrop = backdrops['AncientBackdrop.svg']
     }
-    else if (this.props.filter === 'Medieval') {
-      this.state.backdrop = backdrops['MedievalBackdrop.svg']
-    }
     else {
       // eslint-disable-next-line
       this.state.backdrop = backdrops['Backdrop.svg']
@@ -285,7 +282,7 @@ class Event extends Component{
     let year = this.checkYearBCE(this.props.year)
     if (this.state.mobile === true) {
       return (
-          <MobileEvent theme={theme} filter={filter}  year={year} date={this.props.date} location={this.props.location} title={this.props.title}
+          <MobileEvent theme={theme} filter={filter}  year={this.props.year} date={this.props.date} location={this.props.location} title={this.props.title}
                        TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
                        body={this.props.body}
                        citations={[this.props.citations[0], this.props.citations[1]]}

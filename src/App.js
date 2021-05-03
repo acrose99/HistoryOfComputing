@@ -33,26 +33,6 @@ class App extends Component {
                     theme: themes.Microsoft
                 }));
             }
-            else if (themeGiven === 'Ancient' || themeGiven === 'Ancient') {
-                this.setState(state => ({
-                    theme: themes.Ancient
-                }));
-            }
-            else if (themeGiven === 'Medieval' || themeGiven === 'Medieval') {
-                this.setState(state => ({
-                    theme: themes.Medieval
-                }));
-            }
-            else if (themeGiven === 'Enlightenment' || themeGiven === 'Enlightenment') {
-                this.setState(state => ({
-                    theme: themes.Medieval
-                }));
-            }
-            else {
-                this.setState(state => ({
-                    theme: themes.Vaporwave
-                }));
-            }
         };
     }
     render() {
