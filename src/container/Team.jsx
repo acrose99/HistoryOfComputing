@@ -7,8 +7,8 @@ import Footer from "../components/Footer";
 import AlexRoseImg from "../images/team/alex.jpeg";
 import AlexCraneImg from "../images/team/alexC.jpg";
 import jackImg from "../images/team/jack.png";
-import georgeImg from "../images/team/gkt.jpg";
-import dennisImg from "../images/team/ddennis.jpg";
+// import georgeImg from "../images/team/gkt.jpg";
+// import dennisImg from "../images/team/ddennis.jpg";
 import './Team.css'
 
 //TODO Change based on context
