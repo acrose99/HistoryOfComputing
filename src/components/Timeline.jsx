@@ -120,6 +120,15 @@ function Timeline(props) {
         if (props.filter === '') {
             return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing.</h2>)
         }
+        else if (props.filter === 'Ancient') {
+            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter} Mathematics.</h2>)
+        }
+        else if (props.filter === 'Medieval') {
+            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter} Mathematics.</h2>)
+        }
+        else if (props.filter === 'Enlightenment') {
+            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter} Mathematics.</h2>)
+        }
         else {
             return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter}.</h2>)
         }
