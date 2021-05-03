@@ -11,11 +11,22 @@ class EventFocus extends Component  {
                 </div>
             )
         }
+        if (this.props.citations[0] != null && this.props.citations[1] === undefined) {
+             return (
+                 <div>
+                     <div style={{display: "flex"}}>
+                         <p style={{color: this.props.theme.textEventColor}} id="event-citation-text">
+                             Citation: {this.props.citations[0]}
+                         </p>
+                     </div>
+                 </div>
+             )
+         }
         else {
             return (
                 <div style={{display: "flex"}}>
                     <p style={{color: this.props.theme.textEventColor}} id="event-citation-text">
-                        Citations: &nbsp; {this.props.citations[0]}, {this.props.citations[1]}
+                        Citations: {this.props.citations[0]}, {this.props.citations[1]}
                     </p>
                 </div>
             )
@@ -29,27 +40,12 @@ class EventFocus extends Component  {
         )
     }
     renderBody() {
-        if (this.props.EventFocusImages[0] === undefined) {
-            return (
+         return (
                 <div>
                     {this.renderBodyText()}
                 </div>
             )
         }
-        else  {
-            return (
-                <div>
-                    <img
-                        className="eventBody-image"
-                        // id="eventBody-image1"
-                        // src={this.props.EventFocusImages[0]}
-                        alt={""}
-                    />
-                    {this.renderBodyText()}
-                </div>
-            )
-        }
-    }
     render() {
         return (
             <div className="showEventWrapper">

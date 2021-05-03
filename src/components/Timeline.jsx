@@ -5,16 +5,18 @@ import Event from "./Event";
 import Footer from "./Footer";
 import {events} from "../events"
 import {ThemeStyles} from '../themeStyles'
-import mobile from "@iconify/icons-carbon/src/mobile";
 
 function Timeline(props) {
     const theme = useContext(ThemeStyles);
     let newdata;
     if (props.filter === '') {
-        newdata = events.map(function (data) {
+        newdata = events.sort((a,b) => {
+            if (a["Year"] < b["Year"]) return -1;
+            else return 1;
+        }).map(function (data) {
             return (
                 <Event theme={props.timelineFilter} filter={data["Filter"]} key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                       TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                       TimelineImage={data["TimelineImage"]}
                        body={data["Body"]}
                        citations={[data["Citations"][0], data["Citations"][1]]}
                        type={data['Type']}
@@ -27,7 +29,7 @@ function Timeline(props) {
             newdata = events.filter(data => data.Year === props.filter).map((data) => {
                     return (
                         <Event theme={props.timelineFilter} filter={data["Filter"]} key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                               TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                               TimelineImage={data["TimelineImage"]}
                                body={data["Body"]}
                                citations={[data["Citations"][0], data["Citations"][1]]}
                                type={data['Type']}
@@ -37,26 +39,30 @@ function Timeline(props) {
             )
         }
         else {
-                return (
-                    <div id="Timeline">
-                        <Navbar/>
-                        <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
-                        <h1 style={{textAlign: "center", color: "#5c71e1" }}>No Events Found! Try Again!</h1>
+            return (
+                <div id="Timeline">
+                    <Navbar/>
+                    <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
+                    <h1 style={{textAlign: "center", color: "#5c71e1" }}>No Events Found! Try Again!</h1>
 
-                        <div style={{marginBottom: '200px'}}/>
-                        {/*hack way to fix the timeline separator*/}
+                    <div style={{marginBottom: '200px'}}/>
+                    {/*hack way to fix the timeline separator*/}
 
-                        <Footer/>
-                    </div>
-                )
-            }
+                    <Footer/>
+                </div>
+            )
         }
+    }
     else {
-        newdata = events.filter(data => data.Filter === props.filter).map((data) => {
-            console.log(theme);
+        newdata = events.filter(data => data.Filter === props.filter).sort(((a,b) => {
+            if (a["Year"] > b["Year"]) {
+                return 1;
+            }
+            else return -1;
+        })).map((data) => {
                 return (
                     <Event theme={props.timelineFilter} filter={data["Filter"]} key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
-                           TimelineImage={data["TimelineImage"]} EventFocusImages={data["EventFocusImages"]}
+                           TimelineImage={data["TimelineImage"]}
                            body={data["Body"]}
                            citations={[data["Citations"][0], data["Citations"][1]]}
                            type={data['Type']}
@@ -96,8 +102,7 @@ function Timeline(props) {
 
 
         render() {
-            console.log(this.state.events);
-            if (mobile === true) {
+            if (this.state.mobile === false) {
                 return (
                     <div>
                         <div id="eventsDesktop">  {this.state.events}  </div>
@@ -111,7 +116,6 @@ function Timeline(props) {
             )
         }
     }
-
     function createTimeLineIntro() {
         if (props.filter === '') {
             return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing.</h2>)
@@ -132,7 +136,7 @@ function Timeline(props) {
             {/*hack way to fix the timeline separator*/}
 
             <Footer/>
-            </div>
+        </div>
     )
 }
 

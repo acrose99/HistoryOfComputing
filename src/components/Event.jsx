@@ -64,7 +64,6 @@ class MobileEvent extends Component {
                     hideEventInFocus={this.hideEventInFocus}
                     style={this.props.Type}
                     header={this.props.title}
-                    EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}
                     body={this.props.body}
                     type={this.props.type}
                     citations={[this.props.citations[0], this.props.citations[1]]}
@@ -86,7 +85,6 @@ class DesktopEvent extends Component {
       borderTop: border,
       borderBottom: border
     }
-    this.showEventInFocus = this.hideEventInFocus.bind(this);
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
     this.onClick = this.onClick.bind(this);
     // this.changeEventBackground = this.changeEventBackground.bind(this);
@@ -104,11 +102,6 @@ class DesktopEvent extends Component {
       background: style
     })
   }
-  showEventInFocus() {
-    this.setState({
-      showEventInFocus: true
-    })
-  }
   hideEventInFocus() {
     this.setState({
       showEventInFocus: false
@@ -118,11 +111,26 @@ class DesktopEvent extends Component {
   //
   // let i = 0;
   onClick() {
-    // console.log(showEventInFocus);
+    const border = 'none';
     if (this.state.showEventInFocus === true) {
-      this.hideEventInFocus();
-    } else {
-      this.showEventInFocus();
+      this.setState({
+        background: 'none',
+        borderLeft: border,
+        borderRight: border,
+        borderTop: border,
+        borderBottom: border,
+        showEventInFocus: false
+      })
+    }
+    else {
+      this.setState({
+        background: 'none',
+        borderLeft: border,
+        borderRight: border,
+        borderTop: border,
+        borderBottom: border,
+        showEventInFocus: true
+      })
     }
   }
   onMouseEnterEvent(style, theme, filter) {
@@ -180,7 +188,6 @@ class DesktopEvent extends Component {
     return images;
   }
   findBackdrop(backdrops) {
-    console.log(this.props.filter);
     // For some reason use useState results in a compile error.
     if (this.props.filter === 'Apple') {
       // eslint-disable-next-line
@@ -201,7 +208,7 @@ class DesktopEvent extends Component {
               borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
                  onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter)}
                  onMouseLeave={() => this.onMouseLeaveEvent()}
-                 onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})}
+                 onClick={() => this.onClick()}
                  id={this.props.id} className="Event-Container">
               <div className="Event-body">
                 <p style={{color: this.props.theme.textEventColor}} className="Event-date">
@@ -221,7 +228,7 @@ class DesktopEvent extends Component {
         <EventFocus theme={this.props.theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
                      style={this.props.Type}
                      header={this.props.title}
-                     EventFocusImages={[this.props.EventFocusImages[0], this.props.EventFocusImages[1]]}
+
                      body={this.props.body}
                      type={this.props.type}
                      citations={[this.props.citations[0], this.props.citations[1]]}
@@ -257,24 +264,34 @@ class Event extends Component{
     window.removeEventListener("resize", this.updateMenuStyle.bind(this));
   }
 
+  checkYearBCE(year) { /* Necessary for dates before the common era. */
+    let yearNew;
+    if (year < 0) {
+      yearNew = Math.abs(year) + " BCE" /* Converts to correct format */
+      return yearNew;
+    }
+    else return year;
+  }
+
   render() {
     let theme = this.context;
     let filter = this.props.filter;
+    let year = this.checkYearBCE(this.props.year)
     if (this.state.mobile === true) {
       return (
-          <MobileEvent theme={theme} filter={filter}  year={this.props.year} date={this.props.date} location={this.props.location} title={this.props.title}
+          <MobileEvent theme={theme} filter={filter}  year={year} date={this.props.date} location={this.props.location} title={this.props.title}
                        TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
                        body={this.props.body}
-                       citations={[this.props.citations[1], this.props.citations[2]]}
+                       citations={[this.props.citations[0], this.props.citations[1]]}
                        type={this.props.type} />
       )
     }
     else if (this.state.mobile === false) {
       return (
-          <DesktopEvent theme={theme} filter={filter}  year={this.props.year} date={this.props.date} location={this.props.location} title={this.props.title}
-                       TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
+          <DesktopEvent theme={theme} filter={filter}  year={year} date={this.props.date} location={this.props.location} title={this.props.title}
+                       TimelineImage={this.props.TimelineImage}
                        body={this.props.body}
-                       citations={[this.props.citations[1], this.props.citations[2]]}
+                       citations={[this.props.citations[0], this.props.citations[1]]}
                        type={this.props.type} />
       )
     }

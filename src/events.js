@@ -281,6 +281,19 @@ export const events = [
         "EventFocusImages": [
             require("./images/event-images/EventFocus1.jpg"),
             require("./images/event-images/EventFocus2.jpg")             ]
+    },
+    {
+        "id": 17,
+        "Filter": "Ancient",
+        "Type": "Ancient",
+        "Title": "Sumerian Numbering System is invented",
+        "Body": "The Sumerian System, called \"sexagesimal\", combined a mundane 10... with a \"celestial\" 6, to obtain the base figure 60. This system is in some ways superior to our present one, and much superior to later Greek and Roman systems. It enabled Sumerians to divide into fractions and multiply into the million, to calculate roots or raise numbers several powers.",
+        "Date": "3300 BCE",
+        "Year": -3300,
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/SumerianNumberSystem.png"),
     }
 ]
 
