@@ -443,13 +443,119 @@ export const events = [
         "Filter": "Enlightenment",
         "Type": "Enlightenment",
         "Title": "Calculus is Invented",
-        "Body": "Placeholder",
+        "Body": "Gottfried Leibniz and Isaac Newton both independently discover Calculus around 1960",
         "Date": "1680s",
         "Year": 1680,
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/Newton.png"),
     },
+    {
+        "id": 30,
+        "Filter": "Enlightenment",
+        "Type": "Enlightenment",
+        "Title": "Leibniz Wheel Invented",
+        "Body": "Gottfried Leibniz created the Leibniz wheel, a four function calculator that saved time to create logarithmic tables.",
+        "Date": "1694",
+        "Year": "1694",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/LEIBNIZ-WHEEL.png"),
+    },
+    {
+        "id": 31,
+        "Filter": "Enlightenment",
+        "Type": "Enlightenment",
+        "Title": "First Programmable Punched Cards",
+        "Body": "Joseph Jacquard creates and implements a memory and programmability using a punched card on a loom",
+        "Date": "1801",
+        "Year": "1801",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/Loom.png"),
+    },
+    {
+        "id": 32,
+        "Filter": "Industrial",
+        "Type": "Industrial",
+        "Title": "First Mass Produced Calculator",
+        "Body": "The Arithometer was the first mass produced calculator",
+        "Date": "1820",
+        "Year": "1820",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/Arithometer.gif"),
+    },
+    {
+        "id": 33,
+        "Filter": "Industrial",
+        "Type": "Industrial",
+        "Title": "Design of the Difference Engine",
+        "Body": "Charles Babbage, an English Polymath, designed the Difference Engine, a machine that could add, subtract, multiple, and divide up to six significant figures.",
+        "Date": "1823",
+        "Year": "1823",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/Babbage.png"),
+    },
+    {
+        "id": 34,
+        "Filter": "EarlyComputing",
+        "Type": "EarlyComputing",
+        "Title": "Ada Lovelace becomes First Programmer",
+        "Body": "Ada Lovelace became the first programmer by describing Charles Babbage's Analytic Engine, which functions as a modern digital computer, with storage, a processor, and I/O cards. ",
+        "Date": "1842",
+        "Year": "1842",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/AdaLovelace.png"),
+    },
+    {
+        "id": 35,
+        "Filter": "EarlyComputing",
+        "Type": "Early Computing",
+        "Title": "Discovery of Boolean Algebra",
+        "Body": "George Boole, an English Mathematician, invents Boolean algebra in 'The Investigation of the Laws of Thought'",
+        "Date": "1854",
+        "Year": "1854",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/GeorgeBoole.jpg"),
+    },
+    {
+        "id": 36,
+        "Filter": "EarlyComputing",
+        "Type": "Early Computing",
+        "Title": "Invention of the Modern Keyboard",
+        "Body": "Christopher Sholes, an American invetor, invented the QWERTY keyboard in order to prevent typists from hitting more then one key at once.",
+        "Date": "1868",
+        "Year": "1868",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/QWRTY.png"),
+    },
+    {
+        "id": 37,
+        "Filter": "EarlyComputing",
+        "Type": "IBM",
+        "Title": "First Programmable Machine",
+        "Body": "Herman Hollerith, an American inventor, patents the Tabulating Machine. The Tabulating Machine was the world's first programmable machine, by using keypunched machines.",
+        "Date": "1890",
+        "Year": "1890",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/TabulatingMachine.png"),
+    },
+
+
 ]
 

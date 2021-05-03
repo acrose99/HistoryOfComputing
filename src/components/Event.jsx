@@ -199,6 +199,15 @@ class DesktopEvent extends Component {
     else if (this.props.filter === 'Medieval') {
       this.state.backdrop = backdrops['MedievalBackdrop.svg']
     }
+    else if (this.props.filter === 'EarlyComputing') {
+      this.state.backdrop = backdrops['EarlyComputingBackdrop.svg']
+    }
+    else if (this.props.filter === 'Enlightenment') {
+      this.state.backdrop = backdrops['EnlightenmentBackdrop.svg']
+    }
+    else if (this.props.filter === 'Industrial') {
+      this.state.backdrop = backdrops['IndustrialBackdrop.svg']
+    }
     else {
       // eslint-disable-next-line
       this.state.backdrop = backdrops['Backdrop.svg']

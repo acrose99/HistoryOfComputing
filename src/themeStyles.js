@@ -76,9 +76,6 @@ export const themes = {
         backgroundImage: 'linear-gradient(rgb(255, 195, 113, .5), rgb(255, 95, 109, .5))',
         navbarBackground: 'rgba(244, 171, 142, 1)'
     },
-
-
-    /* PLACEHOLDERS */
     Ancient: {
         foreground: "#94716B",
         background: "#B79891",
@@ -117,26 +114,65 @@ export const themes = {
         backgroundImage: "linear-gradient(rgb(238, 242, 243, .5), rgb(142, 158, 171, .5))",
         navbarBackground: "#8e9eab"
     },
-    Enlightenment: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+    /* PLACEHOLDERS */
+    Enlightenment: {
+        foreground: "#757F9A",
+        background: "#D7DDE8",
+
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
         borderDefault: '4mm ridge black',
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
+        borderLeftColor: '4mm ridge #757F9A',
+        borderRightColor: '4mm ridge #D7DDE8',
+        borderTopColor: '4mm ridge #D7DDE8',
+        borderBottomColor: '4mm ridge #757F9A',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        backgroundImage: "linear-gradient(rgb(215, 221, 232, .5), rgb(117, 127, 154, .5))",
+        navbarBackground: "#757F9A"
     },
+    Industrial: {
+        foreground: "#1e130c",
+        background: "#9a8478",
 
+        textColor: '#ffffff',
+        textNavbarColor: '#ffffff',
+        textFooterColor: '#ffffff',
+        headerColor: '#ffffff',
+
+        textEventColor: 'white',
+        borderDefault: '4mm ridge black',
+        borderLeftColor: '4mm ridge #1e130c',
+        borderRightColor: '4mm ridge #9a8478',
+        borderTopColor: '4mm ridge #9a8478',
+        borderBottomColor: '4mm ridge #1e130c',
+
+        backgroundImage: "linear-gradient(rgb(154, 132, 120), rgb(30, 19, 12, .25))",
+        navbarBackground: "#9a8478"
+    },
+    EarlyComputing: {
+        foreground: "#94716B",
+        background: "#B79891",
+
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
+
+        textEventColor: 'white',
+        borderDefault: '4mm ridge black',
+        borderLeftColor: '4mm ridge #94716B',
+        borderRightColor: '4mm ridge #B79891',
+        borderTopColor: '4mm ridge #94716B',
+        borderBottomColor: '4mm ridge #B79891',
+
+        backgroundImage: "linear-gradient(rgb(154, 132, 120), rgb(30, 19, 12, .25))",
+        navbarBackground: "#B79891"
+    },
 
 
 };
