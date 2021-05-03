@@ -75,7 +75,32 @@ export const themes = {
 
         backgroundImage: 'linear-gradient(rgb(255, 195, 113, .5), rgb(255, 95, 109, .5))',
         navbarBackground: 'rgba(244, 171, 142, 1)'
-    }
+    },
+
+
+    /* PLACEHOLDERS */
+    Ancient: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+        borderDefault: '4mm ridge black',
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
+
+
+
 };
 
 export const ThemeStyles = React.createContext(themes.vaporwave);
