@@ -14,6 +14,9 @@ import RangeInput from "./RangeInput";
 import ibmIcon from '@iconify/icons-cib/ibm';
 import bxsFactory from '@iconify/icons-bx/bxs-factory';
 import cardFileBox from '@iconify/icons-emojione-monotone/card-file-box';
+import womenLine from '@iconify/icons-ri/women-line';
+import rainbowFlag from '@iconify/icons-twemoji/rainbow-flag';
+import globeIcon from '@iconify/icons-vs/globe';
 
 import FilterCategory from "./FiltererCategory";
 
@@ -135,6 +138,7 @@ class Filterer extends Component{
                         <div className="filtererCategories">
                             <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]} icons={[appleIcon, bxlMicrosoft, ibmIcon ]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
                             <FilterCategory category="Eras" filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing"]} icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory,  cardFileBox]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                            <FilterCategory category="Representation" filters={["Women", "LGBTQ+", "POC"]} icons={[womenLine, rainbowFlag, globeIcon]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
 
                             <div id="filtererCategoryContainerYear"className="filtererCategoryContainer">
                                 <div className="filtererCategoryHeaderContainer">
@@ -171,8 +175,8 @@ class Filterer extends Component{
                             <div className="filtererCategories">
                                 <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]} icons={[appleIcon, bxlMicrosoft, ibmIcon ]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
                                 <FilterCategory category="Eras" filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing"]} icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory,  cardFileBox]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
-
-                                <div id="filtererCategoryContainerYear"className="filtererCategoryContainer">
+                                <FilterCategory category="Representation" filters={["Women", "LGBTQ+", "POC"]} icons={[womenLine, rainbowFlag, globeIcon]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                                <div id="filtererCategoryContainerYear" className="filtererCategoryContainer">
                                     <div className="filtererCategoryHeaderContainer">
                                         <h4 className="filtererCategory">Year</h4>
                                         <InlineIcon id="YearIcon" className="icon" onClick={() => this.showCategory('Year')}  height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}}/>

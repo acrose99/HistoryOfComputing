@@ -32,7 +32,7 @@ function filtererCategory(props) {
     }
 
     const filters = props.filters.map((filter, index) =>
-            <div className="filtererCategoryType">
+            <div key={index} className="filtererCategoryType">
                 <div onClick={() => onClickFiltererType(filter, filter)}
                      className="filtererCategoryTypeContainer">
                     <InlineIcon className="filtererCategoryIcon" height={32} width={32}
