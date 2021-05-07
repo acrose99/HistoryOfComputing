@@ -87,7 +87,7 @@ class DesktopEvent extends Component {
     }
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
     this.onClick = this.onClick.bind(this);
-    // this.changeEventBackground = this.changeEventBackground.bind(this);
+    this.changeEventBackground = this.changeEventBackground.bind(this);
     this.onMouseEnterEvent = this.onMouseEnterEvent.bind(this);
     this.onMouseLeaveEvent = this.onMouseLeaveEvent.bind(this, border);
   }
@@ -96,10 +96,11 @@ class DesktopEvent extends Component {
     this.setState({
       border: style
     })
+
   }
   changeEventBackground(style) {
     this.setState({
-      background: style
+      backgroundImage: style
     })
   }
   hideEventInFocus() {
@@ -223,42 +224,42 @@ class DesktopEvent extends Component {
     if (this.props.filters !== undefined && this.props.filters !== null) {
       if (this.props.filters.includes('Apple')) {
         // eslint-disable-next-line
-        this.state.backdrop = backdrops['AppleBackdrop.svg']
+        return backdrops['AppleBackdrop.svg']
       }
       else if (this.props.filters.includes('Ancient')){
-        this.state.backdrop = backdrops['AncientBackdrop.svg']
+        return backdrops['AncientBackdrop.svg']
       }
       else if (this.props.filters.includes('Medieval')) {
-        this.state.backdrop = backdrops['MedievalBackdrop.svg']
+        return backdrops['MedievalBackdrop.svg']
       }
       else if (this.props.filters.includes ('EarlyComputing')) {
-        this.state.backdrop = backdrops['EarlyComputingBackdrop.svg']
+        return backdrops['EarlyComputingBackdrop.svg']
       }
       else if (this.props.filters.includes ('Enlightenment')) {
-        this.state.backdrop = backdrops['EnlightenmentBackdrop.svg']
+        return backdrops['EnlightenmentBackdrop.svg']
       }
       else if (this.props.filters.includes ('Industrial')) {
-        this.state.backdrop = backdrops['IndustrialBackdrop.svg']
+        return backdrops['IndustrialBackdrop.svg']
       }
       else {
         // eslint-disable-next-line
-        this.state.backdrop = backdrops['Backdrop.svg']
+        return backdrops['Backdrop.svg']
       }
     }
     else {
       // eslint-disable-next-line
-      this.state.backdrop = backdrops['Backdrop.svg']
+        return backdrops['Backdrop.svg'];
     }
   }
   render() {
     const backdrops = this.importAll(require.context('../images/Backdrops', false, /Backdrop.svg$/));
-    this.findBackdrop(backdrops);
+    const backdrop = this.findBackdrop(backdrops);
     if (this.state.showEventInFocus === false) {
       return (
           <div className="Event">
             <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background,borderTop: this.state.borderTop,
               borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
-                 onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter, this.props.filters)}
+                 onMouseEnter={() => this.onMouseEnterEvent(`url(${backdrop})`, this.props.theme, this.props.filter, this.props.filters)}
                  onMouseLeave={() => this.onMouseLeaveEvent()}
                  onClick={() => this.onClick()}
                  id={this.props.id} className="Event-Container">
