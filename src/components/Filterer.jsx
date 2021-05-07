@@ -12,6 +12,13 @@ import microscopeIcon from '@iconify/icons-carbon/microscope';
 import "react-input-range/lib/css/index.css";
 import RangeInput from "./RangeInput";
 import ibmIcon from '@iconify/icons-cib/ibm';
+import bxsFactory from '@iconify/icons-bx/bxs-factory';
+import cardFileBox from '@iconify/icons-emojione-monotone/card-file-box';
+import womenLine from '@iconify/icons-ri/women-line';
+import rainbowFlag from '@iconify/icons-twemoji/rainbow-flag';
+import globeIcon from '@iconify/icons-vs/globe';
+
+import FilterCategory from "./FiltererCategory";
 
 class Filterer extends Component{
     constructor(props) {
@@ -129,73 +136,10 @@ class Filterer extends Component{
                             <InlineIcon className="icon" onClick={() => this.changeFiltererType('Closed')}  height={32} width={32} icon={caretDownOutlined} style={{color: '#ffff'}} />
                         </div>
                         <div className="filtererCategories">
-                            <div className="filtererCategoryContainer">
-                                <div className="filtererCategoryHeaderContainer">
-                                    <h4 className="filtererCategory">Companies</h4>
-                                    <InlineIcon id="CompanyIcon" className="icon" onClick={() => this.showCategory('Companies')}  height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}} />
-                                </div>
-                                <div id="Companies"  className="filtererCategoriesOpened">
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Apple', 'RetroApple')} className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={appleIcon} />
-                                            <h4 className="filtererCategoryTypeHeader">Apple</h4>
-                                        </div>
-                                    </div>
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Microsoft', 'Microsoft')} className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={bxlMicrosoft} style={{color: '#19D2FF'}} />
-                                            <h4 className="filtererCategoryTypeHeader">Microsoft</h4>
-                                        </div>
-                                    </div>
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('IBM', 'IBM')} className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={ibmIcon} />
-                                            <h4 className="filtererCategoryTypeHeader">IBM</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="filtererCategoryContainer">
-                                <div className="filtererCategoryHeaderContainer">
-                                    <h4 className="filtererCategory">Eras</h4>
-                                    <InlineIcon id="EraIcon" className="icon"
-                                                onClick={() => this.showCategory('Eras')} height={16} width={16}
-                                                icon={caretUpFilled} style={{color: '#ffff'}}/>
-                                </div>
-                                <div id="Eras" className="filtererCategoriesOpened">
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Ancient', 'Ancient')}
-                                             className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32}
-                                                        icon={abjadArabic}/>
-                                            <h4 className="filtererCategoryTypeHeader">Ancient (BCE-1200)</h4>
-                                        </div>
-                                    </div>
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Medieval', 'Medieval')}
-                                             className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32}
-                                                        icon={crossIcon}/>
-                                            <h4 className="filtererCategoryTypeHeader">Medieval (1200-1680) </h4>
-                                        </div>
-                                    </div>
-                                    {/*<div className="filtererCategoryType">*/}
-                                    {/*    <div onClick={() => this.onClickFiltererType('Enlightenment', 'Enlightenment')}*/}
-                                    {/*         className="filtererCategoryTypeContainer">*/}
-                                    {/*        <InlineIcon className="filtererCategoryIcon" height={32} width={32}*/}
-                                    {/*                    icon={microscopeIcon}/>*/}
-                                    {/*        <h4 className="filtererCategoryTypeHeader">Enlightenment (1680-?)</h4>*/}
-                                    {/*    </div>*/}
-                                    {/*</div>*/}
-                                </div>
-                            </div>
-                            {/* EVENTS NOT IMPLEMENTED YET, NO FILTER NEEDED*/}
-                            {/*<div className="filtererCategoryContainer">*/}
-                            {/*    <div className="filtererCategoryHeaderContainer">*/}
-                            {/*        <h4 className="filtererCategory">Languages</h4>*/}
-                            {/*        <InlineIcon className="icon" onClick={() => this.changeFiltererType('Closed')}  height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}} />*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
+                            <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]} icons={[appleIcon, bxlMicrosoft, ibmIcon ]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                            <FilterCategory category="Eras" filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing"]} icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory,  cardFileBox]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                            <FilterCategory category="Representation" filters={["Women", "LGBTQ+", "POC"]} icons={[womenLine, rainbowFlag, globeIcon]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+
                             <div id="filtererCategoryContainerYear"className="filtererCategoryContainer">
                                 <div className="filtererCategoryHeaderContainer">
                                     <h4 className="filtererCategory">Year</h4>
@@ -228,97 +172,32 @@ class Filterer extends Component{
                             <h4  id="filtererClosedHeader">Filter: {this.props.timelineFilter}</h4>
                             <InlineIcon className="icon" onClick={() => this.changeFiltererType('Closed')}  height={32} width={32} icon={caretDownOutlined} style={{color: '#ffff'}} />
                         </div>
-                        <div className="filtererCategories">
-                            <div className="filtererCategoryContainer">
-                                <div className="filtererCategoryHeaderContainer">
-                                    <h4 className="filtererCategory">Companies</h4>
-                                    <InlineIcon id="CompanyIcon" className="icon" onClick={() => this.showCategory('Companies')}  height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}} />
-                                </div>
-                                <div id="Companies"  className="filtererCategoriesOpened">
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Apple', 'RetroApple')} className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={appleIcon} />
-                                            <h4 className="filtererCategoryTypeHeader">Apple</h4>
-                                        </div>
+                            <div className="filtererCategories">
+                                <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]} icons={[appleIcon, bxlMicrosoft, ibmIcon ]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                                <FilterCategory category="Eras" filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing"]} icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory,  cardFileBox]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                                <FilterCategory category="Representation" filters={["Women", "LGBTQ+", "POC"]} icons={[womenLine, rainbowFlag, globeIcon]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                                <div id="filtererCategoryContainerYear" className="filtererCategoryContainer">
+                                    <div className="filtererCategoryHeaderContainer">
+                                        <h4 className="filtererCategory">Year</h4>
+                                        <InlineIcon id="YearIcon" className="icon" onClick={() => this.showCategory('Year')}  height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}}/>
                                     </div>
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Microsoft', 'Microsoft')} className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32} icon={bxlMicrosoft} style={{color: '#19D2FF'}} />
-                                            <h4 className="filtererCategoryTypeHeader">Microsoft</h4>
+                                    <div id="Year" className="filtererCategoriesOpened">
+                                        <div id="filtererContainerYear" className="filtererCategoryTypeContainer">
+                                            <RangeInput handleYear={this.handleYear} year={this.state.year}/>
+                                            {/*onClick={() => this.changeTimeLineFilter(this.state.year)}*/}
                                         </div>
-                                    </div>
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('IBM', 'IBM')}
-                                             className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32}
-                                                        icon={ibmIcon}/>
-                                            <h4 className="filtererCategoryTypeHeader">IBM</h4>
-                                        </div>
+                                        <button id="yearSubmit" onClick={() => this.changeTimeLineFilter(this.state.year)}>Set Year</button>
+
                                     </div>
                                 </div>
+                                {/* EVENTS NOT IMPLEMENTED YET, NO FILTER NEEDED*/}
+                                {/*<div className="filtererCategoryContainer">*/}
+                                {/*    <div className="filtererCategoryHeaderContainer">*/}
+                                {/*        <h4 className="filtererCategory">Cultures</h4>*/}
+                                {/*        <InlineIcon className="icon" onClick={() => this.changeFiltererType('Closed')}  height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}} />*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
                             </div>
-                            <div className="filtererCategoryContainer">
-                                <div className="filtererCategoryHeaderContainer">
-                                    <h4 className="filtererCategory">Eras</h4>
-                                    <InlineIcon id="EraIcon" className="icon"
-                                                onClick={() => this.showCategory('Eras')} height={16} width={16}
-                                                icon={caretUpFilled} style={{color: '#ffff'}}/>
-                                </div>
-                                <div id="Eras" className="filtererCategoriesOpened">
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Ancient', 'Ancient')}
-                                             className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32}
-                                                        icon={abjadArabic}/>
-                                            <h4 className="filtererCategoryTypeHeader">Ancient (BCE-1200)</h4>
-                                        </div>
-                                    </div>
-                                    <div className="filtererCategoryType">
-                                        <div onClick={() => this.onClickFiltererType('Medieval', 'Medieval')}
-                                             className="filtererCategoryTypeContainer">
-                                            <InlineIcon className="filtererCategoryIcon" height={32} width={32}
-                                                        icon={crossIcon}/>
-                                            <h4 className="filtererCategoryTypeHeader">Medieval (1200-1680) </h4>
-                                        </div>
-                                    </div>
-                                    {/*<div className="filtererCategoryType">*/}
-                                    {/*    <div onClick={() => this.onClickFiltererType('Enlightenment', 'Enlightenment')}*/}
-                                    {/*         className="filtererCategoryTypeContainer">*/}
-                                    {/*        <InlineIcon className="filtererCategoryIcon" height={32} width={32}*/}
-                                    {/*                    icon={microscopeIcon}/>*/}
-                                    {/*        <h4 className="filtererCategoryTypeHeader">Enlightenment (1680-?)</h4>*/}
-                                    {/*    </div>*/}
-                                    {/*</div>*/}
-                                </div>
-                            </div>
-                            <div id="filtererCategoryContainerYear" className="filtererCategoryContainer">
-                                <div className="filtererCategoryHeaderContainer">
-                                    <h4 className="filtererCategory">Year</h4>
-                                    <InlineIcon id="YearIcon" className="icon" onClick={() => this.showCategory('Year')}
-                                                height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}}/>
-                                </div>
-                                <div id="Year" className="filtererCategoriesOpened">
-                                    <div id="filtererContainerYear" className="filtererCategoryTypeContainer">
-                                        <RangeInput handleYear={this.handleYear} year={this.state.year}/>
-                                    </div>
-                                    <button id="yearSubmit"
-                                            onClick={() => this.changeTimeLineFilter(this.state.year)}>Set Year
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="filtererShowAll">
-                                <div  className="filtererShowAllContainer">
-                                    <h4 onClick={() => this.onClickFiltererType('', 'vaporwave')} className="filtererShowAllHeader">Show All</h4>
-                                </div>
-                            </div>
-                            {/* EVENTS NOT IMPLEMENTED YET, NO FILTER NEEDED*/}
-                            {/*<div className="filtererCategoryContainer">*/}
-                            {/*    <div className="filtererCategoryHeaderContainer">*/}
-                            {/*        <h4 className="filtererCategory">Cultures</h4>*/}
-                            {/*        <InlineIcon className="icon" onClick={() => this.changeFiltererType('Closed')}  height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}} />*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-                        </div>
                     </div>
                 )
             }

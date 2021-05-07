@@ -53,7 +53,7 @@ export const events = [
     },
     {
         "id": 4,
-        "Filter": "IBM",
+        "Filters": ["IBM"],
         "Type": "CPM",
         "Title": "IBM Scamp is created",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -71,7 +71,7 @@ export const events = [
     },
     {
         "id": 5,
-        "Filter": "Apple",
+        "Filters": ["Apple"],
         "Type": "RetroApple",
         "Title": "Apple II introduced",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -89,6 +89,7 @@ export const events = [
     },
     {
         "id": 6,
+        "Filters": ["Sun"],
         "Type": "Sun",
         "Title": "Menlo Park, US",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -106,6 +107,7 @@ export const events = [
     },
     {
         "id": 7,
+        "Filters": ["Commodore"],
         "Type": "Commodore",
         "Title": "Commodore introduces the Commodore 64",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -123,7 +125,7 @@ export const events = [
     },
     {
         "id": 8,
-        "Filter": "Apple",
+        "Filters": ["Apple"],
         "Type": "Apple",
         "Title": "Apple launches the Macintosh",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -141,7 +143,7 @@ export const events = [
     },
     {
         "id": 9,
-        "Filter": "Apple",
+        "Filters": ["Apple"],
         "Type": "Next",
         "Title": "Steve Jobs and NeXt create the NeXTcube",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -159,7 +161,7 @@ export const events = [
     },
     {
         "id": 10,
-        "Filter": "Apple",
+        "Filters": ["Apple"],
         "Type": "Apple",
         "Title": "Apple Newton is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -177,7 +179,7 @@ export const events = [
     },
     {
         "id": 11,
-        "Filter": "IBM",
+        "Filters": ["IBM"],
         "Type": "IBM",
         "Title": "IBM releases the ThinkPad 701C",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -195,7 +197,7 @@ export const events = [
     },
     {
         "id": 12,
-        "Filter": "Apple",
+        "Filters": ["Apple"],
         "Type": "Apple",
         "Title": "The iPhone is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -213,7 +215,7 @@ export const events = [
     },
     {
         "id": 13,
-        "Filter": "Apple",
+        "Filters": ["Apple"],
         "Type": "Apple",
         "Title": "The Apple iPad is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -248,7 +250,7 @@ export const events = [
     },
     {
         "id": 15,
-        "Filter": "Microsoft",
+        "Filters": ["Microsoft"],
         "Type": "Windows",
         "Title": "Windows 10 is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -266,7 +268,7 @@ export const events = [
     },
     {
         "id": 16,
-        "Filter": "Apple",
+        "Filters": ["Apple"],
         "Type": "Apple",
         "Title": "The Apple Pro Stand is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in (23 cm) CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 (equivalent to $6,140 in 2019).\n  \nThe Macintosh was introduced by the now-famous $370,000 (equivalent to $910,541 in 2019) television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
@@ -284,7 +286,7 @@ export const events = [
     },
     {
         "id": 17,
-        "Filter": "Ancient",
+        "Filters": ["Ancient"],
         "Type": "Ancient",
         "Title": "Sumerian Numbering System appears",
         "Body": "The Sumerian System, called \"sexagesimal\", combined a mundane 10... with a \"celestial\" 6, to obtain the base figure 60. This system is in some ways superior to our present one, and much superior to later Greek and Roman systems. It enabled Sumerians to divide into fractions and multiply into the million, to calculate roots or raise numbers several powers. This is the first proof of mathematics",
@@ -297,7 +299,7 @@ export const events = [
     },
     {
         "id": 18,
-        "Filter": "Ancient",
+        "Filters": ["Ancient"],
         "Type": "Ancient",
         "Title": "The Abacus is invented",
         "Body": "Placeholder",
@@ -310,7 +312,7 @@ export const events = [
     },
     {
         "id": 19,
-        "Filter": "Ancient",
+        "Filters": ["Ancient"],
         "Type": "Ancient",
         "Title": "First alphabetic language appears",
         "Body": "Placeholder",
@@ -323,7 +325,7 @@ export const events = [
     },
     {
         "id": 20,
-        "Filter": "Ancient",
+        "Filters": ["Ancient"],
         "Type": "Ancient",
         "Title": "First known use of zero by Babylonian scholars",
         "Body": "Placeholder",
@@ -336,7 +338,7 @@ export const events = [
     },
     {
         "id": 21,
-        "Filter": "Ancient",
+        "Filters": ["Ancient"],
         "Type": "Ancient",
         "Title": "A decimal system is in invented in India",
         "Body": "Derived from Brahmi (An ancient Indian writing script) notation, this nine-digit system was the first mathematic system to introduce importance to the position of numbers, which created the decimal system, which is essential for math and computation.",
@@ -349,7 +351,7 @@ export const events = [
     },
     {
         "id": 22,
-        "Filter": "Ancient",
+        "Filters": ["Ancient"],
         "Type": "Ancient",
         "Title": "Simple math reaches China and Arabia",
         "Body": "The concept of numbers, zeroes, and decimals makes its way to Arabia and China, setting up future development",
@@ -362,7 +364,7 @@ export const events = [
     },
     {
         "id": 23,
-        "Filter": "Medieval",
+        "Filters": ["Medieval"],
         "Type": "Medieval",
         "Title": "Western Europe begins to adopt Arabic mathematics",
         "Body": "Through cultural assimilation brought upon by the Islamic conquest of Spain, Western Europe begins to adopt basic mathematical principles, including the concept of decimals, zeroes, and more. ",
@@ -375,7 +377,7 @@ export const events = [
     },
     {
         "id": 24,
-        "Filter": "Medieval",
+        "Filters": ["Medieval"],
         "Type": "Medieval",
         "Title": "Fibonacci Sequence invented",
         "Body": "Leonardo of Pisa (aka Fibonacci), a mathematician, publishes Liver Abaci, where many algebraic techniques are shown for the first time, including the Fibonacci sequence, which would later be an essential concept in Computer Science. ",
@@ -388,7 +390,7 @@ export const events = [
     },
     {
         "id": 25,
-        "Filter": "Medieval",
+        "Filters": ["Medieval"],
         "Type": "Medieval",
         "Title": "Logarithms are discovered",
         "Body": "Using a calculator called 'Napier's Bones', scottish Mathematician John Napier discovers logarithmic functions.",
@@ -401,7 +403,7 @@ export const events = [
     },
     {
         "id": 26,
-        "Filter": "Medieval",
+        "Filters": ["Medieval"],
         "Type": "Medieval",
         "Title": "Slide Rule is Invented",
         "Body": "William Oughtred, an English Mathematician (and pastor) invents the slide rule,a simple calculator used for algebra and logarithms.",
@@ -414,7 +416,7 @@ export const events = [
     },
     {
         "id": 27,
-        "Filter": "Medieval",
+        "Filters": ["Medieval"],
         "Type": "Medieval",
         "Title": "Analytic geometry is discovered",
         "Body": "Rene Descartes, a French polymath, invents Analytic geometry, the first study of shapes using a coordinate system and equations.",
@@ -427,7 +429,7 @@ export const events = [
     },
     {
         "id": 28,
-        "Filter": "Medieval",
+        "Filters": ["Medieval"],
         "Type": "Medieval",
         "Title": "First mechanical calculator invented",
         "Body": "Blaise Pascal, another French polymath, invents the world's first Mechanical calculator, the Pascaline, which can only perform addition ",
@@ -440,16 +442,148 @@ export const events = [
     },
     {
         "id": 29,
-        "Filter": "Enlightenment",
+        "Filters": ["Enlightenment"],
         "Type": "Enlightenment",
         "Title": "Calculus is Invented",
-        "Body": "Placeholder",
+        "Body": "Gottfried Leibniz and Isaac Newton both independently discover Calculus around 1960",
         "Date": "1680s",
         "Year": 1680,
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/Newton.png"),
     },
+    {
+        "id": 30,
+        "Filters": ["Enlightenment"],
+        "Type": "Enlightenment",
+        "Title": "Leibniz Wheel Invented",
+        "Body": "Gottfried Leibniz created the Leibniz wheel, a four function calculator that saved time to create logarithmic tables.",
+        "Date": "1694",
+        "Year": "1694",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/LEIBNIZ-WHEEL.png"),
+    },
+    {
+        "id": 31,
+        "Filters": ["Enlightenment"],
+        "Type": "Enlightenment",
+        "Title": "First Programmable Punched Cards",
+        "Body": "Joseph Jacquard creates and implements a memory and programmability using a punched card on a loom",
+        "Date": "1801",
+        "Year": "1801",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/Loom.png"),
+    },
+    {
+        "id": 32,
+        "Filters": ["Industrial"],
+        "Type": "Industrial",
+        "Title": "First Mass Produced Calculator",
+        "Body": "The Arithometer was the first mass produced calculator",
+        "Date": "1820",
+        "Year": "1820",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/Arithometer.gif"),
+    },
+    {
+        "id": 33,
+        "Filters": ["Industrial"],
+        "Type": "Industrial",
+        "Title": "Design of the Difference Engine",
+        "Body": "Charles Babbage, an English Polymath, designed the Difference Engine, a machine that could add, subtract, multiple, and divide up to six significant figures.",
+        "Date": "1823",
+        "Year": "1823",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/Babbage.png"),
+    },
+    {
+        "id": 34,
+        "Filters": ["EarlyComputing", "Women"],
+        "Type": "EarlyComputing",
+        "Title": "Ada Lovelace becomes First Programmer",
+        "Body": "Ada Lovelace became the first programmer by describing Charles Babbage's Analytic Engine, which functions as a modern digital computer, with storage, a processor, and I/O cards. ",
+        "Date": "1842",
+        "Year": "1842",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/AdaLovelace.png"),
+    },
+    {
+        "id": 35,
+        "Filters": ["EarlyComputing"],
+        "Type": "Early Computing",
+        "Title": "Discovery of Boolean Algebra",
+        "Body": "George Boole, an English Mathematician, invents Boolean algebra in 'The Investigation of the Laws of Thought'",
+        "Date": "1854",
+        "Year": "1854",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/GeorgeBoole.jpg"),
+    },
+    {
+        "id": 36,
+        "Filters": ["EarlyComputing"],
+        "Type": "Early Computing",
+        "Title": "Invention of the Modern Keyboard",
+        "Body": "Christopher Sholes, an American invetor, invented the QWERTY keyboard in order to prevent typists from hitting more then one key at once.",
+        "Date": "1868",
+        "Year": "1868",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/QWRTY.png"),
+    },
+    {
+        "id": 37,
+        "Filters": ["EarlyComputing"],
+        "Type": "IBM",
+        "Title": "First Programmable Machine",
+        "Body": "Herman Hollerith, an American inventor, patents the Tabulating Machine. The Tabulating Machine was the world's first programmable machine, by using keypunched machines.",
+        "Date": "1890",
+        "Year": "1890",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/TabulatingMachine.png"),
+    },
+    {
+        "id": 38,
+        "Filters": ["EarlyComputing", "LGBTQ+"],
+        "Type": "EarlyComputing",
+        "Title": "Bombe Enigma Machine Invented",
+        "Body": "Alan Turing led the team that designed and created the Bombe, an electro-mechanical device used to break Nazi enigmas. Turing would continue making innovations during WW2. ",
+        "Date": "1939",
+        "Year": "1939",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/TuringBombe.png"),
+    },
+    {
+        "id": 39,
+        "Filters": ["POC"],
+        "Type": "POC",
+        "Title": "Katherine Johnson calculates Project Mercury",
+        "Body": "Katherine Johnson calculates the trajectory of flight of Alan Shepard, the first American in Space.",
+        "Date": "1961",
+        "Year": "1961",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": require("./images/event-images/KatherineJohnson.png"),
+    },
+
+
 ]
 

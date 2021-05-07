@@ -48,6 +48,16 @@ class App extends Component {
                     theme: themes.Medieval
                 }));
             }
+            else if (themeGiven === 'EarlyComputing') {
+                this.setState(state => ({
+                    theme: themes.EarlyComputing
+                }));
+            }
+            else if (themeGiven === 'Industrial' || themeGiven === 'Industrial') {
+                this.setState(state => ({
+                    theme: themes.Industrial
+                }));
+            }
             else {
                 this.setState(state => ({
                     theme: themes.Vaporwave

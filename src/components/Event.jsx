@@ -87,7 +87,7 @@ class DesktopEvent extends Component {
     }
     this.hideEventInFocus = this.hideEventInFocus.bind(this);
     this.onClick = this.onClick.bind(this);
-    // this.changeEventBackground = this.changeEventBackground.bind(this);
+    this.changeEventBackground = this.changeEventBackground.bind(this);
     this.onMouseEnterEvent = this.onMouseEnterEvent.bind(this);
     this.onMouseLeaveEvent = this.onMouseLeaveEvent.bind(this, border);
   }
@@ -96,10 +96,11 @@ class DesktopEvent extends Component {
     this.setState({
       border: style
     })
+
   }
   changeEventBackground(style) {
     this.setState({
-      background: style
+      backgroundImage: style
     })
   }
   hideEventInFocus() {
@@ -133,13 +134,30 @@ class DesktopEvent extends Component {
       })
     }
   }
-  onMouseEnterEvent(style, theme, filter) {
-    console.log("theme:" + theme);
-    console.log("style:" + style);
-    console.log("filter:" + filter);
-    if (filter !== undefined && filter !== null) {
-      console.log(themes[filter].borderLeftColor);
-      if (themes[filter].borderLeftColor !== undefined && themes[filter].borderRightColor !== undefined
+  onMouseEnterEvent(style, theme, filter, filters) {
+    if (filter === '') {
+      /* Theres no great way to do this but figured the natural tendency is to place the most important filter first */
+      if (filters !== undefined && themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
+          && themes[filters[0]].borderTopColor !== undefined
+          && themes[filters[0]].borderBottomColor !== undefined) {
+        this.setState({
+          background: style,
+          borderLeft:  themes[filters[0]].borderLeftColor,
+          borderRight: themes[filters[0]].borderRightColor,
+          borderTop: themes[filters[0]].borderTopColor,
+          borderBottom: themes[filters[0]].borderBottomColor,
+        })
+      }
+      else this.setState({
+        background: style,
+        borderLeft:  theme.borderLeftColor,
+        borderRight: theme.borderRightColor,
+        borderTop: theme.borderTopColor,
+        borderBottom: theme.borderBottomColor,
+      })
+    }
+    else if (filter !== undefined && filter !== null) {
+      if (themes[filter] !== undefined && themes[filter].borderLeftColor !== undefined && themes[filter].borderRightColor !== undefined
           && themes[filter].borderTopColor !== undefined
           && themes[filter].borderBottomColor !== undefined) {
         this.setState({
@@ -149,6 +167,20 @@ class DesktopEvent extends Component {
           borderTop: themes[filter].borderTopColor,
           borderBottom: themes[filter].borderBottomColor,
         })
+      }
+      else if (themes[filters[0]] !== undefined) {
+        /* Theres no great way to do this but figured the natural tendency is to place the most important filter first */
+        if (themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
+            && themes[filters[0]].borderTopColor !== undefined
+            && themes[filters[0]].borderBottomColor !== undefined) {
+          this.setState({
+            background: style,
+            borderLeft:  themes[filters[0]].borderLeftColor,
+            borderRight: themes[filters[0]].borderRightColor,
+            borderTop: themes[filters[0]].borderTopColor,
+            borderBottom: themes[filters[0]].borderBottomColor,
+          })
+        }
       }
       else this.setState({
         background: style,
@@ -189,30 +221,45 @@ class DesktopEvent extends Component {
   }
   findBackdrop(backdrops) {
     // For some reason use useState results in a compile error.
-    if (this.props.filter === 'Apple') {
-      // eslint-disable-next-line
-      this.state.backdrop = backdrops['AppleBackdrop.svg']
-    }
-    else if (this.props.filter === 'Ancient') {
-      this.state.backdrop = backdrops['AncientBackdrop.svg']
-    }
-    else if (this.props.filter === 'Medieval') {
-      this.state.backdrop = backdrops['MedievalBackdrop.svg']
+    if (this.props.filters !== undefined && this.props.filters !== null) {
+      if (this.props.filters.includes('Apple')) {
+        // eslint-disable-next-line
+        return backdrops['AppleBackdrop.svg']
+      }
+      else if (this.props.filters.includes('Ancient')){
+        return backdrops['AncientBackdrop.svg']
+      }
+      else if (this.props.filters.includes('Medieval')) {
+        return backdrops['MedievalBackdrop.svg']
+      }
+      else if (this.props.filters.includes ('EarlyComputing')) {
+        return backdrops['EarlyComputingBackdrop.svg']
+      }
+      else if (this.props.filters.includes ('Enlightenment')) {
+        return backdrops['EnlightenmentBackdrop.svg']
+      }
+      else if (this.props.filters.includes ('Industrial')) {
+        return backdrops['IndustrialBackdrop.svg']
+      }
+      else {
+        // eslint-disable-next-line
+        return backdrops['Backdrop.svg']
+      }
     }
     else {
       // eslint-disable-next-line
-      this.state.backdrop = backdrops['Backdrop.svg']
+        return backdrops['Backdrop.svg'];
     }
   }
   render() {
     const backdrops = this.importAll(require.context('../images/Backdrops', false, /Backdrop.svg$/));
-    this.findBackdrop(backdrops);
+    const backdrop = this.findBackdrop(backdrops);
     if (this.state.showEventInFocus === false) {
       return (
           <div className="Event">
             <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background,borderTop: this.state.borderTop,
               borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
-                 onMouseEnter={() => this.onMouseEnterEvent(`url(${this.state.backdrop})`, this.props.theme, this.props.filter)}
+                 onMouseEnter={() => this.onMouseEnterEvent(`url(${backdrop})`, this.props.theme, this.props.filter, this.props.filters)}
                  onMouseLeave={() => this.onMouseLeaveEvent()}
                  onClick={() => this.onClick()}
                  id={this.props.id} className="Event-Container">
@@ -281,11 +328,11 @@ class Event extends Component{
 
   render() {
     let theme = this.context;
-    let filter = this.props.filter;
+    let filters = this.props.filters;
     let year = this.checkYearBCE(this.props.year)
     if (this.state.mobile === true) {
       return (
-          <MobileEvent theme={theme} filter={filter}  year={year} date={this.props.date} location={this.props.location} title={this.props.title}
+          <MobileEvent theme={theme} filter={this.props.filter} filters={filters}  year={this.props.year} date={this.props.date} location={this.props.location} title={this.props.title}
                        TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
                        body={this.props.body}
                        citations={[this.props.citations[0], this.props.citations[1]]}
@@ -294,7 +341,7 @@ class Event extends Component{
     }
     else if (this.state.mobile === false) {
       return (
-          <DesktopEvent theme={theme} filter={filter}  year={year} date={this.props.date} location={this.props.location} title={this.props.title}
+          <DesktopEvent theme={theme} filter={this.props.filter} filters={filters}  year={year} date={this.props.date} location={this.props.location} title={this.props.title}
                        TimelineImage={this.props.TimelineImage}
                        body={this.props.body}
                        citations={[this.props.citations[0], this.props.citations[1]]}
