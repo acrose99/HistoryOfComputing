@@ -1,45 +1,75 @@
 import React, {Component} from "react";
 import "./Home.css";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import MacHello from "../images/buttons/Mac128hello.png"
-import MacWorld from "../images/buttons/Mac128world.png"
-import {themes, ThemeStyles} from '../themeStyles';
+import HomeImg from "../images/HistOfComputingHome.svg"
+import Background from "../images/background.svg"
+import { Link } from "react-router-dom";
+import {ThemeStyles} from '../themeStyles';
 
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            src: MacHello
+            windowBig: true,
         }
-        this.onMacHover = this.onMacHover.bind(this);
-        this.onMacLeave = this.onMacLeave.bind(this);
     }
-    onMacHover() {
-        this.setState({
-            src: MacWorld
-        });
+
+
+    updateMenuStyle() {
+        // if the width is less than 768, it goes into small menu
+        if (window.innerWidth < 768) {
+            this.setState({ windowBig: false, });
+        }
+        else {
+            this.setState({ windowBig: true, });
+        }
     }
-    onMacLeave() {
-        this.setState({
-            src: MacHello
-        });
+
+    componentDidMount() {
+        this.updateMenuStyle();
+        window.addEventListener("resize", this.updateMenuStyle.bind(this));
+    }
+    componentWillUnmount() {
+        // tutorial said i should unmount the event listener so here it is
+        window.removeEventListener("resize", this.updateMenuStyle.bind(this));
     }
     render() {
         let theme = this.context;
-        return (
-                    <div className="Home-content">
-                        <Navbar/>
-                        <img id="macHome" onMouseEnter={() => this.onMacHover} onMouseLeave={this.onMacLeave}  src={this.state.src} alt="MacHello"/>
-                        <h1 style={{color: themes.Vaporwave.headerColor}}>
+        if (this.state.windowBig === false) {
+            return (
+                <div className="Home-content-mobile">
+                    {/*<Navbar/>*/}
+                    <img id="homeImgMobile"  src={HomeImg} alt="Intro"/>
+                    <div className="heroText">
+                        <h1 style={{fontSize: '38px'}} className="heroHeader">
                             Welcome to The History of Computing!
                         </h1>
-                        <p style={{color: themes.Vaporwave.textColor}}>
-                            We recommend you first go to the timeline by using the navigation menu above.
-                        </p>
+                        <div className="home-btn-wrapper">
+                            <Link className="home-btn" to="/timeline">See the timeline</Link>
+                        </div>
+                    </div>
+                    {/*<Footer/>*/}
+                    {/*<div style={{display: "flex", flexGrow: 1, backgroundColor: theme.background }}>*/}
+                    {/*</div>*/}
+                </div>
+            )
+        }
+       else return (
+                    <div style={{background: `url(${Background})`, backgroundSize: 'cover'}} className="Home-content">
+                        {/*<Navbar/>*/}
+                        <div className="hero">
+                            <div className="heroText">
+                                <h1 className="heroHeader">
+                                    Welcome to The History of Computing!
+                                </h1>
+                                <div className="home-btn-wrapper">
+                                    <Link className="home-btn" to="/timeline">See the timeline</Link>
+                                </div>
+                            </div>
+                            <img id="homeImg"  src={HomeImg} alt="Intro"/>
+                        </div>
                         <Footer/>
-                        <div style={{display: "flex", flexGrow: 1, background: theme.background}}>
-
+                        <div style={{display: "flex", flexGrow: 1, backgroundColor: theme.background }}>
                         </div>
                     </div>
         )

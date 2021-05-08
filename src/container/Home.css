@@ -24,15 +24,71 @@
 
 /* The majority of this stuff just keeps everything centered and nice looking for diffrent sizes of the browser*/
 .Home-content {
-    text-align: center;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    flex-grow: 2;
+    min-height: 100vh;
+    width: 100vw;
+    background-size: contain;
 }
 
-#macHome {
-    display: block;
-    margin: 0 auto;
-    max-height: 500px;
-    max-width: 500px;
+#homeImg {
+    max-height: 60vh;
+    min-height: 400px;
+    max-width: 60vw;
+    flex: 1;
+    /*object-fit: contain;*/
+}
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    margin-top: 5vh;
+    justify-content: space-between;
+}
+.heroText {
+    max-width: 400px;
+    padding-left: 5%;
+    flex: 0 0 35%;
+}
+.heroHeader {
+    font-size: 3em;
+    font-family: "Futura", sans-serif;
+}
+.home-btn-wrapper {
+    flex-direction: column;
+    padding: .75rem 2rem;
+    width: 10rem;
+    font-size: 1.125rem;
+    line-height: 1.25;
+    background:  linear-gradient(250.46deg, #8468F5 72.09%, #EC74E7 352.57%);
+    display: inline-block;
+    border-radius: 1rem;
+    text-align: center;
+}
+.home-btn {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Mobile */
+.Home-content-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(155.52deg, rgba(165, 153, 255, 0.5) 18.54%, rgba(177, 168, 255, 0.5) 24.61%, rgba(179, 169, 255, 0.5) 42.81%, rgba(122, 104, 255, 0.5) 61.01%, rgba(102, 82, 255, 0.5) 105.21%);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#homeImgMobile {
+    max-height: 60vh;
+    object-fit: contain;
 }

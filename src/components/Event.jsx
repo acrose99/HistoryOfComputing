@@ -137,7 +137,7 @@ class DesktopEvent extends Component {
   onMouseEnterEvent(style, theme, filter, filters) {
     if (filter === '') {
       /* Theres no great way to do this but figured the natural tendency is to place the most important filter first */
-      if (filters !== undefined && themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
+      if (filters !== undefined && themes[filters[0]] !== undefined && themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
           && themes[filters[0]].borderTopColor !== undefined
           && themes[filters[0]].borderBottomColor !== undefined) {
         this.setState({
