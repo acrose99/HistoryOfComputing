@@ -137,7 +137,7 @@ class DesktopEvent extends Component {
   onMouseEnterEvent(style, theme, filter, filters) {
     if (filter === '') {
       /* Theres no great way to do this but figured the natural tendency is to place the most important filter first */
-      if (filters !== undefined && themes[filters[0]] !== undefined && themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
+       if (filters !== undefined && themes[filters[0]] !== undefined && themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
           && themes[filters[0]].borderTopColor !== undefined
           && themes[filters[0]].borderBottomColor !== undefined) {
         this.setState({
@@ -219,12 +219,16 @@ class DesktopEvent extends Component {
     });
     return images;
   }
-  findBackdrop(backdrops) {
+  findBackdrop(filter, backdrops) {
     /* Place in order of heirachy for user to see.
         For example:
         I've placed the LGBTQ backdrop higher then Early Computing,
         because I want to emphasize representation more then era */
-    if (this.props.filters !== undefined && this.props.filters !== null) {
+    if (filter !== '' && filter !== undefined && filter !== null) {
+      console.log("filter" + filter);
+      return backdrops[filter+ 'Backdrop.svg']
+    }
+    else if (this.props.filters !== undefined && this.props.filters !== null) {
       if (this.props.filters.includes('Apple')) {
         // eslint-disable-next-line
         return backdrops['AppleBackdrop.svg']
@@ -253,13 +257,12 @@ class DesktopEvent extends Component {
       }
     }
     else {
-      // eslint-disable-next-line
-        return backdrops['Backdrop.svg'];
+      return backdrops['Backdrop.svg']
     }
   }
   render() {
     const backdrops = this.importAll(require.context('../images/Backdrops', false, /Backdrop.svg$/));
-    const backdrop = this.findBackdrop(backdrops);
+    const backdrop = this.findBackdrop(this.props.filter,backdrops);
     if (this.state.showEventInFocus === false) {
       return (
           <div className="Event">
