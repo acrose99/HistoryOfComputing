@@ -53,9 +53,19 @@ class App extends Component {
                     theme: themes.EarlyComputing
                 }));
             }
-            else if (themeGiven === 'Industrial' || themeGiven === 'Industrial') {
+            else if (themeGiven === 'LGBTQ' || themeGiven === 'LGBTQ+') {
                 this.setState(state => ({
-                    theme: themes.Industrial
+                    theme: themes.LGBTQ
+                }));
+            }
+            // else if (themeGiven === 'POC' || themeGiven === 'POC') {
+            //     this.setState(state => ({
+            //         theme: themes.POC
+            //     }));
+            // }
+            else if (themeGiven === 'Women' || themeGiven === 'women') {
+                this.setState(state => ({
+                    theme: themes.Women
                 }));
             }
             else {

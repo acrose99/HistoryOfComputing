@@ -220,11 +220,17 @@ class DesktopEvent extends Component {
     return images;
   }
   findBackdrop(backdrops) {
-    // For some reason use useState results in a compile error.
+    /* Place in order of heirachy for user to see.
+        For example:
+        I've placed the LGBTQ backdrop higher then Early Computing,
+        because I want to emphasize representation more then era */
     if (this.props.filters !== undefined && this.props.filters !== null) {
       if (this.props.filters.includes('Apple')) {
         // eslint-disable-next-line
         return backdrops['AppleBackdrop.svg']
+      }
+      else if (this.props.filters.includes('LGBTQ')) {
+        return backdrops['LGBTQBackdrop.svg']
       }
       else if (this.props.filters.includes('Ancient')){
         return backdrops['AncientBackdrop.svg']
@@ -232,13 +238,13 @@ class DesktopEvent extends Component {
       else if (this.props.filters.includes('Medieval')) {
         return backdrops['MedievalBackdrop.svg']
       }
-      else if (this.props.filters.includes ('EarlyComputing')) {
+      else if (this.props.filters.includes('EarlyComputing')) {
         return backdrops['EarlyComputingBackdrop.svg']
       }
-      else if (this.props.filters.includes ('Enlightenment')) {
+      else if (this.props.filters.includes('Enlightenment')) {
         return backdrops['EnlightenmentBackdrop.svg']
       }
-      else if (this.props.filters.includes ('Industrial')) {
+      else if (this.props.filters.includes('Industrial')) {
         return backdrops['IndustrialBackdrop.svg']
       }
       else {

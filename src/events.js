@@ -559,7 +559,7 @@ export const events = [
     },
     {
         "id": 38,
-        "Filters": ["EarlyComputing", "LGBTQ+"],
+        "Filters": ["LGBTQ", "EarlyComputing"],
         "Type": "EarlyComputing",
         "Title": "Bombe Enigma Machine Invented",
         "Body": "Alan Turing led the team that designed and created the Bombe, an electro-mechanical device used to break Nazi enigmas. Turing would continue making innovations during WW2. ",

@@ -135,6 +135,15 @@ function Timeline(props) {
         else if (props.filter === 'EarlyComputing') {
             return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of Early Computing.</h2>)
         }
+        else if (props.filter === 'Women') {
+            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of Women in Computing.</h2>)
+        }
+        else if (props.filter === 'LGBTQ') {
+            return (<h3 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of LGBTQ+ individuals in Computing.</h3>)
+        }
+        else if (props.filter === 'POC') {
+            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of POC individuals in Computing.</h2>)
+        }
         else {
             return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter}.</h2>)
         }

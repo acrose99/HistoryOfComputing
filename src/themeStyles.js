@@ -173,7 +173,63 @@ export const themes = {
         backgroundImage: "linear-gradient(rgb(154, 132, 120), rgb(30, 19, 12, .25))",
         navbarBackground: "#B79891"
     },
+    LGBTQ: {
+        foreground: "rgba(70,0,255,0.47)",
+        background: "rgba(255, 99, 0, 0.47)",
 
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
+
+        textEventColor: 'black',
+        borderDefault: '4mm ridge black',
+        borderLeftColor: '4mm ridge #fe0000',
+        borderRightColor: '4mm ridge #ff6300',
+        borderTopColor: '4mm ridge #008001',
+        borderBottomColor: '4mm ridge #4600ff',
+
+        backgroundImage: "linear-gradient(rgb(255, 0, 0, .5), rgb(255, 99, 0, .5), rgb(255, 255, 1, .5), rgb(0, 128, 0, .5), rgb(70, 0, 255, .5), rgb(131, 1, 137, .5))",
+        navbarBackground: "transparent"
+    },
+    Women: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+        borderDefault: '4mm ridge black',
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
+    POC: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+        borderDefault: '4mm ridge black',
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
 
 };
 
