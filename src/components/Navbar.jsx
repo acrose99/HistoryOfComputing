@@ -14,14 +14,14 @@ class BigNavbar extends Component{
             <div style={{backgroundColor: this.props.theme.navbarBackground}} id="bigMenu">
 
                 <div id="top-container">
-                    <h2 style={{color: this.props.theme.headerColor, fontStyle: "italic"}} id="title">The History Of Computing</h2>
+                    <h2 style={{color: this.props.theme.headerColor}} id="title">The History Of Computing</h2>
                 </div>
                 <div  id="bottom-container">
                     <button className="menuItem"><a style={{color: this.props.textNavbarColor}} className="menuItemLink" href="timeline">The Timeline</a></button>
                     <button className="menuItem"><a style={{color: this.props.textNavbarColor}} className="menuItemLink" href="https://github.com/acrose99/HistoryOfComputingDocs">Documentation</a></button>
                     <button className="menuItem"><a style={{color: this.props.textNavbarColor}} className="menuItemLink" href="/team">About US</a></button>
-                    <button className="menuItem"><a style={{color: this.props.textNavbarColor}} className="menuItemLink" href="https://ecommons.luc.edu/history_facpubs/42/">The Book</a></button>
-                    <button className="menuItem"><a style={{color: this.props.textNavbarColor}} className="menuItemLink" href="https://ssl.cs.luc.edu/">SSL</a></button>
+                    {/*<button className="menuItem"><a style={{color: this.props.textNavbarColor}} className="menuItemLink" href="https://ecommons.luc.edu/history_facpubs/42/">The Book</a></button>*/}
+                    {/*<button className="menuItem"><a style={{color: this.props.textNavbarColor}} className="menuItemLink" href="https://ssl.cs.luc.edu/">SSL</a></button>*/}
                     <IconButton className="Footer-menuButton" href="https://github.com/acrose99/HistoryOfComputing" edge={"end"}>
                         <Icon className="Footer-menuButton-icon" icon={githubFilled} style={{ color: this.props.theme.textNavbarColor }} />
                     </IconButton>
@@ -55,7 +55,7 @@ class MiniNavbar extends Component{
             <div id="smallMenu">
                 <div id="mini-top-container">
 
-                    <h2 style={{color: this.props.theme.headerColor, fontStyle: "italic"}} id="title">The History Of Computing</h2>
+                    <h2 style={{color: this.props.theme.headerColor}} id="title">The History Of Computing</h2>
                     <div className="hamLink">
                         <IconButton onClick={this.miniMenuFunction} className="Footer-menuButton" edge={"end"}>
                             <Icon className="Footer-menuButton-icon" icon={menuOutlined} style={{ color: this.props.theme.textNavbarColor }} />
@@ -76,13 +76,13 @@ class MiniNavbar extends Component{
                         <a href="about" style={{color: this.props.theme.headerColor, background: this.props.theme.background}} className="miniMenuItem">About Us
                         </a>
                     </div>
-                    <div className="miniMenuItemDiv">
+                    {/*<div className="miniMenuItemDiv">*/}
 
-                        <a href="https://ssl.cs.luc.edu/"  style={{color: this.props.theme.headerColor, background: this.props.theme.background}}className="miniMenuItem">SSL</a></div>
-                    <div className="miniMenuItemDiv">
+                    {/*    <a href="https://ssl.cs.luc.edu/"  style={{color: this.props.theme.headerColor, background: this.props.theme.background}}className="miniMenuItem">SSL</a></div>*/}
+                    {/*<div className="miniMenuItemDiv">*/}
 
-                        <a href="https://github.com/acrose99/HistoryOfComputing" style={{color: this.props.theme.headerColor, background: this.props.theme.background}} className="miniMenuItem">Github</a>
-                    </div>
+                    {/*    <a href="https://github.com/acrose99/HistoryOfComputing" style={{color: this.props.theme.headerColor, background: this.props.theme.background}} className="miniMenuItem">Github</a>*/}
+                    {/*</div>*/}
                 </div>
 
             </div>
@@ -90,7 +90,6 @@ class MiniNavbar extends Component{
     }
 }
 class Navbar extends Component {
-    // big = over 700px width. mini = less than 700 width
     constructor(props) {
 
         super(props);
@@ -101,8 +100,8 @@ class Navbar extends Component {
 
 
     updateMenuStyle() {
-        // if the width is less than 800px, it goes into small menu
-        if (window.innerWidth <= 800) {
+        // if the width is less than 768px, it goes into small menu
+        if (window.innerWidth < 768) {
             this.setState({ windowBig: false, });
         }
         else {
@@ -115,7 +114,6 @@ class Navbar extends Component {
         window.addEventListener("resize", this.updateMenuStyle.bind(this));
     }
     componentWillUnmount() {
-        // tutorial said i should unmount the event listener so here it is
         window.removeEventListener("resize", this.updateMenuStyle.bind(this));
     }
 

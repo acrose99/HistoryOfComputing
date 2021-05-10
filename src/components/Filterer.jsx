@@ -20,6 +20,10 @@ import globeIcon from '@iconify/icons-vs/globe';
 
 import FilterCategory from "./FiltererCategory";
 
+
+/* TODO: Refactor */
+/* TODO: MOBILE */
+/* TODO: Have some sort of Search? */
 class Filterer extends Component{
     constructor(props) {
         super(props);
@@ -119,7 +123,7 @@ class Filterer extends Component{
                         </div>
                         <div className="filtererShowAll">
                             <div  className="filtererShowAllContainer">
-                                <h4 onClick={() => this.onClickFiltererType('', 'vaporwave')} className="filtererShowAllHeader">Show All</h4>
+                                <h4 onClick={() => this.onClickFiltererType('', 'Vaporwave')} className="filtererShowAllHeader">Show All</h4>
                             </div>
                         </div>
                     </div>
@@ -151,7 +155,6 @@ class Filterer extends Component{
                                         {/*onClick={() => this.changeTimeLineFilter(this.state.year)}*/}
                                     </div>
                                     <button id="yearSubmit" onClick={() => this.changeTimeLineFilter(this.state.year)}>Set Year</button>
-
                                 </div>
                             </div>
                             {/* EVENTS NOT IMPLEMENTED YET, NO FILTER NEEDED*/}
@@ -187,7 +190,6 @@ class Filterer extends Component{
                                             {/*onClick={() => this.changeTimeLineFilter(this.state.year)}*/}
                                         </div>
                                         <button id="yearSubmit" onClick={() => this.changeTimeLineFilter(this.state.year)}>Set Year</button>
-
                                     </div>
                                 </div>
                                 {/* EVENTS NOT IMPLEMENTED YET, NO FILTER NEEDED*/}
@@ -198,6 +200,11 @@ class Filterer extends Component{
                                 {/*    </div>*/}
                                 {/*</div>*/}
                             </div>
+                        <div className="filtererShowAll">
+                            <div  className="filtererShowAllContainer">
+                                <h4 onClick={() => this.onClickFiltererType('', 'Vaporwave')} className="filtererShowAllHeader">Show All</h4>
+                            </div>
+                        </div>
                     </div>
                 )
             }

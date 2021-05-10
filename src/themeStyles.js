@@ -20,7 +20,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -31,30 +31,39 @@ export const themes = {
     },
     Microsoft: {
         foreground: "black",
-        background: '#71BAE9',
+        background: '#00AFF0',
 
-        textColor: '#71BAE9',
-        textNavbarColor: '#50c0ff',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
         textFooterColor: 'white',
         headerColor: '#000000',
 
-        textEventColor: '#009fff',
-        borderDefault: '4mm ridge black',
-        backgroundImage: "linear-gradient(rgb(86, 204, 242, .5), rgb(47, 128, 237, .5))",
-        navbarBackground: "#71bae9"
+        textEventColor: '#000000',
+        borderDefault: '4mm ridge #9E73D3',
+        borderLeftColor: '4mm ridge #00AFF0',
+        borderRightColor: '4mm ridge #00AFF0',
+        borderTopColor: '4mm ridge #00AFF0',
+        borderBottomColor: '4mm ridge #00AFF0',
+
+        backgroundImage: "linear-gradient(rgba(0, 175, 240, .2), rgba(0, 175, 240, .8))",
+        navbarBackground: "rgba(0, 175, 240, .8)"
     },
     IBM: {
         foreground: "black",
-        background: '#71BAE9',
+        background: 'rgba(0, 117, 183, 0.6)',
 
-        textColor: '#71BAE9',
-        textNavbarColor: '#50c0ff',
-        textFooterColor: 'white',
-        headerColor: '#009cff',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: 'black',
+        headerColor: '#000000',
 
-        textEventColor: '#009fff',
-        borderDefault: '4mm ridge black',
-        backgroundImage: "linear-gradient(rgb(86, 204, 242, .5), rgb(47, 128, 237, .5))",
+        textEventColor: 'black',
+
+        borderLeftColor: '4mm ridge white',
+        borderRightColor: '4mm ridge rgba(0, 117, 183)',
+        borderTopColor: '4mm ridge rgba(0, 117, 183)',
+        borderBottomColor: '4mm ridge white',
+        backgroundImage: "linear-gradient(rgba(225, 248, 248, 0.41), rgba(0, 117, 183, .4))",
         navbarBackground: "#71bae9"
     },
     Apple: {
@@ -67,7 +76,7 @@ export const themes = {
         headerColor: '#000000',
 
         textEventColor: 'rgb(0,0,0)',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #feef00',
         borderRightColor: '4mm ridge #FE8100',
         borderTopColor: '4mm ridge #9e73d3',
@@ -86,7 +95,7 @@ export const themes = {
         headerColor: '#2f2f2f',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #94716B',
         borderRightColor: '4mm ridge #B79891',
         borderTopColor: '4mm ridge #94716B',
@@ -105,7 +114,7 @@ export const themes = {
         headerColor: '#000000',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #8e9eab',
         borderRightColor: '4mm ridge #eef2f3',
         borderTopColor: '4mm ridge #8e9eab',
@@ -114,8 +123,6 @@ export const themes = {
         backgroundImage: "linear-gradient(rgb(238, 242, 243, .5), rgb(142, 158, 171, .5))",
         navbarBackground: "#8e9eab"
     },
-
-    /* PLACEHOLDERS */
     Enlightenment: {
         foreground: "#757F9A",
         background: "#D7DDE8",
@@ -126,7 +133,7 @@ export const themes = {
         headerColor: '#000000',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #757F9A',
         borderRightColor: '4mm ridge #D7DDE8',
         borderTopColor: '4mm ridge #D7DDE8',
@@ -145,7 +152,7 @@ export const themes = {
         headerColor: '#ffffff',
 
         textEventColor: 'white',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #1e130c',
         borderRightColor: '4mm ridge #9a8478',
         borderTopColor: '4mm ridge #9a8478',
@@ -164,7 +171,7 @@ export const themes = {
         headerColor: '#000000',
 
         textEventColor: 'white',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #94716B',
         borderRightColor: '4mm ridge #B79891',
         borderTopColor: '4mm ridge #94716B',
@@ -175,7 +182,7 @@ export const themes = {
     },
     LGBTQ: {
         foreground: "rgba(70,0,255,0.47)",
-        background: "rgba(255, 99, 0, 0.47)",
+        background: "#ffb5b2",
 
         textColor: '#000000',
         textNavbarColor: '#000000',
@@ -183,13 +190,13 @@ export const themes = {
         headerColor: '#000000',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #fe0000',
         borderRightColor: '4mm ridge #ff6300',
         borderTopColor: '4mm ridge #008001',
         borderBottomColor: '4mm ridge #4600ff',
 
-        backgroundImage: "linear-gradient(rgb(255, 0, 0, .5), rgb(255, 99, 0, .5), rgb(255, 255, 1, .5), rgb(0, 128, 0, .5), rgb(70, 0, 255, .5), rgb(131, 1, 137, .5))",
+        backgroundImage: "linear-gradient(rgb(255, 0, 0, .3), rgb(255, 99, 0, .3), rgb(255, 255, 1, .3), rgb(0, 128, 0, .3), rgb(70, 0, 255, .5), rgb(131, 1, 137, .3))",
         navbarBackground: "transparent"
     },
 
@@ -197,42 +204,42 @@ export const themes = {
 
     /* TODO FILL OUT */
     Women: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "#ffffff",
+        background: "#ef9cd4",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        borderLeftColor: '4mm ridge #9779d3',
+        borderRightColor: '4mm ridge #ef9cd4',
+        borderTopColor: '4mm ridge #ef9cd4',
+        borderBottomColor: '4mm ridge #9779d3',
+
+        backgroundImage: "linear-gradient(rgb(239, 156, 212, 0.3), rgb(151, 121, 211, 0.7))",
+        navbarBackground: "#ef9cd4"
     },
     POC: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "#000000",
+        background: "#cdc1c1",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        borderLeftColor: '4mm ridge #cdc1c1',
+        borderRightColor: '4mm ridge #cdc1c1',
+        borderTopColor: '4mm ridge #cdc1c1',
+        borderBottomColor: '4mm ridge #cdc1c1',
+
+        backgroundImage: "linear-gradient(#ffffff, #E2E2E2)",
+        navbarBackground: "#cdc1c1"
     },
     ModernComputing: {
         foreground: "#8d8bff",
@@ -244,7 +251,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -263,7 +270,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -282,7 +289,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -301,7 +308,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -320,7 +327,26 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
+    Space: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -339,7 +365,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -358,7 +384,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -377,7 +403,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -396,7 +422,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',
@@ -415,7 +441,7 @@ export const themes = {
         headerColor: '#08087c',
 
         textEventColor: 'black',
-        borderDefault: '4mm ridge black',
+
         borderLeftColor: '4mm ridge #9E73D3',
         borderRightColor: '4mm ridge #5C8BAD',
         borderTopColor: '4mm ridge #9E73D3',

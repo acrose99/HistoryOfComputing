@@ -225,34 +225,18 @@ class DesktopEvent extends Component {
         I've placed the LGBTQ backdrop higher then Early Computing,
         because I want to emphasize representation more then era */
     if (filter !== '' && filter !== undefined && filter !== null) {
-      console.log("filter" + filter);
       return backdrops[filter+ 'Backdrop.svg']
     }
     else if (this.props.filters !== undefined && this.props.filters !== null) {
-      if (this.props.filters.includes('Apple')) {
-        // eslint-disable-next-line
-        return backdrops['AppleBackdrop.svg']
-      }
-      else if (this.props.filters.includes('LGBTQ')) {
-        return backdrops['LGBTQBackdrop.svg']
-      }
-      else if (this.props.filters.includes('Ancient')){
-        return backdrops['AncientBackdrop.svg']
-      }
-      else if (this.props.filters.includes('Medieval')) {
-        return backdrops['MedievalBackdrop.svg']
-      }
-      else if (this.props.filters.includes('EarlyComputing')) {
-        return backdrops['EarlyComputingBackdrop.svg']
-      }
-      else if (this.props.filters.includes('Enlightenment')) {
-        return backdrops['EnlightenmentBackdrop.svg']
-      }
-      else if (this.props.filters.includes('Industrial')) {
-        return backdrops['IndustrialBackdrop.svg']
+      if (themes[this.props.filters[0]] !== undefined) {
+        if (backdrops[this.props.filters[0]+ 'Backdrop.svg'] !== undefined) {
+          return backdrops[this.props.filters[0]+ 'Backdrop.svg']
+        }
+        else {
+          return backdrops['Backdrop.svg']
+        }
       }
       else {
-        // eslint-disable-next-line
         return backdrops['Backdrop.svg']
       }
     }

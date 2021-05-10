@@ -11,14 +11,26 @@
 
 /*iPhone 6,7,8, X */
 @media screen and (min-width: 375px) and (max-width: 414px) {
-
+    .w-layout-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-title {
+        text-decoration: underline;
+    }
 }
 
 /* iPhone sizes */
 
 /*iPhone Plus, XS, XS Max */
 @media screen and (min-width: 414px) and (max-width: 768px) {
-
+    .w-layout-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-title {
+        text-decoration: underline;
+    }
 }
 /* iPad */
 @media screen and (min-width: 768px) and (max-width: 1024px) {

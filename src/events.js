@@ -529,7 +529,7 @@ export const events = [
     },
     {
 
-        "Filters": ["POC"],
+        "Filters": ["Space", "ModernComputing","POC"],
         "Title": "Katherine Johnson calculates Project Mercury",
         "Body": "Katherine Johnson calculates the trajectory of flight of Alan Shepard, the first American in Space.",
         "Date": "1961",
@@ -548,7 +548,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/TabulatingMachineCompany.png"),
     },
     {
 
@@ -572,7 +572,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/Germanium.png"),
     },
     {
 
@@ -584,7 +584,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/FlipFlopSwitch.png"),
     },
     {
 
@@ -596,7 +596,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/RUR.jpg"),
     },
     {
 
@@ -608,7 +608,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/IBMFirstLogo.png"),
     },
     {
 
@@ -620,7 +620,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": require("./images/event-images/Pascaline.png"),
+        "TimelineImage": require("./images/event-images/IBM601.jpg"),
     },
 
 

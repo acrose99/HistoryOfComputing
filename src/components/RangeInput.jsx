@@ -2,6 +2,7 @@ import React from 'react';
 import InputRange from 'react-input-range';
 import './RangeInput.css';
 
+/* TODO ALLOW A RANGE OF YEARS */
 class RangeInput extends React.Component {
     constructor(props) {
         super(props);

@@ -3,6 +3,7 @@ import "./Timeline.css"
 import Navbar from "./Navbar";
 import Event from "./Event";
 import Footer from "./Footer";
+import Representation from "../container/Representation";
 import {events} from "../events"
 import {ThemeStyles} from '../themeStyles'
 
@@ -134,13 +135,28 @@ function Timeline(props) {
             return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of Early Computing.</h2>)
         }
         else if (props.filter === 'Women') {
-            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of Women in Computing.</h2>)
+            return (
+                <div>
+                    <h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of Women in Computing.</h2>
+                    <Representation/>
+                </div>
+            )
         }
         else if (props.filter === 'LGBTQ') {
-            return (<h3 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of LGBTQ+ individuals in Computing.</h3>)
+            return (
+                <div>
+                    <h3 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of LGBTQ+ individuals in Computing.</h3>
+                    <Representation/>
+                </div>
+            )
         }
         else if (props.filter === 'POC') {
-            return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of POC individuals in Computing.</h2>)
+            return (
+                <div>
+                    <h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of POC individuals in Computing.</h2>
+                    <Representation/>
+                </div>
+            )
         }
         else {
             return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter}.</h2>)

@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import "./TimelineContainer.css"
 import Timeline from "../components/Timeline";
 import Filterer from "../components/Filterer";
-// import FiltererMobile from "../components/FiltererMobile/FiltererMobile";
 class TimelineContainer extends Component{
     constructor(props) {
         super(props);
