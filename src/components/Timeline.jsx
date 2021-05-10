@@ -13,26 +13,25 @@ function Timeline(props) {
         newdata = events.sort((a,b) => {
             if (a["Year"] < b["Year"]) return -1;
             else return 1;
-        }).map(function (data) {
+        }).map(function (data, index) {
             return (
-                <Event theme={props.timelineFilter} filter={props.filter} filters={data["Filters"]}  key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                <Event theme={props.timelineFilter} filter={props.filter} filters={data["Filters"]}  key={index} year={data["Year"]} date={data["Date"]}title={data["Title"]}
                        TimelineImage={data["TimelineImage"]}
                        body={data["Body"]}
                        citations={[data["Citations"][0], data["Citations"][1]]}
-                       type={data['Type']}
+
                 > </Event>
             )
         })
     }
     else if (typeof props.filter === "number") {
         if (events.filter(data => data.Year === props.filter).length > 0) {
-            newdata = events.filter(data => data.Year === props.filter).map((data) => {
+            newdata = events.filter(data => data.Year === props.filter).map((data, index) => {
                     return (
-                        <Event theme={props.timelineFilter} filter={props.filter} filters={data["Filters"]} key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                        <Event theme={props.timelineFilter} filter={props.filter} filters={data["Filters"]} key={index}  year={data["Year"]} date={data["Date"]}title={data["Title"]}
                                TimelineImage={data["TimelineImage"]}
                                body={data["Body"]}
                                citations={[data["Citations"][0], data["Citations"][1]]}
-                               type={data['Type']}
                         > </Event>
                     )
                 }
@@ -59,13 +58,12 @@ function Timeline(props) {
                 return 1;
             }
             else return -1;
-        })).map((data) => {
+        })).map((data, index) => {
                 return (
-                    <Event theme={props.timelineFilter} filter={props.filter} filters={data["Filters"]} key={data["id"]} listId={data["id"]} year={data["Year"]} date={data["Date"]} location={data["Location"]} title={data["Title"]}
+                    <Event theme={props.timelineFilter} filter={props.filter} filters={data["Filters"]} key={index}  year={data["Year"]} date={data["Date"]}title={data["Title"]}
                            TimelineImage={data["TimelineImage"]}
                            body={data["Body"]}
                            citations={[data["Citations"][0], data["Citations"][1]]}
-                           type={data['Type']}
                     > </Event>
 
                 )

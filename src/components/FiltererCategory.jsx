@@ -5,9 +5,21 @@ import caretUpFilled from "@iconify/icons-ant-design/caret-up-filled";
 
 function filtererCategory(props) {
    function onClickFiltererType(filter, theme) {
-       if (filter === 'Early Computing' ||theme === 'Early Computing') {
+       if (filter === 'Early Computing' ||theme === 'early computing') {
            props.toggleTheme('EarlyComputing')
            changeTimeLineFilter('EarlyComputing')
+       }
+       if (filter === 'Modern Computing' ||theme === 'modern computing') {
+           props.toggleTheme('ModernComputing')
+           changeTimeLineFilter('ModernComputing')
+       }
+       if (filter === 'Information Age' ||theme === 'information age') {
+           props.toggleTheme('InformationAge')
+           changeTimeLineFilter('InformationAge')
+       }
+       if (filter === 'Imagination Age' ||theme === 'imagination age') {
+           props.toggleTheme('ImaginationAge')
+           changeTimeLineFilter('ImaginationAge')
        }
        else {
            props.toggleTheme(theme)

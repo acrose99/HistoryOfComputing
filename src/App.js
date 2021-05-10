@@ -11,68 +11,10 @@ class App extends Component {
         this.state = {
             theme: themes.Vaporwave,
         };
-
         this.toggleTheme = (themeGiven) => {
-            if (themeGiven === 'RetroApple' || themeGiven === 'retroapple' || themeGiven === 'Apple' || themeGiven === 'apple') {
-                this.setState(state => ({
-                    theme: themes.Apple
+                this.setState(({
+                    theme: themes[themeGiven]
                 }));
-            }
-            else if (themeGiven === 'Vaporwave' || themeGiven === 'vaporwave') {
-                this.setState(state => ({
-                    theme: themes.Vaporwave
-                }));
-            }
-            else if (themeGiven === 'IBM' || themeGiven === 'ibm') {
-                this.setState(state => ({
-                    theme: themes.IBM
-                }));
-            }
-            else if (themeGiven === 'Microsoft' || themeGiven === 'microsoft') {
-                this.setState(state => ({
-                    theme: themes.Microsoft
-                }));
-            }
-            else if (themeGiven === 'Ancient' || themeGiven === 'Ancient') {
-                this.setState(state => ({
-                    theme: themes.Ancient
-                }));
-            }
-            else if (themeGiven === 'Medieval' || themeGiven === 'Medieval') {
-                this.setState(state => ({
-                    theme: themes.Medieval
-                }));
-            }
-            else if (themeGiven === 'Enlightenment' || themeGiven === 'Enlightenment') {
-                this.setState(state => ({
-                    theme: themes.Medieval
-                }));
-            }
-            else if (themeGiven === 'EarlyComputing') {
-                this.setState(state => ({
-                    theme: themes.EarlyComputing
-                }));
-            }
-            else if (themeGiven === 'LGBTQ' || themeGiven === 'LGBTQ+') {
-                this.setState(state => ({
-                    theme: themes.LGBTQ
-                }));
-            }
-            // else if (themeGiven === 'POC' || themeGiven === 'POC') {
-            //     this.setState(state => ({
-            //         theme: themes.POC
-            //     }));
-            // }
-            else if (themeGiven === 'Women' || themeGiven === 'women') {
-                this.setState(state => ({
-                    theme: themes.Women
-                }));
-            }
-            else {
-                this.setState(state => ({
-                    theme: themes.Vaporwave
-                }));
-            }
         };
     }
     render() {

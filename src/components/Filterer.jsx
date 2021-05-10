@@ -137,7 +137,7 @@ class Filterer extends Component{
                         </div>
                         <div className="filtererCategories">
                             <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]} icons={[appleIcon, bxlMicrosoft, ibmIcon ]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
-                            <FilterCategory category="Eras" filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing"]} icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory,  cardFileBox]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
+                            <FilterCategory category="Eras" filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing", "Modern Computing", "Information Age", "'Imagination Age'"]} icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory,  cardFileBox]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
                             <FilterCategory category="Representation" filters={["Women", "LGBTQ", "POC"]} icons={[womenLine, rainbowFlag, globeIcon]} toggleTheme={this.props.toggleTheme} handleFilterChange={this.props.handleFilterChange}/>
 
                             <div id="filtererCategoryContainerYear"className="filtererCategoryContainer">
