@@ -1,4 +1,4 @@
-import React, {Component, useContext} from "react";
+import React, {Component, useContext, useEffect} from "react";
 import "./Timeline.css"
 import Navbar from "./Navbar";
 import Event from "./Event";
@@ -9,6 +9,7 @@ import {ThemeStyles} from '../themeStyles'
 
 function Timeline(props) {
     const theme = useContext(ThemeStyles);
+    useDocumentTitle(props.filter);
     let newdata;
     if (props.filter === '') {
         newdata = events.sort((a,b) => {
@@ -29,7 +30,7 @@ function Timeline(props) {
         if (events.filter(data => data.Year === props.filter).length > 0) {
             newdata = events.filter(data => data.Year === props.filter).map((data, index) => {
                     return (
-                        <Event theme={props.timelineFilter} filter={props.filter} filters={data["Filters"]} key={index}  year={data["Year"]} date={data["Date"]}title={data["Title"]}
+                        <Event theme={props.timelineFilter}  filters={data["Filters"]} key={index}  year={data["Year"]} date={data["Date"]}title={data["Title"]}
                                TimelineImage={data["TimelineImage"]}
                                body={data["Body"]}
                                citations={[data["Citations"][0], data["Citations"][1]]}
@@ -119,6 +120,9 @@ function Timeline(props) {
         if (props.filter === '') {
             return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing.</h2>)
         }
+        else if (typeof props.filter == "number") {
+            return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing in the year {props.filter}</h2>)
+        }
         else if (props.filter === 'Ancient') {
             return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter} Mathematics.</h2>)
         }
@@ -176,6 +180,15 @@ function Timeline(props) {
             <Footer/>
         </div>
     )
+}
+
+function useDocumentTitle(title) {
+    useEffect(() => {
+        if (title !== '') {
+            document.title = "History of Computing: " + title;
+        }
+        else document.title = "History of Computing"
+    })
 }
 
 export default Timeline;

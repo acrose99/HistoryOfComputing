@@ -325,7 +325,7 @@ class Event extends Component{
     let year = this.checkYearBCE(this.props.year)
     if (this.state.mobile === true) {
       return (
-          <MobileEvent theme={theme} filter={this.props.filter} filters={filters}  year={this.props.year} date={this.props.date} location={this.props.location} title={this.props.title}
+          <MobileEvent theme={theme} filter={this.props.filter} filters={filters}  year={this.props.year}  location={this.props.location} title={this.props.title}
                        TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
                        body={this.props.body}
                        citations={[this.props.citations[0], this.props.citations[1]]}
@@ -334,7 +334,7 @@ class Event extends Component{
     }
     else if (this.state.mobile === false) {
       return (
-          <DesktopEvent theme={theme} filter={this.props.filter} filters={filters}  year={year} date={this.props.date} location={this.props.location} title={this.props.title}
+          <DesktopEvent theme={theme} filter={this.props.filter} filters={filters}  year={year}  location={this.props.location} title={this.props.title}
                        TimelineImage={this.props.TimelineImage}
                        body={this.props.body}
                        citations={[this.props.citations[0], this.props.citations[1]]}
