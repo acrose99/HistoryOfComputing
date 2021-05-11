@@ -14,6 +14,8 @@
 
 For transparency's sake, the fork we maintained is [here](https://github.com/SoftwareSystemsLaboratory/HistoryOfComputing), but I no longer am involved within SSL, nor do I expect them to update the fork without me.
 
+I am now finishing the content of this site myself. 
+
 ### As part of the agreement to work with SSL, I was a [Mulcahy Fellow](https://www.luc.edu/cas/academics_mulcahyscholarship.shtml)
 
 For transparency's sake, the abstract of that fellowship, which is now complete, is below:
