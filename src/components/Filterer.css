@@ -5,7 +5,10 @@
     display: -ms-flexbox;
     display: flex;
     width: 90%;
-    margin: 0 auto;
+
+    /*margin-top: 50px;*/
+    margin-left: 5%;
+
     padding: 0;
     overflow-x: auto;
     overflow-y: hidden;
@@ -21,6 +24,8 @@
     -webkit-transition: 0.175s all ease-in-out;
     height: 10vh;
     transition: 0.175s all ease-in-out;
+    position: fixed;
+    z-index: 5;
 }
 #filtererClosedHeader {
     color: white;

@@ -169,6 +169,8 @@ function Timeline(props) {
 
     return (
         <div id="Timeline">
+            <div style={{marginBottom: '100px'}}/>
+            {/*hack way to fix the filterer*/}
             {createTimeLineIntro()}
             <div style={{marginBottom: '100px'}}/>
             {/*hack way to fix the timeline separator*/}
