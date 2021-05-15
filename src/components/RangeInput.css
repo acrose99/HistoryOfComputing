@@ -2,6 +2,7 @@
     width: 110px;
     display: flex;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .input-range__label {
     color: white;

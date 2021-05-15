@@ -168,15 +168,13 @@ function Timeline(props) {
     }
 
     return (
-        <div style={{backgroundImage: theme.backgroundImage}} id="Timeline">
-            <Navbar/>
+        <div id="Timeline">
             {createTimeLineIntro()}
             <div style={{marginBottom: '100px'}}/>
             {/*hack way to fix the timeline separator*/}
             <Events />
             <div style={{marginBottom: '200px', marginTop: '50px'}}/>
             {/*hack way to fix the timeline separator*/}
-
             <Footer/>
         </div>
     )

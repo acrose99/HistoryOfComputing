@@ -1,6 +1,6 @@
 import React from "react";
 import {InlineIcon} from "@iconify/react";
-import caretUpFilled from "@iconify/icons-ant-design/caret-up-filled";
+import caretRightOutlined from '@iconify/icons-ant-design/caret-right-outlined';
 
 
 function filtererCategory(props) {
@@ -36,7 +36,7 @@ function filtererCategory(props) {
 
         if (categoryElement.style.display === 'none' || categoryElement.style.display === '') { //empty string for initial state
             categoryElement.style.display = 'flex';
-            icon.style.transform = 'rotateZ(180deg)';
+            icon.style.transform = 'rotateZ(90deg)';
         } else if (categoryElement.style.display === 'flex') {
             categoryElement.style.display = 'none';
             icon.style.transform = 'rotateZ(0deg)';
@@ -57,14 +57,13 @@ function filtererCategory(props) {
     return (
         <div>
             <div className="filtererCategoryContainer">
-                <div className="filtererCategoryHeaderContainer">
-                    <h4 className="filtererCategory">{props.category}</h4>
-                    <InlineIcon id={props.category + "Icon"} className="icon" onClick={() => showCategory(props.category)}
-                                height={16} width={16} icon={caretUpFilled} style={{color: '#ffff'}}/>
+                <h4 className="filtererCategory">{props.category}</h4>
+                <InlineIcon id={props.category + "Icon"} className="icon" onClick={() => showCategory(props.category)}
+                            height={16} width={16} icon={caretRightOutlined} style={{color: '#ffff'}}/>
+
+                <div id={props.category} className="filtererCategoriesOpened">
+                    {filters}
                 </div>
-            </div>
-            <div id={props.category} className="filtererCategoriesOpened">
-                {filters}
             </div>
         </div>
     )

@@ -39,7 +39,7 @@ class Home extends Component {
             return (
                 <div className="Home-content-mobile">
                     {/*<Navbar/>*/}
-                    <img id="homeImgMobile"  src={HomeImg} alt="Intro"/>
+                    {/*<img id="homeImgMobile"  src={HomeImg} alt="Intro"/>*/}
                     <div className="heroText">
                         <h1 style={{fontSize: '38px'}} className="heroHeader">
                             Welcome to The History of Computing!
