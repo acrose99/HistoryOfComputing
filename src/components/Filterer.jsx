@@ -124,7 +124,6 @@ class Filterer extends Component{
                      <div className="filtererContainer">
                          <h4 id="filtererClosedHeader">Filter Events:</h4>
                      </div>
-                     <div className="filtererCategories">
                          <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]}
                                          icons={[appleIcon, bxlMicrosoft, ibmIcon]}
                                          toggleTheme={this.props.toggleTheme}
@@ -156,7 +155,6 @@ class Filterer extends Component{
                                  </button>
                              </div>
                          </div>
-                     </div>
                  </div>
                  <div className="filtererShowAllContainer">
                      <ShowAll onClickFiltererType={() => this.onClickFiltererType('', 'Vaporwave')} timelineFilter={this.props.timelineFilter}/>

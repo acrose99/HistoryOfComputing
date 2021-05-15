@@ -57,9 +57,11 @@ function filtererCategory(props) {
     return (
         <div>
             <div className="filtererCategoryContainer">
-                <h4 className="filtererCategory">{props.category}</h4>
-                <InlineIcon id={props.category + "Icon"} className="icon" onClick={() => showCategory(props.category)}
-                            height={16} width={16} icon={caretRightOutlined} style={{color: '#ffff'}}/>
+                <h4 className="filtererCategory">{props.category}
+                    <InlineIcon id={props.category + "Icon"} className="icon"
+                                onClick={() => showCategory(props.category)}
+                                height={16} width={16} icon={caretRightOutlined} style={{color: '#ffff'}}/>
+                </h4>
 
                 <div id={props.category} className="filtererCategoriesOpened">
                     {filters}
