@@ -16,14 +16,14 @@ function RangeInput(props) {
      return (
             <div>
                 <div className="min-max-container">
-                    <div>
-                        <label className="yearLabel" htmlFor="minYear"> Minimum Year
+                    <div className="min-max-input">
+                        <label className="yearLabel" htmlFor="minYear"> Minimum Year:
                             <input min="-3300" max="2021" id="minYear" value={minYear}
                                    onChange={handleMinYearChange} type="number"/>
                         </label>
                     </div>
-                    <div>
-                        <label className="yearLabel" htmlFor="maxYear"> Maximum Year
+                    <div className="min-max-input">
+                        <label className="yearLabel" htmlFor="maxYear"> Maximum Year:
                             <input min="-3500" max="2021" id="maxYear" value={maxYear}
                                    onChange={handleMaxYearChange} type="number"/>
                         </label>

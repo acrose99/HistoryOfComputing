@@ -2,7 +2,11 @@
     .min-max-container {
         display: flex;
     }
+    .min-max-input {
+        margin-right: 25px;
+    }
 }
+
 .input-range {
     width: 110px;
     display: flex;
@@ -20,4 +24,16 @@
 }
 .yearLabel {
     color: black;
+}
+#yearSubmit {
+    background: #3f51b5;
+    color: black;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 20px;
+    /* margin-left: ; */
+    /* margin-bottom: 10px; */
+    border: 0;
+    font-size: 1em;
 }

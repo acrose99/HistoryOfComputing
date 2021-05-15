@@ -125,15 +125,19 @@
     /*width: 40%;*/
     display: flex;
     /*height: 100%;*/
-    background: #40B2D2;
+    /*background: #40B2D2;*/
     /*margin-top: 4%;*/
+    padding: 0 1%;
     left: 5%;
     position: fixed;
     z-index: 4;
+    color: black;
+}
+.filtererShowAll:hover {
+    color: white;
 }
 .filtererShowAllHeader {
-    color: black;
-    font-size: 16px;
+    font-size: 1em;
 }
 #Year {
     display: none;

@@ -197,7 +197,7 @@ export const themes = {
         borderBottomColor: '4mm ridge #4600ff',
 
         backgroundImage: "linear-gradient(rgb(255, 0, 0, .3), rgb(255, 99, 0, .3), rgb(255, 255, 1, .3), rgb(0, 128, 0, .3), rgb(70, 0, 255, .5), rgb(131, 1, 137, .3))",
-        navbarBackground: "transparent"
+        navbarBackground: "#ffb5b2"
     },
 
     /* PLACEHOLDER THEMES */
