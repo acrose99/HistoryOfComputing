@@ -1,5 +1,5 @@
 /*Galaxy S9+ and Android */
-@media screen and (max-width: 360px) and (max-width: 375px) {
+@media screen and (min-width: 360px) and (max-width: 375px) {
     .Mobile-Event-Container {
         justify-content: center;
         margin-bottom: 50px;

@@ -1,10 +1,7 @@
 import React, {Component} from "react";
 import './Filterer.css';
-// import {ThemeStyles} from '../themeStyles';
 import {InlineIcon} from '@iconify/react';
 import appleIcon from '@iconify/icons-openmoji/apple';
-import caretUpFilled from '@iconify/icons-ant-design/caret-up-filled';
-import caretDownOutlined from '@iconify/icons-ant-design/caret-down-outlined';
 import caretRightOutlined from '@iconify/icons-ant-design/caret-right-outlined';
 import bxlMicrosoft from '@iconify/icons-bx/bxl-microsoft';
 import crossIcon from '@iconify/icons-la/cross';
@@ -21,21 +18,22 @@ import globeIcon from '@iconify/icons-vs/globe';
 
 import FilterCategory from "./FiltererCategory";
 import ShowAll from "./ShowAll";
+import {ThemeStyles} from "../themeStyles";
 
 
-/* TODO: Refactor */
-/* TODO: MOBILE */
 /* TODO: Have some sort of Search? */
 class Filterer extends Component{
     constructor(props) {
         super(props);
         this.state = {
             filtererType: this.props.filtererType,
-            year: 2000
+            minYear: -3300,
+            maxYear: 2021
         }
         this.changeFiltererType = this.changeFiltererType.bind(this);
         this.showCategory = this.showCategory.bind(this);
         this.changeTimeLineFilter = this.changeTimeLineFilter.bind(this);
+        this.changeTimelineFilterYear = this.changeTimelineFilterYear.bind(this);
         this.handleYear = this.handleYear.bind(this);
     }
     onClickFiltererType(filter, theme) {
@@ -44,6 +42,9 @@ class Filterer extends Component{
     }
     changeTimeLineFilter(filter) {
         this.props.handleFilterChange(filter)
+    }
+    changeTimelineFilterYear(minFilter, maxFilter) {
+        this.props.handleFilterChangeYear(minFilter,maxFilter)
     }
     changeFiltererType(type) {
         this.setState(function(state) {
@@ -118,9 +119,10 @@ class Filterer extends Component{
         //         return null;
         //     }
         // }
-         return (
+        let theme = this.context;
+        return (
              <div>
-                 <div id="filterer">
+                 <div style={{background: theme.navbarBackground}} id="filterer">
                      <div className="filtererContainer">
                          <h4 id="filtererClosedHeader">Filter Events:</h4>
                      </div>
@@ -141,18 +143,15 @@ class Filterer extends Component{
 
                          <div id="filtererCategoryContainerYear" className="filtererCategoryContainer">
                              <div className="filtererCategoryHeaderContainer">
-                                 <h4 className="filtererCategory">Year</h4>
+                                 <h4 className="filtererCategory">Years</h4>
                                  <InlineIcon id="YearIcon" className="icon" onClick={() => this.showCategory('Year')}
                                              height={16} width={16} icon={caretRightOutlined} style={{color: '#ffff'}}/>
                              </div>
                              <div id="Year" className="filtererCategoriesOpened">
                                  <div id="filtererContainerYear" className="filtererCategoryTypeContainer">
-                                     <RangeInput handleYear={this.handleYear} year={this.state.year}/>
+                                     <RangeInput changeTimeLineFilter={this.changeTimeLineFilter} changeTimelineFilterYear={this.changeTimelineFilterYear}  maxYear={this.state.maxYear} minYear={this.state.minYear}/>
                                      {/*onClick={() => this.changeTimeLineFilter(this.state.year)}*/}
                                  </div>
-                                 <button id="yearSubmit"
-                                         onClick={() => this.changeTimeLineFilter(this.state.year)}>Set Year
-                                 </button>
                              </div>
                          </div>
                  </div>
@@ -163,5 +162,6 @@ class Filterer extends Component{
     )
     }
 }
+Filterer.contextType = ThemeStyles;
 
 export default Filterer

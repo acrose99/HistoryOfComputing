@@ -1,3 +1,8 @@
+@media (max-width: 767px) {
+    .min-max-container {
+        display: flex;
+    }
+}
 .input-range {
     width: 110px;
     display: flex;
@@ -12,4 +17,7 @@
 }
 .input-range__label--max {
     display: none;
+}
+.yearLabel {
+    color: black;
 }

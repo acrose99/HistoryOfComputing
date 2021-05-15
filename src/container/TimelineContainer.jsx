@@ -12,10 +12,16 @@ class TimelineContainer extends Component{
             timelineFilter: ''
         }
         this.handleFilterChange = this.handleFilterChange.bind(this);
+        this.handleFilterChangeYear = this.handleFilterChangeYear.bind(this);
         this.toggleTheme = this.toggleTheme.bind(this);
     }
     handleFilterChange(filter) {
         this.setState({timelineFilter: filter});
+    }
+    handleFilterChangeYear(filterMin, filterMax) {
+        //TODO internal logic depending on years selected, I.E ancient vs modern
+        this.props.toggleTheme('Vaporwave');
+        this.setState({timelineFilter: [filterMin, filterMax]});
     }
     toggleTheme(theme) {
         this.props.toggleTheme(theme);
@@ -26,7 +32,7 @@ class TimelineContainer extends Component{
         return (
             <div style={{backgroundImage: theme.backgroundImage}} id="TimelineContainer">
                 <Navbar/>
-                <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange}/>
+                <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange} handleFilterChangeYear={this.handleFilterChangeYear}/>
                 <Timeline filter={this.state.timelineFilter}/>
             </div>
 

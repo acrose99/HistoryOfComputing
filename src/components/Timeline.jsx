@@ -26,9 +26,12 @@ function Timeline(props) {
             )
         })
     }
-    else if (typeof props.filter === "number") {
-        if (events.filter(data => data.Year === props.filter).length > 0) {
-            newdata = events.filter(data => data.Year === props.filter).map((data, index) => {
+    else if (typeof props.filter === "object") {
+        console.log("minYear:" + props.filter[0]);
+        console.log(typeof + props.filter);
+
+        if (events.filter(data => ((data["Year"] === props.filter[0])) + (data["Year"] === props.filter[1])).length >= 0) {
+            newdata = events.filter(data => data["Year"] >= props.filter[0] && data["Year"] <= props.filter[1]).map((data, index) => {
                     return (
                         <Event theme={props.timelineFilter}  filters={data["Filters"]} key={index}  year={data["Year"]} date={data["Date"]}title={data["Title"]}
                                TimelineImage={data["TimelineImage"]}
@@ -42,11 +45,10 @@ function Timeline(props) {
         else {
             return (
                 <div id="Timeline">
-                    <Navbar/>
                     <h2 id="Timeline-intro">Important events that summarize the History of Computing.</h2>
                     <h1 style={{textAlign: "center", color: "#5c71e1" }}>No Events Found! Try Again!</h1>
 
-                    <div style={{marginBottom: '200px'}}/>
+                    <div style={{paddingBottom: '200px'}}/>
                     {/*hack way to fix the timeline separator*/}
 
                     <Footer/>
@@ -120,8 +122,8 @@ function Timeline(props) {
         if (props.filter === '') {
             return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing.</h2>)
         }
-        else if (typeof props.filter == "number") {
-            return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing in the year {props.filter}</h2>)
+        else if (typeof props.filter === "object") {
+            return (<h2 style={{color: theme.headerColor}} id="Timeline-intro">Important events that summarize the History of Computing from the year {props.filter[0]} to the year {props.filter[1]} </h2>)
         }
         else if (props.filter === 'Ancient') {
             return (<h2 style={{color: theme.headerColor}}  id="Timeline-intro">Important events that summarize the History of {props.filter} Mathematics.</h2>)
