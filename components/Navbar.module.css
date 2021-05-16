@@ -1,0 +1,122 @@
+.bigMenu {
+    width: 90%;
+    /* background-color: #a158fd; */
+    /* preventing scrollbars from popping up in navbar */
+    overflow-x: hidden;
+    overscroll-behavior-x: contain;
+    overflow-y: hidden;
+    margin: 0 auto;
+    /* border-radius: 25px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.topContainer {
+    /*background-color: #8d8bff;*/
+    display: flex;
+    border: 1px solid black;
+}
+.bottomContainer {
+    background-color: white;
+    display: flex;
+    height: 32px;
+    flex-direction: row;
+    padding: 2px;
+    border: 1px solid black;
+    justify-content: center;
+}
+.menuImg {
+    display: flex;
+    align-self: flex-end;
+    /* position: relative; */
+    /* position:absolute; */
+    height: 20px;
+    /* height: 15px; */
+    /* margin-bottom: 0px; */
+    bottom: 0;
+}
+
+.miniTopContainer {
+    display: flex;
+    flex-direction: row;
+}
+.toggleContainer {
+    display: none;
+}
+.NavIcon {
+    width: 30px;
+    position: relative;
+    top: 10px;
+    height: 45px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.menuItem {
+    margin-left: 20px;
+}
+.menuItemLink {
+    text-decoration: none;
+    /*color: #6666fa;*/
+    font-size: 1em;
+    padding: 2px;
+    margin-right: 20%;
+}
+
+.miniMenuItem {
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    font-family: Chicago, sans-serif;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 2px;
+}
+
+.miniMenuItemDiv {
+    border-bottom: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 24px;
+}
+.miniMenuItemDiv:hover {
+    background-color: #6764fd;
+}
+.miniMenuItemDiv:last-child {
+    border-bottom: transparent;
+}
+.hamIcon {
+    /* background: transparent; */
+    /* display: flex; */
+    height: 60px;
+    /* width: 30px; */
+    /* justify-self: flex-end; */
+}
+.hamLink {
+    /* background-color: rgb(86, 102, 116); */
+    display: flex;
+    /* justify-self: flex-end; */
+    margin-left: auto;
+    margin-right: 5px;
+
+    align-self: center;
+    width: 60px;
+}
+
+.smallMenu {
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    /*background-color: #8d8bff;*/
+}
+.title {
+    font-family: "Futura", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 5px;
+}
+.NavbarMenuButtonIcon {
+    height: 29px;
+    width: 36px;
+}

@@ -1,0 +1,276 @@
+/*Galaxy S9+ and Android */
+@media screen and (max-width: 360px) and (max-width: 375px) {
+    .MobileEventContainer {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    /* The TimelineComponent Line */
+    .MobileEventContainer::before {
+        left: calc(61.5% - (2.5em + .5vw)/2 - 2px);
+        top: -105px;
+        width: 5px;
+        height: 105px
+    }
+    /* The TimelineComponent Marker */
+    .MobileEventContainer::after {
+        top: -5%;
+        width: 50px;
+        height: 50px;
+        right: calc(47% - (2.5em + .5vw)/2);
+    }
+
+    .MobileEventImage {
+        /*height: 150px;*/
+        /*width: 150px;*/
+        display: block;
+        margin-bottom: 10px;
+    }
+    .MobileEventBody {
+        margin-top: 50px;
+    }
+    .MobileEventFigure {
+        display: flex;
+        justify-content: center;
+    }
+    .MobileEventTitle {
+        font-size: 14px;
+    }
+    .MobileEventDate {
+        font-size: 14px;
+        top: -10px;
+        left: calc(11% - (2.5em + .5vw)/2);
+    }
+}
+
+/*iPhone 6,7,8, X */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    .MobileEventContainer {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    /* The TimelineComponent Line */
+    .MobileEventContainer::before {
+        left: calc(61.5% - (2.5em + .5vw)/2 - 2px);
+        top: -105px;
+        width: 5px;
+        height: 105px
+    }
+    /* The TimelineComponent Marker */
+    .MobileEventContainer::after {
+        top: -5%;
+        width: 50px;
+        height: 50px;
+        right: calc(47% - (2.5em + .5vw)/2);
+    }
+
+    .MobileEventImage {
+        /*height: 160px;*/
+        /*width: 160px;*/
+        display: block;
+        margin-bottom: 10px;
+    }
+    .MobileEventBody {
+        margin-top: 50px;
+    }
+    .MobileEventFigure {
+        display: flex;
+        justify-content: center;
+    }
+    .MobileEventTitle {
+        font-size: 18px;
+    }
+    .MobileEventDate {
+        font-size: 14px;
+        top: -12px;
+        left: calc(10.5% - (2.5em + .5vw)/2);
+    }
+}
+
+/* iPhone sizes */
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 414px) and (max-width: 768px) {
+    .MobileEventContainer {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    /* The TimelineComponent Line */
+    .MobileEventContainer::before {
+        left: calc(61.5% - (2.5em + .5vw)/2 - 2px);
+        top: -105px;
+        width: 5px;
+        height: 105px
+    }
+    /* The TimelineComponent Marker */
+    .MobileEventContainer::after {
+        top: -5%;
+        width: 50px;
+        height: 50px;
+        right: calc(47% - (2.5em + .5vw)/2);
+    }
+
+    .MobileEventImage {
+        /*height: 150px;*/
+        /*width: 150px;*/
+        display: block;
+        margin-bottom: 10px;
+    }
+    .MobileEventBody {
+        margin-top: 50px;
+    }
+    .MobileEventFigure {
+        display: flex;
+        justify-content: center;
+    }
+    .MobileEventTitle {
+        font-size: 20px;
+    }
+    .MobileEventDate {
+        font-size: 14px;
+        top: -12px;
+        left: calc(10% - (2.5em + .5vw)/2);
+    }
+}
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .EventContainer {
+        justify-content: center;
+    }
+    .EventImage {
+        margin-right: 25px;
+        /*height: 200px;*/
+        /*width: 200px;*/
+    }
+}
+
+/* Smaller Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+
+}
+/* Larger Desktop */
+@media screen and (min-width: 1400px) {
+
+}
+
+.Event {
+    display: flex;
+    justify-content: center;
+}
+
+.EventContainer {
+    background-size: cover;
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-bottom: 100px;
+    transition: border 1.3s; /* Hover Off */
+    min-width: 500px;
+    min-height: 225px;
+    max-width: 520px;
+    max-height: 300px;
+}
+.EventImage {
+    box-shadow: none !important;
+    margin: 0 0 0 10%;
+    /*max-width: 250px;*/
+    /*max-height: 250px;*/
+}
+.EventBody {
+    align-self: center;
+    margin: 0 10% 0 2%;
+}
+.EventDate {
+    /*color: black;*/
+    display: inline-block;
+    font-family: "Futura", sans-serif;
+    font-size: 1.5em;
+    margin: 0 10px 0 0;
+}
+.EventLocation {
+    /*color: black;*/
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 10px 3px 0;
+}
+.EventFigure::before {
+    content: "";
+    position: absolute;
+    /*display: flex;*/
+    background-color: #d9cfbe;
+    width: 10px;
+    left: 40%;
+    top: -25%;
+    height: 150%;
+    /*border-radius: 100%;*/
+    z-index: 1;
+}
+.EventFigure::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 20px;
+    left: 38.5%;
+    top: 35%;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 4px solid #2d667b;
+    z-index: 2;
+}
+.EventTitle {
+    font-family: "Futura", sans-serif;
+    position: relative;
+    z-index: 3;
+}
+
+
+/* MOBILE */
+.MobileEventContainer {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+/* The TimelineComponent Line */
+.MobileEventContainer::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    background-color: #d9cfbe;
+    transform: translateY(0);
+    will-change: transform;
+}
+/* The TimelineComponent Marker */
+.MobileEventContainer::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    background-color: #2d667b;
+    border-radius: 100%;
+    transform: translateY(0);
+    will-change: transform;
+    z-index: 1;
+}
+
+
+.MobileEventImage {
+    box-shadow: none !important;
+    display: block;
+    /*max-width: 200px;*/
+    /*max-height: 250px;*/
+}
+.MobileEventBody {
+    width: 100%;
+    z-index: 2;
+}
+.MobileEventDate {
+    font-size: 14px;
+    z-index: 2;
+    position: relative;
+}
+.MobileEventTitle {
+    /*font-size: 14px;*/
+    z-index: 2;
+}
+

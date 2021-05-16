@@ -1,0 +1,262 @@
+/*Galaxy S9+ and Android */
+@media screen and (max-width: 360px) and (max-width: 375px) {
+    .showEventWrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 320px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 35% 0;
+    }
+    .showEvent {
+        width: 240px;
+    }
+}
+
+/*iPhone 6,7,8, X */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    .showEventWrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 335px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 35% 0;
+    }
+
+    .eventBody {
+        flex-direction: column;
+    }
+
+    .eventBodyImage {
+        /*max-width: 240px;*/
+    }
+    .showEvent {
+        width: 250px;
+    }
+    .eventHeaderText {
+        font-size: 18px;
+    }
+}
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 414px) and (max-width: 768px) {
+    .showEventWrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 375px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 35% 0;
+    }
+    .eventBody {
+        flex-direction: column;
+    }
+
+    .eventBodyImage {
+        /*max-width: 366px;*/
+    }
+    .showEvent {
+        width: 280px;
+    }
+    .eventHeaderText {
+        font-size: 22px;
+    }
+}
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .showEventWrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+    .eventBody {
+        flex-direction: column;
+    }
+
+    .eventBodyImage {
+        /*max-height: 233px;*/
+        float: left;
+        padding: 3%;
+    }
+    .showEvent {
+        width: 480px;
+    }
+    .eventHeaderText {
+        font-size: 22px;
+    }
+}
+
+/* Smaller Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    .showEventWrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 650px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+    .eventBodyImage {
+        padding: 3%;
+        float: left;
+    }
+    .showEvent {
+        width: 630px;
+    }
+    .eventHeaderText {
+        font-size: 22px;
+    }
+}
+/* Larger Desktop */
+@media screen and (min-width: 1400px) {
+    .showEventWrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .eventBodyImage {
+        /*max-height: 200px;*/
+        /*max-width: 200px;*/
+        flex: 1;
+    }
+    .showEvent {
+        width: 800px;
+    }
+    .eventHeaderText {
+        font-size: 24px;
+        flex: 0;
+    }
+}
+.showEventWrapper {
+    position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
+    /*width: 90%;*/
+    /*padding-top: 20px;*/
+    padding-bottom: 10%;
+    /* min-height: 100%;  */
+    /* might put min height back. depends on how it looks when I add stuff to page */
+    /*height: 30%;*/
+    /*margin: 5% auto 5%;*/
+    left: 0;
+    right: 0;
+    /* display: block; */
+    /* margin: 33%; */
+    /* background: linear-gradient(
+      180deg,
+      rgba(0, 147, 255, 0.4) 0%,
+      rgba(173, 95, 249, 0.4) 100%
+    ); */
+    /*transform: translateY(100%);*/
+}
+
+.showEventWrapper--open {
+    transform: translateY(0%);
+}
+
+.eventCitation {
+    bottom: 0;
+    background: #ffffff;
+    height: auto;
+    padding: 0.5% 1%;
+    float: right;
+}
+.eventBody {
+    display: flex;
+    padding: 3% 5%;
+    background: #ffffff;
+    border: solid rgb(78, 76, 76);
+    border-width: 0px 1.5px 1.5px 1.5px;
+    border-radius: 0em 0em 0.5em 0.5em;
+
+    box-sizing: border-box;
+}
+
+.showEvent {
+    display: block;
+    margin: 15px auto;
+}
+.eventHeader {
+    height: 10%;
+    background: #ffffff;
+    border: solid rgb(78, 76, 76);
+
+    border-width: 1.5px 1.5px 0px 1.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.eventCitationText {
+    line-height: 18px;
+    font-size: 1rem;
+}
+.eventBodyText {
+    font-size: 1rem;
+    float: right;
+}
+
+.eventHeaderText {
+    text-align: center;
+    font-size: 16px;
+}
+.vaporwaveBar {
+    display: block;
+    width: 200px;
+    height: 30px;
+}
+
+.vaporwaveBarContents {
+    font-size: 20px;
+    background-color: transparent;
+    border: transparent;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+}
+.vaporwaveBarContents img {
+    width: fit-content;
+    height: fit-content;
+}
+.vbarButtons {
+    position: relative;
+    top: 0;
+    left: 2px;
+    height: 30px;
+    width: 33%;
+}
+
+.vbarDivs {
+    width: 33%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border: 2px black;
+}
+
+.eventBodyImage {
+    justify-content: left;
+    flex-grow: 1;
+}
+.eventBodyImage1 {
+    float: right;
+}
+
+.eventBodyImage2 {
+    float: left;
+}
+
+.xButton {
+    width: 30px;
+    height: 30px;
+}

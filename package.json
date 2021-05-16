@@ -2,65 +2,29 @@
   "name": "historyofcomputing",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.12",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "amplify": "0.0.11",
-    "file-system": "^1.2.2",
-    "fs": "^0.0.1-security",
-    "js-yaml": "^3.14.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-input-range": "^1.3.0",
-    "react-scripts": "4.0.0",
-    "react-swipeable": "^6.0.1",
-    "serve": "^11.3.2",
-    "yaml": "^1.10.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build  && cp build/index.html build/404.html",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "CI=true npm run build",
-    "deploy": "gh-pages -d build -r https://$GH_TOKEN@github.com/acrose99/HistoryOfComputing.git"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@iconify/icons-ant-design": "^1.0.8",
-    "@iconify/icons-bi": "^1.0.6",
-    "@iconify/icons-bx": "^1.1.0",
-    "@iconify/icons-carbon": "^1.0.4",
-    "@iconify/icons-cib": "^1.1.0",
+  "dependencies": {
+    "@iconify/icons-ant-design": "^1.1.0",
+    "@iconify/icons-carbon": "^1.1.3",
     "@iconify/icons-emojione-monotone": "^1.1.0",
     "@iconify/icons-la": "^1.1.0",
-    "@iconify/icons-mdi": "^1.1.15",
-    "@iconify/icons-openmoji": "^1.1.4",
-    "@iconify/icons-ri": "^1.1.0",
+    "@iconify/icons-openmoji": "^1.1.14",
     "@iconify/icons-twemoji": "^1.1.1",
     "@iconify/icons-vs": "^1.1.0",
-    "@iconify/react": "^1.1.3",
-    "@material-ui/core": "^4.9.14",
-    "@typescript-eslint/parser": "^4.14.2",
-    "gh-pages": "^3.1.0",
-    "react-router-dom": "^5.2.0"
+    "@iconify/react": "^1.1.4",
+    "next": "10.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@iconify/icons-bx": "^1.1.0",
+    "@iconify/icons-cib": "^1.1.0",
+    "@iconify/icons-mdi": "^1.1.15",
+    "@iconify/icons-ri": "^1.1.0",
+    "@material-ui/core": "^4.11.4"
   }
 }
