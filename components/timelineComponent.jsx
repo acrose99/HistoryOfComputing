@@ -170,7 +170,7 @@ function TimelineComponent(props) {
 
     return (
         <div id={styles.Timeline}>
-            <div style={{marginBottom: '150px'}}/>
+            <div style={{marginBottom: '200px'}}/>
             {/*hack way to fix the filterer*/}
             {createTimeLineIntro()}
             <div style={{marginBottom: '100px'}}/>

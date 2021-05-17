@@ -4,6 +4,7 @@ import Filterer from "../components/Filterer/Filterer";
 import styles from "../components/TimelineContainer.module.css"
 import Navbar from "../components/Navbar";
 import {ThemeStyles} from "../context/themeStyles";
+import ShowAll from "../components/Filterer/ShowAll";
 class Timeline extends Component{
     constructor(props) {
         super(props);
@@ -11,8 +12,13 @@ class Timeline extends Component{
             timelineFilter: ''
         }
         this.handleFilterChange = this.handleFilterChange.bind(this);
+        this.showAll = this.showAll.bind(this);
         this.handleFilterChangeYear = this.handleFilterChangeYear.bind(this);
         this.toggleTheme = this.toggleTheme.bind(this);
+    }
+    showAll() {
+        this.setState({timelineFilter: ''});
+        this.props.toggleTheme('Vaporwave');
     }
     handleFilterChange(filter) {
         this.setState({timelineFilter: filter});
@@ -28,7 +34,17 @@ class Timeline extends Component{
 
     render() {
         let theme = this.context;
-        return (
+        if (this.state.timelineFilter !== '') {
+            return (
+                <div style={{backgroundImage: theme.backgroundImage}} id="TimelineContainer">
+                    <Navbar/>
+                    <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange} handleFilterChangeYear={this.handleFilterChangeYear}/>
+                    <ShowAll onClickFiltererType={this.showAll}/>
+                    <TimelineComponent filter={this.state.timelineFilter}/>
+                </div>
+            )
+        }
+        else return (
             <div style={{backgroundImage: theme.backgroundImage}} id="TimelineContainer">
                 <Navbar/>
                 <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange} handleFilterChangeYear={this.handleFilterChangeYear}/>

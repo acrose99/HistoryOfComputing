@@ -45,16 +45,16 @@ class Home extends Component {
               <meta name="description" content="An fun and innovative way to learn the History of Computing" />
               <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="Home-content-mobile">
+            <div className={styles.HomeContentMobile}>
               {/*<Navbar/>*/}
               {/*<img id="homeImgMobile"  src={HomeImg} alt="Intro"/>*/}
-              <div className="heroText">
-                <h1 style={{fontSize: '38px'}} className="heroHeader">
+              <div className={styles.heroText}>
+                <h1 style={{fontSize: '38px'}} className={styles.heroHeader}>
                   Welcome to The History of Computing!
                 </h1>
-                <div className="home-btn-wrapper">
-                  <Link className="home-btn" to="/timeline">See the timeline</Link>
-                </div>
+                  <Link href="/Timeline">
+                      <a className={styles.homeBtn}> See the timeline</a>
+                  </Link>
               </div>
               {/*<Footer/>*/}
               {/*<div style={{display: "flex", flexGrow: 1, backgroundColor: theme.background }}>*/}
@@ -70,23 +70,16 @@ class Home extends Component {
             <meta name="description" content="An fun and innovative way to learn the History of Computing" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <div style={{backgroundImage: "url('/images/background.svg')", backgroundSize: 'cover'}} className={styles.HomeContent}>
-            <div className={styles.hero}>
+          <Image priority={true} objectFit="cover" layout="fill" quality={100} className={styles.homeImg} src='/Background.png' alt="HomeBackground"/>
+          <div className={styles.hero}>
               <div className={styles.heroText}>
                 <h1 className={styles.heroHeader}>
                   Welcome to The History of Computing!
                 </h1>
-                <div className={styles.homeBtnWrapper}>
-                  <Link className={styles.homeBtn} href="/Timeline">
-                    <a> See the timeline</a>
-                  </Link>
-                </div>
+                <Link href="/Timeline">
+                  <a className={styles.homeBtn}> See the timeline</a>
+                </Link>
               </div>
-              <Image priority={true} quality={100} height={600} width={600} className={styles.homeImg} src='/images/HistOfComputingHome.svg' alt="Intro"/>
-            </div>
-            <Footer/>
-            <div style={{display: "flex", flexGrow: 1, backgroundColor: theme.background }}>
-            </div>
           </div>
         </div>
     )

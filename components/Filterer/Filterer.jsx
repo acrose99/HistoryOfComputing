@@ -21,7 +21,7 @@ import {ThemeStyles} from "../../context/themeStyles";
 
 
 /* TODO: Have some sort of Search? */
-class Filterer extends Component{
+class Filterer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -35,23 +35,28 @@ class Filterer extends Component{
         this.changeTimelineFilterYear = this.changeTimelineFilterYear.bind(this);
         this.handleYear = this.handleYear.bind(this);
     }
+
     onClickFiltererType(filter, theme) {
         this.props.toggleTheme(theme)
         this.changeTimeLineFilter(filter)
     }
+
     changeTimeLineFilter(filter) {
         this.props.handleFilterChange(filter)
     }
+
     changeTimelineFilterYear(minFilter, maxFilter) {
-        this.props.handleFilterChangeYear(minFilter,maxFilter)
+        this.props.handleFilterChangeYear(minFilter, maxFilter)
     }
+
     changeFiltererType(type) {
-        this.setState(function(state) {
+        this.setState(function (state) {
             return {
                 filtererType: type
             };
         });
     }
+
     handleYear(value) {
         this.setState({
             year: value
@@ -67,8 +72,7 @@ class Filterer extends Component{
             if (categoryElement.style.display === 'none' || categoryElement.style.display === '') { //empty string for initial state
                 categoryElement.style.display = 'flex';
                 icon.style.transform = 'rotateZ(90deg)';
-            }
-            else if (categoryElement.style.display === 'flex') {
+            } else if (categoryElement.style.display === 'flex') {
                 categoryElement.style.display = 'none';
                 icon.style.transform = 'rotateZ(0deg)';
             }
@@ -81,8 +85,7 @@ class Filterer extends Component{
             if (categoryElement.style.display === 'none' || categoryElement.style.display === '') { //empty string for initial state
                 categoryElement.style.display = 'flex';
                 icon.style.transform = 'rotateZ(90deg)';
-            }
-            else if (categoryElement.style.display === 'flex') {
+            } else if (categoryElement.style.display === 'flex') {
                 categoryElement.style.display = 'none';
                 icon.style.transform = 'rotateZ(0deg)';
             }
@@ -95,8 +98,7 @@ class Filterer extends Component{
             if (categoryElement.style.display === 'none' || categoryElement.style.display === '') { //empty string for initial state
                 categoryElement.style.display = 'flex';
                 icon.style.transform = 'rotateZ(90deg)';
-            }
-            else if (categoryElement.style.display === 'flex') {
+            } else if (categoryElement.style.display === 'flex') {
                 categoryElement.style.display = 'none';
                 icon.style.transform = 'rotateZ(0deg)';
             }
@@ -107,43 +109,45 @@ class Filterer extends Component{
         let theme = this.context;
         return (
             <div>
-                <div style={{background: theme.navbarBackground}} className={styles.filterer}>
-                    <div className={styles.filtererContainer}>
-                        <h4 className={styles.filtererClosedHeader}>Filter Events:</h4>
-                    </div>
-                    <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]}
-                                    icons={[appleIcon, bxlMicrosoft, ibmIcon]}
-                                    toggleTheme={this.props.toggleTheme}
-                                    handleFilterChange={this.props.handleFilterChange}/>
-                    <FilterCategory category="Eras"
-                        //"Modern Computing", "Information Age", "'Imagination Age'"
-                                    filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing"]}
-                                    icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory, cardFileBox]}
-                                    toggleTheme={this.props.toggleTheme}
-                                    handleFilterChange={this.props.handleFilterChange}/>
-                    <FilterCategory category="Representation" filters={["Women", "LGBTQ", "POC"]}
-                                    icons={[womenLine, rainbowFlag, globeIcon]}
-                                    toggleTheme={this.props.toggleTheme}
-                                    handleFilterChange={this.props.handleFilterChange}/>
+                <div>
+                    <div style={{background: theme.navbarBackground}} className={styles.filterer}>
+                        <div className={styles.filtererContainer}>
+                            <h4 className={styles.filtererClosedHeader}>Filter Events:</h4>
+                        </div>
+                        <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]}
+                                        icons={[appleIcon, bxlMicrosoft, ibmIcon]}
+                                        toggleTheme={this.props.toggleTheme}
+                                        handleFilterChange={this.props.handleFilterChange}/>
+                        <FilterCategory category="Eras"
+                            //"Modern Computing", "Information Age", "'Imagination Age'"
+                                        filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing"]}
+                                        icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory, cardFileBox]}
+                                        toggleTheme={this.props.toggleTheme}
+                                        handleFilterChange={this.props.handleFilterChange}/>
+                        <FilterCategory category="Representation" filters={["Women", "LGBTQ", "POC"]}
+                                        icons={[womenLine, rainbowFlag, globeIcon]}
+                                        toggleTheme={this.props.toggleTheme}
+                                        handleFilterChange={this.props.handleFilterChange}/>
 
-                    <div style={{display: "flex"}} className={styles.filtererContainer}>
-                        <div className={styles.filtererCategoryHeaderContainer}>
-                            <h4 className={styles.filtererCategory}>Years</h4>
-                            <InlineIcon id="YearIcon" className={styles.icon} onClick={() => this.showCategory('Year')}
-                                        height={16} width={16} icon={caretRightOutlined} style={{color: '#ffff'}}/>
-                        </div>
-                        <div id="Year" className={styles.filtererCategoriesOpened}>
-                                <RangeInput  changeTimelineFilterYear={this.changeTimelineFilterYear}  maxYear={this.state.maxYear} minYear={this.state.minYear}/>
+                        <div style={{display: "flex"}} className={styles.filtererContainer}>
+                            <div className={styles.filtererCategoryHeaderContainer}>
+                                <h4 className={styles.filtererCategory}>Years</h4>
+                                <InlineIcon id="YearIcon" className={styles.icon}
+                                            onClick={() => this.showCategory('Year')}
+                                            height={16} width={16} icon={caretRightOutlined} style={{color: '#ffff'}}/>
+                            </div>
+                            <div id="Year" className={styles.filtererCategoriesOpened}>
+                                <RangeInput changeTimelineFilterYear={this.changeTimelineFilterYear}
+                                            maxYear={this.state.maxYear} minYear={this.state.minYear}/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={styles.filtererShowAllContainer}>
-                    <ShowAll onClickFiltererType={() => this.onClickFiltererType('', 'Vaporwave')} timelineFilter={this.props.timelineFilter}/>
                 </div>
             </div>
         )
     }
 }
+
 Filterer.contextType = ThemeStyles;
 
 export default Filterer

@@ -26,14 +26,18 @@
 }
 .heroText {
   max-width: 400px;
-  padding-left: 5%;
-  flex: 0 0 35%;
+  margin-left: 5%;
+  flex: 0 0 30%;
+  z-index: 1;
 }
 .heroHeader {
   font-size: 3em;
   font-family: "Futura", sans-serif;
 }
-.homeBtnWrapper {
+.homeBtn {
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
   flex-direction: column;
   padding: .75rem 2rem;
   width: 10rem;
@@ -43,11 +47,6 @@
   display: inline-block;
   border-radius: 1rem;
   text-align: center;
-}
-.homeBtn {
-  font-family: sans-serif;
-  color: white;
-  text-decoration: none;
 }
 
 
