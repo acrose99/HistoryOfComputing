@@ -729,7 +729,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Sage.jpg",
+        "TimelineImage": "/images/event-images/SAGE.jpg",
     },
     {
         "Filters": ["EarlyComputing", "AI", "Culture", "LBBTQ"],
