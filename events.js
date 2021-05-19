@@ -1,8 +1,8 @@
 export const events = [
     {
         "Title": "Harvard Mark 1 is completed",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
+        "Body": "Led by John Von Neumann, an influential American mathematician and scientist, the Mark was used to calculate the Manhattan Project (which developed the Atomic Bomb) and fulfilled the goals of Charles Babbage's analytical engine. Besides it's technical relevance, it's important for the contributions of Grace Hopper, who was one of it's main programmers.  ",
+        "Filters": ["EarlyComputing", "Women"],
         "Year": 1944,
         "Location": "Cambridge",
         "Citations": [
@@ -10,10 +10,6 @@ export const events = [
             "Michael Fassbender"
         ],
         "TimelineImage": "/images/event-images/Timeline1.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg",
-        ]
     },
     {
         "Title": "MIT LINC is introduced",
@@ -500,7 +496,7 @@ export const events = [
     },
     {
 
-        "Filters": ["LGBTQ", "EarlyComputing"],
+        "Filters": ["EarlyComputing", "LGBTQ"],
         "Title": "Bombe Enigma Machine Invented",
         "Body": "Alan Turing led the team that designed and created the Bombe, an electro-mechanical device used to break Nazi enigmas. Turing would continue making innovations during WW2. ",
 
@@ -508,7 +504,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/TuringBombe.png",
+        "TimelineImage": "/images/event-images/TuringBombe.jpg",
     },
     {
 
@@ -543,7 +539,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/diodes.jpg",
     },
     {
 
@@ -604,6 +600,185 @@ export const events = [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
         "TimelineImage": "/images/event-images/IBM601.jpg",
+    },
+    {
+        "Filters": ["HP", "EarlyComputing"],
+        "Body": "Hewlett-Packard (known as HP), is founded by the American businessmen Bill Hewlett and Dave Packard to create calculators. ",
+        "Title": "Hewlett Packard Founded",
+        "Year": "1938",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/hpLogo1.png",
+    },
+    {
+        "Filters": ["EarlyComputing"],
+        "Body": "The Z1, possibly the worlds first computer, was invented by German scientist Konrad Zuse. It was the first computer to used Boolean logic and floating point numbers. ",
+        "Title": "The Z1 computer is invented",
+        "Year": "1938",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/zuse.png",
+    },
+    {
+        "Filters": ["EarlyComputing"],
+        "Title": "Colossus: The First Turing-Complete Computer",
+        "Body": "Made by a English team led by Alan Turing working to break German codes during WW2, the all-electronic Colossus is the worlds first programmable and Turing-complete computer. ",
+        "Year": "1943",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Colossus.png",
+    },
+    {
+        "Filters": ["EarlyComputing"],
+        "Title": "Turing machine conceptualized. ",
+        "Body": "Alan Turing creates the Turing machine model, which states that is a machine capable of a finite set of configurations (q1,…,qn). A machine capable of this is said to be 'Turing complete'.",
+        "Year": "1937",
+        "Citations": [
+            "De Mol, Liesbeth, 'Turing Machines', _The Stanford Encyclopedia of Philosophy_ (Winter 2019 Edition), Edward N. Zalta (ed.)"
+        ],
+        "TimelineImage": "/images/event-images/Turing1.png",
+    },
+    {
+        "Filters": ["EarlyComputing", "Women"],
+        "Title": "ENIAC: The world's first fully electronic computer ",
+        "Body": "ENIAC (Electronic Numerical Integrator and Computer) is invented through the U.S army's research laboratory. It was the world's first programmable, electronic, and digital computer. It was much faster then previous computers and was used to calculate complex mathematical problems, such as the feasibility of thermonuclear weapons. Additionally, all six programmers of the ENIAC were women, who were chosen from a group of researchers at the University of Pennsylvania. These women were some of the first computer programmers, and needed to know a great deal of mathematics, circuitry, and machinery.",
+        "Year": "1945",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/ENIAC.png",
+    },
+    {
+        "Filters": ["Culture"],
+        "Title": "'As We May Think' is published",
+        "Body": "As We May Think, an essay by American mathematician Vannevar Bush, is a visionary essay which predicts the Information age,  including Personal Computers, the Internet, and even Speech recognition.   ",
+        "Year": "1945",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/asWeMayThink.jpg",
+    },
+    {
+        "Filters": ["EarlyComputing", "Bell Labs"],
+        "Title": "Invention of the Transistor",
+        "Body": "The transistor, a semiconductor device that can amplify and/or switch electronic signals is invented at Bell Labs. Transistors are now basic building blocks of electronics.",
+        "Year": "1947",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/firstTransistor.jpg",
+    },
+    {
+        "Filters": ["EarlyComputing"],
+        "Title": "EDSAC built, the world's first digital stored-program computer",
+        "Body": "The Electronic delay storage automatic calculator (EDSAC), developed by researchers at the University of Cambridge was the first computer that could fully store variables and programs in memory.  ",
+        "Year": "1948",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/EDSAC.jpg",
+    },
+    {
+        "Filters": ["EarlyComputing"],
+        "Title": "UNIVAC 1, the first commercial computer, is built",
+        "Body": "The world's first commercially sold computer, the UNIVAC 1, was built by J. Presper Eckert and John Mauchly.",
+        "Year": "1950",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/UNIVAC.jpg",
+    },
+    {
+        "Filters": ["Culture"],
+        "Title": "First use of computers to predict elections",
+        "Body": "The UNIVAC 1 was used by CBS to predict the 1952 U.S presidential election, and it successfully predicted Dwight D Eisenhower, using only 5.5% of the voter turnout. ",
+        "Year": "1951",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/UNIVAC-CBS.jpg",
+    },
+    {
+        "Filters": ["IBM", "EarlyComputing"],
+        "Title": "IBM introduces the IBM 650",
+        "Body": "The IBM 650, although slightly inferior to the UNIVAC benefits from IBM's business relationships, and becomes the best selling computer of the 1950's.",
+        "Year": "1953",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/IBM650.jpg",
+    },
+    {
+        "Filters": ["EarlyComputing"],
+        "Title": "Whirlwind 1: First computer to use RAM",
+        "Body": "The Whirlwind 1, a computer developed for the U.S Navy and led by Jay Forrester, a American Computer Scientist, is the first computer to use magnetic core memory, otherwise known as RAM. ",
+        "Year": "1951",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Whirlwind1.jpg",
+    },
+    {
+        "Filters": ["EarlyComputing", "IBM", "Culture"],
+        "Title": "Development of SAGE ",
+        "Body": "The Semi-Automatic Ground Environment (SAGE) began to be developed. Using an enormous network of AN/FSQ computers, manufactured by IBM, which utilized the RAM techniques of the Whirlwind 1,  a connected network of computers could predict and defend the U.S from nuclear attack. It's enormous scale wowed the public and inspired movies such as Dr. Strangelove.  ",
+        "Year": "1955",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Sage.jpg",
+    },
+    {
+        "Filters": ["EarlyComputing", "AI", "Culture", "LBBTQ"],
+        "Title": "Conceptualization of the Turing Test",
+        "Body": "Alan Turing posits the 'Turing Test', a test that decides if a machine can truly think for itself. The test consists of the user interacting with a machine and not detecting that it is a machine. It remains an important milestone in AI, and it is debated whether or not it has been passed. Additionally, it has remained relevant in pop culture, in movies such as Blade Runner, Ex Machina, etc.",
+        "Year": "1950",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/turingTest.png",
+    },
+    {
+        "Filters": ["EarlyComputing", "Languages"],
+        "Title": "FORTRAN, the first widely used programming language, is invented",
+        "Body": "John W. Backus, an American Computer Scientist, invents Fortran, the first widely used High level programming language. Fortran was the dominant high level programming language for decades, until the early 80's. Although no longer popular, it is still used in legacy applications. ",
+        "Year": "1957",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Fortran.png",
+    },
+    {
+        "Filters": ["EarlyComputing", "Languages", "AI"],
+        "Title": "Lisp, a nonprocedural programming language, is invented",
+        "Body": "LISP, the worlds first nonprocedural high level programming language, was invented by John McCarthy, an American Computer Scientist. Lisp was designed to be used for AI research, and became the favored language for AI researchers. Lisp 'dialects' are still widely used. ",
+        "Year": "1958",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Lisp.png",
+    },
+    {
+        "Filters": ["ModernComputing", "Culture", "Gaming"],
+        "Title": "PDP-1: World's first Microcomputer",
+        "Body": "The Programmed Data Processor (PDP-1), developed by the Digital Equipment Corporation (DEC), is invented. The PDP-1 is relevant in numerous ways. Primarily, it was the first 'minicomputer', a computer meant for personal use by computer researchers. Furthermore, it also became popular with the burgeoning 'hacker' community. Because of these hackers, the PDP-1 was the first computer used to create a video game, and was possibly the first computer used to produce music.",
+        "Year": "1960",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/PDP-1.jpg",
+    },
+    {
+        "Filters": ["Culture"],
+        "Title": "I, Robot is released to the public",
+        "Body": "I, Robot, is written by author/scientist Isaac Asimov, and is considered the first mainstream usage of Robots in popular culture. Asimov himself later became one of the most influential science fiction writers ever, although his work usually did not deal specifically with computers.",
+        "Year": "1950",
+        "Citations": [
+        ],
+        "TimelineImage": "/images/event-images/iRobot.jpg",
     },
 
 

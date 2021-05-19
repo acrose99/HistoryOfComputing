@@ -6,19 +6,19 @@ import styles from './Filterer.module.css';
 
 function filtererCategory(props) {
     function onClickFiltererType(filter, theme) {
-        if (filter === 'Early Computing' ||theme === 'early computing') {
+        if (filter === 'Early Computing' || theme === 'Early Computing') {
             props.toggleTheme('EarlyComputing')
-            changeTimeLineFilter('EarlyComputing')
+            changeTimeLineFilter('EarlyComputing');
         }
-        if (filter === 'Modern Computing' ||theme === 'modern computing') {
+        else if (filter === 'Modern Computing' ||theme === 'modern computing') {
             props.toggleTheme('ModernComputing')
             changeTimeLineFilter('ModernComputing')
         }
-        if (filter === 'Information Age' ||theme === 'information age') {
+        else if (filter === 'Information Age' ||theme === 'information age') {
             props.toggleTheme('InformationAge')
             changeTimeLineFilter('InformationAge')
         }
-        if (filter === 'Imagination Age' ||theme === 'imagination age') {
+        else if (filter === 'Imagination Age' ||theme === 'imagination age') {
             props.toggleTheme('ImaginationAge')
             changeTimeLineFilter('ImaginationAge')
         }

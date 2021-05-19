@@ -242,23 +242,23 @@ export const themes = {
         navbarBackground: "#cdc1c1"
     },
     ModernComputing: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "rgba(0, 62, 97, 0.6)",
+        background: "rgba(255, 251, 247)",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
 
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
+        borderLeftColor: '4mm ridge rgba(255, 251, 247)',
+        borderRightColor: '4mm ridge rgba(0, 62, 97)',
+        borderTopColor: '4mm ridge rgba(255, 251, 247)',
+        borderBottomColor: '4mm ridge rgba(0, 62, 97)',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        backgroundImage: "linear-gradient(rgba(255, 251, 247, 0.8), rgba(0, 62, 97, 0.6))",
+        navbarBackground: "rgba(0, 62, 97, 0.6)"
     },
     InformationAge: {
         foreground: "#8d8bff",
@@ -317,6 +317,25 @@ export const themes = {
         backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
         navbarBackground: "#8d8bff"
     },
+    Hardware: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
     Software: {
         foreground: "#8d8bff",
         background: "#ddd6ff",
@@ -336,64 +355,102 @@ export const themes = {
         backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
         navbarBackground: "#8d8bff"
     },
-    Space: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
-
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
-
-        textEventColor: 'black',
-
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
-
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
-    },
-    Mobile: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
-
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
-
-        textEventColor: 'black',
-
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
-
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
-    },
-    Automation: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
-
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
-
-        textEventColor: 'black',
-
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
-
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
-    },
+    // Space: {
+    //     foreground: "#8d8bff",
+    //     background: "#ddd6ff",
+    //
+    //     textColor: '#6666fa',
+    //     textNavbarColor: '#6666fa',
+    //     textFooterColor: '#6666fa',
+    //     headerColor: '#08087c',
+    //
+    //     textEventColor: 'black',
+    //
+    //     borderLeftColor: '4mm ridge #9E73D3',
+    //     borderRightColor: '4mm ridge #5C8BAD',
+    //     borderTopColor: '4mm ridge #9E73D3',
+    //     borderBottomColor: '4mm ridge #5C8BAD',
+    //
+    //     backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+    //     navbarBackground: "#8d8bff"
+    // },
+    // Mobile: {
+    //     foreground: "#8d8bff",
+    //     background: "#ddd6ff",
+    //
+    //     textColor: '#6666fa',
+    //     textNavbarColor: '#6666fa',
+    //     textFooterColor: '#6666fa',
+    //     headerColor: '#08087c',
+    //
+    //     textEventColor: 'black',
+    //
+    //     borderLeftColor: '4mm ridge #9E73D3',
+    //     borderRightColor: '4mm ridge #5C8BAD',
+    //     borderTopColor: '4mm ridge #9E73D3',
+    //     borderBottomColor: '4mm ridge #5C8BAD',
+    //
+    //     backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+    //     navbarBackground: "#8d8bff"
+    // },
+    // Automation: {
+    //     foreground: "#8d8bff",
+    //     background: "#ddd6ff",
+    //
+    //     textColor: '#6666fa',
+    //     textNavbarColor: '#6666fa',
+    //     textFooterColor: '#6666fa',
+    //     headerColor: '#08087c',
+    //
+    //     textEventColor: 'black',
+    //
+    //     borderLeftColor: '4mm ridge #9E73D3',
+    //     borderRightColor: '4mm ridge #5C8BAD',
+    //     borderTopColor: '4mm ridge #9E73D3',
+    //     borderBottomColor: '4mm ridge #5C8BAD',
+    //
+    //     backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+    //     navbarBackground: "#8d8bff"
+    // },
     Gaming: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
+    Languages: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
+    AI: {
         foreground: "#8d8bff",
         background: "#ddd6ff",
 
@@ -450,6 +507,25 @@ export const themes = {
         backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
         navbarBackground: "#8d8bff"
     },
+    Culture: {
+        foreground: "rgba(150, 120, 141, 0.8)",
+        background: "rgba(220, 173, 112, 0.8)",
+
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
+
+        textEventColor: 'white',
+
+        borderLeftColor: '4mm ridge rgba(220, 173, 112, 0.8)',
+        borderRightColor: '4mm ridge rgba(150, 120, 141, 0.8)',
+        borderTopColor: '4mm ridge rgba(220, 173, 112, 0.8)',
+        borderBottomColor: '4mm ridge rgba(150, 120, 141, 0.8)',
+
+        backgroundImage: "linear-gradient(rgba(220, 173, 112, 0.8), rgba(150, 120, 141, 0.8))",
+        navbarBackground: "rgba(220, 173, 112, 0.8)"
+    }
 };
 
 export const ThemeStyles = React.createContext(themes.Vaporwave);

@@ -27,7 +27,6 @@
 .heroText {
   max-width: 400px;
   margin-left: 5%;
-  flex: 0 0 30%;
   z-index: 1;
 }
 .heroHeader {

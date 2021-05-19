@@ -42,9 +42,9 @@ function TimelineComponent(props) {
         }
         else {
             return (
-                <div className={styles.TimelineComponent}>
+                <div className={styles.Timeline}>
                     <Navbar/>
-                    <h2 className={styles.TimelineComponent-intro}>Important events that summarize the History of Computing.</h2>
+                    <h2 className={styles.TimelineIntro}>Important events that summarize the History of Computing.</h2>
                     <h1 style={{textAlign: "center", color: "#5c71e1" }}>No Events Found! Try Again!</h1>
 
                     <div style={{marginBottom: '200px'}}/>
@@ -99,6 +99,9 @@ function TimelineComponent(props) {
         componentWillUnmount() {
             // tutorial said i should unmount the event listener so here it is
             window.removeEventListener("resize", this.updateMenuStyle.bind(this));
+            this.setState({
+                events: null
+            })
         }
 
 
@@ -119,7 +122,12 @@ function TimelineComponent(props) {
     }
     function createTimeLineIntro() {
         if (props.filter === '') {
-            return (<h2 style={{color: theme.headerColor}} className={styles.TimelineIntro}>Important events that summarize the History of Computing.</h2>)
+            return (
+                <div style={{textAlign: "center"}}>
+                    <h2 style={{color: theme.headerColor}} className={styles.TimelineIntro}>Important events that summarize the History of Computing.</h2>
+                    <p style={{color: theme.headerColor}}>Scroll through the filters/categories above to read specific events, or if you're dedicated, read through all of them chronologically here!</p>
+                </div>
+            )
         }
         else if (typeof props.filter === "object") {
             return (<h2 style={{color: theme.headerColor}} className={styles.TimelineIntro}>Important events that summarize the History of Computing from the year {props.filter[0]} to the year {props.filter[1]} </h2>)
@@ -132,6 +140,9 @@ function TimelineComponent(props) {
         }
         else if (props.filter === 'Enlightenment') {
             return (<h2 style={{color: theme.headerColor}}  className={styles.TimelineIntro}>Important events that summarize the History of {props.filter} Mathematics.</h2>)
+        }
+        else if (props.filter === 'ModernComputing') {
+            return (<h2 style={{color: theme.headerColor}}  className={styles.TimelineIntro}>Important events that summarize the History of Modern Computing.</h2>)
         }
         else if (props.filter === 'Industrial') {
             return (<h2 style={{color: theme.headerColor}}  className={styles.TimelineIntro}>Important events that summarize the History of {props.filter} Mechanics.</h2>)
