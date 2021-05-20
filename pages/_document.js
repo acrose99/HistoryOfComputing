@@ -23,4 +23,4 @@ class MyDocument extends Document {
     }
 }
 
-export default MyDocumen
+export default MyDocument

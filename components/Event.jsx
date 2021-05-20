@@ -5,9 +5,8 @@ import stylesFocus from './EventFocus.module.css'
 import {ThemeStyles} from '../context/themeStyles'
 import {themes} from '../context/themeStyles';
 
-import Image from 'next/Image'
+import Image from 'next/image'
 import EventFocus from "./EventFocus";
-// import Backdrop from '../../images/Backdrop.svg';
 
 class MobileEvent extends Component {
   constructor(props) {
