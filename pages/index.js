@@ -76,7 +76,7 @@ class Home extends Component {
                 <h1 className={styles.heroHeader}>
                   Welcome to The History of Computing!
                 </h1>
-                <Link href="/Timeline">
+                <Link href="/Timeline/all">
                   <a className={styles.homeBtn}> See the timeline</a>
                 </Link>
               </div>

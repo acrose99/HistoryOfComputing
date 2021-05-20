@@ -516,7 +516,7 @@ export const themes = {
         textFooterColor: '#000000',
         headerColor: '#000000',
 
-        textEventColor: 'white',
+        textEventColor: 'black',
 
         borderLeftColor: '4mm ridge rgba(220, 173, 112, 0.8)',
         borderRightColor: '4mm ridge rgba(150, 120, 141, 0.8)',

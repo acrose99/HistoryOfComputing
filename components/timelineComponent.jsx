@@ -6,13 +6,15 @@ import Event from "./Event";
 import Representation from "./Representation";
 import {events} from "../events"
 import {ThemeStyles} from '../context/themeStyles'
+import {themes} from '../context/themeStyles';
+
 import Footer from "./Footer";
 
 function TimelineComponent(props) {
     const theme = useContext(ThemeStyles);
     useDocumentTitle(props.filter);
     let newdata;
-    if (props.filter === '') {
+    if (props.filter === 'all') {
         newdata = events.sort((a,b) => {
             if (a["Year"] < b["Year"]) return -1;
             else return 1;
@@ -121,7 +123,7 @@ function TimelineComponent(props) {
         }
     }
     function createTimeLineIntro() {
-        if (props.filter === '') {
+        if (props.filter === 'all') {
             return (
                 <div style={{textAlign: "center"}}>
                     <h2 style={{color: theme.headerColor}} className={styles.TimelineIntro}>Important events that summarize the History of Computing.</h2>

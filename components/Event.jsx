@@ -227,7 +227,7 @@ class DesktopEvent extends Component {
         I've placed the LGBTQ backdrop higher then Early Computing,
         because I want to emphasize representation more then era */
     const backdrops = '/images/Backdrops/'
-    if (filter !== '' && filter !== undefined && filter !== null) {
+    if (filter !== 'all' && filter !== '' && filter !== undefined && filter !== null) {
       return backdrops + filter+ 'Backdrop.svg'
     }
     else if (this.props.filters !== undefined && this.props.filters !== null) {
