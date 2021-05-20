@@ -14,10 +14,10 @@ export const themes = {
         foreground: "#8d8bff",
         background: "#ddd6ff",
 
-        textColor: '#6666fa',
+        textColor: '#000000',
         textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
 

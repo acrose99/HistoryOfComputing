@@ -70,7 +70,7 @@ class Home extends Component {
             <meta name="description" content="An fun and innovative way to learn the History of Computing" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <Image priority={true} objectFit="cover" layout="fill" quality={100} className={styles.homeImg} src='/Background.png' alt="HomeBackground"/>
+          <Image priority={true} objectFit="cover" layout="fill" quality={100} className={styles.homeImg} src='/Background.png'/>
           <div className={styles.hero}>
               <div className={styles.heroText}>
                 <h1 className={styles.heroHeader}>

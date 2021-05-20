@@ -5,6 +5,7 @@ import styles from "../components/TimelineContainer.module.css"
 import Navbar from "../components/Navbar";
 import {ThemeStyles} from "../context/themeStyles";
 import ShowAll from "../components/Filterer/ShowAll";
+import Head from "next/head";
 class Timeline extends Component{
     constructor(props) {
         super(props);
@@ -45,10 +46,12 @@ class Timeline extends Component{
             )
         }
         else return (
-            <div style={{backgroundImage: theme.backgroundImage}} id="TimelineContainer">
-                <Navbar/>
-                <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange} handleFilterChangeYear={this.handleFilterChangeYear}/>
-                <TimelineComponent filter={this.state.timelineFilter}/>
+            <div>
+                <div style={{backgroundImage: theme.backgroundImage}} id="TimelineContainer">
+                    <Navbar/>
+                    <Filterer toggleTheme={this.toggleTheme} timelineFilter={this.state.timelineFilter} handleFilterChange={this.handleFilterChange} handleFilterChangeYear={this.handleFilterChangeYear}/>
+                    <TimelineComponent filter={this.state.timelineFilter}/>
+                </div>
             </div>
 
         )

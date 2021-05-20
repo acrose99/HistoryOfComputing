@@ -18,10 +18,10 @@ export default function Footer() {
                         <div className={styles.footerBlockLeft}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
 
-                            <Link style={{textDecorationColor: theme.headerColor}} href="/">
-                                <h2 style={{color: theme.headerColor, fontStyle: "italic"}} >The History Of Computing </h2>
+                            <Link style={{textDecorationColor: theme.textFooterColor}} href="/">
+                                <h2 style={{color: theme.textFooterColor, fontStyle: "italic"}} >The History Of Computing </h2>
                             </Link>
-                            <p style={{color: theme.headerColor}}  className={styles.slogan}>
+                            <p style={{color: theme.textFooterColor}}  className={styles.slogan}>
                                 We make History fun.
                             </p>
                         </div>
@@ -35,7 +35,7 @@ export default function Footer() {
                                     <Link href="/Timeline" className={styles.footerTitle}>
                                         <a className={styles.footerTitle} style={{color: theme.textFooterColor}}>Timeline</a>
                                     </Link>
-                                    <div style={{color: theme.textColor}} className={styles.footerTitle}>Contribute:</div>
+                                    <div style={{color: theme.textFooterColor}} className={styles.footerTitle}>Contribute:</div>
                                     <IconButton href="https://github.com/acrose99/HistoryOfComputing" edge={"start"}>
                                         <Icon className={styles.footerMenuButtonIcon} icon={githubFilled} style={{ color: theme.textFooterColor }} />
                                     </IconButton>
