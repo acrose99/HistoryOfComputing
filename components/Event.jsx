@@ -267,7 +267,7 @@ class DesktopEvent extends Component {
                 <h3 style={{color: this.props.theme.textEventColor}} className={styles.EventTitle}>{this.props.title}</h3>
               </div>
               <figure className={styles.EventFigure}>
-                <Image className={styles.EventImage} width={200} height={200} layout="fixed"   src={this.props.TimelineImage} alt="Error" />
+                <Image className={styles.EventImage} width={200} height={200} layout="fixed"   src={this.props.TimelineImage + '?webp'} alt="Error" />
               </figure>
             </div>
           </div>

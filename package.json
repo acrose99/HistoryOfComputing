@@ -14,9 +14,17 @@
     "@iconify/icons-la": "^1.1.0",
     "@iconify/icons-openmoji": "^1.1.14",
     "@iconify/icons-vs": "^1.1.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0",
+    "lqip-loader": "^2.2.1",
     "next": "10.2.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "node": "^16.1.0",
     "react": "^17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "@iconify/icons-bx": "^1.1.0",
