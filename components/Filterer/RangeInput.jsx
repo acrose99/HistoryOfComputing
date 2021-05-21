@@ -28,4 +28,4 @@ function RangeInput(props) {
     );
 }
 
-export default RangeInput
+export default React.memo(RangeInput);

@@ -72,4 +72,4 @@ function filtererCategory(props) {
     )
 }
 
-export default filtererCategory
+export default React.memo(filtererCategory);

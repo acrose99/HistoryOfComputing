@@ -36,9 +36,9 @@
     .showEvent {
         width: 250px;
     }
-    .eventHeaderText {
-        font-size: 18px;
-    }
+    /*.eventHeaderText {*/
+    /*    font-size: 18px;*/
+    /*}*/
 }
 
 /*iPhone Plus, XS, XS Max */
@@ -62,9 +62,9 @@
     .showEvent {
         width: 280px;
     }
-    .eventHeaderText {
-        font-size: 22px;
-    }
+    /*.eventHeaderText {*/
+    /*    font-size: 22px;*/
+    /*}*/
 }
 /* iPad */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -76,6 +76,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 0 auto;
+        box-shadow: 16px 16px 0 -2px rgba(0,0,0,.6);
     }
     .eventBody {
         flex-direction: column;
@@ -89,9 +90,9 @@
     .showEvent {
         width: 480px;
     }
-    .eventHeaderText {
-        font-size: 22px;
-    }
+    /*.eventHeaderText {*/
+    /*    font-size: 22px;*/
+    /*}*/
 }
 
 /* Smaller Desktop */
@@ -104,6 +105,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 0 auto;
+        box-shadow: 16px 16px 0 -2px rgba(0,0,0,.6);
     }
     .eventBodyImage {
         padding: 3%;
@@ -112,9 +114,9 @@
     .showEvent {
         width: 630px;
     }
-    .eventHeaderText {
-        font-size: 22px;
-    }
+    /*.eventHeaderText {*/
+    /*    font-size: 22px;*/
+    /*}*/
 }
 /* Larger Desktop */
 @media screen and (min-width: 1400px) {
@@ -122,8 +124,9 @@
         display: flex;
         flex-direction: column;
         align-self: center;
-        width: 1000px;
+        width: 650px;
         margin: 0 auto;
+        box-shadow: 16px 16px 0 -2px rgba(0,0,0,.6);
     }
     .eventBodyImage {
         /*max-height: 200px;*/
@@ -133,30 +136,12 @@
     .showEvent {
         width: 800px;
     }
-    .eventHeaderText {
-        font-size: 24px;
-        flex: 0;
-    }
 }
 .showEventWrapper {
     position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
-    /*width: 90%;*/
-    /*padding-top: 20px;*/
-    padding-bottom: 10%;
-    /* min-height: 100%;  */
-    /* might put min height back. depends on how it looks when I add stuff to page */
-    /*height: 30%;*/
-    /*margin: 5% auto 5%;*/
+    margin-bottom: 10%;
     left: 0;
     right: 0;
-    /* display: block; */
-    /* margin: 33%; */
-    /* background: linear-gradient(
-      180deg,
-      rgba(0, 147, 255, 0.4) 0%,
-      rgba(173, 95, 249, 0.4) 100%
-    ); */
-    /*transform: translateY(100%);*/
 }
 
 .showEventWrapper--open {
@@ -174,9 +159,8 @@
     display: flex;
     padding: 3% 5%;
     background: #ffffff;
-    border: solid rgb(78, 76, 76);
-    border-width: 0px 1.5px 1.5px 1.5px;
-    border-radius: 0em 0em 0.5em 0.5em;
+    border: 2px solid rgb(78, 76, 76);
+    border-radius: 0 0 0.5em 0.5em;
 
     box-sizing: border-box;
 }
@@ -186,11 +170,9 @@
     margin: 15px auto;
 }
 .eventHeader {
-    height: 10%;
-    background: #ffffff;
     border: solid rgb(78, 76, 76);
 
-    border-width: 1.5px 1.5px 0px 1.5px;
+    border-width: 2px 2px 0 2px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -207,8 +189,9 @@
 }
 
 .eventHeaderText {
+    margin: 0 auto;
+    font-size: 1.35em;
     text-align: center;
-    font-size: 16px;
 }
 .vaporwaveBar {
     display: block;
@@ -217,11 +200,8 @@
 }
 
 .vaporwaveBarContents {
-    font-size: 20px;
     background-color: transparent;
     border: transparent;
-    width: 30px;
-    height: 30px;
     margin-left: 2px;
 }
 .vaporwaveBarContents img {
@@ -229,20 +209,13 @@
     height: fit-content;
 }
 .vbarButtons {
-    position: relative;
-    top: 0;
-    left: 2px;
-    height: 30px;
-    width: 33%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
 }
 
-.vbarDivs {
-    width: 33%;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    border: 2px black;
-}
 
 .eventBodyImage {
     justify-content: left;

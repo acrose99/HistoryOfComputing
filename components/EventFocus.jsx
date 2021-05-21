@@ -52,23 +52,18 @@ class EventFocus extends Component  {
             <div className={stylesFocus.showEventWrapper}>
                 <div style={{background: this.props.theme.background}} className={stylesFocus.eventHeader}>
                     <div className={stylesFocus.vbarButtons}>
-                        <button className={stylesFocus.vaporwaveBarContents}
-                                onClick={this.props.hideEventInFocus}
-                        >
-                            <img
-                                src={"/images/buttons/media_player_stream_no.png"}
-                                alt="Close"
-                            />
-                        </button>
-                    </div>
-                    <div className={stylesFocus.vbarDivs}>
-                        <p style={{color: this.props.theme.textColor}} className={stylesFocus.eventHeaderText}>
-                            {this.props.header}
-                        </p>
-                    </div>
-                    <div className={stylesFocus.vbarDivs}>
-
-                    </div>
+                            <button className={stylesFocus.vaporwaveBarContents}
+                                    onClick={this.props.hideEventInFocus}
+                            >
+                                <img
+                                    src={"/images/buttons/media_player_stream_no.png"}
+                                    alt="Close"
+                                />
+                            </button>
+                            <p style={{color: this.props.theme.textColor}} className={stylesFocus.eventHeaderText}>
+                                {this.props.header}
+                            </p>
+                        </div>
                 </div>
                 <div className={stylesFocus.eventBody}>
                     <div>
