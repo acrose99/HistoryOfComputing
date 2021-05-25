@@ -63,12 +63,10 @@ class MobileEvent extends Component {
       )
     }
     else return (
-        <EventFocus theme={this.props.theme} showEventInFocus={this.state.showEventInFocus}
+        <EventFocus  filter={this.props.filter} filters={this.props.filters} theme={this.props.theme} showEventInFocus={this.state.showEventInFocus}
                     hideEventInFocus={this.hideEventInFocus}
-                    style={this.props.Type}
                     header={this.props.title}
                     body={this.props.body}
-                    type={this.props.type}
                     citations={[this.props.citations[0], this.props.citations[1]]}
         />
     );
@@ -228,8 +226,8 @@ class DesktopEvent extends Component {
         because I want to emphasize representation more then era */
     const backdrops = '/images/Backdrops/'
     if (filter !== 'all' && filter !== '' && filter !== undefined && filter !== null) {
-        if (themes[filter]+ 'Backdrop.svg' !== undefined) {
-          return backdrops + 'Backdrop.svg'
+        if (backdrops + filter + 'Backdrop.svg' !== undefined) {
+          return backdrops + filter + 'Backdrop.svg'
         }
         else {
           return backdrops + 'Backdrop.svg'
@@ -279,9 +277,8 @@ class DesktopEvent extends Component {
       )
     }
     else return (
-        <EventFocus theme={this.props.theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
+        <EventFocus filter={this.props.filter} filters={this.props.filters} theme={this.props.theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
                     header={this.props.title}
-
                     body={this.props.body}
                     type={this.props.type}
                     citations={[this.props.citations[0], this.props.citations[1]]}

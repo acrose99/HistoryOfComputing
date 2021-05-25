@@ -1,13 +1,14 @@
 import React, {Component} from "react";
 import styles from './Filterer.module.css';
 import {InlineIcon} from '@iconify/react';
-import appleIcon from '@iconify/icons-openmoji/apple';
+import appleFilled from '@iconify/icons-ant-design/apple-filled';
 import caretRightOutlined from '@iconify/icons-ant-design/caret-right-outlined';
 import bxlMicrosoft from '@iconify/icons-bx/bxl-microsoft';
 import crossIcon from '@iconify/icons-la/cross';
 import abjadArabic from '@iconify/icons-mdi/abjad-arabic';
 import microscopeIcon from '@iconify/icons-carbon/microscope';
 import RangeInput from "./RangeInput";
+import oracleIcon from '@iconify/icons-simple-icons/oracle';
 import ibmIcon from '@iconify/icons-cib/ibm';
 import bxsFactory from '@iconify/icons-bx/bxs-factory';
 import cardFileBox from '@iconify/icons-emojione-monotone/card-file-box';
@@ -17,10 +18,12 @@ import globeIcon from '@iconify/icons-vs/globe';
 import circuitBoard from '@iconify/icons-codicon/circuit-board';
 import appWindowDuotone from '@iconify/icons-ph/app-window-duotone';
 import gaming15 from '@iconify/icons-maki/gaming-15';
+import attIcon from '@iconify/icons-file-icons/att';
 import robotExcitedOutline from '@iconify/icons-mdi/robot-excited-outline';
 import imacIcon from '@iconify/icons-whh/imac';
 import bxCodeCurly from '@iconify/icons-bx/bx-code-curly';
 import booksIcon from '@iconify/icons-raphael/books';
+import solarisIcon from '@iconify/icons-grommet-icons/solaris';
 
 
 import FilterCategory from "./FiltererCategory";
@@ -149,8 +152,8 @@ class Filterer extends Component {
                                         toggleTheme={this.props.toggleTheme}
                                         handleFilterChange={this.props.handleFilterChange}/>
 
-                        <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft"]}
-                                        icons={[appleIcon, bxlMicrosoft, ibmIcon]}
+                        <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft", "AT&T", "Oracle", "Sun"]}
+                                        icons={[appleFilled, bxlMicrosoft, ibmIcon, attIcon, oracleIcon, solarisIcon]}
                                         toggleTheme={this.props.toggleTheme}
                                         handleFilterChange={this.props.handleFilterChange}/>
                         <FilterCategory category="Representation" filters={["Women", "LGBTQ", "POC"]}

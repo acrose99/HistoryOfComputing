@@ -1,9 +1,12 @@
 import React, {Component} from "react";
 import stylesFocus from "./EventFocus.module.css";
+import {themes} from '../context/themeStyles'
 
-class EventFocus extends Component  {
+
+//TODO make the background extend the filter
+class EventFocus extends Component {
     renderCitations() {
-        if (this.props.citations[0] == null || this.props.citations[0]=== "") {
+        if (this.props.citations[0] == null || this.props.citations[0] === "") {
             return (
                 <div>
                     <p id={stylesFocus.eventCitationText}>
@@ -40,6 +43,7 @@ class EventFocus extends Component  {
             </p>
         )
     }
+
     renderBody() {
         return (
             <div>
@@ -47,20 +51,44 @@ class EventFocus extends Component  {
             </div>
         )
     }
+
+    findBackground(filter) {
+        /* Place in order of heirachy for user to see.
+            For example:
+            I've placed the LGBTQ backdrop higher then Early Computing,
+            because I want to emphasize representation more then era */
+        if (filter !== 'all' && filter !== '' && filter !== undefined && filter !== null) {
+            if (themes[filter].background !== undefined) {
+                return themes[filter].background;
+            }
+            else if (themes[this.props.filters[0]].background !== undefined) {
+                return themes[this.props.filters[0]].background;
+            }
+            else {
+                return this.props.theme.background;
+            }
+        }
+        else if (themes[this.props.filters[0]].background !== undefined) {
+            return themes[this.props.filters[0]].background;
+        }
+        else return this.props.theme.background;
+    }
+
     render() {
+        let background = this.findBackground(this.props.filter);
         return (
             <div className={stylesFocus.showEventWrapper}>
-                <div style={{background: this.props.theme.background}} className={stylesFocus.eventHeader}>
+                <div style={{background: background}} className={stylesFocus.eventHeader}>
                     <div className={stylesFocus.vbarButtons}>
-                            <button className={stylesFocus.vaporwaveBarContents}
-                                    onClick={this.props.hideEventInFocus}
-                            >
-                                <img
-                                    src={"/images/buttons/media_player_stream_no.png"}
-                                    alt="Close"
-                                />
-                            </button>
-                            <p style={{color: this.props.theme.textColor}} className={stylesFocus.eventHeaderText}>
+                        <button className={stylesFocus.vaporwaveBarContents}
+                                onClick={this.props.hideEventInFocus}
+                        >
+                            <img
+                                src={"/images/buttons/media_player_stream_no.png"}
+                                alt="Close"
+                            />
+                        </button>
+                        <p style={{color: this.props.theme.textColor}} className={stylesFocus.eventHeaderText}>
                                 {this.props.header}
                             </p>
                         </div>

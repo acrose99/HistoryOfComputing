@@ -10,6 +10,10 @@ function filtererCategory(props) {
             props.toggleTheme('EarlyComputing')
             changeTimeLineFilter('EarlyComputing');
         }
+        else if (filter === 'AT&T') {
+            props.toggleTheme('ATAT')
+            changeTimeLineFilter('ATAT');
+        }
         else if (filter === 'Modern Computing' ||theme === 'modern computing') {
             props.toggleTheme('ModernComputing')
             changeTimeLineFilter('ModernComputing')
