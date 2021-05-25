@@ -228,7 +228,12 @@ class DesktopEvent extends Component {
         because I want to emphasize representation more then era */
     const backdrops = '/images/Backdrops/'
     if (filter !== 'all' && filter !== '' && filter !== undefined && filter !== null) {
-      return backdrops + filter+ 'Backdrop.svg'
+        if (themes[filter]+ 'Backdrop.svg' !== undefined) {
+          return backdrops + 'Backdrop.svg'
+        }
+        else {
+          return backdrops + 'Backdrop.svg'
+        }
     }
     else if (this.props.filters !== undefined && this.props.filters !== null) {
       if (themes[this.props.filters[0]] !== undefined) {

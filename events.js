@@ -60,10 +60,21 @@ export const events = [
             "/images/event-images/EventFocus2.jpg"             ]
     },
     {
+        "Filters": ["Apple", "ModernComputing"],
+        "Title": "Apple is founded",
+        "Body": "Steve Wozniak and Steve Jobs founded Apple in Job's parent's garage in Los Altos, California.  They first created the Apple 1 microcomputer in their garage. It was later replaced by the more revolutionary Apple II.",
+        "Year": "1976",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/AppleLogo.png",
+    },
+
+    {
 
         "Filters": ["Apple"],
         "Title": "Apple II introduced",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
+        "Body": "The Apple II, the sequel to the Apple I, is a computer that was promised to work 'right out of the box'. The Apple II was a hit and may have started the personal computer (PC) revolution.",
 
         "Year": 1977,
         "Location": "Cupertino, US",
@@ -780,7 +791,401 @@ export const events = [
         ],
         "TimelineImage": "/images/event-images/iRobot.jpg",
     },
+    {
+        "Filters": ["Languages", "Modern Computing", "Women"],
+        "Title": "COBOL Invented",
+        "Body": "COBOL (Common business-oriented language) was developed by computer scientist Grace Hopper, whom was working for the US Department of Defense. It was meant to quickly process data, and became widely used in applications handling large amounts of transactions. It is still used today, although it has been in decline since the 2000's.  ",
+        "Year": "1960",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/COBOL.jpg",
+    },
+    {
+        "Filters": ["ModernComputing", "Gaming"],
+        "Title": "First Computer Game",
+        "Body": "Spacewar, the first computer game, is made by MIT researched Steve Russel, on a PDP-1",
+        "Year": "1962",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Spacewar.jpg",
+    },
+    {
+        "Filters": ["ModernComputing", "Languages"],
+        "Title": "Invention of ASCII",
+        "Body": "ASCII (American Standard Code for Information Interchange) is created by the American National Standards Institute. The ANSCII standardizes how characters/letters are represented.  ",
+        "Year": "1963",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/ASCII.png",
+    },
+    {
+        "Filters": ["ModernComputing", "Languages"],
+        "Title": "Invention of BASIC",
+        "Body": "BASIC (Beginners' All-purpose Symbolic Instruction Code) is invented by American computer scientists Thomas Kurtz and John Kemeny, who were researchers at Dartmouth College.  Due to it's ease of use and small size, most minicomputers and microcomputers began to adopt BASIC for general use by consumers. BASIC was the de facto home programming system until the early 1990's.",
+        "Year": "1964",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Basic.png",
+    },
+    {
+        "Filters": ["ModernComputing", "Hardware"],
+        "Title": "Invention of the Computer Mouse",
+        "Body": "At the Stanford Research Institute, inventor and computer scientist Douglas Engelbart invented the first computer mouse. ",
+        "Year": "1964",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Mouse.png",
+    },
+    {
+        "Filters": ["ModernComputing", "Intel"],
+        "Title": "Intel is founded",
+        "Body": "Intel is founded by American businessmen Gordon Moore, Andy Grove, and Robert Noyce in Mountain View, California ",
+        "Year": "1968",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/IntelLogo.png",
+    },
+    {
+        "Filters": ["ModernComputing", "Internet"],
+        "Title": "ARPANET: The technical backbone of the internet",
+        "Body": "ARPANET (Advanced Research Projects Agency Network) went online, it was first wide area network to use TCP?/IP protocol and packet switching. It was the technical foundation of the internet",
+        "Year": "1969",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/ARPANET.gif",
+    },
+    {
+        "Filters": ["ModernComputing", "ATAT"],
+        "Title": "Development of UNIX OS",
+        "Body": "Kenneth Thompson and Dennis Ritchie create the UNIX OS at Bell Labs ATAT. UNIX would go on to become either the direct or inspire (called UNIX like) the operating systems of most current operating systems.",
+        "Year": "1970",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/UNIX.png",
+    },
+    {
+        "Filters": ["IBM", "ModernComputing", "Hardware"],
+        "Title": "Invention of the floppy disk",
+        "Body": "IBM introduces the 8-inch floppy disk, a method of storage that uses a think magnetic disk enclosed in fabric. The disk itself is read and written by a floppy disk drive.  ",
+        "Year": "1970",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Floppy.png",
+    },
 
+    {
+        "Filters": ["ModernComputing", "Languages"],
+        "Title": "Invention of Pascal",
+        "Body": "Niklaus Writh, a Swiss computer scientist designs Pascal. Pascal is a small and efficient language that uses a lot of data structures to enforce good practices. Pascal was extremely popular in the 1970s, but was eventually displaced by the C programming language during the 1980s due to the rise of UNIX operating systems. ",
+        "Year": "1970",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascal.jpg",
+    },
+    {
+        "Filters": ["ModernComputing", "Gaming"],
+        "Title": "First Video Game Console",
+        "Body": "The Magnavox Odyssey, developed by Magnavox, was the first video game console. The console had some very simple games, including a predecessor to Pong, but the console did not sell well. ",
+        "Year": "1972",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Magnavox.png",
+    },
+    {
+
+        "Filters": ["ModernComputing", "Gaming", "Atari"],
+        "Title": "Release of Pong/Atari is Founded",
+        "Body": "Pong, the first arcade video game, is introduced by Atari, a company founded by Nolan Bushnell. The game consists of a 2D representation of table tennis, and was a hit.",
+        "Year": "1972",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Atari.png",
+    },
+
+    {
+        "Filters": ["ModernComputing", "Languages", "ATAT"],
+        "Title": "Invention of C",
+        "Body": "At Bell Labs, Dennis Ritchie and Ken Thompson develop C.  C is a procedural, statically typed language meant for low level (low level generally consists of code not directly accessed by a consumer) programs. C gradually became the world's most popular programming language, and is still ranked the top language to this day, due to it's cross-platform compatibility and usefulness with compilers, computer systems, and backend systems. Additionally, C has influenced almost every other language in use today, including direct dialects like C++ and even languages like Java and Javascript. ",
+        "Year": "1972",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/C.png",
+    },
+    {
+        "Filters": ["ModernComputing", "Software", "Xerox"],
+        "Title": "First WYSIWYG program",
+        "Body": "Bravo, the first WYSIWYG (What You See Is What You Get) document processor is created for the Xerox Alto. ",
+        "Year": "1974",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Alto.png",
+    },
+
+    {
+        "Filters": ["ModernComputing", "Microsoft", "Hardware"],
+        "Title": "Altair 8880: First popular personal computer",
+        "Body": "The Altair 8880, a 'microcomputer' using an Intel 8080 CPU, is sold through mail to order and becomes popular with hobbyists. It was key in the formation of Microsoft and is often recognized as popularizing personal computers.",
+        "Year": "1975",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/AltairPoster.png",
+    },
+    {
+        "Filters": ["Microsoft", "ModernComputing"],
+        "Title": "Microsoft is Founded",
+        "Body": "Microsoft was founded by Bill Gates and Paul Allen in 1975. They wrote a BASIC interpreter for the Altair 8880",
+        "Year": "1975",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/MicrosoftLogo.png",
+    },
+    {
+        "Filters": ["Apple", "Software", "ModernComputing", ],
+        "Title": "VisiCalc released",
+        "Body": "VisiCalc, the first spreadsheet program for personal computers, was released by VisiCorp for the Apple II. It is considered the first 'killer app', a piece of software that drove hardware sales",
+        "Year": "1978",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/VisiCalc.png",
+    },
+    {
+        "Filters": ["Languages", "ModernComputing"],
+        "Title": "Ada language is developed ",
+        "Body": "Ada, a programming language named after Ada Lovelace, is released. It is touted as the language of the future by the U.S government, although it never achieves this status. Ada supports strong types and is similar to Pascal. ",
+        "Year": "1980",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Adalanguage.png",
+    },
+    {
+        "Filters": ["IBM", "Hardware", "Microsoft", "ModernComputing"],
+        "Title": "IBM PC is released",
+        "Body": "The IBM PC was released in 1981. It used an open architecture, which inspired subsequent PC clones such as the MPC 1600 produced by the Colombia Data Products. The OS itself was written in MS-DOS, which brought Microsoft to relevance. The IBM PC was a huge hit and competed with the Apple II for marketshare. Most non Apple personal computers are descendants of the IBM PC.  ",
+        "Year": "1981",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/IBMPC.png",
+    },
+    {
+        "Filters": ["ModernComputing"],
+        "Title": "First use of Email",
+        "Body": "Ray Tomlinson, an American computer scientist sends the first email using ARPANET, using the @ sign to link a user name to a server.",
+        "Year": "1971",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/firstEmail.jpg",
+    },
+    {
+        "Filters": ["Culture"],
+        "Title": "1982 Person of the Year: The PC",
+        "Body": "Time magazine's person of the year in 1982 was the personal computer.",
+        "Year": "1982",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/TIME1982.jpg",
+    },
+    {
+        "Filters": ["Adobe", "ModernComputing"],
+        "Title": "Adobe Systems founded",
+        "Body": "Adobe Systems is founded by American businessmen John Warnock and Charles Geschke in 1982. Their first product was the Postscript printing language.",
+        "Year": "1982",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/AdobeLogo.png",
+    },
+
+    {
+        "Filters": ["IBM", "Software", "ModernComputing"],
+        "Title": "Lotus Software releases the first killer app for the PC",
+        "Body": "Lotus 1-2-3, a spreadsheet app, is released for the IBM PC. It was the first 'killer app' for the PC, and started the Lotus Software company now owned by IBM. ",
+        "Year": "1983",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Lotus123.jpg",
+    },
+    {
+        "Filters": ["ModernComputing"],
+        "Title": "TCP/IP becomes standard protocol",
+        "Body": "The internet protocol consisting of the Transmission Control Protocol (TCP) and the Internet Protocol (IP) becomes the standard, after the US Department of Defense adopts it for the ARPANET. ",
+        "Year": "1983",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/TCP IP.svg",
+    },
+    {
+        "Filters": ["Languages", "ModernComputing"],
+        "Title": "C++ invented",
+        "Body": "Bjarne Stroustrup, a Danish computer scientist, creates C++, a programming language that extends C. C++ brought classes to C, and is used in many contexts where performance and efficiency are important, such as desktop applications and databases, where the low level approach of C is not as desirable.",
+        "Year": "1983",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/C++.png",
+    },
+    {
+        "Filters": ["Apple", "Hardware", "ModernComputing"],
+        "Title": "Apple Lisa is released",
+        "Body": "The Apple Lisa desktop computer was released by Apple, it's price (9,995 dollars) made it a commercial failure. However, it's technical achievements such as protected memory and document oriented workflows (reminiscent of a typical modern GUI) were adopted over time.",
+        "Year": "1983",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Lisa.png",
+    },
+    {
+        "Filters": ["ModernComputing", "Hardware"],
+        "Title": "CD-ROM introduced",
+        "Body": "The Compact Disc Read-Only Memory (CD-ROM) form of data storage is introduced by Sony. The first product to use it is the Sony CDP-101 disk player. ",
+        "Year": "1984",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/CD-ROM.png",
+    },
+    {
+        "Filters": ["Culture"],
+        "Title": "William Gibson writes Neuromancer",
+        "Body": "The novel Neuromancer, written by American author William Gibson, coins terms such as cyberspace, popularizes hacking and computer science in popular culture, and starts the cyberpunk genre.",
+        "Year": "1984",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Neuromancer.jpg",
+    },
+    {
+        "Filters": ["Culture", "ModernComputing"],
+        "Title": "The first use of CGI in The Last Starfighter. ",
+        "Body": "Hollywood began to use Computer Generated Images (CGI), starting with the movie in The Last Starfighter. ",
+        "Year": "1984",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/LastStarfighter.png",
+    },
+    {
+        "Filters": ["Microsoft", "ModernComputing"],
+        "Title": "Microsoft releases Window 1.0",
+        "Body": "Microsoft releases Windows 1.0, their competitor to the Macintosh OS, was released. The first 3 versions of Windows were GUI's for the underyling MS-DOS operating system, which was made for the IBM PC and then extended for other personal computers. It was considered a commercial flop. ",
+        "Year": "1985",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Windows1.png",
+    },
+    {
+        "Filters": ["Adobe", "Software", "ModernComputing"],
+        "Title": "Aldus PageMaker 1.0 is released",
+        "Body": "The Aldus Corporation released PageMaker in 1985, a widely successful program that started the desktop publishing industry, by allowing users to make different types of documents. It was later bought out by Adobe Systems.",
+        "Year": "1985",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/AldusPagemaker.png",
+    },
+    {
+        "Filters": ["Apple", "ModernComputing"],
+        "Title": "Macintosh II released",
+        "Body": "Apple releases the Macintosh II in 1987, introducing colored displays. ",
+        "Year": "1987",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/MacII.jpg",
+    },
+    {
+        "Filters": ["ModernComputing"],
+        "Title": "First Internet Virus: The Morris worm",
+        "Body": "The Morris Worm, made by Robert Morris, was the first computer virus to be spread through the internet. Morris, who simply wanted to see if it a virus could spread through the internet, replicated itself continuously (due to a coding mistake), which served as a denial of service attack. The worm is estimated to have taken down 1/4 of the internet. Morris then became the first person convicted for Computer Fraud.",
+        "Year": "1988",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/MorrisWorm.jpg",
+    },
+    {
+        "Filters": ["ModernComputing"],
+        "Title": "Tim Berners-Lee outlines the World Wide Web",
+        "Body": "Tim Berners-Lee, an English Computer Scientist proposed the idea of a World Wide Web to his (European Council for Nuclear Research) CERN colleagues. Berners-Lee wanted to combine the internet protocol with the domain name system (DNS), and use hypertext to show the content.  ",
+        "Year": "1989",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/WWWProposal.gif",
+    },
+    {
+        "Filters": ["IBM", "Hardware", "ModernComputing"],
+        "Title": "IBM releases the i486 processor",
+        "Body": "Intel released the 80486 microprocessor in 1989, it was the first processor to have more then a million transistors, and could execute around 40 million instructions per second.",
+        "Year": "1989",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/i486.jpg",
+    },
+    {
+        "Filters": ["Microsoft", "ModernComputing"],
+        "Title": "Microsoft releases Windows 2.0",
+        "Body": "Microsoft released Windows 2.0 in 1987, although it introduced Word and Excel, the release was still not that successful, like Windows 1.9",
+        "Year": "1987",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/WindowsLogo.svg",
+    },
+    {
+        "Filters": ["Culture", "Information Age"],
+        "Title": "Cold War Ends, signaling a new paradigm in technology.  ",
+        "Body": "In 1991, the Soviet Union formerly dissolved and the Cold War ended. Although not a part of computer science, it decreased the amount of Military interest in funding Computer Science, which was responsible for things like ARPANET, Ada, COBOL, and much more innovations. ",
+        "Year": "1991",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/ColdWar.jpg",
+    },
+    {
+        "Filters": ["InformationAge"],
+        "Title": "The World Wide Web is launched",
+        "Body": "Tim Berners-Lee ushered in the Information Age by creating the World Wide Web, commonly called the Internet. The World Wide Web consists of a web server, using the Hypertext Transfer Protocol (HTTP) and Uniform Resource Locator (URL) for a web server, and a web client by using HyperText Markup Language (HTML). ",
+        "Year": "1991",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/1991bernerslee.jpg",
+    },
+    {
+        "Filters": ["IBM", "InformationAge"],
+        "Title": "IBM loses PC dominance",
+        "Body": "IBM lost its dominance over the PC marketplace, despite originating the name PC,  as more and more competing personal computers were made. ",
+        "Year": "1992",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/1990Ad.jpg",
+    },
 
 ]
 
