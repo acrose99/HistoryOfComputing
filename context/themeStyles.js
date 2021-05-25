@@ -70,10 +70,10 @@ export const themes = {
         foreground: '#00BD00',
         background: 'rgba(244, 171, 142, 1)',
 
-        textColor: 'white',
-        textNavbarColor: 'rgb(255,120,75)',
-        textFooterColor: 'white',
-        headerColor: '#000000',
+        textColor: 'black',
+        textNavbarColor: 'black',
+        textFooterColor: 'black',
+        headerColor: 'black',
 
         textEventColor: 'rgb(0,0,0)',
 
@@ -260,7 +260,8 @@ export const themes = {
         backgroundImage: "linear-gradient(rgba(255, 251, 247, 0.8), rgba(0, 62, 97, 0.6))",
         navbarBackground: "rgba(0, 62, 97, 0.6)"
     },
-    InformationAge: {
+
+    ATAT: {
         foreground: "#8d8bff",
         background: "#ddd6ff",
 
@@ -278,6 +279,82 @@ export const themes = {
 
         backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
         navbarBackground: "#8d8bff"
+    },
+    Oracle: {
+        foreground: "#C83E3E",
+        background: "#ffffff",
+
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
+
+        textEventColor: 'black',
+
+        borderLeftColor: '4mm ridge #C83E3E',
+        borderRightColor: '4mm ridge #ffffff',
+        borderTopColor: '4mm ridge #ffffff',
+        borderBottomColor: '4mm ridge #C83E3E',
+
+        backgroundImage: "linear-gradient(#FFFFFF, rgba(200, 62, 62, 0.72))",
+        navbarBackground: "rgba(200, 62, 62, 0.72)"
+    },
+    Sun: {
+        foreground: "#9298C0",
+        background: "#555F83",
+
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
+
+        textEventColor: 'black',
+
+        borderLeftColor: '4mm ridge #9298C0',
+        borderRightColor: '4mm ridge #555F83',
+        borderTopColor: '4mm ridge #555F83',
+        borderBottomColor: '4mm ridge #9298C0',
+
+        backgroundImage: "linear-gradient(rgba(146, 152, 192, .8), rgba(85, 95, 131, .6))",
+        navbarBackground: "#9298C0"
+    },
+    Internet: {
+        foreground: "#8d8bff",
+        background: "#ddd6ff",
+
+        textColor: '#6666fa',
+        textNavbarColor: '#6666fa',
+        textFooterColor: '#6666fa',
+        headerColor: '#08087c',
+
+        textEventColor: 'black',
+
+        borderLeftColor: '4mm ridge #9E73D3',
+        borderRightColor: '4mm ridge #5C8BAD',
+        borderTopColor: '4mm ridge #9E73D3',
+        borderBottomColor: '4mm ridge #5C8BAD',
+
+        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
+        navbarBackground: "#8d8bff"
+    },
+    InformationAge: {
+        foreground: "#ffffff",
+        background: "#1CA8CF",
+
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
+
+        textEventColor: '000000',
+
+        borderLeftColor: '4mm ridge #ffffff',
+        borderRightColor: '4mm ridge #1CA8CF',
+        borderTopColor: '4mm ridge #1CA8CF',
+        borderBottomColor: '4mm ridge #ffffff',
+
+        backgroundImage: "linear-gradient(#ffffff, rgba(28, 168, 207, .8))",
+        navbarBackground: "#1CA8CF"
     },
     ImaginationAge: {
         foreground: "#8d8bff",

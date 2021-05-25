@@ -2,8 +2,6 @@ import React, {Component} from "react";
 import stylesFocus from "./EventFocus.module.css";
 import {themes} from '../context/themeStyles'
 
-
-//TODO make the background extend the filter
 class EventFocus extends Component {
     renderCitations() {
         if (this.props.citations[0] == null || this.props.citations[0] === "") {

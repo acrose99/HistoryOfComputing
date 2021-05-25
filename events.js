@@ -4,256 +4,135 @@ export const events = [
         "Body": "Led by John Von Neumann, an influential American mathematician and scientist, the Mark was used to calculate the Manhattan Project (which developed the Atomic Bomb) and fulfilled the goals of Charles Babbage's analytical engine. Besides it's technical relevance, it's important for the contributions of Grace Hopper, who was one of it's main programmers.  ",
         "Filters": ["EarlyComputing", "Women"],
         "Year": 1944,
-        "Location": "Cambridge",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline1.jpg",
     },
     {
+        "Filters": ["ModernComputing"],
         "Title": "MIT LINC is introduced",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
 
         "Year": 1962,
-        "Location": "Cambridge, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline2.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"        ]
     },
     {
-
+        "Filters": ["ModernComputing"],
         "Title": "Hewlett Packard introduces the HP-35",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
         "Year": 1972,
-        "Location": "Palo, Alto, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline3.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
 
-        "Filters": ["IBM"],
+        "Filters": ["IBM", "ModernComputing"],
         "Title": "IBM Scamp is created",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
 
         "Year": 1973,
-        "Location": "LOS Gatos, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/TimeLine4.png",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
         "Filters": ["Apple", "ModernComputing"],
         "Title": "Apple is founded",
         "Body": "Steve Wozniak and Steve Jobs founded Apple in Job's parent's garage in Los Altos, California.  They first created the Apple 1 microcomputer in their garage. It was later replaced by the more revolutionary Apple II.",
         "Year": "1976",
-        "Citations": [
-            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/AppleLogo.png",
     },
 
     {
-
-        "Filters": ["Apple"],
+        "Filters": ["Apple", "ModernComputing"],
         "Title": "Apple II introduced",
         "Body": "The Apple II, the sequel to the Apple I, is a computer that was promised to work 'right out of the box'. The Apple II was a hit and may have started the personal computer (PC) revolution.",
 
         "Year": 1977,
-        "Location": "Cupertino, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline5.png",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
 
-        "Filters": ["Sun"],
-        "Title": "Menlo Park, US",
+        "Filters": ["Sun", "ModernComputing"],
+        "Title": "Sun Microsytems is Founded",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
 
         "Year": 1982,
-        "Location": "Cupertino, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
-        "TimelineImage": "/images/event-images/Timeline6.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
+        "Citations": [],
+        "TimelineImage": "/images/event-images/Timeline6.png",
     },
     {
 
-        "Filters": ["Commodore"],
+        "Filters": ["ModernComputing"],
         "Title": "Commodore introduces the Commodore 64",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
         "Year": 1982,
-        "Location": "Toronto, Canada",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline7.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
-
-        "Filters": ["Apple"],
+        "Filters": ["Apple", "ModernComputing"],
         "Title": "Apple launches the Macintosh",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
         "Year": 1984,
-        "Location": "Cupertino, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline8.png",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
 
-        "Filters": ["Apple"],
+        "Filters": ["Apple", "ModernComputing"],
         "Title": "Steve Jobs and NeXt create the NeXTcube",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
 
         "Year": 1988,
-        "Location": "Palo Alto, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline9.png",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
-        "Filters": ["Apple"],
+        "Filters": ["Apple", "InformationAge"],
         "Title": "Apple Newton is released",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
+        "Body": "The Apple Newton, a personal digital assistant (PDA) was technologically innovative but issues with it's handwriting recognition caused to be a commercial failure. In the current day, it's considered a predecessor to the iPhone because of it's Touch Screen and the start of applications like 'Notes' and other third party integrations.",
 
         "Year": 1993,
-        "Location": "Cupertino Alto, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline10.png",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
 
-        "Filters": ["IBM"],
+        "Filters": ["IBM", "InformationAge"],
         "Title": "IBM releases the ThinkPad 701C",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
         "Year": 1996,
-        "Location": "Palo Alto, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline11.png",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
 
-        "Filters": ["Apple"],
+        "Filters": ["Apple", "InformationAge"],
         "Title": "The Apple iPad is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
         "Year": 2010,
-        "Location": "Cupertino, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline13.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
-
+        "Filters": ["InformationAge"],
         "Title": "Raspberry Pi Model B is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
         "Year": 2012,
-        "Location": "Germany",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline14.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
 
-        "Filters": ["Microsoft"],
+        "Filters": ["Microsoft", "InformationAge"],
         "Title": "Windows 10 is released",
         "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
 
         "Year": 2015,
-        "Location": "Redmond, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
+        "Citations": [],
         "TimelineImage": "/images/event-images/Timeline15.png",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
-    },
-    {
-
-        "Filters": ["Apple"],
-        "Title": "The Apple Pro Stand is released",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
-        "Year": 2015,
-        "Location": "Redmond, US",
-        "Citations": [
-            "Tim Apple",
-            "Michael Fassbender"
-        ],
-        "TimelineImage": "/images/event-images/TImeline16.jpg",
-        "EventFocusImages": [
-            "/images/event-images/EventFocus1.jpg",
-            "/images/event-images/EventFocus2.jpg"             ]
     },
     {
 
@@ -327,11 +206,9 @@ export const events = [
         "TimelineImage": "/images/event-images/ZeroArabia.png",
     },
     {
-
         "Filters": ["Medieval"],
         "Title": "Western Europe begins to adopt Arabic mathematics",
         "Body": "Through cultural assimilation brought upon by the Islamic conquest of Spain, Western Europe begins to adopt basic mathematical principles, including the concept of decimals, zeroes, and more. ",
-
         "Year": 900,
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
@@ -343,7 +220,6 @@ export const events = [
         "Filters": ["Medieval"],
         "Title": "Fibonacci Sequence invented",
         "Body": "Leonardo of Pisa aka Fibonacci, a mathematician, publishes Liver Abaci, where many algebraic techniques are shown for the first time, including the Fibonacci sequence, which would later be an essential concept in Computer Science. ",
-
         "Year": 1202,
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
@@ -519,7 +395,7 @@ export const events = [
     },
     {
 
-        "Filters": ["Space", "ModernComputing", "POC"],
+        "Filters": ["Women", "ModernComputing", "POC"],
         "Title": "Katherine Johnson calculates Project Mercury",
         "Body": "Katherine Johnson calculates the trajectory of flight of Alan Shepard, the first American in Space.",
 
@@ -613,7 +489,7 @@ export const events = [
         "TimelineImage": "/images/event-images/IBM601.jpg",
     },
     {
-        "Filters": ["HP", "EarlyComputing"],
+        "Filters": ["EarlyComputing"],
         "Body": "Hewlett-Packard (known as HP), is founded by the American businessmen Bill Hewlett and Dave Packard to create calculators. ",
         "Title": "Hewlett Packard Founded",
         "Year": "1938",
@@ -673,7 +549,7 @@ export const events = [
         "TimelineImage": "/images/event-images/asWeMayThink.jpg",
     },
     {
-        "Filters": ["EarlyComputing", "Bell Labs"],
+        "Filters": ["EarlyComputing", "ATAT"],
         "Title": "Invention of the Transistor",
         "Body": "The transistor, a semiconductor device that can amplify and/or switch electronic signals is invented at Bell Labs. Transistors are now basic building blocks of electronics.",
         "Year": "1947",
@@ -1162,12 +1038,12 @@ export const events = [
         "Body": "In 1991, the Soviet Union formerly dissolved and the Cold War ended. Although not a part of computer science, it decreased the amount of Military interest in funding Computer Science, which was responsible for things like ARPANET, Ada, COBOL, and much more innovations. ",
         "Year": "1991",
         "Citations": [
-            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers:fJav the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
         "TimelineImage": "/images/event-images/ColdWar.jpg",
     },
     {
-        "Filters": ["InformationAge"],
+        "Filters": ["InformationAge", "Languages", "Culture"],
         "Title": "The World Wide Web is launched",
         "Body": "Tim Berners-Lee ushered in the Information Age by creating the World Wide Web, commonly called the Internet. The World Wide Web consists of a web server, using the Hypertext Transfer Protocol (HTTP) and Uniform Resource Locator (URL) for a web server, and a web client by using HyperText Markup Language (HTML). ",
         "Year": "1991",
@@ -1185,6 +1061,177 @@ export const events = [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
         "TimelineImage": "/images/event-images/1990Ad.jpg",
+    },
+    {
+        "Filters": ["InformationAge"],
+        "Title": "PalmPilot PDA released",
+        "Body": "Palm Inc, an American company now owned by HP, created the PalmPilot, a PDA device that used a touchscreen and had its own operating system, PalmOS. Palm Inc would later be a key pioneer in the smartphone industry, as the PalmPilot was a precursor. ",
+        "Year": "1997",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/PalmPilot.jpg",
+    },
+    {
+        "Filters": ["InformationAge"],
+        "Title": "Mosaic: The first Graphical Web Browser",
+        "Body": "NSCA Mosaic, the first graphical web browser, was released for free in 1993. Mosaic was developed at the University of Illinois at Urbana Champaign (UIUC). Although it technically was the not first web browser, it was the first web browser to support images, personal computers, and the internet protocol, hence why we are calling it the first graphical web browser. It was instrumental in popularizing the World Wide Web, but it lost its relevance to Netscape later on.",
+        "Year": "1993",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 20a07. "
+        ],
+        "TimelineImage": "/images/event-images/Mosaic.png",
+    },
+    {
+        "Filters": ["InformationAge"],
+        "Title": "Netscape Navigator is released",
+        "Body": "American businessmen Marc Andreessen and Jim Clark released Netscape Navigator in late 1994.  By creating features (some of which will be discussed on their own) like on the fly loading of web pages, cookies, JavaScript, and more, Netscape quickly became the dominant web browser for the mid 1990s, until Microsoft's bundling of Internet Explorer started the 'Browser Wars', which Microsoft eventually won by dominating the market. During this period, Netscape was eventually bought out by AOL in 1999, but as AOL and Netscape both failed for differing reasons, Netscape was spun off to become the Mozilla Foundation, who now develops Mozilla Firefox. ",
+        "Year": "1994",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/NetScape.png",
+    },
+    {
+        "Filters": ["InformationAge"],
+        "Title": "AOL is 'founded', although it previously existed under a different name.",
+        "Body": "AOL (America Online) was 'founded' in 1989 when the company known as Quantum Computer Services changed their name to AOL in 1989. However, Quantum Computer Services had launched an online service for the Commodore 64 and 128, and other mainstream computers previously. AOL would later become the predominant internet service provider until the early 2000's.",
+        "Year": "1989",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/AOLogo.png",
+    },
+    {
+        "Filters": ["Sun", "Languages", "InformationAge"],
+        "Title": "Java is released by Sun Microsystems",
+        "Body": "Sun Microsystems released an object-oriented programming (OOP) language called Java in 1995. Crucially, Java was platform independent and it's OOP practices such as inheritance allowed for adaptable and easy to write code. Java thus became a widely used language, specifically for client-web server applications (Servlet), desktop applications,  and even games.",
+        "Year": "1995",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Java.png",
+    },
+    {
+        "Filters": ["Oracle", "ModernComputing"],
+        "Title": "Oracle is founded: First product is the Oracle Database",
+        "Body": "Oracle was founded in 1977 by American Businessmen Larry Ellison, Bob Miner, and Ed Oates, as Ellison served as CEO. Their first product was the Oracle Database, a database management system that is now a industry standard. The first version released was a Relational Database Management System that had a basic SQL implementation.  ",
+        "Year": "1977",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/OracleLogo.png",
+    },
+    {
+        "Filters": ["InformationAge"],
+        "Title": "Amazon is founded",
+        "Body": "Jeff Bezos, an American businessman starts Amazon.com with a large loan from his parents. Originally, Amazon was a small online store where users could buy books.",
+        "Year": "1995",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/amazonLogo.jpg",
+    },
+    {
+        "Filters": ["Culture", "InformationAge"],
+        "Title": "Toy Story: The first full CGI Film",
+        "Body": "Toy Story, the first full-length computer generated feature film, is released by Pixar Animation Studios, a company headed by Steve Jobs.",
+        "Year": "1995",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/pixar.png",
+    },
+    {
+        "Filters": ["Languages", "InformationAge"],
+        "Title": "Javascript released by Netscape",
+        "Body": "JavaScript, a language with no real relation to Java, was made by Brendan Eich while working at Netscape. JavaScript is a scripting language for the web that interacts with the Documental Object Model generated by HTML. JavaScript was immediately a huge success and is now sued by over 97% of all websites (including this one!). More recently, Javascript frameworks have come to dominate the frontend code of websites (what the user sees) such as React.JS (what this site uses), and runtime environments (how a language is executed) like Node.JS have exploded in popularity.",
+        "Year": "1995",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+    {
+        "Filters": ["Languages", "InformationAge"],
+        "Title": "CSS proposed by Hakon Wium Lie",
+        "Body": "Hakon Wium Lie, who was working with Tim Berners-Lee, proposed Cascading Style Sheets (CSS) in 1994. CSS is a markup language that styles the Document Object Model generated by the HTML, thereby changing what the user sees when looking at a site. CSS was adopted by Netscape in 1996 and is now used in almost all sites.",
+        "Year": "1994",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+    {
+        "Filters": ["Microsoft", "InformationAge"],
+        "Title": "Microsoft releases Windows 95",
+        "Body": "Windows 1995 was released by Microsoft in 1995, as the title suggests. Most importantly. Windows 95 merged MS-DOS with the Windows GUI, but it also introduced mainstream changes such as adding a taskbar, a start button, notifications, and major GUI improvements. Windows 95 became the most used OS by 1998. Additionally, Windows 95 shipped with Internet Explorer, which started the 'Browser Wars' between Netscape and Microsoft",
+        "Year": "1995",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+    {
+        "Filters": ["Culture", "IBM", "InformationAge", "AI"],
+        "Title": "IBM's Deep Blue defeats World Chess Champion Garry Kasparov",
+        "Body": "IBM's Deep Blue, a supercomputer trained to play chess using AI, beat world champion Garry Kasparov. Technically, it signified that powerful computers could beat Humans at tasks previously considered impossible (I.E things like Chess where long term planning and tactics could beat out brute force calculations). Culturally, Deep Blue was a phenomenon as the world was both scared and excited about the possibility/power of AI and computers in general. ",
+        "Year": "1997",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. ",
+            "“Deep Blue | Down the Rabbit Hole.” YouTube, YouTube, 30 Oct. 2020, www.youtube.com/watch?v=HwF229U2ba8. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+    {
+        "Filters": ["Microsoft", "InformationAge"],
+        "Title": "Microsoft releases Windows 98",
+        "Body": "Windows 1998 was the successor to the popular Windows 95. Windows 98 was a 'tuneup' to Windows 95, as it added web integration, by using HTML for apps like Outlook and the File System. It also coincided with the rising marketshare of Internet Explorer, which began to 'beat' Netscape in marketshare.",
+        "Year": "1998",
+        "Citations": [
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+    {
+        "Filters": ["Culture", "InformationAge"],
+        "Title": "Napster: File Sharing creates controversy ",
+        "Body": "Napster, a file trading service on the Internet especially used to share music, was founded. Napster led to a debate over intellectual property and copyright law. Napster was forced by the government to shut down its network, in lawsuit filed by the RIAA. Napster then, unsuccessfully, tried to pivot to a subscription model. Ultimately, Napster's brand is (of 2020) owned by Rhapsody.",
+        "Year": "1999",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+    {
+        "Filters": ["Culture", "InformationAge"],
+        "Title": "Y2K: A successful disappointment ",
+        "Body": "Y2k, also known as the Y2K bug or the Y2K problem, was both the anticipated and actual problems associated with the storage and formatting of dates in computer programs before the new millennium. In the years/months/weeks/days before 1/1/2000, various companies, governments, and organizations fixed their systems to address the problem. Thus, the anticipated failures did not live up to the societal hype perpetrated by non-technical citizens. ",
+        "Year": "2000",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+    {
+        "Filters": ["Culture", "InformationAge"],
+        "Title": "The dot-com bubble begins",
+        "Body": "The dot-com bubble began around 1995 when organizations and individuals began to pump money into companies who had a focus on the internet, such as Pets.com and Flooz.com. By the time the bubble 'burst', Nasdaq had rose by 400%.",
+        "Year": "1995",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
+    },
+
+    {
+        "Filters": ["Culture", "InformationAge"],
+        "Title": "Dot-com bubble bursts",
+        "Body": " In 2000, the dot-com bubble finally burst, as the general stock market index collapsed by 80%, and general tech companies lost the majority of their market cap. Although many of the companies were actually sound investments, the oversaturation of the market combined with the unsound investments led to a general collapse. Although many companies went bankrupt, some of the more sound companies, like Amazon.com, Yahoo, etc. lost huge amounts of money, but survived.",
+        "Year": "2000",
+        "Citations": [
+            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
+        ],
+        "TimelineImage": "/images/event-images/Pascaline.png",
     },
 
 ]
