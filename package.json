@@ -1,6 +1,6 @@
 {
   "name": "historyofcomputing",
-  "version": "0.1.0",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -30,6 +30,7 @@
     "@iconify/icons-ant-design": "^1.1.0",
     "@iconify/icons-bx": "^1.1.0",
     "@iconify/icons-cib": "^1.1.0",
+    "@iconify/icons-clarity": "^1.1.1",
     "@iconify/icons-codicon": "^1.1.15",
     "@iconify/icons-file-icons": "^1.1.4",
     "@iconify/icons-grommet-icons": "^1.1.1",

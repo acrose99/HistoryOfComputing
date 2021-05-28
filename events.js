@@ -8,33 +8,6 @@ export const events = [
         "TimelineImage": "/images/event-images/Timeline1.jpg",
     },
     {
-        "Filters": ["ModernComputing"],
-        "Title": "MIT LINC is introduced",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
-        "Year": 1962,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/Timeline2.jpg",
-    },
-    {
-        "Filters": ["ModernComputing"],
-        "Title": "Hewlett Packard introduces the HP-35",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-        "Year": 1972,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/Timeline3.jpg",
-    },
-    {
-
-        "Filters": ["IBM", "ModernComputing"],
-        "Title": "IBM Scamp is created",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
-        "Year": 1973,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/TimeLine4.png",
-    },
-    {
         "Filters": ["Apple", "ModernComputing"],
         "Title": "Apple is founded",
         "Body": "Steve Wozniak and Steve Jobs founded Apple in Job's parent's garage in Los Altos, California.  They first created the Apple 1 microcomputer in their garage. It was later replaced by the more revolutionary Apple II.",
@@ -56,20 +29,10 @@ export const events = [
 
         "Filters": ["Sun", "ModernComputing"],
         "Title": "Sun Microsytems is Founded",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
+        "Body": "Sun Microsystems, Inc. (Sun for short) was an American technology company that sold computers, computer components, software, and information technology services and created the Java programming language, the Solaris operating system, ZFS, the Network File System (NFS), and SPARC microprocessors. Sun contributed significantly to the evolution of several key computing technologies, among them Unix, RISC processors, thin client computing, and virtualized computing.",
         "Year": 1982,
         "Citations": [],
         "TimelineImage": "/images/event-images/Timeline6.png",
-    },
-    {
-
-        "Filters": ["ModernComputing"],
-        "Title": "Commodore introduces the Commodore 64",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-        "Year": 1982,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/Timeline7.jpg",
     },
     {
         "Filters": ["Apple", "ModernComputing"],
@@ -78,16 +41,6 @@ export const events = [
         "Year": 1984,
         "Citations": [],
         "TimelineImage": "/images/event-images/Timeline8.png",
-    },
-    {
-
-        "Filters": ["Apple", "ModernComputing"],
-        "Title": "Steve Jobs and NeXt create the NeXTcube",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
-        "Year": 1988,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/Timeline9.png",
     },
     {
         "Filters": ["Apple", "InformationAge"],
@@ -100,39 +53,12 @@ export const events = [
     },
     {
 
-        "Filters": ["IBM", "InformationAge"],
-        "Title": "IBM releases the ThinkPad 701C",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-        "Year": 1996,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/Timeline11.png",
-    },
-    {
-
         "Filters": ["Apple", "InformationAge"],
         "Title": "The Apple iPad is released",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
+        "Body": "The iPad combines many of the popular capabilities of the iPhone, such as built-in high-definition camera, access to the iTunes Store, and audio-video capabilities, but with a nine-inch screen and without the phone. ",
         "Year": 2010,
-        "Citations": [],
+        "Citations": ["Computer History Museum"],
         "TimelineImage": "/images/event-images/Timeline13.jpg",
-    },
-    {
-        "Filters": ["InformationAge"],
-        "Title": "Raspberry Pi Model B is released",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-        "Year": 2012,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/Timeline14.jpg",
-    },
-    {
-
-        "Filters": ["Microsoft", "InformationAge"],
-        "Title": "Windows 10 is released",
-        "Body": "The Macintosh 128K, originally released as the Apple Macintosh, is the original Apple Macintosh personal computer.\n\nIts beige case consisted of a 9 in 23 cm CRT monitor and came with a keyboard and mouse. A handle built into the top of the case made it easier for the computer to be lifted and carried.\n\n It had an initial selling price of $2,495 equivalent to $6,140 in 2019.\n  \nThe Macintosh was introduced by the now-famous $370,000 equivalent to $910,541 in 2019 television commercial directed by Ridley Scott, ‘1984’, that aired on CBS during the third quarter of Super Bowl XVIII on January 22, 1984.\n\nSales of the Macintosh were strong from its initial release on January 24, 1984, and reached 70,000 units on May 3, 1984. Upon the release of its successor, the Macintosh 512K, it was rebranded as the Macintosh 128K. The computer is Model M0001.",
-
-        "Year": 2015,
-        "Citations": [],
-        "TimelineImage": "/images/event-images/Timeline15.png",
     },
     {
 
@@ -1150,7 +1076,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/JS.png",
     },
     {
         "Filters": ["Languages", "InformationAge"],
@@ -1160,7 +1086,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/CSS.png",
     },
     {
         "Filters": ["Microsoft", "InformationAge"],
@@ -1170,7 +1096,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/Win95.png",
     },
     {
         "Filters": ["Culture", "IBM", "InformationAge", "AI"],
@@ -1181,7 +1107,7 @@ export const events = [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. ",
             "“Deep Blue | Down the Rabbit Hole.” YouTube, YouTube, 30 Oct. 2020, www.youtube.com/watch?v=HwF229U2ba8. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/DeepBlue.jpg",
     },
     {
         "Filters": ["Microsoft", "InformationAge"],
@@ -1190,7 +1116,7 @@ export const events = [
         "Year": "1998",
         "Citations": [
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/windows98.png",
     },
     {
         "Filters": ["Culture", "InformationAge"],
@@ -1200,7 +1126,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/napster.png",
     },
     {
         "Filters": ["Culture", "InformationAge"],
@@ -1210,7 +1136,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/y2k.png",
     },
     {
         "Filters": ["Culture", "InformationAge"],
@@ -1220,7 +1146,7 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/pets1.jpg",
     },
 
     {
@@ -1231,8 +1157,144 @@ export const events = [
         "Citations": [
             "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
         ],
-        "TimelineImage": "/images/event-images/Pascaline.png",
+        "TimelineImage": "/images/event-images/pets2.jpg",
     },
+    {
+        "Filters": ["Microsoft", "InformationAge"],
+        "Title": "Windows Me is released",
+        "Body": "Microsoft released the Windows Me, which was widely considered a failure due to stability issues and lack of new features.",
+        "Year": "2000",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/WindowsMe.png",
+    },
+    {
+        "Filters": ["Apple", "InformationAge"],
+        "Title": "Apple develops the macOS",
+        "Body": "Apple released macOS (first version was Mac OS X), it was based on the NeXt computer's OS (NeXTSTEP) which was Unix like. This gave Mac users a much needed stability and performance improvements.",
+        "Year": "2001",
+        "Citations": [],
 
+        "TimelineImage": "/images/event-images/finder.png",
+    },
+    {
+        "Filters": ["Gaming", "Microsoft", 'InformationAge'],
+        "Title": "Microsoft launches the Xbox Video Game Console series",
+        "Body": "Microsoft finally entered the gaming market with the Xbox, which competed with Sony's Playstation and Nintendo products like the Gamecube. The Xbox's online gaming capabilities and blockbuster games like Halo 2 made it moderately successful (although it lost money because the manufacturing price was higher then the retail price). It was later succeeded by the Xbox 360, Xbox One, and Xbox Series X.",
+        "Year": "2001",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/xbox.png",
+    },
+    {
+        "Filters": ["InformationAge", "Google"],
+        "Title": "Google is founded",
+        "Body": "Google, founded by American businessmen Larry Page and Sergey Brin, was founded in 1998. The two wanted to create a search engine that had a better algorithm for directing users to websites they want to visit, by using an algorithm called 'PageRank'.  It was a better user experience then the other search engines and quickly became the largest search engine. Using this power Google became a major player in the tech field. ",
+        "Year": "1998",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/google.png",
+    },
+    {
+        "Filters": ["Microsoft", "InformationAge"],
+        "Title": "Windows XP is released",
+        "Body": "Microsoft released Windows XP, XP was widely adopted by the industry and remained the largest operating system for around a decade. ",
+        "Year": "2001",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/windowsXP.png",
+    },
+    {
+        "Filters": ["Apple", "Software", "InformationAge"],
+        "Title": "iTunes is released for the Mac",
+        "Body": "Apple released iTunes in 2001. At first, iTunes was only supported on the Mac and was a song player and song management tool. iTunes transformed the music industry by changing music distribution to a digital market. It was later adopted by the iPhone, iPad, and other Apple products.",
+        "Year": "2001",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/itunes.png",
+    },
+    {
+        "Filters": ["Culture", "InformationAge"],
+        "Title": "MySpace is founded",
+        "Body": "MySpace was NOT the first social media network, but for several years, MySpace was the most popular social media site until it was eclipsed by Facebook.  Regardless of this, it helped defined social networking user through features like custom profile pages. ",
+        "Year": "2003",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/myspace.png",
+    },
+    {
+        "Filters": ["InformationAge", "Facebook", "Culture"],
+        "Title": "Facebook is founded",
+        "Body": "Facebook, a social media service originally made for Harvard and later all college students, was founded by Mark Zuckerberg. Facebook later became the most popular website, is now one of the biggest companies in the world, as it owns other valuable entities like Instagram, WhatsApp, and more.",
+        "Year": "2004",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/facebook.png",
+    },
+    {
+        "Filters": ["InformationAge", "Culture", ],
+        "Title": "Twitter is founded",
+        "Body": "Twitter, a social networking network used by hundreds of millions now, was formed in 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams (all of whom met at the American company Odeo). ",
+        "Year": "2006",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/twitter.png",
+    },
+    {
+        "Filters": ["InformationAge", "Amazon"],
+        "Title": "Amazon launches Amazon Web Services: Starting the widespread usage of the cloud",
+        "Body": "Amazon Web Services (AWS) was launched in 2006 by Amazon. AWS was one of the first cloud-based (computing power and infrastructure being held by a third party, virtually) tech services.  Specific services included (and still do) EC2 and S3, which automated computing power and file storage, respectively. Other companies like Microsoft and Google soon followed suit.",
+        "Year": "2006",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/aws.png",
+    },
+    {
+        "Filters": ["AI", "InformationAge"],
+        "Title": "Checkers is solved by an AI",
+        "Body": "In the article 'Checkers is Solved', published by the journal Science, researchers showed that perfect play by AI always led to a draw.",
+        "Year": "2007",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/checkers.jpg",
+    },
+    {
+        "Filters": ["Apple", "InformationAge"],
+        "Title": "Apple releases the iPhone",
+        "Body": "In 2007, Apple launched the iPhone, which combined the power of the iPod with the power of a touchscreen, cellphone, web browsers. The iPhone was a massive success, and touchscreen phones quickly destroyed the marketshare of other types of cell phones. The iPhone is still the most popular cellphone by brand (Androids are more popular by OS).",
+        "Year": "2007",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/iphone.png",
+    },
+    {
+        "Filters": ["InformationAge", "Culture"],
+        "Title": "Netflix pivots to streaming",
+        "Body": "Netflix, which until 2007 was a DVD rental business, shifted to streaming movies and shows in 2007, which was instrumental in the popularization of media streaming.  ",
+        "Year": "2007",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/netflix.png",
+    },
+    {
+        "Filters": ["InformationAge", "Culture", "Google"],
+        "Title": "Youtube is founded",
+        "Body": "Youtube was founded by Chard Hurley, Steve Chen, and Jawed Karim in 2005. Youtube allowed users to upload and share videos with ease, with additional features like subscriptions, comments, and more. Youtube grew quickly and was bought by Google in 2006. ",
+        "Year": "2005",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/youtube.png",
+    },
+    {
+        "Filters": ["InformationAge"],
+        "Title": "Bitcoin is invented",
+        "Body": "Satoshi Nakamoto (a pseudonym), introduces Bitcoin to a cryptography mailing list. It initially is only known to an extremely small subsection of the population.Bitcoin and other cryptocurrencies have slowly but steadily become more and more relevant.",
+        "Year": "2008",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/bitcoin.png",
+    },
+    {
+        "Filters": ["AI", "Culture", "InformationAge"],
+        "Title": "AI composes album",
+        "Body": "Emily Howell, an AI program that composes music based on feedback from users, 'released' its first album, 'From Darkness, Light'. ",
+        "Year": "2010",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/howell.jpg",
+    },
+    {
+        "Filters": ["Apple", "InformationAge"],
+        "Title": "Steve Jobs dies",
+        "Body": "Steve Jobs, the founder of Apple, died in 2011, Jobs transformed music, movies, computers, phones, and the world. ",
+        "Year": "2011",
+        "Citations": [],
+        "TimelineImage": "/images/event-images/steve.jpg",
+    },
 ]
 

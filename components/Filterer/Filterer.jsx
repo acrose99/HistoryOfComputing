@@ -5,6 +5,8 @@ import appleFilled from '@iconify/icons-ant-design/apple-filled';
 import caretRightOutlined from '@iconify/icons-ant-design/caret-right-outlined';
 import bxlMicrosoft from '@iconify/icons-bx/bxl-microsoft';
 import crossIcon from '@iconify/icons-la/cross';
+import internetOfThingsLine from '@iconify/icons-clarity/internet-of-things-line';
+
 import abjadArabic from '@iconify/icons-mdi/abjad-arabic';
 import microscopeIcon from '@iconify/icons-carbon/microscope';
 import RangeInput from "./RangeInput";
@@ -147,19 +149,19 @@ class Filterer extends Component {
 
                         <FilterCategory category="Eras"
                             //"Information Age", "'Imagination Age'"
-                                        filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing", "Modern Computing"]}
-                                        icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory, cardFileBox, imacIcon]}
+                                        filters={["Ancient", "Medieval", "Enlightenment", "Industrial", "Early Computing", "Modern Computing", "Information Age"]}
+                                        icons={[abjadArabic, crossIcon, microscopeIcon, bxsFactory, cardFileBox, imacIcon, internetOfThingsLine]}
                                         toggleTheme={this.props.toggleTheme}
                                         handleFilterChange={this.props.handleFilterChange}/>
 
                         <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft", "AT&T", "Oracle", "Sun"]}
-                                        icons={[appleFilled, bxlMicrosoft, ibmIcon, attIcon, oracleIcon, solarisIcon]}
+                                        icons={[appleFilled, ibmIcon, bxlMicrosoft, attIcon, oracleIcon, solarisIcon]}
                                         toggleTheme={this.props.toggleTheme}
                                         handleFilterChange={this.props.handleFilterChange}/>
-                        <FilterCategory category="Representation" filters={["Women", "LGBTQ", "POC"]}
-                                        icons={[womenLine, rainbowFlag, globeIcon]}
-                                        toggleTheme={this.props.toggleTheme}
-                                        handleFilterChange={this.props.handleFilterChange}/>
+                        {/*<FilterCategory category="Representation" filters={["Women", "LGBTQ", "POC"]}*/}
+                        {/*                icons={[womenLine, rainbowFlag, globeIcon]}*/}
+                        {/*                toggleTheme={this.props.toggleTheme}*/}
+                        {/*                handleFilterChange={this.props.handleFilterChange}/>*/}
 
                     </div>
                 </div>

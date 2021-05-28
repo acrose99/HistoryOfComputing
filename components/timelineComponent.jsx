@@ -128,6 +128,9 @@ function TimelineComponent(props) {
                 <div style={{textAlign: "center"}}>
                     <h2 style={{color: theme.headerColor}} className={styles.TimelineIntro}>Important events that summarize the History of Computing.</h2>
                     <p style={{color: theme.headerColor}}>Scroll through the filters/categories above to read specific events, or if you're dedicated, read through all of them chronologically here!</p>
+                    <p style={{color: theme.headerColor}}>Please note that this by no means a complete summary, as such would be impossible. I believe that this is one of the more complete and non biased timelines of computing history, on the web, but nevertheless theres only so much one person can do.  </p>
+                    <a style={{textDecoration: "underline"}} href="https://github.com/acrose99/HistoryOfComputing/blob/master/ToDO.MD"> I'm still updating the timeline!  Click here to see what still needs to be added.</a>
+                    <p>Finally, I decided to stop the timeline at 2011, a decade earlier, since the legacy of most things after that is still ongoing, and could change.</p>
                 </div>
             )
         }
@@ -151,6 +154,9 @@ function TimelineComponent(props) {
         }
         else if (props.filter === 'EarlyComputing') {
             return (<h2 style={{color: theme.headerColor}}  className={styles.TimelineIntro}>Important events that summarize the History of Early Computing.</h2>)
+        }
+        else if (props.filter === 'InformationAge') {
+            return (<h2 style={{color: theme.headerColor}}  className={styles.TimelineIntro}>Important events that summarize the History of the Information Age.</h2>)
         }
         else if (props.filter === 'Women') {
             return (
@@ -189,6 +195,7 @@ function TimelineComponent(props) {
             <div style={{marginBottom: '100px'}}/>
             {/*hack way to fix the timeline separator*/}
             <Events />
+            <h1 style={{textAlign: "center"}}>and counting...</h1>
             <div style={{marginBottom: '200px', marginTop: '50px'}}/>
             {/*hack way to fix the timeline separator*/}
             <Footer/>

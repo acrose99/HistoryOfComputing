@@ -395,42 +395,43 @@ export const themes = {
         navbarBackground: "#8d8bff"
     },
     Hardware: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "#04AC52",
+        background: "#4D4D4D",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
 
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
+        borderLeftColor: '4mm ridge #4D4D4D',
+        borderRightColor: '4mm ridge #04AC52',
+        borderTopColor: '4mm ridge #04AC52',
+        borderBottomColor: '4mm ridge #4D4D4D',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        backgroundImage: "linear-gradient(rgb(77, 77, 77, 0.5), rgb(77, 77, 77, 0.8))",
+        navbarBackground: "#4D4D4D"
     },
     Software: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "#8E2DE2",
+        background: "rgba(142, 45, 226, 0.61)",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
+
 
         textEventColor: 'black',
 
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
+        borderLeftColor: '4mm ridge #4A00E0',
+        borderRightColor: '4mm ridge #8E2DE2',
+        borderTopColor: '4mm ridge #8E2DE2',
+        borderBottomColor: '4mm ridge #4A00E0',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        backgroundImage: "linear-gradient(rgba(142, 45, 226, 0.61), rgba(74, 0, 224, 0.67)",
+        navbarBackground: "rgba(142, 45, 226, 0.61)"
     },
     // Space: {
     //     foreground: "#8d8bff",
@@ -491,98 +492,59 @@ export const themes = {
     // },
     Gaming: {
         foreground: "#8d8bff",
-        background: "#ddd6ff",
+        background: "#66753b",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
 
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
+        borderLeftColor: '4mm ridge #8E8C8D',
+        borderRightColor: '4mm ridge #BACF78',
+        borderTopColor: '4mm ridge #BACF78',
+        borderBottomColor: '4mm ridge #8E8C8D',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        backgroundImage: "linear-gradient(rgba(186, 207, 120, 1), rgba(142, 140, 141, 1))",
+        navbarBackground: "#66753b"
     },
     Languages: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "#000000",
+        background: "#9b9b9b",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
 
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
+        borderLeftColor: '4mm ridge #9b9b9b',
+        borderRightColor: '4mm ridge #9b9b9b',
+        borderTopColor: '4mm ridge #9b9b9b',
+        borderBottomColor: '4mm ridge #9b9b9b',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        navbarBackground: "#9b9b9b"
     },
     AI: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "#1E4656",
+        background: "#BACAD0",
 
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
-
-        textEventColor: 'black',
-
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
-
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
-    },
-    GeneralEntertainment: { /* TODO GET RID OF, OR CHANGE TO MISC? */
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
-
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'black',
 
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
+        borderLeftColor: '4mm ridge #BACAD0',
+        borderRightColor: '4mm ridge #1E4656',
+        borderTopColor: '4mm ridge #1E4656',
+        borderBottomColor: '4mm ridge #BACAD0',
 
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
-    },
-    VR: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
-
-        textColor: '#6666fa',
-        textNavbarColor: '#6666fa',
-        textFooterColor: '#6666fa',
-        headerColor: '#08087c',
-
-        textEventColor: 'black',
-
-        borderLeftColor: '4mm ridge #9E73D3',
-        borderRightColor: '4mm ridge #5C8BAD',
-        borderTopColor: '4mm ridge #9E73D3',
-        borderBottomColor: '4mm ridge #5C8BAD',
-
-        backgroundImage: "linear-gradient(rgb(69, 104, 220, .25), rgb(176, 106, 179, .5))",
-        navbarBackground: "#8d8bff"
+        backgroundImage: "linear-gradient(rgba(186, 202, 208, .8), rgba(30, 70, 86, 0.6))",
+        navbarBackground: "#94a2a4"
     },
     Culture: {
         foreground: "rgba(150, 120, 141, 0.8)",
