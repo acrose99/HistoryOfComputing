@@ -17,7 +17,7 @@ class BigNavbar extends Component{
                     <h2 style={{color: this.props.theme.headerColor}} className={styles.title}>The History Of Computing</h2>
                 </div>
                 <div  className={styles.bottomContainer}>
-                    <Link className={styles.menuItem} href="/Timeline">
+                    <Link className={styles.menuItem} href="/Timeline/all">
                      <a style={{color: this.props.textNavbarColor}} className={styles.menuItemLink}>The Timeline</a>
                     </Link>
                     <Link className={styles.menuItem} href="/Team">
