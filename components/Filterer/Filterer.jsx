@@ -154,10 +154,17 @@ class Filterer extends Component {
                                         toggleTheme={this.props.toggleTheme}
                                         handleFilterChange={this.props.handleFilterChange}/>
 
-                        <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft", "AT&T", "Oracle", "Sun"]}
-                                        icons={[appleFilled, ibmIcon, bxlMicrosoft, attIcon, oracleIcon, solarisIcon]}
+                        <FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft", "AT&T"]}
+                                        icons={[appleFilled, ibmIcon, bxlMicrosoft, attIcon]}
                                         toggleTheme={this.props.toggleTheme}
                                         handleFilterChange={this.props.handleFilterChange}/>
+
+                        {/* TODO: ADD Events */}
+
+                        {/*<FilterCategory category="Companies" filters={["Apple", "IBM", "Microsoft", "AT&T", "Oracle", "Sun"]}*/}
+                        {/*                icons={[appleFilled, ibmIcon, bxlMicrosoft, attIcon, oracleIcon, solarisIcon]}*/}
+                        {/*                toggleTheme={this.props.toggleTheme}*/}
+                        {/*                handleFilterChange={this.props.handleFilterChange}/>*/}
                         {/*<FilterCategory category="Representation" filters={["Women", "LGBTQ", "POC"]}*/}
                         {/*                icons={[womenLine, rainbowFlag, globeIcon]}*/}
                         {/*                toggleTheme={this.props.toggleTheme}*/}

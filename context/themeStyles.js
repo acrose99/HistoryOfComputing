@@ -146,10 +146,10 @@ export const themes = {
         foreground: "#1e130c",
         background: "#9a8478",
 
-        textColor: '#ffffff',
-        textNavbarColor: '#ffffff',
-        textFooterColor: '#ffffff',
-        headerColor: '#ffffff',
+        textColor: '#000000',
+        textNavbarColor: '#000000',
+        textFooterColor: '#000000',
+        headerColor: '#000000',
 
         textEventColor: 'white',
 
@@ -491,7 +491,7 @@ export const themes = {
     //     navbarBackground: "#8d8bff"
     // },
     Gaming: {
-        foreground: "#8d8bff",
+        foreground: "#b8b8b8",
         background: "#66753b",
 
         textColor: '#000000',

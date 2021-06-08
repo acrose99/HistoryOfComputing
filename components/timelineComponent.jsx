@@ -95,15 +95,11 @@ function TimelineComponent(props) {
         }
 
         componentDidMount() {
-            this.updateMenuStyle();
             window.addEventListener("resize", this.updateMenuStyle.bind(this));
         }
         componentWillUnmount() {
             // tutorial said i should unmount the event listener so here it is
             window.removeEventListener("resize", this.updateMenuStyle.bind(this));
-            this.setState({
-                events: null
-            })
         }
 
 
