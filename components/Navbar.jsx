@@ -66,7 +66,7 @@ class MiniNavbar extends Component{
                 <div id="toggleContainer" className={styles.toggleContainer}>
                     <div className={styles.miniMenuItemDiv}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
-                        <Link href="/Timeline">
+                        <Link href="/Timeline/all">
                             <a style={{color: this.props.theme.headerColor, background: this.props.theme.background}}  className={styles.miniMenuItem}>The Timeline</a>
                         </Link>
                     </div>

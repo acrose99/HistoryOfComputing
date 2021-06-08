@@ -52,7 +52,7 @@ class Home extends Component {
                 <h1 style={{fontSize: '38px'}} className={styles.heroHeader}>
                   Welcome to The History of Computing!
                 </h1>
-                  <Link href="/Timeline">
+                  <Link href="/Timeline/all">
                       <a className={styles.homeBtn}> See the timeline</a>
                   </Link>
               </div>

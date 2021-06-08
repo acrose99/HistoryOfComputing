@@ -5,8 +5,6 @@
         flex-direction: column;
         align-self: center;
         width: 320px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin: 35% 0;
     }
     .showEvent {
@@ -21,8 +19,6 @@
         flex-direction: column;
         align-self: center;
         width: 335px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin: 35% 0;
     }
 
@@ -48,8 +44,6 @@
         flex-direction: column;
         align-self: center;
         width: 375px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin: 35% 0;
     }
     .eventBody {
@@ -73,8 +67,6 @@
         flex-direction: column;
         align-self: center;
         width: 500px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin: 0 auto;
         box-shadow: 16px 16px 0 -2px rgba(0,0,0,.6);
     }
@@ -102,8 +94,6 @@
         flex-direction: column;
         align-self: center;
         width: 650px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin: 0 auto;
         box-shadow: 16px 16px 0 -2px rgba(0,0,0,.6);
     }
@@ -140,52 +130,38 @@
 .showEventWrapper {
     position: static; /* fixed position so that it will be put there irregarldess of where in the timeline user is at*/
     margin-bottom: 10%;
-    left: 0;
-    right: 0;
-}
-
-.showEventWrapper--open {
-    transform: translateY(0%);
+    border-left: 2px solid rgb(78, 76, 76);
+    background: #ffffff;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
 }
 
 .eventCitation {
-    bottom: 0;
-    background: #ffffff;
-    height: auto;
-    padding: 0.5% 1%;
     float: right;
-}
-.eventBody {
-    display: flex;
-    padding: 3% 5%;
-    background: #ffffff;
-    border: 2px solid rgb(78, 76, 76);
-    border-radius: 0 0 0.5em 0.5em;
-
-    box-sizing: border-box;
-}
-
-.showEvent {
-    display: block;
-    margin: 15px auto;
-}
-.eventHeader {
-    border: solid rgb(78, 76, 76);
-
-    border-width: 2px 2px 0 2px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 0.5em 0.5em 0em 0em;
-}
-
-.eventCitationText {
     line-height: 18px;
     font-size: 1rem;
 }
+
+.eventEras {
+    font-size: 1rem;
+    align-self: end;
+    margin-right: 10px;
+}
+
+.eventBody {
+    display: block;
+    padding: 3% 5%;
+    background: #ffffff;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+.eventHeader {
+    display: flex;
+    border-top: 2px solid rgb(78, 76, 76);
+    border-radius: 1.2em 1.2em 0 0;
+    flex-direction: row;
+    justify-content: center;
+}
 .eventBodyText {
     font-size: 1rem;
-    float: right;
 }
 
 .eventHeaderText {
@@ -232,4 +208,17 @@
 .xButton {
     width: 30px;
     height: 30px;
+}
+
+.eventEraContainer {
+    border-top: 4px ridge rgb(78, 76, 76);
+    border-left: 4px ridge rgb(78, 76, 76);
+    border-radius: 2em 0 .2em 0;
+    width: 15%;
+    padding: 2%;
+    margin: 0 85%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    z-index: 0;
 }
