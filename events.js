@@ -75,8 +75,8 @@ export const events = [
     {
 
         "Filters": ["Ancient"],
-        "Title": "The Abacus, a precursor to modern calculators and computers was invented around 2,700 B.C. The Abacus uses rows of beads (or other items) to represent digits, the beads are manipulated to represent a simple operation.",
-        "Body": "Placeholder",
+        "Body": "The Abacus, a precursor to modern calculators and computers was invented around 2,700 B.C. The Abacus uses rows of beads (or other items) to represent digits, the beads are manipulated to represent a simple operation.",
+        "Title": "Abacus is invented",
 
         "Year": -2700,
         "Citations": [
