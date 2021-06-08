@@ -808,7 +808,7 @@ export const events = [
         "TimelineImage": "/images/event-images/TIME1982.jpg",
     },
     {
-        "Filters": ["Adobe", "ModernComputing"],
+        "Filters": ["ModernComputing"],
         "Title": "Adobe Systems founded",
         "Body": "Adobe Systems is founded by American businessmen John Warnock and Charles Geschke in 1982. Their first product was the Postscript printing language.",
         "Year": "1982",
@@ -899,7 +899,7 @@ export const events = [
         "TimelineImage": "/images/event-images/Windows1.png",
     },
     {
-        "Filters": ["Adobe", "Software", "ModernComputing"],
+        "Filters": ["Software", "ModernComputing"],
         "Title": "Aldus PageMaker 1.0 is released",
         "Body": "The Aldus Corporation released PageMaker in 1985, a widely successful program that started the desktop publishing industry, by allowing users to make different types of documents. It was later bought out by Adobe Systems.",
         "Year": "1985",

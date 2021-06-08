@@ -5,6 +5,7 @@ import { Icon, InlineIcon } from '@iconify/react';
 import EraIcon from "./eraIcon";
 import crossCircle from '@iconify/icons-gridicons/cross-circle';
 import styles from "./EventFocus.module.css";
+import CategoryIcons from "./CategoryIcons";
 
 class EventFocus extends Component {
     renderCitations() {
@@ -37,6 +38,27 @@ class EventFocus extends Component {
             <p className={stylesFocus.eventBodyText}>
                 {this.props.body}
             </p>
+        )
+    }
+    renderCategories(filters) {
+        let categories = [];
+        for (let i = 0; i < filters.length; i++) {
+            /* TODO: Redo when i add events */
+            if (filters[i].includes("Computing") === false && filters[i] !== "Ancient" && filters[i] !== "Internet"  && filters[i] !== "Medieval" && filters[i] !== "Enlightenment" && filters[i] !== "Industrial" && filters[i] !== "InformationAge" && filters[i] !== "Women" && filters[i] !== "LGBTQ" && filters[i] !== "POC") {
+                categories.push(filters[i]);
+            }
+        }
+        if (categories.length === 0) {
+            return (
+                <div style={{background: this.props.theme.background}} className={styles.eventCategoriesContainer}>
+                    <p style={{fontSize: "10px"}}> No categories specified</p>
+                </div>
+            )
+        }
+        return (
+            <div style={{background: this.props.theme.background}} className={styles.eventCategoriesContainer}>
+                <CategoryIcons icons={categories} />
+            </div>
         )
     }
     renderEra(filters) {
@@ -91,7 +113,9 @@ class EventFocus extends Component {
         }
         else {
             return (
-                    <p style={{margin: "right"}} className={stylesFocus.eventEras}>Era: Unspecified</p>
+                <div style={{background: this.props.theme.background}} className={styles.eventEraContainer}>
+                    <p style={{fontSize: "10px"}}>Era: N/A</p>
+                </div>
             )
         }
     }
@@ -167,9 +191,11 @@ class EventFocus extends Component {
                             {this.renderBodyText()}
                             {this.renderCitations()}
                 </div>
+                <div style={{display: "flex", width: "100%"}}>
+                    {this.renderCategories(this.props.filters)}
                     {this.renderEra(this.props.filters)}
-            </div>
-        );
+                </div>
+            </div>);
     }
 }
 export default EventFocus

@@ -20,8 +20,8 @@ addIcon('InformationAge', internetOfThingsLine);
 
 export default function EraIcon(props) {
     return (
-                <a title={"Era:" + props.icon} href={"/Timeline/" + props.icon} >
-                    <Icon icon={props.icon} width={'2em'} height={'2em'} />
+                <a style={{display: "flex", alignSelf: "center"}} title={"Era:" + props.icon} href={"/Timeline/" + props.icon} >
+                    <Icon icon={props.icon} width={'1.8em'} height={'1.8em'} />
                 </a>
         )
 }

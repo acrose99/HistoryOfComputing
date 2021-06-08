@@ -215,10 +215,19 @@
     border-left: 4px ridge rgb(78, 76, 76);
     border-radius: 2em 0 .2em 0;
     width: 15%;
+    margin-left: 60%;
     padding: 2%;
-    margin: 0 85%;
     display: flex;
     position: relative;
     justify-content: center;
-    z-index: 0;
+}
+.eventCategoriesContainer {
+    border-top: 4px ridge rgb(78, 76, 76);
+    border-left: 4px ridge rgb(78, 76, 76);
+    border-right: 4px ridge rgb(78, 76, 76);
+    border-radius: 1em 1em 0 1.3em;
+    width: 25%;
+    padding: 2%;
+    justify-content: center;
+    display: flex;
 }
