@@ -10,6 +10,17 @@ import {themes} from '../context/themeStyles';
 
 import Footer from "./Footer";
 
+function useDocumentTitle(title) {
+    useEffect(() => {
+        if (title !== '') {
+            document.title = "History of Computing: " + title;
+        }
+        else document.title = "History of Computing"
+    })
+}
+
+
+
 function TimelineComponent(props) {
     const theme = useContext(ThemeStyles);
     useDocumentTitle(props.filter);
@@ -198,14 +209,4 @@ function TimelineComponent(props) {
         </div>
     )
 }
-
-function useDocumentTitle(title) {
-    useEffect(() => {
-        if (title !== '') {
-            document.title = "History of Computing: " + title;
-        }
-        else document.title = "History of Computing"
-    })
-}
-
 export default TimelineComponent;

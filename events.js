@@ -87,29 +87,6 @@ export const events = [
     {
 
         "Filters": ["Ancient"],
-        "Title": "First alphabetic language appears",
-        "Body": "Placeholder",
-
-        "Year": -1500,
-        "Citations": [
-            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
-        ],
-        "TimelineImage": "/images/event-images/PhonencianAlphabet.png",
-    },
-    {
-        "Filters": ["Ancient"],
-        "Title": "First known use of zero by Babylonian scholars",
-        "Body": "Placeholder",
-
-        "Year": -300,
-        "Citations": [
-            "Swedin, Eric Gottfrid, and David L. Ferro. Computers: the Life Story of a Technology. Johns Hopkins University Press, 2007. "
-        ],
-        "TimelineImage": "/images/event-images/BabylonianZero.png",
-    },
-    {
-
-        "Filters": ["Ancient"],
         "Title": "A decimal system is in invented in India",
         "Body": "Derived from Brahmi An ancient Indian writing script notation, this nine-digit system was the first mathematic system to introduce importance to the position of numbers, which created the decimal system, which is essential for math and computation.",
 
