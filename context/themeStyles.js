@@ -11,8 +11,8 @@ import React from "react";
 */
 export const themes = {
     Vaporwave: {
-        foreground: "#8d8bff",
-        background: "#ddd6ff",
+        foreground: "#3f51b5",
+        background: "#8d8bff",
 
         textColor: '#000000',
         textNavbarColor: '#6666fa',
