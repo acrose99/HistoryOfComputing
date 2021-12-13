@@ -1,21 +1,9 @@
 # History of Computing
 
-## Team
-### Current:
-* #### [Lead: Alex Rose](https://acrose99.github.io/PersonalWebsite/)
-* #### [Programmer: Alex Crane](https://github.com/alexandratcrane)
-
-### Past:
-* #### [Programmer: Jack Narowski](https://github.com/JackNarowski)
 
 ## History of this Project:
 
-### This was a research project for the [Software Systems Laboratory at Loyola University Chicago (SSL)](https://ssl.cs.luc.edu/). I (Alex Rose) have severed my relationship with SSL because of unprofessional conduct from Professor George K. Thiruvathukal, who was my advisor.
-
-For transparency's sake, the fork we maintained is [here](https://github.com/SoftwareSystemsLaboratory/HistoryOfComputing), but I no longer am involved within SSL, nor do I expect them to update the fork without me.
-
-I am now finishing the content of this site myself.
-
+### This was a research project for the [Software Systems Laboratory at Loyola University Chicago (SSL)](https://ssl.cs.luc.edu/).
 ### As part of the agreement to work with SSL, I was a [Mulcahy Fellow](https://www.luc.edu/cas/academics_mulcahyscholarship.shtml)
 
 For transparency's sake, the abstract of that fellowship, which is now complete, is below:
