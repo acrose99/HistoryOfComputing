@@ -56,7 +56,7 @@ function Home() {
           </h1>
         </div>
         <div className="flex self-center text-slate-900 justify-center rounded-xl items-center h-20 w-64 bg-gradient-to-br bg-indigo-300 mb-24 transition-all duration-500 hover:bg-indigo-500 hover:text-white">
-          <Link href="/timeline">
+          <Link href="/Timeline/all">
             <a className="text-2xl ">Go to the Timeline</a>
           </Link>
         </div>
