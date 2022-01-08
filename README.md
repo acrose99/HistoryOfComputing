@@ -1,6 +1,11 @@
 # History of Computing
 
 
+## Warning
+
+The UI for this site is absolutely terrible but the content and context/state logic is actually quite good! If you stumble upon this, check it out in about a week and it should look much better
+
+
 ## History of this Project:
 
 ### This was a research project for the [Software Systems Laboratory at Loyola University Chicago (SSL)](https://ssl.cs.luc.edu/).
