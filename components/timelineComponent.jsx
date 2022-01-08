@@ -118,7 +118,7 @@ function TimelineComponent(props) {
             if (this.state.mobile === false) {
                 return (
                     <div>
-                        <div className={styles.eventsDesktop}>  {this.state.events}  </div>
+                        <div className="flex flex-col justify-center min-h-screen space-y-12">  {this.state.events}  </div>
                     </div>
                 )
             }

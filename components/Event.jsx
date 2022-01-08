@@ -255,26 +255,66 @@ class DesktopEvent extends Component {
     const backdrop = this.findBackdrop(this.props.filter);
     if (this.state.showEventInFocus === false) {
       return (
-          <div className={styles.Event}>
-            <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', color: this.props.theme.textEventColor, backgroundImage: this.state.background,borderTop: this.state.borderTop,
-              borderBottom: this.state.borderBottom, borderRight: this.state.borderRight, borderLeft: this.state.borderLeft}}
-                 onMouseEnter={() => this.onMouseEnterEvent(`url(${backdrop})`, this.props.theme, this.props.filter, this.props.filters)}
-                 onMouseLeave={() => this.onMouseLeaveEvent()}
-                 onClick={() => this.onClick()}
-                 id={this.props.id} className={styles.EventContainer}>
-              <div className={styles.EventBody}>
-                <p style={{color: this.props.theme.textEventColor}} className={styles.EventDate}>
+        <div className="flex justify-center">
+          <div
+            style={{
+              boxShadow: "-3px 12px 6px 8px rgba(0,0,0,.6)",
+              color: this.props.theme.textEventColor,
+              backgroundImage: this.state.background,
+              borderTop: this.state.borderTop,
+              borderBottom: this.state.borderBottom,
+              borderRight: this.state.borderRight,
+              borderLeft: this.state.borderLeft,
+            }}
+            onMouseEnter={() =>
+              this.onMouseEnterEvent(
+                `url(${backdrop})`,
+                this.props.theme,
+                this.props.filter,
+                this.props.filters
+              )
+            }
+            onMouseLeave={() => this.onMouseLeaveEvent()}
+            onClick={() => this.onClick()}
+            id={this.props.id}
+            className="relative flex text-center mb-32 transition-all duration-1000 w-2/6 h-4/6 bg-cover"
+          >
+            <div className="flex flex-row mx-4 my-4 items-center space-x-24">
+              <div className="flex flex-col w-3/6">
+                <p
+                  style={{ color: this.props.theme.textEventColor }}
+                  className="inline-block text-base mr-2"
+                >
                   {this.props.year}
                   {/*<span style={{color: theme.textEventColor}} className="Event-location">{this.props.location}.</span>*/}
                 </p>
-                <h3 style={{color: this.props.theme.textEventColor}} className={styles.EventTitle}>{this.props.title}</h3>
+                <h3
+                  style={{ color: this.props.theme.textEventColor }}
+                  className="relative z-10"
+                >
+                  {this.props.title}
+                </h3>
               </div>
-              <figure className={styles.EventFigure}>
-                <Image className={styles.EventImage} width={200} height={200} layout="fixed"   src={this.props.TimelineImage + '?webp'} alt="Error" />
-              </figure>
+              <div className="">
+                <Image
+                  className={styles.EventImage}
+                  width={200}
+                  height={200}
+                  objectFit="contain"
+                  src={this.props.TimelineImage + "?webp"}
+                  alt="Error"
+                />
+              </div>
             </div>
           </div>
-      )
+          {/* timeline seperator */}
+          <div className="absolute border-opacity-100 -mt-8 h-4/6 border-4 overflow-hidden"
+          style={{
+            borderColor: 'rgba(0,0,0,.6)',
+          }}
+          />
+        </div>
+      );
     }
     else return (
         <EventFocus filter={this.props.filter} filters={this.props.filters} theme={this.props.theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}

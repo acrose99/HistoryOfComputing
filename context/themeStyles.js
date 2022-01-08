@@ -1,4 +1,5 @@
 import React from "react";
+const colors = require('tailwindcss/colors')
 /*
     Background: For actual Elements (I.E Footer, Navbar, Events, etc)
     Foreground: For actual Elements (I.E Footer, Navbar, Events, etc).
@@ -50,7 +51,7 @@ export const themes = {
     },
     IBM: {
         foreground: "black",
-        background: 'rgba(0, 117, 183, 0.6)',
+        background: colors.blue[300],
 
         textColor: '#000000',
         textNavbarColor: '#000000',

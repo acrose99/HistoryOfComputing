@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-
+import 'normalize.css'
 import React from 'react'
 import App from 'next/app'
 import {ThemeStyles, themes} from '../context/themeStyles';
