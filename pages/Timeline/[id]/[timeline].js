@@ -5,7 +5,6 @@ import Filterer from "../../../components/Filterer/Filterer";
 import Navbar from "../../../components/Navbar";
 import {ThemeStyles} from "../../../context/themeStyles";
 import {themes} from '../../../context/themeStyles';
-import ShowAll from "../../../components/Filterer/ShowAll";
 
 //TODO figure out changing the theme based on the id
 
@@ -13,12 +12,13 @@ export default function Timeline(props) {
     const router = useRouter()
     const { id } = router.query
     let theme = useContext(ThemeStyles);
+    console.log(props)
     if (id !== 'all') {
         return (
-            <div style={{backgroundImage: theme.backgroundImage}} id="TimelineContainer">
+            <div>
                 <Navbar/>
-                <Filterer toggleTheme={props.toggleTheme} timelineFilter={props.timelineFilter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear}/>
-                <ShowAll onClickFiltererType={props.showAll}/>
+                <Filterer toggleTheme={props.toggleTheme} filter={props.filter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear}/>
+                {/* <ShowAll onClickFiltererType={props.showAll}/> */}
                 <TimelineComponent  filter={id}/>
             </div>
         )
@@ -27,9 +27,9 @@ export default function Timeline(props) {
     {
         return (
             <div>
-                <div style={{backgroundImage: theme.backgroundImage}} id="TimelineContainer">
+                <div>
                     <Navbar/>
-                    <Filterer toggleTheme={props.toggleTheme} timelineFilter={props.timelineFilter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear}/>
+                    <Filterer toggleTheme={props.toggleTheme} filter={props.filter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear}/>
                     <TimelineComponent filter={id}/>
                 </div>
             </div>

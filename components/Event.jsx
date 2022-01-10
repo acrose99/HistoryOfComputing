@@ -1,391 +1,354 @@
-import React, {Component} from "react";
-import styles from './Event.module.css'
-import stylesFocus from './EventFocus.module.css'
+import React, { useState, useContext } from "react";
+import styles from "./Event.module.css";
+import stylesFocus from "./EventFocus.module.css";
 
-import {ThemeStyles} from '../context/themeStyles'
-import {themes} from '../context/themeStyles';
+import { ThemeStyles } from "../context/themeStyles";
+import { themes } from "../context/themeStyles";
 
-import Image from 'next/image'
+import Image from "next/image";
 import EventFocus from "./EventFocus";
-
-class MobileEvent extends Component {
-  constructor(props) {
-    super(props);
-    const border = 'none';
-    this.state = {
-      showEventInFocus: false,
-      backdrop: null,
-      background: 'none',
-      borderLeft: border,
-      borderRight: border,
-      borderTop: border,
-      borderBottom: border
-    }
-    this.showEventInFocus = this.hideEventInFocus.bind(this);
-    this.hideEventInFocus = this.hideEventInFocus.bind(this);
-    this.onClick = this.onClick.bind(this);
+import { animated, useSpring } from "react-spring";
+function DesktopEvent(props) {
+  const [showEventInFocus, setShowEventInFocus] = useState(false);
+  const [background, setBackground] = useState("none");
+  const [borderLeft, setBorderLeft] = useState("none");
+  const [borderRight, setBorderRight] = useState("none");
+  const [borderTop, setBorderTop] = useState("none");
+  const [borderBottom, setBorderBottom] = useState("none");
+  function changeEventBorder(style) {
+    setBorderLeft(style.borderLeft);
+    setBorderRight(style.borderRight);
+    setBorderTop(style.borderTop);
+    setBorderBottom(style.borderBottom);
+    // setState({
+    //   border: style,
+    // });
   }
-  showEventInFocus() {
-    this.setState({
-      showEventInFocus: true
-    })
+  function changeEventBackground(style) {
+    setBackground(style.background);
+    // setState({
+    //   backgroundImage: style,
+    // });
   }
-  hideEventInFocus() {
-    this.setState({
-      showEventInFocus: false
-    })
+  function hideEventInFocus() {
+    setShowEventInFocus(false);
+    // setState({
+    //   showEventInFocus: false,
+    // });
   }
-  onClick() {
-    // console.log(showEventInFocus);
-    if (this.state.showEventInFocus === true) {
-      this.hideEventInFocus();
+  function onClick() {
+    const border = "none";
+    if (showEventInFocus === true) {
+      setShowEventInFocus(false);
+      setBorderBottom(border);
+      setBorderLeft(border);
+      setBorderRight(border);
+      setBorderTop(border);
+      // setState({
+      //   background: "none",
+      //   borderLeft: border,
+      //   borderRight: border,
+      //   borderTop: border,
+      //   borderBottom: border,
+      //   showEventInFocus: false,
+      // });
     } else {
-      this.showEventInFocus();
+      setShowEventInFocus(true);
+      setBorderBottom(border);
+      setBorderLeft(border);
+      setBorderRight(border);
+      setBorderTop(border);
+      // setState({
+      //   background: "none",
+      //   borderLeft: border,
+      //   borderRight: border,
+      //   borderTop: border,
+      //   borderBottom: border,
+      //   showEventInFocus: true,
+      // });
     }
   }
-  render() {
-    if (this.state.showEventInFocus === false) {
-      return (
-          <div>
-            {/*hack way to fix the timeline separator*/}
-            <div style={{boxShadow: '-3px 12px 6px 8px rgba(0,0,0,.6)', borderTop: '4px solid #d9cfbe'}} onClick={() => this.setState({showEventInFocus: !this.state.showEventInFocus})} className={styles.MobileEventContainer}>
-              <h2 style={{color: this.props.theme.textEventColor}} className={styles.MobileEventDate}>{this.props.year}</h2>
-              <div  className={styles.MobileEventBody}>
-                <h3 style={{color: this.props.theme.textEventColor}} className={styles.MobileEventTitle}>{this.props.title}</h3>
-              </div>
-              <div>
-                <figure className={styles.MobileEventFigure}>
-                  <Image className={styles.MobileEventImage} width={150} height={150} src={this.props.TimelineImage} alt="Error"/>
-                </figure>
-              </div>
-            </div>
-          </div>
-      )
-    }
-    else return (
-        <EventFocus  filter={this.props.filter} filters={this.props.filters} theme={this.props.theme} showEventInFocus={this.state.showEventInFocus}
-                    hideEventInFocus={this.hideEventInFocus}
-                    header={this.props.title}
-                    body={this.props.body}
-                    citations={[this.props.citations[0], this.props.citations[1]]}
-        />
-    );
-  }
-}
-
-class DesktopEvent extends Component {
-  constructor(props) {
-    super(props);
-    const border = 'none';
-    this.state = {
-      showEventInFocus: false,
-      backdrop: null,
-      background: 'none',
-      borderLeft: border,
-      borderRight: border,
-      borderTop: border,
-      borderBottom: border
-    }
-    this.hideEventInFocus = this.hideEventInFocus.bind(this);
-    this.onClick = this.onClick.bind(this);
-    this.changeEventBackground = this.changeEventBackground.bind(this);
-    this.onMouseEnterEvent = this.onMouseEnterEvent.bind(this);
-    this.onMouseLeaveEvent = this.onMouseLeaveEvent.bind(this, border);
-  }
-  changeEventBorder(style) {
-    console.log(this.state.background);
-    this.setState({
-      border: style
-    })
-
-  }
-  changeEventBackground(style) {
-    this.setState({
-      backgroundImage: style
-    })
-  }
-  hideEventInFocus() {
-    this.setState({
-      showEventInFocus: false
-    })
-  }
-  // const updateEventFalse = () => setShowEvent(true);
-  //
-  // let i = 0;
-  onClick() {
-    const border = 'none';
-    if (this.state.showEventInFocus === true) {
-      this.setState({
-        background: 'none',
-        borderLeft: border,
-        borderRight: border,
-        borderTop: border,
-        borderBottom: border,
-        showEventInFocus: false
-      })
-    }
-    else {
-      this.setState({
-        background: 'none',
-        borderLeft: border,
-        borderRight: border,
-        borderTop: border,
-        borderBottom: border,
-        showEventInFocus: true
-      })
-    }
-  }
-  onMouseEnterEvent(style, theme, filter, filters) {
-    if (filter === '') {
+  function onMouseEnterEvent(style, theme, filter, filters) {
+    if (filter === "") {
       /* Theres no great way to do this but figured the natural tendency is to place the most important filter first */
-      if (filters !== undefined && themes[filters[0]] !== undefined && themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
-          && themes[filters[0]].borderTopColor !== undefined
-          && themes[filters[0]].borderBottomColor !== undefined) {
-        this.setState({
-          background: style,
-          borderLeft:  themes[filters[0]].borderLeftColor,
-          borderRight: themes[filters[0]].borderRightColor,
-          borderTop: themes[filters[0]].borderTopColor,
-          borderBottom: themes[filters[0]].borderBottomColor,
-        })
-      }
-      else this.setState({
-        background: style,
-        borderLeft:  theme.borderLeftColor,
-        borderRight: theme.borderRightColor,
-        borderTop: theme.borderTopColor,
-        borderBottom: theme.borderBottomColor,
-      })
-    }
-    else if (filter !== undefined && filter !== null) {
-      if (themes[filter] !== undefined && themes[filter].borderLeftColor !== undefined && themes[filter].borderRightColor !== undefined
-          && themes[filter].borderTopColor !== undefined
-          && themes[filter].borderBottomColor !== undefined) {
-        this.setState({
-          background: style,
-          borderLeft:  themes[filter].borderLeftColor,
-          borderRight: themes[filter].borderRightColor,
-          borderTop: themes[filter].borderTopColor,
-          borderBottom: themes[filter].borderBottomColor,
-        })
-      }
-      else if (themes[filters[0]] !== undefined) {
+      if (
+        filters !== undefined &&
+        themes[filters[0]] !== undefined &&
+        themes[filters[0]].borderLeftColor !== undefined &&
+        themes[filters[0]].borderRightColor !== undefined &&
+        themes[filters[0]].borderTopColor !== undefined &&
+        themes[filters[0]].borderBottomColor !== undefined
+      ) {
+        setBorderLeft(themes[filters[0]].borderLeftColor);
+        setBorderRight(themes[filters[0]].borderRightColor);
+        setBorderTop(themes[filters[0]].borderTopColor);
+        setBorderBottom(themes[filters[0]].borderBottomColor);
+        setBackground(style);
+        // setState({
+        //   background: style,
+        //   borderLeft: themes[filters[0]].borderLeftColor,
+        //   borderRight: themes[filters[0]].borderRightColor,
+        //   borderTop: themes[filters[0]].borderTopColor,
+        //   borderBottom: themes[filters[0]].borderBottomColor,
+        // });
+      } else setBackground(style);
+      setBorderLeft(theme.borderLeftColor);
+      setBorderRight(theme.borderRightColor);
+      setBorderTop(theme.borderTopColor);
+      setBorderBottom(theme.borderBottomColor);
+      // setState({
+      //   background: style,
+      //   borderLeft: theme.borderLeftColor,
+      //   borderRight: theme.borderRightColor,
+      //   borderTop: theme.borderTopColor,
+      //   borderBottom: theme.borderBottomColor,
+      // });
+    } else if (filter !== undefined && filter !== null) {
+      if (
+        themes[filter] !== undefined &&
+        themes[filter].borderLeftColor !== undefined &&
+        themes[filter].borderRightColor !== undefined &&
+        themes[filter].borderTopColor !== undefined &&
+        themes[filter].borderBottomColor !== undefined
+      ) {
+        setBackground(style);
+        setBorderLeft(theme.borderLeftColor);
+        setBorderRight(theme.borderRightColor);
+        setBorderTop(theme.borderTopColor);
+        setBorderBottom(theme.borderBottomColor);
+        // setState({
+        //   background: style,
+        //   borderLeft: themes[filter].borderLeftColor,
+        //   borderRight: themes[filter].borderRightColor,
+        //   borderTop: themes[filter].borderTopColor,
+        //   borderBottom: themes[filter].borderBottomColor,
+        // });
+      } else if (themes[filters[0]] !== undefined) {
         /* Theres no great way to do this but figured the natural tendency is to place the most important filter first */
-        if (themes[filters[0]].borderLeftColor !== undefined && themes[filters[0]].borderRightColor !== undefined
-            && themes[filters[0]].borderTopColor !== undefined
-            && themes[filters[0]].borderBottomColor !== undefined) {
-          this.setState({
-            background: style,
-            borderLeft:  themes[filters[0]].borderLeftColor,
-            borderRight: themes[filters[0]].borderRightColor,
-            borderTop: themes[filters[0]].borderTopColor,
-            borderBottom: themes[filters[0]].borderBottomColor,
-          })
+        if (
+          themes[filters[0]].borderLeftColor !== undefined &&
+          themes[filters[0]].borderRightColor !== undefined &&
+          themes[filters[0]].borderTopColor !== undefined &&
+          themes[filters[0]].borderBottomColor !== undefined
+        ) {
+          setBackground(style);
+          setBorderLeft(themes[filters[0]].borderLeftColor);
+          setBorderRight(themes[filters[0]].borderRightColor);
+          setBorderTop(themes[filters[0]].borderTopColor);
+          setBorderBottom(themes[filters[0]].borderBottomColor);
+          // setState({
+          //   background: style,
+          //   borderLeft: themes[filters[0]].borderLeftColor,
+          //   borderRight: themes[filters[0]].borderRightColor,
+          //   borderTop: themes[filters[0]].borderTopColor,
+          //   borderBottom: themes[filters[0]].borderBottomColor,
+          // });
         }
-      }
-      else this.setState({
-          background: style,
-          borderLeft:  theme.borderLeftColor,
-          borderRight: theme.borderRightColor,
-          borderTop: theme.borderTopColor,
-          borderBottom: theme.borderBottomColor,
-        })
-    }
-    else {
-      this.setState({
-        background: style,
-        borderLeft:  theme.borderLeftColor,
-        borderRight: theme.borderRightColor,
-        borderTop: theme.borderTopColor,
-        borderBottom: theme.borderBottomColor,
-      })
+      } else setBackground(style);
+      setBorderLeft(theme.borderLeftColor);
+      setBorderRight(theme.borderRightColor);
+      setBorderTop(theme.borderTopColor);
+      setBorderBottom(theme.borderBottomColor);
+      // setState({
+      //   background: style,
+      //   borderLeft: theme.borderLeftColor,
+      //   borderRight: theme.borderRightColor,
+      //   borderTop: theme.borderTopColor,
+      //   borderBottom: theme.borderBottomColor,
+      // });
+    } else {
+      setBackground(style);
+      setBorderLeft(theme.borderLeftColor);
+      setBorderRight(theme.borderRightColor);
+      setBorderTop(theme.borderTopColor);
+      setBorderBottom(theme.borderBottomColor);
+      // setState({
+      //   background: style,
+      //   borderLeft: theme.borderLeftColor,
+      //   borderRight: theme.borderRightColor,
+      //   borderTop: theme.borderTopColor,
+      //   borderBottom: theme.borderBottomColor,
+      // });
     }
   }
-  onMouseLeaveEvent() {
-    const border = 'none';
-    this.setState({
-      background: 'none',
-      borderLeft: border,
-      borderRight: border,
-      borderTop: border,
-      borderBottom: border,
-    })
+  function onMouseLeaveEvent() {
+    const border = "none";
+    setBackground("none");
+    setBorderLeft(border);
+    setBorderRight(border);
+    setBorderTop(border);
+    setBorderBottom(border);
+    // setState({
+    //   background: "none",
+    //   borderLeft: border,
+    //   borderRight: border,
+    //   borderTop: border,
+    //   borderBottom: border,
+    // });
   }
-  importAll(r) {
+  function importAll(r) {
     let images = {};
     // Copied this from stack overflow and I aint screwing with it
     // eslint-disable-next-line
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item);
+    r.keys().map((item, index) => {
+      images[item.replace("./", "")] = r(item);
     });
     return images;
   }
-  findBackdrop(filter) {
+  function findBackdrop(filter) {
     /* Place in order of heirachy for user to see.
         For example:
         I've placed the LGBTQ backdrop higher then Early Computing,
         because I want to emphasize representation more then era */
-    const backdrops = '/images/Backdrops/'
-    if (filter !== 'all' && filter !== '' && filter !== undefined && filter !== null) {
-        if (backdrops + filter + 'Backdrop.svg' !== undefined) {
-          return backdrops + filter + 'Backdrop.svg'
-        }
-        else {
-          return backdrops + 'Backdrop.svg'
-        }
-    }
-    else if (this.props.filters !== undefined && this.props.filters !== null) {
-      if (themes[this.props.filters[0]] !== undefined) {
-        if (backdrops + this.props.filters[0]+ 'Backdrop.svg' !== undefined) {
-          return backdrops + this.props.filters[0]+ 'Backdrop.svg'
-        }
-        else {
-          return backdrops + 'Backdrop.svg'
-        }
+    const backdrops = "/images/Backdrops/";
+    if (
+      filter !== "all" &&
+      filter !== "" &&
+      filter !== undefined &&
+      filter !== null
+    ) {
+      if (backdrops + filter + "Backdrop.svg" !== undefined) {
+        return backdrops + filter + "Backdrop.svg";
+      } else {
+        return backdrops + "Backdrop.svg";
       }
-      else {
-        return backdrops + 'Backdrop.svg'
+    } else if (props.filters !== undefined && props.filters !== null) {
+      if (themes[props.filters[0]] !== undefined) {
+        if (backdrops + props.filters[0] + "Backdrop.svg" !== undefined) {
+          return backdrops + props.filters[0] + "Backdrop.svg";
+        } else {
+          return backdrops + "Backdrop.svg";
+        }
+      } else {
+        return backdrops + "Backdrop.svg";
       }
-    }
-    else {
-      return backdrops+ 'Backdrop.svg'
+    } else {
+      return backdrops + "Backdrop.svg";
     }
   }
-  render() {
-    // const backdrops = this.importAll(require.context('/images/Backdrops', false, /Backdrop.svg$/));
-    const backdrop = this.findBackdrop(this.props.filter);
-    if (this.state.showEventInFocus === false) {
-      return (
-        <div className="flex justify-center">
-          <div
-            style={{
-              boxShadow: "-3px 12px 6px 8px rgba(0,0,0,.6)",
-              color: this.props.theme.textEventColor,
-              backgroundImage: this.state.background,
-              borderTop: this.state.borderTop,
-              borderBottom: this.state.borderBottom,
-              borderRight: this.state.borderRight,
-              borderLeft: this.state.borderLeft,
-            }}
-            onMouseEnter={() =>
-              this.onMouseEnterEvent(
-                `url(${backdrop})`,
-                this.props.theme,
-                this.props.filter,
-                this.props.filters
-              )
-            }
-            onMouseLeave={() => this.onMouseLeaveEvent()}
-            onClick={() => this.onClick()}
-            id={this.props.id}
-            className="relative flex text-center mb-32 transition-all duration-1000 w-2/6 h-4/6 bg-cover"
-          >
-            <div className="flex flex-row mx-4 my-4 items-center space-x-24">
-              <div className="flex flex-col w-3/6">
-                <p
-                  style={{ color: this.props.theme.textEventColor }}
-                  className="inline-block text-base mr-2"
-                >
-                  {this.props.year}
-                  {/*<span style={{color: theme.textEventColor}} className="Event-location">{this.props.location}.</span>*/}
-                </p>
-                <h3
-                  style={{ color: this.props.theme.textEventColor }}
-                  className="relative z-10"
-                >
-                  {this.props.title}
-                </h3>
-              </div>
-              <div className="">
-                <Image
-                  className={styles.EventImage}
-                  width={200}
-                  height={200}
-                  objectFit="contain"
-                  src={this.props.TimelineImage + "?webp"}
-                  alt="Error"
-                />
-              </div>
+  // const backdrops = importAll(require.context('/images/Backdrops', false, /Backdrop.svg$/));
+  let backdrop =findBackdrop(props.filter);
+  const eventFocusAppear = useSpring({
+    transform: showEventInFocus
+      ? "translate(0,0)"
+      : "translate(0,-5rem)",
+    opacity: showEventInFocus ? 1 : 0,
+    // width: showEventInFocus ? "100%" : "75%",
+    config: { duration: 500, delay: 250},
+  });
+  const eventFocusDisappear = useSpring({
+    opacity: showEventInFocus ? 0 : 1,
+    config: { duration: 500, delay: 250},
+  });
+  if (showEventInFocus === false) {
+    return (
+      <animated.div
+        style={eventFocusDisappear}
+        className="flex justify-center h-72 sm:h-auto "
+      >
+        <div
+          style={{
+            boxShadow: "-3px 12px 6px 8px rgba(0,0,0,.6)",
+            color: props.theme.textEventColor,
+            backgroundImage: background,
+            borderTop: borderTop,
+            borderBottom: borderBottom,
+            borderRight: borderRight,
+            borderLeft: borderLeft,
+          }}
+          onMouseEnter={() =>
+            onMouseEnterEvent(
+              `url(${backdrop})`,
+              props.theme,
+              props.filter,
+              props.filters
+            )
+          }
+          onMouseLeave={() => onMouseLeaveEvent()}
+          onClick={() => onClick()}
+          id={props.id}
+          className="relative flex text-center mb-32 transition-all duration-1000 max-w-sm sm:max-w-full md:w-2/6 bg-cover"
+        >
+          <div className="flex flex-row mx-4 my-4 items-center space-x-16">
+            <div className="flex justify-start flex-col mx-2 sm:w-3/6">
+              <p
+                style={{ color: props.theme.textEventColor }}
+                className="inline-block text-sm sm:text-base sm:mr-2"
+              >
+                {props.year}
+                {/*<span style={{color: theme.textEventColor}} className="Event-location">{props.location}.</span>*/}
+              </p>
+              <h3
+                style={{ color: props.theme.textEventColor }}
+                className="relative text-sm sm:text-base"
+              >
+                {props.title}
+              </h3>
+            </div>
+            <div className="mx-16">
+              <Image
+                className={styles.EventImage}
+                width={200}
+                height={200}
+                objectFit="contain"
+                src={props.TimelineImage + "?webp"}
+                alt="Error"
+              />
             </div>
           </div>
-          {/* timeline seperator */}
-          <div className="absolute border-opacity-100 -mt-8 h-4/6 border-4 overflow-hidden"
-          style={{
-            borderColor: 'rgba(0,0,0,.6)',
-          }}
-          />
         </div>
-      );
-    }
-    else return (
-        <EventFocus filter={this.props.filter} filters={this.props.filters} theme={this.props.theme}  showEventInFocus={this.state.showEventInFocus} hideEventInFocus={this.hideEventInFocus}
-                    header={this.props.title}
-                    body={this.props.body}
-                    type={this.props.type}
-                    citations={[this.props.citations[0], this.props.citations[1]]}
+        {/* timeline seperator */}
+        <div
+          className="absolute border-opacity-100 -mt-8 h-4/6 border-4 overflow-hidden"
+          style={{
+            borderColor: "rgba(0,0,0,1)",
+          }}
         />
+      </animated.div>
     );
-  }
+  } else
+    return (
+      <animated.div style={eventFocusAppear} className="flex justify-center">
+        <EventFocus
+          image={props.TimelineImage}
+          filter={props.filter}
+          filters={props.filters}
+          theme={props.theme}
+          showEventInFocus={showEventInFocus}
+          hideEventInFocus={hideEventInFocus}
+          header={props.title}
+          body={props.body}
+          type={props.type}
+          citations={[props.citations[0], props.citations[1]]}
+        />
+      </animated.div>
+    );
 }
-class Event extends Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-      mobile: false,
-    }
-  }
-
-
-  updateMenuStyle() {
-    // if the width is less than 768px (an IPAD) it goes into mobile event
-    if (window.innerWidth < 768) {
-      this.setState({ mobile: true, });
-    }
-    else {
-      this.setState({ mobile: false, });
-    }
-  }
-
-  componentDidMount() {
-    this.updateMenuStyle();
-    window.addEventListener("resize", this.updateMenuStyle.bind(this));
-  }
-  componentWillUnmount() {
-    // tutorial said i should unmount the event listener so here it is
-    window.removeEventListener("resize", this.updateMenuStyle.bind(this));
-  }
-
-  checkYearBCE(year) { /* Necessary for dates before the common era. */
+function Event(props) {
+  function checkYearBCE(year) {
+    /* Necessary for dates before the common era. */
     let yearNew;
     if (year < 0) {
-      yearNew = Math.abs(year) + " BCE" /* Converts to correct format */
+      yearNew = Math.abs(year) + " BCE"; /* Converts to correct format */
       return yearNew;
-    }
-    else return year;
+    } else return year;
   }
-
-  render() {
-    let theme = this.context;
-    let filters = this.props.filters;
-    let year = this.checkYearBCE(this.props.year)
-    if (this.state.mobile === true) {
-      return (
-          <MobileEvent theme={theme} filter={this.props.filter} filters={filters}  year={this.props.year}  location={this.props.location} title={this.props.title}
-                       TimelineImage={this.props.TimelineImage} EventFocusImages={this.props.EventFocusImages}
-                       body={this.props.body}
-                       citations={[this.props.citations[0], this.props.citations[1]]}
-                       type={this.props.type} />
-      )
-    }
-    else if (this.state.mobile === false) {
-      return (
-          <DesktopEvent theme={theme} filter={this.props.filter} filters={filters}  year={year}  location={this.props.location} title={this.props.title}
-                        TimelineImage={this.props.TimelineImage}
-                        body={this.props.body}
-                        citations={[this.props.citations[0], this.props.citations[1]]}
-                        type={this.props.type} />
-      )
-    }
-  }
+  let theme = useContext(ThemeStyles);
+  let filters = props.filters;
+  let year = checkYearBCE(props.year);
+  return (
+    <DesktopEvent
+      theme={theme}
+      filter={props.filter}
+      filters={filters}
+      year={year}
+      location={props.location}
+      title={props.title}
+      TimelineImage={props.TimelineImage}
+      body={props.body}
+      citations={[props.citations[0], props.citations[1]]}
+      type={props.type}
+    />
+  );
 }
-Event.contextType = ThemeStyles;
 export default Event;

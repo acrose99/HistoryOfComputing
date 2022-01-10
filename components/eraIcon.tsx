@@ -17,11 +17,16 @@ addIcon('EarlyComputing', cardFileBox);
 addIcon('ModernComputing', imacIcon);
 addIcon('InformationAge', internetOfThingsLine);
 
-
-export default function EraIcon(props) {
+interface eraIconProps {
+    icon: string;
+}
+export default function EraIcon({
+    icon,
+}) {
     return (
-                <a style={{display: "flex", alignSelf: "center"}} title={"Era:" + props.icon} href={"/Timeline/" + props.icon} >
-                    <Icon icon={props.icon} width={'1.8em'} height={'1.8em'} />
+                <a className='flex self-center text-slate-900 hover:text-indigo-500 transition-colors' title={"Era: " + icon} href={"/Timeline/" + icon} >
+                    <Icon 
+                    icon={icon} width={'1.8em'} height={'1.8em'} />
                 </a>
         )
 }

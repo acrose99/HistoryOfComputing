@@ -6,7 +6,8 @@ import EraIcon from "./eraIcon";
 import crossCircle from "@iconify/icons-gridicons/cross-circle";
 import styles from "./EventFocus.module.css";
 import CategoryIcons from "./CategoryIcons";
-
+import Image from "next/image";
+import tinycolor from "tinycolor2";
 class EventFocus extends Component {
   renderCitations() {
     if (this.props.citations[0] == null || this.props.citations[0] === "") {
@@ -31,9 +32,6 @@ class EventFocus extends Component {
       );
     }
   }
-  renderBodyText() {
-    return <p className={stylesFocus.eventBodyText}>{this.props.body}</p>;
-  }
   renderCategories(filters) {
     let categories = [];
     for (let i = 0; i < filters.length; i++) {
@@ -56,8 +54,8 @@ class EventFocus extends Component {
     if (categories.length === 0) {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-fit rounded-l-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-r-2 w-fit p-4"
         >
           <p className="mx-4 jusitfy-center"> No categories specified</p>
         </div>
@@ -65,8 +63,8 @@ class EventFocus extends Component {
     }
     return (
       <div
-        style={{ background: this.props.theme.background }}
-        className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-fit px-4 rounded-l-xl"
+        // style={{ background: this.props.theme.background }}
+        className="flex justify-center items-center text-base border-slate-900 border-t-2 border-r-2 w-fit p-4 "
       >
         <CategoryIcons icons={categories} />
       </div>
@@ -76,71 +74,78 @@ class EventFocus extends Component {
     if (filters.includes("Ancient")) {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4"
         >
-          <EraIcon icon="Ancient" />
+          <EraIcon
+            icon="Ancient"
+          />
         </div>
       );
     } else if (filters.includes("Medieval")) {
       return (
-        <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
-        >
-          <EraIcon icon="Medieval" />
+        <div className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4">
+          <EraIcon
+            icon="Medieval"
+          />
         </div>
       );
     } else if (filters.includes("Enlightenment")) {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4"
         >
-          <EraIcon icon="Enlightenment" />
+          <EraIcon
+            icon="Enlightenment"
+          />
         </div>
       );
     } else if (filters.includes("Industrial")) {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4"
         >
-          <EraIcon icon="Industrial" />
+          <EraIcon
+            icon="Industrial"
+          />
         </div>
       );
     } else if (filters.includes("EarlyComputing")) {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4"
         >
-          <EraIcon icon="EarlyComputing" />
+          <EraIcon color={"black"} icon="EarlyComputing" />
         </div>
       );
     } else if (filters.includes("ModernComputing")) {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4"
         >
-          <EraIcon icon="ModernComputing" />
+          <EraIcon
+           icon="ModernComputing" />
         </div>
       );
     } else if (filters.includes("InformationAge")) {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4"
         >
-          <EraIcon icon="InformationAge" />
+          <EraIcon
+          icon="InformationAge" />
         </div>
       );
     } else {
       return (
         <div
-          style={{ background: this.props.theme.background }}
-          className="flex justify-center items-center text-base border-slate-900 border-4 border-r-2 w-max px-4 rounded-r-xl"
+          // style={{ background: this.props.theme.background }}
+          className="flex justify-center items-center text-base border-slate-900 border-t-2 border-l-2 w-max p-4"
         >
           <p>Era: N/A</p>
         </div>
@@ -170,91 +175,41 @@ class EventFocus extends Component {
       return themes[this.props.filters[0]].background;
     } else return this.props.theme.background;
   }
-  renderExitIcon(filter) {
-    // Place in order of heirachy for user to see.
-    //    For example:
-    //    I've placed the LGBTQ backdrop higher then Early Computing,
-    //    because I want to emphasize representation more then era
-    if (
-      filter !== "all" &&
-      filter !== "" &&
-      filter !== undefined &&
-      filter !== null
-    ) {
-      if (themes[filter].background !== undefined) {
-        return (
-          <Icon
-            style={{ color: themes[filter].foreground }}
-            icon={crossCircle}
-            width={32}
-            height={32}
-          />
-        );
-      } else if (themes[this.props.filters[0]].background !== undefined) {
-        return (
-          <Icon
-            style={{ color: themes[this.props.filters[0]].foreground }}
-            icon={crossCircle}
-            width={32}
-            height={32}
-          />
-        );
-      } else {
-        return (
-          <Icon
-            style={{ color: this.props.theme.foreground }}
-            icon={crossCircle}
-            width={32}
-            height={32}
-          />
-        );
-      }
-    } else if (themes[this.props.filters[0]].background !== undefined) {
-      return (
-        <Icon
-          style={{ color: themes[this.props.filters[0]].foreground }}
-          icon={crossCircle}
-          width={32}
-          height={32}
-        />
-      );
-    } else
-      return (
-        <Icon
-          style={{ color: this.props.theme.foreground }}
-          icon={crossCircle}
-          width={32}
-          height={32}
-        />
-      );
-  }
 
   render() {
-    let background = this.findBackground(this.props.filter);
+    let background = tinycolor(this.findBackground(this.props.filter));
+    // background.setAlpha(0.4);
+    let backgroundDeg = Math.random() * 360;
     return (
       <div
-        className="flex flex-col w-3/6 my-32 z-30 self-center rounded-2xl"
+        className="flex flex-col w-96 mb-12 sm:mb-0 sm:w-5/6 space-y-12 z-20  self-center rounded-2xl border-2 border-slate-900"
         style={{
-          background: background,
+          background: `linear-gradient(${backgroundDeg}deg, #f1f5f9, white, ${background})`,
         }}
       >
-        <div className="flex items-center h-16 mx-4">
-          <button className="" onClick={this.props.hideEventInFocus}>
-            {this.renderExitIcon(this.props.filter)}
-          </button>
-          <p className="mx-auto text-center text-2xl font-extrabold">
+        <div className="flex h-16 mx-4 mt-6">
+          <p className="mx-auto text-xl sm:text-3xl lg:text-4xl font-extrabold">
             {this.props.header}
           </p>
+          <button className="text-slate-900 hover:text-indigo-500 transition-colors" onClick={this.props.hideEventInFocus}>
+            <Icon icon={crossCircle} width={32} height={32} />
+          </button>
         </div>
-        <div className="flex flex-col mx-4 space-y-8 my-8 text-lg font-bold">
-          {this.renderBodyText()}
+        <div className="flex flex-col mx-4 space-y-16 my-8 text-lg font-bold">
+          <p className="text-lg font-medium my-8">{this.props.body}</p>
+          <Image
+            height={200}
+            width={200}
+            objectFit="contain"
+            src={this.props.image}
+          />
           {this.renderCitations()}
         </div>
         <div className="flex w-full justify-between x">
-          <div className="flex">{this.renderCategories(this.props.filters)}</div>
           <div className="flex">
-            {this.renderEra(this.props.filters)}
+            {this.renderCategories(this.props.filters)}
           </div>
+          <div className="flex">{this.renderEra(this.props.filters)}</div>
         </div>
       </div>
     );
