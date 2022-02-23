@@ -18,6 +18,7 @@ import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import Citations from "./Event/Citations";
 import Categories from "./Event/Categories";
 import Era from "./Event/Era";
+import { useTheme } from "next-themes";
 const slideDown = keyframes({
   from: { height: 0, transform: "translateY(-20px)" },
   to: { height: "var(--radix-accordion-content-height)", transform: "translateY(0)" },
@@ -220,25 +221,16 @@ function Event(props) {
   }
   // let filters = props.filters;
   // let year = checkYearBCE(props.year);
+    const { theme, setTheme } = useTheme();
   return (
     <>
       {!showEventInFocus ? (
         <StyledAccordion type="single" collapsible>
           <StyledItem value="item-1">
-            <AccordionTrigger
-              color={{
-                "@media (prefers-color-scheme: dark)": "mauveDark",
-                "@media (prefers-color-scheme: light)": "mauve",
-              }}
-            >
+            <AccordionTrigger color={theme === "light" ? "mauve" : "mauveDark"}>
               {props.title}
             </AccordionTrigger>
-            <AccordionContent
-              color={{
-                "@media (prefers-color-scheme: dark)": "mauveDark",
-                "@media (prefers-color-scheme: light)": "mauve",
-              }}
-            >
+            <AccordionContent color={theme === "light" ? "mauve" : "mauveDark"}>
               <div className="flex justify-center flex-col text-center space-y-6 p-12">
                 <Image
                   width={200}
@@ -249,7 +241,7 @@ function Event(props) {
                 />
                 <h3 className="text-3xl font-bold"> Year: {props.year}.</h3>
                 <StyledSeparator />
-                <p> {props.body}.</p>
+                <p className="text-xl"> {props.body}.</p>
                 <Citations citations={props.citations} />
                 <StyledSeparator />
                 <Categories filters={props.filters} />

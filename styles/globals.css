@@ -4,10 +4,21 @@
 
 
 
-body {
-    @apply bg-white dark:bg-black transition-[background-color] duration-1000 ease-in-out;
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+  transition: all 0.65s ease-in-out;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply text-black dark:text-white
+    color: text-gray-900;
+}
+[data-theme='dark'] h1, h2, h3, h4, h5, h6 {
+    color: text-gray-100;
 }

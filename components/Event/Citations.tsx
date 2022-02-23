@@ -6,11 +6,11 @@ function Citations({ citations }: CitationProps) {
     return <p>No citations.</p>;
   }
   if (citations[0] != null && citations[1] === undefined) {
-    return <p>Citation: {citations[0]}</p>;
+    return <p className="italic font-light">Citation: {citations[0]}</p>;
   } else {
     return (
       <div>
-        <p>
+        <p className="italic font-light text-sm">
           Citations: {citations[0]}, {citations[1]}
         </p>
       </div>

@@ -79,12 +79,12 @@ const itemStyles = {
   },
 
   "&:focus": {
-    backgroundColor: violet.violet9,
-    color: violet.violet1,
+    backgroundColor: violet.violet8,
+    color: violet.violet12,
   },
   "&hover": {
     backgroundColor: violet.violet4,
-    color: violet.violet11,
+    color: violet.violet12,
   },
 };
 
@@ -105,7 +105,6 @@ const StyledTriggerItem = styled(DropdownMenuPrimitive.TriggerItem, {
   '&[data-state="open"]': {
     backgroundColor: violet.violet4,
     color: violet.violet11,
-
   },
   ...itemStyles,
 });
@@ -173,8 +172,8 @@ function ContextDialog({
                 borderRadius: 3,
               }}
             >
-              <ChevronLeftIcon />
               Categories
+              <ChevronRightIcon />
             </DropdownMenuPrimitive.DropdownMenuTriggerItem>
             <StyledContent sideOffset={2} alignOffset={-5}>
               <StyledItem onClick={() => changeTimeLineFilter("Culture")}>
@@ -206,8 +205,8 @@ function ContextDialog({
                 borderRadius: 3,
               }}
             >
-              <ChevronLeftIcon />
               Eras
+              <ChevronRightIcon />
             </DropdownMenuPrimitive.DropdownMenuTriggerItem>
             <StyledContent sideOffset={2} alignOffset={-5}>
               <StyledItem onClick={() => changeTimeLineFilter("Ancient")}>
@@ -248,8 +247,8 @@ function ContextDialog({
                 borderRadius: 3,
               }}
             >
-              <ChevronLeftIcon />
               Companies
+              <ChevronRightIcon />
             </DropdownMenuPrimitive.DropdownMenuTriggerItem>
             <StyledContent sideOffset={2} alignOffset={-5}>
               <StyledItem onClick={() => changeTimeLineFilter("Apple")}>
@@ -269,7 +268,11 @@ function ContextDialog({
           {menuItems.map((item, index) => (
             <DropdownMenuPrimitive.DropdownMenu>
               <StyledTriggerItem>
-                <StyledItem className="w-64" key={index} onClick={item.func}>
+                <StyledItem
+                  className="w-64 text-lg"
+                  key={index}
+                  onClick={item.func}
+                >
                   {item.children}
                 </StyledItem>
               </StyledTriggerItem>
@@ -314,7 +317,12 @@ function Filterer(props) {
   return (
     <div className="flex z-50 justify-end px-12 fixed w-screen">
       <ContextDialog
-      menuItems={[]}
+      menuItems={[
+        {
+          children: <div className="">Show All </div>,
+          func: () => changeTimeLineFilter("all"),
+        }
+      ]}
       children={<div>Filter</div>} 
       changeTimeLineFilter={changeTimeLineFilter} />
     </div>
