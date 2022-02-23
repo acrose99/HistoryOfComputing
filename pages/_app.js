@@ -3,6 +3,7 @@ import 'normalize.css'
 import React from 'react'
 import App from 'next/app'
 import {ThemeStyles, themes} from '../context/themeStyles';
+import { ThemeProvider } from 'next-themes'
 
 export default class Application extends App {
     constructor(props) {
@@ -20,9 +21,9 @@ export default class Application extends App {
         const { Component, pageProps } = this.props;
         return (
             <div>
-                <ThemeStyles.Provider value={this.state.theme}>
+                <ThemeProvider value={this.state.theme}>
                     <Component toggleTheme={this.toggleTheme} {...pageProps} />
-                </ThemeStyles.Provider>
+                </ThemeProvider>
             </div>
         );
     }

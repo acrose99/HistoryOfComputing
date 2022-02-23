@@ -24,7 +24,7 @@ export default function EraIcon({
     icon,
 }) {
     return (
-                <a className='flex self-center text-slate-900 hover:text-indigo-500 transition-colors' title={"Era: " + icon} href={"/Timeline/" + icon} >
+                <a className='flex self-center text-slate-900 dark:text-white hover:text-indigo-500 transition-colors' title={"Era: " + icon} href={"/Timeline/" + icon} >
                     <Icon 
                     icon={icon} width={'1.8em'} height={'1.8em'} />
                 </a>

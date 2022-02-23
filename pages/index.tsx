@@ -25,7 +25,7 @@ function Home() {
   })
   return (
     <div
-      className="bg-slate-100"
+      className="bg-slate-100 dark:bg-black"
       style={{
         height: "100%",
       }}

@@ -19,7 +19,7 @@ class Navbar extends Component {
         return (
           <div
             style={{ backgroundColor: theme.navbarBackground }}
-            className="flex font-sans items-center text-slate-900 bg-white w-full sm:space-x-4 md:space-x-8 lg:space-x-12 xl:space-x-16 border-b-2 border-gray-200"
+            className="flex font-sans items-center text-slate-900 dark:text-white bg-white dark:bg-black w-full sm:space-x-4 md:space-x-8 lg:space-x-12 xl:space-x-16 border-b-2 border-gray-200"
             style={{
               height: "5rem",
               // @ts-ignore
@@ -41,11 +41,14 @@ class Navbar extends Component {
               </a>
             </Link> */}
             <IconButton
-              className="mx-4 text-base transition-colors text-slate-900 hover:text-indigo-500"
+              className="mx-4 text-base"
               href="https://github.com/acrose99/HistoryOfComputing"
               edge={"end"}
             >
-              <Icon className="text-3xl" icon={githubFilled} />
+              <Icon
+                className="text-3xl text-slate-900 dark:text-white transition-colors hover:text-indigo-500"
+                icon={githubFilled}
+              />
             </IconButton>
           </div>
         );
