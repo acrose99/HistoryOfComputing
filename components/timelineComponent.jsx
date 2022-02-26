@@ -7,7 +7,7 @@ import Representation from "./Representation";
 import { events } from "../events";
 import { ThemeStyles } from "../context/themeStyles";
 import { themes } from "../context/themeStyles";
-
+import Text from "../components/common/Text";
 import Footer from "./Footer";
 
 function useDocumentTitle(title) {
@@ -146,7 +146,7 @@ function TimelineComponent(props) {
     if (props.filter === "all") {
       return (
         <div
-          className="text-black dark:text-white space-y-6 flex justify-center mx-24 flex-col z-50"
+          className="space-y-6 flex justify-center mx-24 flex-col z-50"
           style={{ textAlign: "center" }}
         >
           <h2 className="font-black text-3xl">

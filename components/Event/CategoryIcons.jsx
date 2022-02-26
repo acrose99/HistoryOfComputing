@@ -38,9 +38,14 @@ addIcon('Sun', solarisIcon);
 
 
 export default function CategoryIcons(props) {
-    return props.icons.map((icon, index) =>
-            <a className='text-slate-900 dark:text-white transition-colors hover:text-indigo-500' key={index} title={"Category: " + icon} href={"/Timeline/" + icon}>
-                <Icon icon={icon} width={'1.8em'} height={'1.8em'}/>
-            </a>
-        )
+    return props.icons.map((icon, index) => (
+      <a
+        className="hover:text-indigo-500 transition-all duration-500"
+        key={index}
+        title={"Category: " + icon}
+        href={"/Timeline/" + icon}
+      >
+        <Icon icon={icon} width={"1.8em"} height={"1.8em"} />
+      </a>
+    ));
 }

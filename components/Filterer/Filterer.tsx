@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 
 import { useSpring, config } from "react-spring";
+import { useTheme } from "next-themes";
 
 import { styled } from "../../stiches.config";
 import { keyframes } from "@stitches/react";
-import { violet, mauve } from "@radix-ui/colors";
-import {
-  ChevronRightIcon,
-  ChevronLeftIcon,
-} from "@radix-ui/react-icons";
+import { violet, mauve, mauveDark, violetDark } from "@radix-ui/colors";
+import { ChevronRightIcon, ChevronLeftIcon } from "@radix-ui/react-icons";
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 
 type ContextMenuItem = {
@@ -43,9 +41,7 @@ const slideLeftAndFade = keyframes({
 });
 
 const StyledContent = styled(DropdownMenuPrimitive.Content, {
-  marginTop: '5px',
-  backgroundColor: "white",
-  padding: '5px 5px 1px',
+  marginTop: "5px",
   boxShadow:
     "0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)",
   "@media (prefers-reduced-motion: no-preference)": {
@@ -59,6 +55,18 @@ const StyledContent = styled(DropdownMenuPrimitive.Content, {
       '&[data-side="left"]': { animationName: slideRightAndFade },
     },
   },
+  variants: {
+    color: {
+      mauve: {
+        color: violet.violet11,
+        backgroundColor: mauve.mauve1,
+      },
+      mauveDark: {
+        color: violetDark.violet11,
+        backgroundColor: mauveDark.mauve5,
+      },
+    },
+  },
 });
 
 const itemStyles = {
@@ -66,25 +74,32 @@ const itemStyles = {
   fontSize: 13,
   lineHeight: 1,
   color: violet.violet11,
-  borderBottom: `1px solid ${violet.violet11}`,
+  // borderBottom: `1px solid ${violet.violet11}`,
   display: "flex",
   alignItems: "center",
   height: 25,
   position: "relative",
   userSelect: "none",
 
-  "&[data-disabled]": {
-    color: mauve.mauve8,
-    pointerEvents: "none",
-  },
-
-  "&:focus": {
-    backgroundColor: violet.violet8,
-    color: violet.violet12,
-  },
-  "&hover": {
-    backgroundColor: violet.violet4,
-    color: violet.violet12,
+  variants: {
+    color: {
+      mauve: {
+        color: violet.violet11,
+        backgroundColor: mauve.mauve1,
+        "&:focus": {
+          backgroundColor: mauve.mauve2,
+          color: violet.violet12,
+        },
+      },
+      mauveDark: {
+        color: violetDark.violet11,
+        backgroundColor: mauveDark.mauve5,
+        "&:focus": {
+          backgroundColor: mauveDark.mauve4,
+          color: violet.violet9,
+        },
+      },
+    },
   },
 };
 
@@ -95,18 +110,32 @@ const StyledCheckboxItem = styled(DropdownMenuPrimitive.CheckboxItem, {
 const StyledRadioItem = styled(DropdownMenuPrimitive.RadioItem, {
   ...itemStyles,
 });
+
 const StyledTriggerItem = styled(DropdownMenuPrimitive.TriggerItem, {
   marginTop: "5px",
   backgroundColor: "white",
   borderRadius: 6,
-  padding: 5,
-  boxShadow:
-    "0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)",
-  '&[data-state="open"]': {
-    backgroundColor: violet.violet4,
-    color: violet.violet11,
-  },
   ...itemStyles,
+  variants: {
+    color: {
+      mauve: {
+        color: violet.violet10,
+        backgroundColor: mauve.mauve1,
+        '&[data-state="open"]': {
+          backgroundColor: mauve.mauve2,
+          color: violet.violet11,
+        },
+      },
+      mauveDark: {
+        color: violetDark.violet10,
+        backgroundColor: mauveDark.mauve5,
+        "&:focus": {
+          backgroundColor: mauveDark.mauve4,
+          color: violet.violet9,
+        },
+      },
+    },
+  },
 });
 
 const StyledLabel = styled(DropdownMenuPrimitive.Label, {
@@ -135,103 +164,153 @@ const StyledArrow = styled(DropdownMenuPrimitive.Arrow, {
   fill: "white",
 });
 const StyledChevron = styled(ChevronRightIcon, {
-  color: violet.violet12,
   marginLeft: 5,
   transition: "transform 300ms cubic-bezier(0.87, 0, 0.13, 1)",
   "[data-state=open] &": { transform: "rotate(90deg)" },
+  variants: {
+    color: {
+      mauve: {
+        fill: violet.violet1,
+      },
+      mauveDark: {
+        fill: violetDark.violet11,
+      },
+    },
+  },
 });
 function ContextDialog({
   children,
   changeTimeLineFilter,
   menuItems,
 }: ContextDialogProps) {
+  const { theme, setTheme } = useTheme();
   return (
     <div className="z-50 fixed">
       <DropdownMenuPrimitive.Root>
         <DropdownMenuPrimitive.Trigger className="flex w-32 z-100" asChild>
           <div
             style={{
-              backgroundColor: "white",
-              color: violet.violet11,
+              color: theme === "light" ? violet.violet11 : violetDark.violet11,
+              backgroundColor:
+                theme === "light" ? mauve.mauve1 : mauveDark.mauve5,
               cursor: "pointer",
               borderRadius: 3,
             }}
             className="h-12 flex flex-row items-center my-4 p-4 text-xl rounded shadow-2xl"
           >
             Filter
-            <StyledChevron />
+            <StyledChevron color={theme === "light" ? "mauve" : "mauveDark"} />
           </div>
         </DropdownMenuPrimitive.Trigger>
-        <StyledContent>
+        <StyledContent color={theme === "light" ? "mauve" : "mauveDark"}>
           <DropdownMenuPrimitive.DropdownMenu>
-            <DropdownMenuPrimitive.DropdownMenuTriggerItem
+            <StyledTriggerItem
+              color={theme === "light" ? "mauve" : "mauveDark"}
               className="flex w-32 py-2"
               style={{
-                backgroundColor: "white",
-                color: violet.violet11,
                 borderRadius: 3,
               }}
             >
               Categories
               <ChevronRightIcon />
-            </DropdownMenuPrimitive.DropdownMenuTriggerItem>
-            <StyledContent sideOffset={2} alignOffset={-5}>
-              <StyledItem onClick={() => changeTimeLineFilter("Culture")}>
+            </StyledTriggerItem>
+            <StyledContent
+              color={theme === "light" ? "mauve" : "mauveDark"}
+              sideOffset={2}
+              alignOffset={-5}
+            >
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Culture")}
+              >
                 Culture
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Hardware")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Hardware")}
+              >
                 Hardware
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Software")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Software")}
+              >
                 Software
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Languages")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Languages")}
+              >
                 Languages
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("AI")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("AI")}
+              >
                 AI
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Gaming")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Gaming")}
+              >
                 Gaming
               </StyledItem>
             </StyledContent>
           </DropdownMenuPrimitive.DropdownMenu>
           <DropdownMenuPrimitive.DropdownMenu>
-            <DropdownMenuPrimitive.DropdownMenuTriggerItem
+            <StyledTriggerItem
+              color={theme === "light" ? "mauve" : "mauveDark"}
               className="flex w-32 py-3"
               style={{
-                backgroundColor: "white",
-                color: violet.violet11,
                 borderRadius: 3,
               }}
             >
               Eras
               <ChevronRightIcon />
-            </DropdownMenuPrimitive.DropdownMenuTriggerItem>
-            <StyledContent sideOffset={2} alignOffset={-5}>
-              <StyledItem onClick={() => changeTimeLineFilter("Ancient")}>
+            </StyledTriggerItem>
+            <StyledContent
+              color={theme === "light" ? "mauve" : "mauveDark"}
+              sideOffset={2}
+              alignOffset={-5}
+            >
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Ancient")}
+              >
                 Ancient
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Medieval")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Medieval")}
+              >
                 Medieval
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Enlightenment")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Enlightenment")}
+              >
                 Enlightenment
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Industrial")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Industrial")}
+              >
                 Industrial
               </StyledItem>
               <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
                 onClick={() => changeTimeLineFilter("EarlyComputing")}
               >
                 Early Computing
               </StyledItem>
               <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
                 onClick={() => changeTimeLineFilter("ModernComputing")}
               >
                 Modern Computing
               </StyledItem>
               <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
                 onClick={() => changeTimeLineFilter("InformationAge")}
               >
                 Information Age
@@ -239,25 +318,37 @@ function ContextDialog({
             </StyledContent>
           </DropdownMenuPrimitive.DropdownMenu>
           <DropdownMenuPrimitive.DropdownMenu>
-            <DropdownMenuPrimitive.DropdownMenuTriggerItem
+            <StyledTriggerItem
+              color={theme === "light" ? "mauve" : "mauveDark"}
               className="flex w-32 py-3"
               style={{
-                backgroundColor: "white",
-                color: violet.violet11,
                 borderRadius: 3,
               }}
             >
               Companies
               <ChevronRightIcon />
-            </DropdownMenuPrimitive.DropdownMenuTriggerItem>
-            <StyledContent sideOffset={2} alignOffset={-5}>
-              <StyledItem onClick={() => changeTimeLineFilter("Apple")}>
+            </StyledTriggerItem>
+            <StyledContent
+              color={theme === "light" ? "mauve" : "mauveDark"}
+              sideOffset={2}
+              alignOffset={-5}
+            >
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Apple")}
+              >
                 Apple
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("IBM")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("IBM")}
+              >
                 IBM
               </StyledItem>
-              <StyledItem onClick={() => changeTimeLineFilter("Microsoft")}>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                onClick={() => changeTimeLineFilter("Microsoft")}
+              >
                 Microsoft
               </StyledItem>
               {/* <StyledItem onClick={() => changeTimeLineFilter("AT&T")}>
@@ -267,15 +358,18 @@ function ContextDialog({
           </DropdownMenuPrimitive.DropdownMenu>
           {menuItems.map((item, index) => (
             <DropdownMenuPrimitive.DropdownMenu>
-              <StyledTriggerItem>
+              {/* <StyledTriggerItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+              > */}
                 <StyledItem
+                  color={theme === "light" ? "mauve" : "mauveDark"}
                   className="w-64 text-lg"
                   key={index}
                   onClick={item.func}
                 >
                   {item.children}
                 </StyledItem>
-              </StyledTriggerItem>
+              {/* </StyledTriggerItem> */}
             </DropdownMenuPrimitive.DropdownMenu>
           ))}
         </StyledContent>
@@ -317,14 +411,15 @@ function Filterer(props) {
   return (
     <div className="flex z-50 justify-end px-12 fixed w-screen">
       <ContextDialog
-      menuItems={[
-        {
-          children: <div className="">Show All </div>,
-          func: () => changeTimeLineFilter("all"),
-        }
-      ]}
-      children={<div>Filter</div>} 
-      changeTimeLineFilter={changeTimeLineFilter} />
+        menuItems={[
+          {
+            children: <div className="">Show All </div>,
+            func: () => changeTimeLineFilter("all"),
+          },
+        ]}
+        children={<div>Filter</div>}
+        changeTimeLineFilter={changeTimeLineFilter}
+      />
     </div>
   );
 }
