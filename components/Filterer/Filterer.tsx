@@ -74,6 +74,7 @@ const itemStyles = {
   fontSize: 13,
   lineHeight: 1,
   color: violet.violet11,
+  padding: "5px 10px",
   // borderBottom: `1px solid ${violet.violet11}`,
   display: "flex",
   alignItems: "center",

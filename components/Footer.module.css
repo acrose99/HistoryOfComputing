@@ -1,207 +1,178 @@
 /*Galaxy S9+ and Android */
 @media screen and (max-width: 360px) and (max-width: 375px) {
-    .wLayoutGrid {
-        display: flex;
-        flex-direction: column;
-    }
-    .footerTitle {
-        text-decoration: underline;
-    }
+  .wLayoutGrid {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerTitle {
+    text-decoration: underline;
+  }
 }
 
 /*iPhone 6,7,8, X */
 @media screen and (min-width: 375px) and (max-width: 414px) {
-    .wLayoutGrid {
-        display: flex;
-        flex-direction: column;
-    }
-    .footerTitle {
-        text-decoration: underline;
-    }
+  .wLayoutGrid {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerTitle {
+    text-decoration: underline;
+  }
 }
 
 /* iPhone sizes */
 
 /*iPhone Plus, XS, XS Max */
 @media screen and (min-width: 414px) and (max-width: 768px) {
-    .wLayoutGrid {
-        display: flex;
-        flex-direction: column;
-    }
-    .footerTitle {
-        text-decoration: underline;
-    }
+  .wLayoutGrid {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerTitle {
+    text-decoration: underline;
+  }
 }
 /* iPad */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
 }
 
 /* Smaller Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
-
 }
 /* Larger Desktop */
 @media screen and (min-width: 1400px) {
-
 }
 
 .footer04 {
-    padding: 20px 3%;
-    /*background-color: #fff;*/
-    border-top: 4px solid black;
+  padding: 20px 3%;
+  /*background-color: #fff;*/
+  display: flex;
+  border-top: 4px solid black;
 }
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  /* color: white; */
 }
 .footerFlexWrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 .footerBlockLeft {
-    width: 50%;
-    padding-right: 45px;
+  width: 50%;
+  padding-right: 45px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .logoFlat {
-
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
-    border: 0;
+  max-width: 100%;
+  border: 0;
 }
 .lineBreak {
-    width: 1px;
-    height: 100%;
-    min-height: 250px;
-    background-color: rgba(21, 28, 52, 0.09);
+  width: 1px;
+  height: 100%;
+  min-height: 250px;
 }
 
 .footerBlockRight {
-    width: 50%;
-    padding-left: 45px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 .wLayoutGrid {
-    display: flex;
-    grid-auto-columns: 1fr;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
+  display: flex;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
 }
 .footerColumn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-right: 40px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+  display: flex;
+  padding-right: 40px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footerTitle {
-    margin-bottom: 22px;
-    font-family: DM Sans, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: -0.231818px;
+  margin-bottom: 22px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.231818px;
 
-    /* Vapor */
+  /* Vapor */
 
-    /*background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);*/
-    /*-webkit-text-fill-color: transparent;*/
-    -webkit-background-clip: text;
+  /*background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);*/
+  /*-webkit-text-fill-color: transparent;*/
+  -webkit-background-clip: text;
 }
 
 .footerLinkDark {
-    display: block;
-    margin-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /*color: rgba(0, 41, 255, 1);*/
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
+  display: block;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }
 .footerBottomFull {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 60px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    border-style: solid none none;
-    border-width: 1px;
-    border-color: rgba(21, 28, 52, 0.09) #000 #000;
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-between;
+  border-style: solid none none;
+  border-width: 1px;
+  border-color: rgba(21, 28, 52, 0.09) #000 #000;
 }
 .footerWrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .secondaryLinkDark {
-    display: block;
-    margin-right: 32px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #1e2833;
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
+  display: block;
+  margin-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
 }
 .slogan {
-    font-family: Domine, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 41px;
-    letter-spacing: -0.204545px;
-    /* Vapor */
+  font-family: Domine, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: -0.204545px;
+  /* Vapor */
 
-    /*background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);*/
-    /*-webkit-text-fill-color: transparent;*/
-    -webkit-background-clip: text;
+  /*background: linear-gradient(180deg, #4BA4D2 0%, #5776E0 46.35%, #9044F5 100%);*/
+  /*-webkit-text-fill-color: transparent;*/
+  -webkit-background-clip: text;
 }
 
 .logoFlat {
-    height: 64px;
+  height: 64px;
 }
 
 .footerMenuButtonIcon {
-    height: 29px;
-    width: 36px;
+  height: 29px;
+  width: 36px;
 }

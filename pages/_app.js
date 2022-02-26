@@ -21,7 +21,7 @@ export default class Application extends App {
         const { Component, pageProps } = this.props;
         return (
             <div>
-                <ThemeProvider value={this.state.theme}>
+                <ThemeProvider attribute="class" >
                     <Component toggleTheme={this.toggleTheme} {...pageProps} />
                 </ThemeProvider>
             </div>

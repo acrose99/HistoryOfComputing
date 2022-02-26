@@ -35,19 +35,19 @@ class Navbar extends Component {
     return (
       <div
         style={{ backgroundColor: theme.navbarBackground }}
-        className="flex items-center text-slate-900 dark:text-white bg-white dark:bg-black w-full space-x-4 sm:space-x-2 px-4 md:space-x-8 lg:space-x-12 xl:space-x-16 border-b-2 border-gray-200"
+        className="flex items-center px-2 text-slate-900 dark:text-white bg-white dark:bg-black w-full space-x-2 sm:space-x-4 md:space-x-8 lg:space-x-12 xl:space-x-16 border-b-2 border-gray-200"
         style={{
           height: "5rem",
           // @ts-ignore
         }}
       >
         <Link href="/">
-          <a className="mx-4 text-xl font-extrabold transition-colors hover:text-indigo-500">
+          <a className="hover:underline text-base sm:text-xl font-extrabold transition-colors hover:text-indigo-500">
             The History Of Computing
           </a>
         </Link>
         <Link href="/Timeline/all">
-          <a className="mx-4 text-base transition-colors hover:text-indigo-500">
+          <a className="hover:underline text-base transition-colors hover:text-indigo-500">
             The Timeline
           </a>
         </Link>
@@ -57,12 +57,12 @@ class Navbar extends Component {
               </a>
             </Link> */}
         <IconButton
-          className="mx-4 text-base"
+          className="text-base hover:underline hover:text-indigo-500"
           href="https://github.com/acrose99/HistoryOfComputing"
           edge={"end"}
         >
           <Icon
-            className="text-3xl text-slate-900 dark:text-white transition-colors hover:text-indigo-500"
+            className="hover:underline text-3xl text-slate-900 dark:text-white transition-colors"
             icon={githubFilled}
           />
         </IconButton>
