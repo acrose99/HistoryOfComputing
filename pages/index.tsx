@@ -40,7 +40,7 @@ function Home() {
       </Head>
       <Navbar />
       <div className="flex flex-col justify-center">
-        <div className="flex flex-col justify-center items-center text-slate-900">
+        <div className="flex flex-col justify-center items-center text-slate-900 dark:text-white">
           <animated.div style={springStyles}>
             <h1 className="flex flex-col text-6xl sm:text-6xl md:text-7xl lg:text-9xl text-center">
               Welcome to
