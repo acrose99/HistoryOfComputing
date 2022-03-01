@@ -191,13 +191,13 @@ function ContextDialog({
         <DropdownMenuPrimitive.Trigger className="flex w-32 z-100" asChild>
           <div
             style={{
-              color: theme === "light" ? violet.violet11 : violetDark.violet11,
-              backgroundColor:
-                theme === "light" ? mauve.mauve1 : mauveDark.mauve5,
+              // color: theme === "light" ? violet.violet11 : violetDark.violet11,
+              // backgroundColor:
+              //   theme === "light" ? mauve.mauve1 : mauveDark.mauve5,
               cursor: "pointer",
               borderRadius: 3,
             }}
-            className="h-12 flex flex-row items-center my-4 p-4 text-xl rounded shadow-2xl"
+            className="h-12 flex flex-row items-center my-4 p-4 text-xl rounded shadow-2xl bg-white dark:bg-[#2e2e32] text-[#9e8cfc]"
           >
             Filter
             <StyledChevron color={theme === "light" ? "mauve" : "mauveDark"} />
@@ -362,14 +362,14 @@ function ContextDialog({
               {/* <StyledTriggerItem
                 color={theme === "light" ? "mauve" : "mauveDark"}
               > */}
-                <StyledItem
-                  color={theme === "light" ? "mauve" : "mauveDark"}
-                  className="w-64 text-lg"
-                  key={index}
-                  onClick={item.func}
-                >
-                  {item.children}
-                </StyledItem>
+              <StyledItem
+                color={theme === "light" ? "mauve" : "mauveDark"}
+                className="w-64 text-lg"
+                key={index}
+                onClick={item.func}
+              >
+                {item.children}
+              </StyledItem>
               {/* </StyledTriggerItem> */}
             </DropdownMenuPrimitive.DropdownMenu>
           ))}

@@ -12,7 +12,6 @@ export default function Timeline(props) {
     const router = useRouter()
     const { id } = router.query
     let theme = useContext(ThemeStyles);
-    console.log(props)
     if (id !== 'all') {
         return (
             <div>
