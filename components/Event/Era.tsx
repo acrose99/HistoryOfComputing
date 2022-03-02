@@ -37,31 +37,31 @@ function Era({ filters }: eraProps) {
         <EraIcon icon="Industrial" />
       </div>
     );
-  } else if (filters.includes("EarlyComputing")) {
+  } else if (filters.includes("Early Computing")) {
     return (
       <div
         // style={{ background: this.props.theme.background }}
         className="citations"
       >
-        <EraIcon icon="EarlyComputing" />
+        <EraIcon icon="Early Computing" />
       </div>
     );
-  } else if (filters.includes("ModernComputing")) {
+  } else if (filters.includes("Modern Computing")) {
     return (
       <div
         // style={{ background: this.props.theme.background }}
         className="citations"
       >
-        <EraIcon icon="ModernComputing" />
+        <EraIcon icon="Modern Computing" />
       </div>
     );
-  } else if (filters.includes("InformationAge")) {
+  } else if (filters.includes("Information Age")) {
     return (
       <div
         // style={{ background: this.props.theme.background }}
         className="citations"
       >
-        <EraIcon icon="InformationAge" />
+        <EraIcon icon="Information Age" />
       </div>
     );
   } else {

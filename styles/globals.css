@@ -6,7 +6,7 @@
   /* Your default theme */
   --background: white;
   --foreground: black;
-  transition: all 0.65s ease-in-out;
+  transition: background-color 0.65s ease-in-out;
 }
 
 [data-theme="dark"] {

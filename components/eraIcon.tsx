@@ -13,9 +13,9 @@ addIcon('Ancient', abjadArabic);
 addIcon('Medieval', crossIcon);
 addIcon('Enlightenment', microscopeIcon);
 addIcon('Industrial', bxsFactory);
-addIcon('EarlyComputing', cardFileBox);
-addIcon('ModernComputing', imacIcon);
-addIcon('InformationAge', internetOfThingsLine);
+addIcon('Early Computing', cardFileBox);
+addIcon("Modern Computing", imacIcon);
+addIcon('Information Age', internetOfThingsLine);
 
 interface eraIconProps {
     icon: string;
