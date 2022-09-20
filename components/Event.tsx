@@ -21,11 +21,14 @@ import Era from "./Event/Era";
 import { useTheme } from "next-themes";
 const slideDown = keyframes({
   from: { height: 0, transform: "translateY(-20px)" },
-  to: { height: "var(--radix-accordion-content-height)", transform: "translateY(0)" },
+  to: {
+    height: "var(--radix-accordion-content-height)",
+    transform: "translateY(0)",
+  },
 });
 
 const slideUp = keyframes({
-  from: { height: "var(--radix-accordion-content-height)"},
+  from: { height: "var(--radix-accordion-content-height)" },
   to: { height: 0 },
 });
 
@@ -36,6 +39,9 @@ const StyledAccordion = styled(AccordionPrimitive.Root, {
   width: "20rem",
   "&:hover": {
     boxShadow: `0 2px 10px ${blackA.blackA5}`,
+  },
+  "@media (max-width: 410px)": {
+    padding: "0 1rem",
   },
   "@media (min-width: 768px)": {
     width: "30rem",
@@ -117,7 +123,7 @@ const StyledTrigger = styled(AccordionPrimitive.Trigger, {
   justifyContent: "space-between",
   fontSize: "1.5rem",
   lineHeight: 1,
-  fontWeight: "800",
+  fontWeight: "900",
   cursor: "pointer",
   "&:hover": { backgroundColor: mauve.mauve2 },
   variants: {
@@ -163,7 +169,7 @@ const StyledContent = styled(AccordionPrimitive.Content, {
         backgroundColor: mauveDark.mauve2,
         color: mauveDark.mauve11,
       },
-    }
+    },
   },
 });
 
@@ -192,8 +198,7 @@ function AccordionTrigger({ children, ...props }) {
 
 function AccordionContent({ children, ...props }) {
   return (
-    <StyledContent
-    {...props}>
+    <StyledContent {...props}>
       <StyledContentText>{children}</StyledContentText>
     </StyledContent>
   );
@@ -221,7 +226,7 @@ function Event(props) {
   }
   // let filters = props.filters;
   // let year = checkYearBCE(props.year);
-    const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   return (
     <>
       {!showEventInFocus ? (
@@ -231,7 +236,10 @@ function Event(props) {
               {props.title}
             </AccordionTrigger>
             <AccordionContent color={theme === "light" ? "mauve" : "mauveDark"}>
-              <div className="flex justify-center flex-col text-center space-y-6 p-12">
+              <div
+                className="prose prose-headings:font-bold
+              flex justify-center flex-col text-center p-12"
+              >
                 <Image
                   width={200}
                   height={200}
@@ -239,9 +247,9 @@ function Event(props) {
                   src={props.TimelineImage + "?webp"}
                   alt="Error"
                 />
-                <h3 className="text-3xl font-bold"> Year: {props.year}.</h3>
+                <h2 className=""> Year: {props.year}.</h2>
                 <StyledSeparator />
-                <p className="text-xl"> {props.body}.</p>
+                <p className=""> {props.body}</p>
                 <Citations citations={props.citations} />
                 <StyledSeparator />
                 <Categories filters={props.filters} />

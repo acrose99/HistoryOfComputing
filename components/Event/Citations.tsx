@@ -10,7 +10,7 @@ function Citations({ citations }: CitationProps) {
   } else {
     return (
       <div>
-        <p className="italic font-light text-sm">
+        <p className="italic font-light">
           Citations: {citations[0]}, {citations[1]}
         </p>
       </div>

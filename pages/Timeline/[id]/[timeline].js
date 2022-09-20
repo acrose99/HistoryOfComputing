@@ -15,8 +15,8 @@ export default function Timeline(props) {
     if (id !== 'all') {
         return (
             <div>
+                <Filterer toggleTheme={props.toggleTheme} filter={props.filter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear} />
                 <Navbar/>
-                <Filterer toggleTheme={props.toggleTheme} filter={props.filter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear}/>
                 {/* <ShowAll onClickFiltererType={props.showAll}/> */}
                 <TimelineComponent  filter={id}/>
             </div>
@@ -27,8 +27,8 @@ export default function Timeline(props) {
         return (
             <div>
                 <div>
+                    <Filterer toggleTheme={props.toggleTheme} filter={props.filter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear} />
                     <Navbar/>
-                    <Filterer toggleTheme={props.toggleTheme} filter={props.filter} handleFilterChange={props.handleFilterChange} handleFilterChangeYear={props.handleFilterChangeYear}/>
                     <TimelineComponent filter={id}/>
                 </div>
             </div>

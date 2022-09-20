@@ -40,14 +40,22 @@ const slideLeftAndFade = keyframes({
   "100%": { opacity: 1, transform: "translateX(0)" },
 });
 
+const scaleIn = keyframes({
+  "0%": { opacity: 0, transform: "scale(0)" },
+  "100%": { opacity: 1, transform: "scale(1)" },
+});
+
+
 const StyledContent = styled(DropdownMenuPrimitive.Content, {
   marginTop: "5px",
   boxShadow:
     "0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)",
   "@media (prefers-reduced-motion: no-preference)": {
-    animationDuration: "400ms",
-    animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-    willChange: "transform, opacity",
+    // transformOrigin: "var(--radix-dropdown-menu-content-transform-origin)",
+    // animation: `${scaleIn} 0.5s ease-in-out`,
+    // willChange: "transform, opacity",
+    animationDuration: ".3s",
+    animationTimingFunction: "ease-in-out",
     '&[data-state="open"]': {
       '&[data-side="top"]': { animationName: slideDownAndFade },
       '&[data-side="right"]': { animationName: slideLeftAndFade },
@@ -81,7 +89,6 @@ const itemStyles = {
   height: 25,
   position: "relative",
   userSelect: "none",
-
   variants: {
     color: {
       mauve: {
@@ -104,7 +111,10 @@ const itemStyles = {
   },
 };
 
-const StyledItem = styled(DropdownMenuPrimitive.Item, { ...itemStyles });
+const StyledItem = styled(DropdownMenuPrimitive.Item, {
+  cursor: "pointer !important",
+  ...itemStyles,
+});
 const StyledCheckboxItem = styled(DropdownMenuPrimitive.CheckboxItem, {
   ...itemStyles,
 });
@@ -186,7 +196,7 @@ function ContextDialog({
 }: ContextDialogProps) {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="z-50 fixed">
+    <div className="z-50 fixed my-24">
       <DropdownMenuPrimitive.Root>
         <DropdownMenuPrimitive.Trigger className="flex w-32 z-100" asChild>
           <div
@@ -381,8 +391,6 @@ function ContextDialog({
 
 /* TODO: Have some sort of Search? */
 function Filterer(props) {
-  const [minYear, setMinYear] = useState(props.minYear);
-  const [maxYear, setMaxYear] = useState(props.maxYear);
   const [opened, setOpened] = useState(false);
   // function onClickFiltererType(filter, theme) {
   //   toggleTheme(theme);
@@ -397,18 +405,6 @@ function Filterer(props) {
   //     year: value,
   //   });
   // }
-  const { z } = useSpring({
-    z: opened ? 90 : 0,
-  });
-  const menuAppear = useSpring({
-    opacity: opened ? 1 : 0,
-    transform: opened ? "translate3d(0,0,0)" : "translate3d(0, -100%, 0)",
-    config: {
-      duration: 500,
-      delay: 100,
-      ...config.wobbly,
-    },
-  });
   return (
     <div className="flex z-50 justify-end px-12 fixed w-screen">
       <ContextDialog
