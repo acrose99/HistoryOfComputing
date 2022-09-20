@@ -14,7 +14,7 @@ function Categories({ filters }: CategoriesProps) {
       filters[i] !== "Medieval" &&
       filters[i] !== "Enlightenment" &&
       filters[i] !== "Industrial" &&
-      filters[i] !== "InformationAge" &&
+      filters[i] !== "Information Age" &&
       filters[i] !== "Women" &&
       filters[i] !== "LGBTQ" &&
       filters[i] !== "POC"
